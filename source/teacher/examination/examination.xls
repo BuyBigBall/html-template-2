@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+
+	﻿
+	<head>
+		<meta charset="utf-8" />
+			</head>
+
+	<body>
+
+		<table border="1">
+			<tr>
+				<td colspan="7" align="center" height="50" style="font-size:14px;">商务礼仪与职业形象面试考试考试成绩 - 教育一班</td>
+			</tr>
+			<tr>
+				<td colspan="7" align="center" height="30">考试时间：2021-02-02 14:40~17:43&nbsp;参考人数：0/0人 平均分：0分&nbsp;优秀：0人&nbsp;良好：0人&nbsp;及格：0人&nbsp;不及格：0人</td>
+			</tr>
+			<tr class="bgceaf9">
+				<th height="25" style="background:#eaf9ff;">姓名</th>
+				<th height="25" style="background:#eaf9ff;">学号</th>
+				<th height="25" style="background:#eaf9ff;">性别</th>
+				<th height="25" style="background:#eaf9ff;">年龄</th>
+				<th height="25" style="background:#eaf9ff;">评分</th>
+				<th height="25" style="background:#eaf9ff;">等级</th>
+				<th height="25" style="background:#eaf9ff;">本次考试排名</th>
+			</tr>
+					</table>
+		
+	</body>
+
+</html>

@@ -1,0 +1,2391 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>大连理工大学出版社</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="static/index/public/css/base.css" />
+	<link rel="stylesheet" href="static/index/public/css/jquery.fullpage.min.css">
+	<link rel="stylesheet" href="static/index/public/css/style.css?v=1" />
+	<link rel="stylesheet" href="static/index/public/css/add_sxh.css" />
+	<link rel="stylesheet" href="static/index/public/css/style_lgpt.css" />
+
+	<script src="static/index/public/js/jquery-1.7.1.min.js"></script>
+	<script src="static/index/public/js/jquery.plus.extend.js"></script>
+	<script src="static/index/public/js/jquery.main.js"></script>
+	<script src="static/index/public/js/jquery.fullpage.min.js"></script>
+	<script src="static/index/public/js/jquery.form.js"></script>
+	<script src="static/index/public/js/alert.js"></script>
+	<script src="static/index/public/js/commonJs.js"></script>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--[if lt IE 9]><style>
+		.alertBrowserBox{
+			display: block !important;
+		}
+	</style><![endif]-->
+
+</head>
+<style>
+.ysk{ display: block; width:30px; line-height: 20px; background: #008fef; color: #fff; text-align: center; position:fixed; height: 80px; z-index: 30; right: 0; top: 150px; }
+.wkmore{ display: block; line-height: 50px; font-size: 18px; text-align: center; }
+</style>
+<body>
+	<!--头部模块_start-->
+	<div class="g-hd">
+			<!--头部模块_start-->
+		<div class="g-inr">
+			<a class="logo" <a href="index.htm"><img src="upload/image/14829742798015.png"/></a>
+			<ul class="nav f-cb">
+				<li  >
+					<a class="nav1" <a href="index.htm">首页</a>
+				</li>
+				<li  >
+					<a class="nav1" href="textbook.htm?_f=textbook">教材中心 </a>
+				</li>
+				<li  class="cur"  >
+					<a class="nav1" href="resource.htm">资源中心</a>
+				</li>
+				<li  >
+					<a class="nav1" href="
+													index.php?_d=login&type=1&_f=login
+						" target="_blank" >
+					在线教学</a>
+				</li>
+				<li  >
+					<a class="nav1" href="contactus.htm">出版专栏</a>
+					<div class="nav2List">
+						<a  href="contactus.htm">联系我们</a>
+						<a  href="topic.htm">选题开发</a>
+						<a  href="publishing.htm">出版流程</a>
+						<a  href="knowledge.htm">出版知识</a>
+					</div>
+				</li>
+				<li  >
+					<a class="nav1" href="about.htm">关于我们</a>
+					<div class="nav2List">
+						<a  href="about.htm">企业简介</a>
+						<a  href="about2.htm">大事记</a>
+						<a  href="about3.htm">荣誉业绩</a>
+						<a  href="about4.htm">国家项目</a>
+					</div>
+				</li>
+			</ul>
+						<div class="login f-cb">
+				<a class="icon" href="register.htm"><i class="ico sprite"></i><span class="text">登录</span></a>
+				<a href="register.htm"><span class="text">注册</span></a>
+			</div>
+					</div>
+	<!--头部模块_end-->
+
+	</div>
+	<!--头部模块_end-->
+	<!--搜索模块_start-->
+	<div class="g-search">
+		<div class="g-inr">
+			<div class="box">
+				<form action="" method="get" >
+				<input type="hidden" name="_d" value="resource"/>
+				<input type="hidden" name="_f" value="searchResource"/>
+					<div class="type">
+						<div class="typeCur" id="typeCur"><span id="typeCurText">全部</span><i class="arrow sprite"></i></div>
+						<ul class="typeSelect" id="typeSelect">
+							<li class="cur" data-val="0">全部</li>
+							<li data-val="1">教材名称</li>
+							<li data-val="2">书号</li>
+							<li data-val="3">作者</li>
+							<li data-val="4">课程名称</li>
+						</ul>
+					</div>
+					<div class="inputWrap">
+						<input class="inputField" type="text" name="keyword" id="textbookName">
+						<p class="inputPh"></p>
+					</div>
+					<input type="hidden" id="searchType" name="type" value="0">
+					<input class="submit sprite" type="submit" value=""">
+				</form>
+			</div>
+			<div class="labels">
+				<label>热搜：</label>
+								<a href="?_d=resource&_f=searchResource&keyword=会计">会计</a>
+								<a href="?_d=resource&_f=searchResource&keyword=经济">经济</a>
+								<a href="?_d=resource&_f=searchResource&keyword=管理">管理</a>
+								<a href="?_d=resource&_f=searchResource&keyword=计算机">计算机</a>
+								<a href="?_d=resource&_f=searchResource&keyword=机械">机械</a>
+								<a href="?_d=resource&_f=searchResource&keyword=建筑">建筑</a>
+								<a href="?_d=resource&_f=searchResource&keyword=汽车">汽车</a>
+								<a href="?_d=resource&_f=searchResource&keyword=电工电子">电工电子</a>
+							</div>
+		</div>
+	</div>
+	<!--搜索模块_end-->
+	<!--主体模块_start-->
+	<div class="g-body">
+		<div class="g-inr">
+			<div class="clmContainer">
+				<!--侧边栏_start-->
+				<div class="clmSide f-fl">
+					<a class="rscUploadLink" href="resource.htmUpload"><i class="ico sprite"></i>上传资源</a>
+					<div class="menuWrap">
+						<div class="menuType">
+							<div class="typeCur">高等职业教育<i class="arrow"></i></div>
+							<ul class="list">
+								<a href="resource.htm?contentId=2">高等职业教育</a>
+								<a href="resource.htm?contentId=1">中等职业教育</a>
+							</ul>
+						</div>
+						<div class="menuTabs f-cb">
+													<div class="menu cur curTpye-blue">
+														<h5 class="tab tab-blue">全部资源</h5>
+								<ul class="list">
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=26">测绘类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=26&majorId=93"><h5 class="label">测绘类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=26&majorId=93&courseId=662">数字测图</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=1">公共课<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=1&majorId=80"><h5 class="label">公共基础类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=57">大学语文</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=58">应用文写作</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=59">财经应用文写作</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=60">职业汉语与实用写作</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=61">建筑应用文写作</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=73">人际沟通</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=62">大学生心理健康</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=63">大学体育</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=64">大学生就业指导</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=65">大学生创业</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=66">大学生职业生涯规划</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=67">职业素养教育</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=68">大学生国防教育</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=69">演讲与口才</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=70">普通话</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=71">口语交际</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=72">国学经典导读</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=74">公共关系</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=75">音乐欣赏</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=76">文学欣赏</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=77">美术欣赏</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=78">中国传统文化</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=79">职业形象设计与训练</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=80">礼仪</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=583">大学生安全教育</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=691">劳动教育</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=692">劳动教育</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=1&majorId=81"><h5 class="label">数学类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=94">高等数学（通用类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=83">高等数学（理工类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=84">高等数学（少学时）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=85">高等数学（应用类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=91">应用数学（通用类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=86">应用数学（理工类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=87">应用数学（文科类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=88">应用数学（工科类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=89">应用数学（经管类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=93">工程数学</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=92">经济数学</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=95">高职数学实验</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=2">财经商贸大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=3"><h5 class="label">财经大类专业基础课类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=46">经济学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=48">管理学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=47">统计学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=45">经济法</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=54">质量认证理论与实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=53">管理信息系统</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=51">企业管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=50">经济管理基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=49">管理心理学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=636">财政与金融</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=89"><h5 class="label">财务会计类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=89&courseId=641">财务管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=89&courseId=642">会计</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=89&courseId=643">审计</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=89&courseId=644">会计信息管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=89&courseId=646">税务</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=6"><h5 class="label">金融保险类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=618">金融学基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=634"> 商业银行业务实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=633">资产评估</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=632">金融法规</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=631">商业银行业务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=630">保险理论与实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=629">人身保险实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=628">财产保险实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=627">保险学基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=626">个人理财实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=625">个人理财</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=624">风险管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=623">证券投资实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=622">银行会计实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=621">国际金融实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=620">西方经济学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=619">互联网金融</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=635">保险会计</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=7"><h5 class="label">电子商务类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=512">移动电子商务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=162">电子商务概论</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=316">电子商务实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=163">网络营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=305">新编市场营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=303">电子商务案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=165">电子商务物流</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=310">电子商务法</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=311">电子商务网站建设</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=304">网上开店实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=306">网页设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=307">网络技术及应用</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=308">电子商务安全技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=309">电子支付与网络安全</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=312">电子商务实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=520">电子商务专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=314">呼叫中心运营管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=670">跨境电商B2B数据运营</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=669">跨境电商数据分析与应用</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=668">跨境电商客户服务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=667">跨境电商基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=666">跨境电商物流</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=665">跨境电商数字营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=671">跨境电商基础</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=8"><h5 class="label">国际经济与贸易类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=268">国际贸易实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=459">跨境电子商务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=40">国际商务运作综合实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=39">商品进出口业务（英文）</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=38">国际贸易实务双语</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=37">外贸英语函电</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=36">新编报检实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=35">新编报关实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=34">国际商法</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=33">商务礼仪与职业形象</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=32">国际市场营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=31">国际商务谈判</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=30">外贸单证实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=29">外贸跟单实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=28">国际结算</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=27">国际货物运输与保险</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=26">进出口业务实训</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=76"><h5 class="label">市场营销类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=174">市场营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=175">市场营销策划</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=176">市场调查与预测</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=178">商务谈判</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=179">推销实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=180">推销与商务谈判</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=185">分销渠道管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=183">商务礼仪</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=181">广告实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=186">商品学实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=187">消费者行为分析</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=182">消费心理学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=188">服务营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=189">客户关系管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=193">客户服务实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=184">房地产市场营销</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=77"><h5 class="label">物流管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=531">现代物流基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=532">物流管理基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=533">运输管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=534">配送管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=535">仓储管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=536">仓储与配送管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=537">采购管理与库存控制</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=538">物流法规</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=539">物流地理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=540">供应链管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=541">物流信息管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=542">企业物流管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=543">报关实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=544">物流成本管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=545">物流设施与设备</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=546">国际货运代理实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=547">商品养护</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=548">物流技术综合实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=549">物流管理综合实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=550">物流营销实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=551">实用物流专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=688">现代物流管理</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=78"><h5 class="label">连锁经营管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=422">连锁经营管理原理与实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=423">连锁门店开发与设计</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=424">连锁门店促销技巧</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=425">连锁企业门店运营管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=426">连锁企业物流概论</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=427">特许经营管理</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=79"><h5 class="label">人力资源管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=513">人力资源开发与管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=514">劳动关系管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=515">企业行政管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=516">组织行为学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=517">薪酬管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=518">员工培训与开发</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=519">人才选拔与测评</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=3">电子信息大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=85"><h5 class="label">计算机大类专业基础课类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=139">计算机应用基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=148">办公自动化</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=147">C语言程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=149">计算机网络技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=166">网页设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=167">多媒体技术应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=168">SQL Server数据库技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=169">Visual FoxPro数据库技术及应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=170">Access数据库技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=171">计算机组装与维护</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=270">计算机专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=271">计算机数学</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=269">毕业论文与设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=553">人工智能应用基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=664">数据库技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=685">信息技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=14"><h5 class="label">计算机应用技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=343">操作系统</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=328">Linux操作系统及应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=329">微机原理</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=330">微机原理与接口技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=331">微机原理与组装维护</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=358">单片机原理及应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=333">数据结构</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=334">Internet实用技术（第四版）</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=335">管理信息系统</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=336">实用工具软件</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=337">计算机电路基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=338">Visual Basic程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=339">SQL Server数据库技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=340">VC#.NET程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=341">JavaScript网页交互设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=342">信息检索</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=655">MySQL数据库技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=15"><h5 class="label">软件类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=569">软件工程</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=607">Web技术应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=581">MySQL数据库技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=580">HTML5+CSS3网站设计基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=579">面向对象程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=578">C#程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=577">JSP程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=576">Java Web程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=575">Java程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=574">实用软件测试技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=573">Android基础程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=572">PHP程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=608">Oracle数据库应用技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=16"><h5 class="label">网络类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=282">计算机网络技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=272">Windows网络操作系统配置管理</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=273">Linux网络操作系统配置管理</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=274">计算机网络工程</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=275">网络管理与维护</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=276">局域网组建与维护</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=277">路由和交换技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=278">网络安全技术与实施</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=279">网络综合布线设计与实施</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=280">ASP.NET程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=281">XML程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=552">网站前端开发</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=17"><h5 class="label">多媒体类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=317">素描速写</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=332">单片机原理及应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=318">Flash二维动画设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=319">Photoshop图形图像处理</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=320">三维动画设计与制作（3DS MAX）</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=321">CorelDRAW矢量绘图</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=322">MAYA三维建模设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=323">Authorware多媒体设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=324">Illustrator矢量绘图</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=325">影视特效设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=326">音视频采集与编辑</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=18"><h5 class="label">动漫类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=18&courseId=131">动画运动规律</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=18&courseId=132">动画造型设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=18&courseId=134">动画场景设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=18&courseId=135">动画分镜头台本设计</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=19"><h5 class="label">电子信息类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=199">模拟电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=200">数字电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=201">电子技术基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=209">电子技术技能实训</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=210">电路分析基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=211">高频电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=212">电子信息专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=213">单片机应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=214">电子行业认知与新技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=227">典型电子产品调试与维修</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=216">智能电子产品设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=217">电子产品印刷电路板设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=218">电子产品检验</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=219">电子产品营销与服务</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=220">电子设备装调实训</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=221">电子测量与仪器应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=222">彩色电视机原理与维修</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=223">可编程控制器应用技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=224">智能监控技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=225">有线电视技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=226">电工电子基础实训</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=472">综合布线系统设计与实施</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=19&courseId=610">单片机原理与接口技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=20"><h5 class="label">通信类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=202">通信技术基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=203">通信工程制图及实训</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=204">通信工程设计及概预算</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=205">通信专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=206">光纤通信技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=207">信号与系统</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=208">电信市场营销</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=86"><h5 class="label">云计算技术与应用<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=86&courseId=554">云计算技术与应用</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=87"><h5 class="label">大数据类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=87&courseId=570">大数据基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=87&courseId=571">Python语言程序设计</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=91"><h5 class="label">虚拟现实应用技术专业<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=91&courseId=657">虚拟现实正向建模</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=91&courseId=658">虚拟现实应用技术基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=91&courseId=659">虚拟现实逆向建模</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=101"><h5 class="label">人工智能应用技术专业<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=101&courseId=682">Python网络爬虫</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=102"><h5 class="label">大数据技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=102&courseId=678">大数据基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=102&courseId=679">Python语言程序设计基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=102&courseId=680">Python项目化开发实践</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=102&courseId=681">Python网络爬虫快速入门</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=103"><h5 class="label">物联网应用技术<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=103&courseId=684">网络与通信技术</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=4">装备制造大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=38"><h5 class="label">制造大类专业基础课类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=138">机械制图（机械专业）</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=140">机械制图（非机械专业）</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=141">公差配合与测量技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=511">机械制图测绘实训</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=142">工程力学</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=143">机械设计基础</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=265">机械制造基础</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=266">机械制造技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=144">液压与气动技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=145">电工电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=146">电气控制技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=39"><h5 class="label">机电类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=473">计算机辅助设计</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=475">计算机绘图</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=474">计算机辅助设计与制造</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=476">计算机三维建模</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=477">机械制造工艺</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=478">金工实训</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=479">钳工技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=480">金属切削机床</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=481">普车加工技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=482">数控编程与加工技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=483">先进制造技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=484">机械工程材料</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=485">工程材料与热加工</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=486">模拟电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=487">维修电工</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=488">机械专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=489">机电英语</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=41"><h5 class="label">数控技术应用类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=445">数控加工工艺项目化教程</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=456">综合数控加工及工艺</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=444">数控编程及加工技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=446">UG  NX 8.0数控加工编程应用</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=447">典型零件设计与数控加工</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=448">数控技术应用专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=449">数控机床</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=450">数控原理与数控系统</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=451">数控机床安装与调试</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=452">数控机床电气控制</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=453">数控机床故障诊断与维修</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=454">数控机床与操作</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=455">CAD/CAM技术应用</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=457">数控车床操作工技能认证</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=41&courseId=458">数控铣床/加工中心操作工技能认证</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=42"><h5 class="label">模具设计与制造类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=490">塑料成型工艺与设备</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=491">冲压工艺与设备</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=492">冲压CAE</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=493">模具CAD/CAM</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=494">基于UG软件的模具设计</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=495">注塑模具设计</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=496">模具数字化设计与制造（模具CAD/CAE/CAM）</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=497">模具数控加工技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=498">模具材料与热处理</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=499">模具专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=471">模具制造工艺</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=464">塑料成型工艺与模具设计</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=463">冷冲压工艺与模具设计</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=43"><h5 class="label">焊接技术及自动化类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=500">金属材料热处理</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=501">焊接冶金学及金属材料焊接</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=502">焊接方法与设备</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=503">焊接质量检测技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=504">焊接结构生产</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=505">焊接实训</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=40"><h5 class="label">电气自动化技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=247">数字电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=248">模拟电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=249">电机与拖动技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=250">单片机技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=251">可编程控制器技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=252">电工电子技术基础</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=253">工厂供配电技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=254">变频器技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=255">C语言程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=256">电气测量技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=257">专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=258">自动化生产线安装与调试</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=259">交流调速技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=260">传感器技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=261">自动控制原理</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=262">电力电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=263">计算机控制技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=264">工业组态控制技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=92"><h5 class="label">电梯工程技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=92&courseId=661">电梯安装与维修</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=104"><h5 class="label">智能制造技术专业群<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=104&courseId=689">工业机器人技术基础</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=5">土木建筑大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=5&majorId=44"><h5 class="label">建筑工程技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=347">建筑力学</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=348">建筑力学—王渊辉主编</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=349">建筑材料与检测—连丽主编</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=351">建筑材料与检测实训指导</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=350">建筑材料与检测习题集</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=352">建筑制图与识图—肖明和主编</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=353">建筑制图与识图习题集</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=354">建筑制图与识图—张宁远主编</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=355">建筑工程测量</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=356">工程测量技能实训</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=368">建筑工程计量与计价（包括装饰）</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=369">建筑工程计量与计价学习指导与实训</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=370">建筑工程计量与计价（建筑工程部分）</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=371">建筑工程计量与计价（少学时）</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=372">建筑施工组织</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=373">建筑施工组织设计</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=374">地基与基础</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=375">建筑设备安装</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=376">建筑结构</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=377">建筑结构综合实训教程</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=378">建设法规与案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=379">装饰工程计量与计价</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=380">装饰工程计量与计价实训题集</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=381">建筑施工技术</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=382">建筑构造</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=383">建筑工程概论</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=384">计算机辅助建筑设计</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=385">建筑CAD应用教程</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=386">建筑结构（上册）</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=387">建筑结构（下册）</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=388">建筑识图与建筑构造</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=389">建筑工程资料管理—模拟实务</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=390">平法识图与钢筋算量</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=391">景观设计实用手绘教程</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=663">BIM建模</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=5&majorId=45"><h5 class="label">工程管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=392">工程项目管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=393">工程造价实训</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=394">建设工程监理实务</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=395">建设工程监理实务与案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=396">工程造价控制与案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=397">施工企业会计基础</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=398">施工企业会计基础习题集</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=399">工程招投标与合同管理</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=400">建筑工程预算电算化</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=401">工程经济学</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=402">建筑力学与结构</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=403">建筑力学</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=404">建筑结构</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=405">建筑安装工程概预算与清单计价</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=406">建筑企业材料管理</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=467">工程地质</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=468">道路工程制图</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=5&majorId=47"><h5 class="label">物业管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=407">物业管理概论</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=408">物业管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=409">新编物业管理法规</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=410">新编物业管理法规案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=411">社区建设与管理</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=412">物业设备维修与管理</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=413">物业企业会计</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=414">房地产估价理论方法与实务</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=415">房地产法规</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=416">物业英语</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=417">房地产开发与经营管理</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=6">交通运输大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=6&majorId=48"><h5 class="label">汽车运用与维修类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=228">汽车发动机构造与维修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=267">汽车发动机构造与维修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=229">汽车底盘构造与维修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=230">汽车发动机电控技术</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=231">汽车底盘电控技术</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=232">汽车检测与诊断</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=233">汽车电气设备与维修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=327">汽车电气设备与维修（第二版）</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=234">汽车电工电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=235">汽车评估</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=236">汽车保险基础与实务</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=237">汽车概论</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=238">汽车空调</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=345">汽车专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=239">汽车专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=240">汽车营销基础与实务</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=241">汽车自动变速器结构原理与检修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=242">汽油发动机微机控制系统检修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=344">汽油发动机微机控制系统检修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=243">汽车服务顾问基础与实务</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=244">汽车制造工艺</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=246">汽车文化</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=245">汽车单片机与局域网技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=6&majorId=49"><h5 class="label">道路桥梁工程类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=367">桥涵工程</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=366">道路工程制图</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=365">道路工程制图习题集</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=364">工程地质</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=363">道路工程测量</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=362">道路建筑材料</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=361">土力学与地基基础</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=360">路基路面工程</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=359">公路工程资料编制与管理</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=7">旅游大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=7&majorId=50"><h5 class="label">旅游管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=584">旅游经济学</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=594">旅游心理</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=593">法规</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=592">民俗</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=591">专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=590">旅游地理</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=589">礼仪</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=588">旅游学</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=587">旅游企业会计</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=586">旅行社管理</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=585">导游</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=595">旅游市场</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=7&majorId=51"><h5 class="label">会展类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=7&majorId=51&courseId=596">会展英语</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=51&courseId=597">会展管理</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=51&courseId=598">会展营销</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=51&courseId=599">案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=51&courseId=660">展位设计</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=7&majorId=52"><h5 class="label">酒店管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=600">饭店管理</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=601">餐饮服务</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=602">食品营养与卫生</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=603">人力资源</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=604">专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=605">加盟与经营</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=606">宴会菜单</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=8">教育与体育大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=8&majorId=53"><h5 class="label">学前教育类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=429">学前教育学</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=430">学前儿童发展心理学</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=431">幼儿园课程概论</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=432">幼儿园管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=433">学前卫生学</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=434">幼儿文学</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=435">学前教育英语</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=436">幼儿园游戏与指导</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=437">幼儿歌曲钢琴伴奏教程</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=438">实用幼儿园歌曲教学伴奏曲选</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=439">乐理与视唱教程</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=440">舞蹈与幼儿舞蹈创编</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=441">学期儿童社会教育活动指导</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=442">学前儿童健康教育活动指导</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=443">学前儿童美术教育活动指导</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=8&majorId=54"><h5 class="label">文秘类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=521">秘书理论与实务</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=529">文秘英语</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=528">办公设备操作与管理</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=527">秘书实训</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=526"> 秘书学概论</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=525">文书工作与档案管理</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=524">会议管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=523">办公室事务</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=522">秘书写作</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=530">社交礼仪</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=8&majorId=55"><h5 class="label">教师教育类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=8&majorId=55&courseId=609">现代教育技术</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=55&courseId=654">教育心理学</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=9">文化艺术大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=9&majorId=56"><h5 class="label">艺术设计类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=418">设计色彩</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=419">手绘效果图设计</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=420">平面设计实训</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=421">摄影技术</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=565">设计素描</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=566">透视学</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=567">广告设计</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=611">3D Rhino中文版产品设计</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=10">医药卫生大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=10&majorId=57"><h5 class="label">护理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=288">护理学基础</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=283">病原生物学及免疫学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=292">正常人体结构</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=293">生物化学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=299">病理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=290">生理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=287">健康评估</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=297">临床护理实习指导</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=295">护理伦理与法规</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=284">中医护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=285">妇产科护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=286">急救护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=298">内科护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=294">外科护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=300">儿科护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=289">护理心理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=296">社区护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=291">护理药理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=301">护理营养学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=466">学前卫生学</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=11">农林牧渔大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=11&majorId=58"><h5 class="label">园林园艺类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=647">草坪建植与管理</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=648">园林苗木生产与经营</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=649">花卉栽培</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=650">园林植物病虫害防治</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=651">植物与植物生理</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=652">果树栽培</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=653">园林工程施工技术</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=12">食品药品与粮食大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=12&majorId=59"><h5 class="label">食品类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=465">食品生物化学</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=506">食品理化检验</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=507">食品感官检验</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=508">食品安全</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=509">食品营养与健康</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=510">食品仪器分析</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=656">食品微生物</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=683">发酵食品生产</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=686">食品检测技术</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=13">生物与化工大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=13&majorId=60"><h5 class="label">化工技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=469">化工制图与CAD</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=563">化学实验</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=562">仪器分析技术</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=561">无机及分析化学</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=560">化学与健康</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=559">工业分析</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=558">分析化学</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=557">无机化学</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=556">物理化学</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=555">化工原理</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=470">有机化学</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=564">化工生产技术</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=21">资源环境与安全大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=21&majorId=61"><h5 class="label">环境保护类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=612">环境监测</a>
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=613">大气污染控制技术</a>
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=614">固体废物处理与利用</a>
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=615">水污染控制技术</a>
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=616">环境工程概论</a>
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=617">环境化学</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=27">高等职业教育外语<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=27&majorId=94"><h5 class="label">公共英语<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=27&majorId=94&courseId=674">点击职业英语</a>
+																										<a href="resource.htm?contentId=2&classId=27&majorId=94&courseId=675">智学</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=27&majorId=95"><h5 class="label">商务英语<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=27&majorId=95&courseId=690">外语</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=27&majorId=96"><h5 class="label">行业英语<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=27&majorId=96&courseId=673">点击职业英语</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=27&majorId=97"><h5 class="label">应用英语<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=27&majorId=97&courseId=677">英语</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=27&majorId=98"><h5 class="label">日语<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=27&majorId=98&courseId=672">日语</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																									<li>
+																		<a class="link" href="resource.htm?contentId=2&classId=29">公安与司法<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=29&majorId=105"><h5 class="label">安全防范技术<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=29&majorId=105&courseId=687">智能安防系统调试</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																</ul>
+							</div>
+														<div class="menu">
+															<h5 class="tab tab-red">国家规划</h5>
+								<ul class="list">
+																												<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=1&type=1">公共课<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=1&majorId=80&type=1"><h5 class="label">公共基础类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=57&type=1">大学语文</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=58&type=1">应用文写作</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=59&type=1">财经应用文写作</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=60&type=1">职业汉语与实用写作</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=61&type=1">建筑应用文写作</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=73&type=1">人际沟通</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=62&type=1">大学生心理健康</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=63&type=1">大学体育</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=64&type=1">大学生就业指导</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=65&type=1">大学生创业</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=66&type=1">大学生职业生涯规划</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=67&type=1">职业素养教育</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=68&type=1">大学生国防教育</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=69&type=1">演讲与口才</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=70&type=1">普通话</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=71&type=1">口语交际</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=72&type=1">国学经典导读</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=74&type=1">公共关系</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=75&type=1">音乐欣赏</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=76&type=1">文学欣赏</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=77&type=1">美术欣赏</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=78&type=1">中国传统文化</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=79&type=1">职业形象设计与训练</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=80&type=1">礼仪</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=583&type=1">大学生安全教育</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=691&type=1">劳动教育</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=80&courseId=692&type=1">劳动教育</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=1&majorId=81&type=1"><h5 class="label">数学类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=94&type=1">高等数学（通用类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=83&type=1">高等数学（理工类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=84&type=1">高等数学（少学时）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=85&type=1">高等数学（应用类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=91&type=1">应用数学（通用类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=86&type=1">应用数学（理工类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=87&type=1">应用数学（文科类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=88&type=1">应用数学（工科类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=89&type=1">应用数学（经管类）</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=93&type=1">工程数学</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=92&type=1">经济数学</a>
+																										<a href="resource.htm?contentId=2&classId=1&majorId=81&courseId=95&type=1">高职数学实验</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=2&type=1">财经商贸大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=3&type=1"><h5 class="label">财经大类专业基础课类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=46&type=1">经济学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=48&type=1">管理学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=47&type=1">统计学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=45&type=1">经济法</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=54&type=1">质量认证理论与实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=53&type=1">管理信息系统</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=51&type=1">企业管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=50&type=1">经济管理基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=49&type=1">管理心理学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=3&courseId=636&type=1">财政与金融</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=89&type=1"><h5 class="label">财务会计类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=89&courseId=641&type=1">财务管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=89&courseId=642&type=1">会计</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=89&courseId=643&type=1">审计</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=89&courseId=644&type=1">会计信息管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=89&courseId=646&type=1">税务</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=6&type=1"><h5 class="label">金融保险类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=618&type=1">金融学基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=634&type=1"> 商业银行业务实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=633&type=1">资产评估</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=632&type=1">金融法规</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=631&type=1">商业银行业务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=630&type=1">保险理论与实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=629&type=1">人身保险实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=628&type=1">财产保险实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=627&type=1">保险学基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=626&type=1">个人理财实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=625&type=1">个人理财</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=624&type=1">风险管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=623&type=1">证券投资实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=622&type=1">银行会计实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=621&type=1">国际金融实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=620&type=1">西方经济学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=619&type=1">互联网金融</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=6&courseId=635&type=1">保险会计</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=7&type=1"><h5 class="label">电子商务类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=512&type=1">移动电子商务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=162&type=1">电子商务概论</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=316&type=1">电子商务实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=163&type=1">网络营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=305&type=1">新编市场营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=303&type=1">电子商务案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=165&type=1">电子商务物流</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=310&type=1">电子商务法</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=311&type=1">电子商务网站建设</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=304&type=1">网上开店实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=306&type=1">网页设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=307&type=1">网络技术及应用</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=308&type=1">电子商务安全技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=309&type=1">电子支付与网络安全</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=312&type=1">电子商务实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=520&type=1">电子商务专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=314&type=1">呼叫中心运营管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=670&type=1">跨境电商B2B数据运营</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=669&type=1">跨境电商数据分析与应用</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=668&type=1">跨境电商客户服务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=667&type=1">跨境电商基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=666&type=1">跨境电商物流</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=665&type=1">跨境电商数字营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=7&courseId=671&type=1">跨境电商基础</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=8&type=1"><h5 class="label">国际经济与贸易类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=268&type=1">国际贸易实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=459&type=1">跨境电子商务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=40&type=1">国际商务运作综合实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=39&type=1">商品进出口业务（英文）</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=38&type=1">国际贸易实务双语</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=37&type=1">外贸英语函电</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=36&type=1">新编报检实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=35&type=1">新编报关实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=34&type=1">国际商法</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=33&type=1">商务礼仪与职业形象</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=32&type=1">国际市场营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=31&type=1">国际商务谈判</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=30&type=1">外贸单证实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=29&type=1">外贸跟单实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=28&type=1">国际结算</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=27&type=1">国际货物运输与保险</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=8&courseId=26&type=1">进出口业务实训</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=76&type=1"><h5 class="label">市场营销类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=174&type=1">市场营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=175&type=1">市场营销策划</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=176&type=1">市场调查与预测</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=178&type=1">商务谈判</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=179&type=1">推销实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=180&type=1">推销与商务谈判</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=185&type=1">分销渠道管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=183&type=1">商务礼仪</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=181&type=1">广告实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=186&type=1">商品学实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=187&type=1">消费者行为分析</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=182&type=1">消费心理学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=188&type=1">服务营销</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=189&type=1">客户关系管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=193&type=1">客户服务实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=76&courseId=184&type=1">房地产市场营销</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=77&type=1"><h5 class="label">物流管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=531&type=1">现代物流基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=532&type=1">物流管理基础</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=533&type=1">运输管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=534&type=1">配送管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=535&type=1">仓储管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=536&type=1">仓储与配送管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=537&type=1">采购管理与库存控制</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=538&type=1">物流法规</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=539&type=1">物流地理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=540&type=1">供应链管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=541&type=1">物流信息管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=542&type=1">企业物流管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=543&type=1">报关实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=544&type=1">物流成本管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=545&type=1">物流设施与设备</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=546&type=1">国际货运代理实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=547&type=1">商品养护</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=548&type=1">物流技术综合实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=549&type=1">物流管理综合实训</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=550&type=1">物流营销实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=551&type=1">实用物流专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=77&courseId=688&type=1">现代物流管理</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=78&type=1"><h5 class="label">连锁经营管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=422&type=1">连锁经营管理原理与实务</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=423&type=1">连锁门店开发与设计</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=424&type=1">连锁门店促销技巧</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=425&type=1">连锁企业门店运营管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=426&type=1">连锁企业物流概论</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=78&courseId=427&type=1">特许经营管理</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=2&majorId=79&type=1"><h5 class="label">人力资源管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=513&type=1">人力资源开发与管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=514&type=1">劳动关系管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=515&type=1">企业行政管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=516&type=1">组织行为学</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=517&type=1">薪酬管理</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=518&type=1">员工培训与开发</a>
+																										<a href="resource.htm?contentId=2&classId=2&majorId=79&courseId=519&type=1">人才选拔与测评</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=3&type=1">电子信息大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=85&type=1"><h5 class="label">计算机大类专业基础课类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=139&type=1">计算机应用基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=148&type=1">办公自动化</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=147&type=1">C语言程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=149&type=1">计算机网络技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=166&type=1">网页设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=167&type=1">多媒体技术应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=168&type=1">SQL Server数据库技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=169&type=1">Visual FoxPro数据库技术及应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=170&type=1">Access数据库技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=171&type=1">计算机组装与维护</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=270&type=1">计算机专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=271&type=1">计算机数学</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=269&type=1">毕业论文与设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=553&type=1">人工智能应用基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=664&type=1">数据库技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=85&courseId=685&type=1">信息技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=14&type=1"><h5 class="label">计算机应用技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=343&type=1">操作系统</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=328&type=1">Linux操作系统及应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=329&type=1">微机原理</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=330&type=1">微机原理与接口技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=331&type=1">微机原理与组装维护</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=358&type=1">单片机原理及应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=333&type=1">数据结构</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=334&type=1">Internet实用技术（第四版）</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=335&type=1">管理信息系统</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=336&type=1">实用工具软件</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=337&type=1">计算机电路基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=338&type=1">Visual Basic程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=339&type=1">SQL Server数据库技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=340&type=1">VC#.NET程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=341&type=1">JavaScript网页交互设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=342&type=1">信息检索</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=14&courseId=655&type=1">MySQL数据库技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=15&type=1"><h5 class="label">软件类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=569&type=1">软件工程</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=607&type=1">Web技术应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=581&type=1">MySQL数据库技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=580&type=1">HTML5+CSS3网站设计基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=579&type=1">面向对象程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=578&type=1">C#程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=577&type=1">JSP程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=576&type=1">Java Web程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=575&type=1">Java程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=574&type=1">实用软件测试技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=573&type=1">Android基础程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=572&type=1">PHP程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=15&courseId=608&type=1">Oracle数据库应用技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=16&type=1"><h5 class="label">网络类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=282&type=1">计算机网络技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=272&type=1">Windows网络操作系统配置管理</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=273&type=1">Linux网络操作系统配置管理</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=274&type=1">计算机网络工程</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=275&type=1">网络管理与维护</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=276&type=1">局域网组建与维护</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=277&type=1">路由和交换技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=278&type=1">网络安全技术与实施</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=279&type=1">网络综合布线设计与实施</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=280&type=1">ASP.NET程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=281&type=1">XML程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=16&courseId=552&type=1">网站前端开发</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=17&type=1"><h5 class="label">多媒体类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=317&type=1">素描速写</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=332&type=1">单片机原理及应用</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=318&type=1">Flash二维动画设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=319&type=1">Photoshop图形图像处理</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=320&type=1">三维动画设计与制作（3DS MAX）</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=321&type=1">CorelDRAW矢量绘图</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=322&type=1">MAYA三维建模设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=323&type=1">Authorware多媒体设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=324&type=1">Illustrator矢量绘图</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=325&type=1">影视特效设计与制作</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=17&courseId=326&type=1">音视频采集与编辑</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=18&type=1"><h5 class="label">动漫类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=18&courseId=131&type=1">动画运动规律</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=18&courseId=132&type=1">动画造型设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=18&courseId=134&type=1">动画场景设计</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=18&courseId=135&type=1">动画分镜头台本设计</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=20&type=1"><h5 class="label">通信类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=202&type=1">通信技术基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=203&type=1">通信工程制图及实训</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=204&type=1">通信工程设计及概预算</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=205&type=1">通信专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=206&type=1">光纤通信技术</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=207&type=1">信号与系统</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=20&courseId=208&type=1">电信市场营销</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=87&type=1"><h5 class="label">大数据类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=87&courseId=570&type=1">大数据基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=87&courseId=571&type=1">Python语言程序设计</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=91&type=1"><h5 class="label">虚拟现实应用技术专业<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=91&courseId=657&type=1">虚拟现实正向建模</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=91&courseId=658&type=1">虚拟现实应用技术基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=91&courseId=659&type=1">虚拟现实逆向建模</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=3&majorId=102&type=1"><h5 class="label">大数据技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=3&majorId=102&courseId=678&type=1">大数据基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=102&courseId=679&type=1">Python语言程序设计基础</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=102&courseId=680&type=1">Python项目化开发实践</a>
+																										<a href="resource.htm?contentId=2&classId=3&majorId=102&courseId=681&type=1">Python网络爬虫快速入门</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=4&type=1">装备制造大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=38&type=1"><h5 class="label">制造大类专业基础课类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=138&type=1">机械制图（机械专业）</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=140&type=1">机械制图（非机械专业）</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=141&type=1">公差配合与测量技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=511&type=1">机械制图测绘实训</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=142&type=1">工程力学</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=143&type=1">机械设计基础</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=265&type=1">机械制造基础</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=266&type=1">机械制造技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=144&type=1">液压与气动技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=145&type=1">电工电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=38&courseId=146&type=1">电气控制技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=39&type=1"><h5 class="label">机电类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=473&type=1">计算机辅助设计</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=475&type=1">计算机绘图</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=474&type=1">计算机辅助设计与制造</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=476&type=1">计算机三维建模</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=477&type=1">机械制造工艺</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=478&type=1">金工实训</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=479&type=1">钳工技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=480&type=1">金属切削机床</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=481&type=1">普车加工技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=482&type=1">数控编程与加工技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=483&type=1">先进制造技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=484&type=1">机械工程材料</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=485&type=1">工程材料与热加工</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=486&type=1">模拟电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=487&type=1">维修电工</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=488&type=1">机械专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=39&courseId=489&type=1">机电英语</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=42&type=1"><h5 class="label">模具设计与制造类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=490&type=1">塑料成型工艺与设备</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=491&type=1">冲压工艺与设备</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=492&type=1">冲压CAE</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=493&type=1">模具CAD/CAM</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=494&type=1">基于UG软件的模具设计</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=495&type=1">注塑模具设计</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=496&type=1">模具数字化设计与制造（模具CAD/CAE/CAM）</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=497&type=1">模具数控加工技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=498&type=1">模具材料与热处理</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=499&type=1">模具专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=471&type=1">模具制造工艺</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=464&type=1">塑料成型工艺与模具设计</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=42&courseId=463&type=1">冷冲压工艺与模具设计</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=43&type=1"><h5 class="label">焊接技术及自动化类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=500&type=1">金属材料热处理</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=501&type=1">焊接冶金学及金属材料焊接</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=502&type=1">焊接方法与设备</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=503&type=1">焊接质量检测技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=504&type=1">焊接结构生产</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=43&courseId=505&type=1">焊接实训</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=4&majorId=40&type=1"><h5 class="label">电气自动化技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=247&type=1">数字电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=248&type=1">模拟电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=249&type=1">电机与拖动技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=250&type=1">单片机技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=251&type=1">可编程控制器技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=252&type=1">电工电子技术基础</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=253&type=1">工厂供配电技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=254&type=1">变频器技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=255&type=1">C语言程序设计</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=256&type=1">电气测量技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=257&type=1">专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=258&type=1">自动化生产线安装与调试</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=259&type=1">交流调速技术与应用</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=260&type=1">传感器技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=261&type=1">自动控制原理</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=262&type=1">电力电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=263&type=1">计算机控制技术</a>
+																										<a href="resource.htm?contentId=2&classId=4&majorId=40&courseId=264&type=1">工业组态控制技术</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=5&type=1">土木建筑大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=5&majorId=44&type=1"><h5 class="label">建筑工程技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=347&type=1">建筑力学</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=348&type=1">建筑力学—王渊辉主编</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=349&type=1">建筑材料与检测—连丽主编</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=351&type=1">建筑材料与检测实训指导</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=350&type=1">建筑材料与检测习题集</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=352&type=1">建筑制图与识图—肖明和主编</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=353&type=1">建筑制图与识图习题集</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=354&type=1">建筑制图与识图—张宁远主编</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=355&type=1">建筑工程测量</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=356&type=1">工程测量技能实训</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=368&type=1">建筑工程计量与计价（包括装饰）</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=369&type=1">建筑工程计量与计价学习指导与实训</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=370&type=1">建筑工程计量与计价（建筑工程部分）</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=371&type=1">建筑工程计量与计价（少学时）</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=372&type=1">建筑施工组织</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=373&type=1">建筑施工组织设计</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=374&type=1">地基与基础</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=375&type=1">建筑设备安装</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=376&type=1">建筑结构</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=377&type=1">建筑结构综合实训教程</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=378&type=1">建设法规与案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=379&type=1">装饰工程计量与计价</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=380&type=1">装饰工程计量与计价实训题集</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=381&type=1">建筑施工技术</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=382&type=1">建筑构造</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=383&type=1">建筑工程概论</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=384&type=1">计算机辅助建筑设计</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=385&type=1">建筑CAD应用教程</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=386&type=1">建筑结构（上册）</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=387&type=1">建筑结构（下册）</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=388&type=1">建筑识图与建筑构造</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=389&type=1">建筑工程资料管理—模拟实务</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=390&type=1">平法识图与钢筋算量</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=391&type=1">景观设计实用手绘教程</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=44&courseId=663&type=1">BIM建模</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=5&majorId=45&type=1"><h5 class="label">工程管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=392&type=1">工程项目管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=393&type=1">工程造价实训</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=394&type=1">建设工程监理实务</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=395&type=1">建设工程监理实务与案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=396&type=1">工程造价控制与案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=397&type=1">施工企业会计基础</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=398&type=1">施工企业会计基础习题集</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=399&type=1">工程招投标与合同管理</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=400&type=1">建筑工程预算电算化</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=401&type=1">工程经济学</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=402&type=1">建筑力学与结构</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=403&type=1">建筑力学</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=404&type=1">建筑结构</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=405&type=1">建筑安装工程概预算与清单计价</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=406&type=1">建筑企业材料管理</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=467&type=1">工程地质</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=45&courseId=468&type=1">道路工程制图</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=5&majorId=47&type=1"><h5 class="label">物业管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=407&type=1">物业管理概论</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=408&type=1">物业管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=409&type=1">新编物业管理法规</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=410&type=1">新编物业管理法规案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=411&type=1">社区建设与管理</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=412&type=1">物业设备维修与管理</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=413&type=1">物业企业会计</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=414&type=1">房地产估价理论方法与实务</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=415&type=1">房地产法规</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=416&type=1">物业英语</a>
+																										<a href="resource.htm?contentId=2&classId=5&majorId=47&courseId=417&type=1">房地产开发与经营管理</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=6&type=1">交通运输大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=6&majorId=48&type=1"><h5 class="label">汽车运用与维修类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=228&type=1">汽车发动机构造与维修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=267&type=1">汽车发动机构造与维修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=229&type=1">汽车底盘构造与维修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=230&type=1">汽车发动机电控技术</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=231&type=1">汽车底盘电控技术</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=232&type=1">汽车检测与诊断</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=233&type=1">汽车电气设备与维修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=327&type=1">汽车电气设备与维修（第二版）</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=234&type=1">汽车电工电子技术</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=235&type=1">汽车评估</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=236&type=1">汽车保险基础与实务</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=237&type=1">汽车概论</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=238&type=1">汽车空调</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=345&type=1">汽车专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=239&type=1">汽车专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=240&type=1">汽车营销基础与实务</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=241&type=1">汽车自动变速器结构原理与检修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=242&type=1">汽油发动机微机控制系统检修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=344&type=1">汽油发动机微机控制系统检修</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=243&type=1">汽车服务顾问基础与实务</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=244&type=1">汽车制造工艺</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=246&type=1">汽车文化</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=48&courseId=245&type=1">汽车单片机与局域网技术</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=6&majorId=49&type=1"><h5 class="label">道路桥梁工程类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=367&type=1">桥涵工程</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=366&type=1">道路工程制图</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=365&type=1">道路工程制图习题集</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=364&type=1">工程地质</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=363&type=1">道路工程测量</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=362&type=1">道路建筑材料</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=361&type=1">土力学与地基基础</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=360&type=1">路基路面工程</a>
+																										<a href="resource.htm?contentId=2&classId=6&majorId=49&courseId=359&type=1">公路工程资料编制与管理</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=7&type=1">旅游大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=7&majorId=50&type=1"><h5 class="label">旅游管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=584&type=1">旅游经济学</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=594&type=1">旅游心理</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=593&type=1">法规</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=592&type=1">民俗</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=591&type=1">专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=590&type=1">旅游地理</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=589&type=1">礼仪</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=588&type=1">旅游学</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=587&type=1">旅游企业会计</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=586&type=1">旅行社管理</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=585&type=1">导游</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=50&courseId=595&type=1">旅游市场</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=7&majorId=51&type=1"><h5 class="label">会展类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=7&majorId=51&courseId=596&type=1">会展英语</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=51&courseId=597&type=1">会展管理</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=51&courseId=598&type=1">会展营销</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=51&courseId=599&type=1">案例分析</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=51&courseId=660&type=1">展位设计</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=7&majorId=52&type=1"><h5 class="label">酒店管理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=600&type=1">饭店管理</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=601&type=1">餐饮服务</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=602&type=1">食品营养与卫生</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=603&type=1">人力资源</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=604&type=1">专业英语</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=605&type=1">加盟与经营</a>
+																										<a href="resource.htm?contentId=2&classId=7&majorId=52&courseId=606&type=1">宴会菜单</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=8&type=1">教育与体育大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=8&majorId=53&type=1"><h5 class="label">学前教育类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=429&type=1">学前教育学</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=430&type=1">学前儿童发展心理学</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=431&type=1">幼儿园课程概论</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=432&type=1">幼儿园管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=433&type=1">学前卫生学</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=434&type=1">幼儿文学</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=435&type=1">学前教育英语</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=436&type=1">幼儿园游戏与指导</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=437&type=1">幼儿歌曲钢琴伴奏教程</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=438&type=1">实用幼儿园歌曲教学伴奏曲选</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=439&type=1">乐理与视唱教程</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=440&type=1">舞蹈与幼儿舞蹈创编</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=441&type=1">学期儿童社会教育活动指导</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=442&type=1">学前儿童健康教育活动指导</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=53&courseId=443&type=1">学前儿童美术教育活动指导</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=8&majorId=54&type=1"><h5 class="label">文秘类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=521&type=1">秘书理论与实务</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=529&type=1">文秘英语</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=528&type=1">办公设备操作与管理</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=527&type=1">秘书实训</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=526&type=1"> 秘书学概论</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=525&type=1">文书工作与档案管理</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=524&type=1">会议管理实务</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=523&type=1">办公室事务</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=522&type=1">秘书写作</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=54&courseId=530&type=1">社交礼仪</a>
+																									</div>
+																							</div>
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=8&majorId=55&type=1"><h5 class="label">教师教育类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=8&majorId=55&courseId=609&type=1">现代教育技术</a>
+																										<a href="resource.htm?contentId=2&classId=8&majorId=55&courseId=654&type=1">教育心理学</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=9&type=1">文化艺术大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=9&majorId=56&type=1"><h5 class="label">艺术设计类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=418&type=1">设计色彩</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=419&type=1">手绘效果图设计</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=420&type=1">平面设计实训</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=421&type=1">摄影技术</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=565&type=1">设计素描</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=566&type=1">透视学</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=567&type=1">广告设计</a>
+																										<a href="resource.htm?contentId=2&classId=9&majorId=56&courseId=611&type=1">3D Rhino中文版产品设计</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=10&type=1">医药卫生大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=10&majorId=57&type=1"><h5 class="label">护理类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=288&type=1">护理学基础</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=283&type=1">病原生物学及免疫学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=292&type=1">正常人体结构</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=293&type=1">生物化学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=299&type=1">病理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=290&type=1">生理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=287&type=1">健康评估</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=297&type=1">临床护理实习指导</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=295&type=1">护理伦理与法规</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=284&type=1">中医护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=285&type=1">妇产科护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=286&type=1">急救护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=298&type=1">内科护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=294&type=1">外科护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=300&type=1">儿科护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=289&type=1">护理心理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=296&type=1">社区护理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=291&type=1">护理药理学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=301&type=1">护理营养学</a>
+																										<a href="resource.htm?contentId=2&classId=10&majorId=57&courseId=466&type=1">学前卫生学</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=11&type=1">农林牧渔大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=11&majorId=58&type=1"><h5 class="label">园林园艺类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=647&type=1">草坪建植与管理</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=648&type=1">园林苗木生产与经营</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=649&type=1">花卉栽培</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=650&type=1">园林植物病虫害防治</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=651&type=1">植物与植物生理</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=652&type=1">果树栽培</a>
+																										<a href="resource.htm?contentId=2&classId=11&majorId=58&courseId=653&type=1">园林工程施工技术</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=12&type=1">食品药品与粮食大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=12&majorId=59&type=1"><h5 class="label">食品类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=465&type=1">食品生物化学</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=506&type=1">食品理化检验</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=507&type=1">食品感官检验</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=508&type=1">食品安全</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=509&type=1">食品营养与健康</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=510&type=1">食品仪器分析</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=656&type=1">食品微生物</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=683&type=1">发酵食品生产</a>
+																										<a href="resource.htm?contentId=2&classId=12&majorId=59&courseId=686&type=1">食品检测技术</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=13&type=1">生物与化工大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=13&majorId=60&type=1"><h5 class="label">化工技术类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=469&type=1">化工制图与CAD</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=563&type=1">化学实验</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=562&type=1">仪器分析技术</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=561&type=1">无机及分析化学</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=560&type=1">化学与健康</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=559&type=1">工业分析</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=558&type=1">分析化学</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=557&type=1">无机化学</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=556&type=1">物理化学</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=555&type=1">化工原理</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=470&type=1">有机化学</a>
+																										<a href="resource.htm?contentId=2&classId=13&majorId=60&courseId=564&type=1">化工生产技术</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=21&type=1">资源环境与安全大类<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=21&majorId=61&type=1"><h5 class="label">环境保护类<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=612&type=1">环境监测</a>
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=613&type=1">大气污染控制技术</a>
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=614&type=1">固体废物处理与利用</a>
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=615&type=1">水污染控制技术</a>
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=616&type=1">环境工程概论</a>
+																										<a href="resource.htm?contentId=2&classId=21&majorId=61&courseId=617&type=1">环境化学</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																											<li>
+																			<a class="link" href="resource.htm?contentId=2&classId=27&type=1">高等职业教育外语<span class="arrow">&gt;</span></a>
+																				<div class="menuPanelRsc">
+																						<div class="group">
+												<a href="resource.htm?contentId=2&classId=27&majorId=94&type=1"><h5 class="label">公共英语<span class="arrow">&gt;</span></h5></a>
+																								<div class="links">
+																										<a href="resource.htm?contentId=2&classId=27&majorId=94&courseId=674&type=1">点击职业英语</a>
+																										<a href="resource.htm?contentId=2&classId=27&majorId=94&courseId=675&type=1">智学</a>
+																									</div>
+																							</div>
+																					</div>
+																			</li>
+																</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 左下角广告 start -->
+										<a class="belt" href="textbook.htm?_f=textbook" >
+						<img src="upload/image/14829124051575.jpg" />
+					</a>
+										<a class="belt" href="textbook_cluster.htm?classId=2&Major=76&type=1&contentId=2" >
+						<img src="upload/image/14829124169415.jpg" />
+					</a>
+										<!-- 左下角导航 end -->
+				</div>
+				<!--侧边栏_end-->
+				<!--内容栏_start-->
+				<div class="clmMain f-fr">
+					<div class="resourceBar">
+						<p class="f-fl">高等职业教育<em>&gt;</em>全部分类</p>
+						<p class="f-fr">共 <span class="color3">2943</span> 件相关教学资源</p>
+					</div>
+					
+					<ul class="resourceFilter">
+																		<li class="borderB0">
+							<label>类型：</label>
+							<div class="items">
+								<a  class="cur" href="resource.htm?contentId=2&classId=&majorId=&courseId=&type=&textbookId=">全部</a>
+																<a  href="resource.htm?contentId=2&classId=&majorId=&courseId=&type=&textbookId=&resourceType=3">题库</a>
+																<a  href="resource.htm?contentId=2&classId=&majorId=&courseId=&type=&textbookId=&resourceType=6">课件</a>
+																<a  href="resource.htm?contentId=2&classId=&majorId=&courseId=&type=&textbookId=&resourceType=4">微课</a>
+																<a  href="resource.htm?contentId=2&classId=&majorId=&courseId=&type=&textbookId=&resourceType=7">AR</a>
+																<a  href="resource.htm?contentId=2&classId=&majorId=&courseId=&type=&textbookId=&resourceType=1">试卷</a>
+																<a  href="resource.htm?contentId=2&classId=&majorId=&courseId=&type=&textbookId=&resourceType=8">答案</a>
+																<a  href="resource.htm?contentId=2&classId=&majorId=&courseId=&type=&textbookId=&resourceType=9">素材</a>
+																<a  href="resource.htm?contentId=2&classId=&majorId=&courseId=&type=&textbookId=&resourceType=5">其他</a>
+																<a  href="resource.htm?contentId=2&classId=&majorId=&courseId=&type=&textbookId=&resourceType=10">直击护考</a>
+															</div>
+						</li>
+					</ul>
+
+					<div class="resourceWrap dbHeight">
+											<ul class="resourceList" id="wktx">
+													<li>
+								<img src="upload/image/14829153837958.jpg">
+								<div class="cnt">
+									<p class="name">微课-《中医护理学》（主编：简亚平）</p>
+									<div class="info">
+										<span>所属课程： 中医护理学</span>
+										<span>类型：mp4</span>
+										<span>大小：30.96 MB</span>
+										<span>上传时间：2017-03-23</span>
+									</div>
+								</div>
+								<div class="btns">
+																		<a  href="javascript:;" onclick="window.open ('resourcedetail.htm?url=/upload/resource/14902591664821/微课-《中医护理学》-毫针刺法之进针.mp4', 'newwindow', 'height=800, width=1000, top=100,left=400, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');" >观看</a>
+																	</div>
+							</li>
+													<li>
+								<img src="upload/image/14882728246240.png">
+								<div class="cnt">
+									<p class="name">思考题及答案-《中医护理学》（主编：简亚平）</p>
+									<div class="info">
+										<span>所属课程： 中医护理学</span>
+										<span>类型：doc</span>
+										<span>大小：62.5 KB</span>
+										<span>上传时间：2017-03-23</span>
+									</div>
+								</div>
+								<div class="btns">
+																													<a  href="javascript:;"  onclick="window.open ('pdfviewer.htm?file=upload/resource/16081888692320.pdf', 'newwindow', 'height=800, width=1000, top=100,left=400, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');" >部分预览</a>
+										
+										
+																												<a onclick="needLogin()">下载</a>
+																										</div>
+							</li>
+													<li>
+								<img src="upload/image/14882728246240.png">
+								<div class="cnt">
+									<p class="name">附录-常用中药及中成药简表</p>
+									<div class="info">
+										<span>所属课程： 中医护理学</span>
+										<span>类型：pdf</span>
+										<span>大小：401.02 KB</span>
+										<span>上传时间：2017-03-23</span>
+									</div>
+								</div>
+								<div class="btns">
+																													<a  href="javascript:;"  onclick="window.open ('pdfviewer.htm?file=/upload/resource/14902595021252/小样-附录.pdf', 'newwindow', 'height=800, width=1000, top=100,left=400, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');" >部分预览</a>
+										
+										
+																												<a onclick="needLogin()">下载</a>
+																										</div>
+							</li>
+													<li>
+								<img src="upload/image/14829143232461.jpg">
+								<div class="cnt">
+									<p class="name">课件-《妇产科护理学》（主编：郑艾娟，徐元屏）</p>
+									<div class="info">
+										<span>所属课程： 妇产科护理学</span>
+										<span>类型：rar</span>
+										<span>大小：88.98 MB</span>
+										<span>上传时间：2017-03-24</span>
+									</div>
+								</div>
+								<div class="btns">
+																													<a  href="javascript:;"  onclick="window.open ('pdfviewer.htm?file=/upload/resource/14903459128965/小样-课件.pdf', 'newwindow', 'height=800, width=1000, top=100,left=400, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');" >部分预览</a>
+										
+										
+																												<a onclick="needLogin()">下载</a>
+																										</div>
+							</li>
+													<li>
+								<img src="upload/image/14829143898165.jpg">
+								<div class="cnt">
+									<p class="name">测试题及答案-《妇产科护理学》（主编：郑艾娟，徐元屏）</p>
+									<div class="info">
+										<span>所属课程： 妇产科护理学</span>
+										<span>类型：doc</span>
+										<span>大小：131 KB</span>
+										<span>上传时间：2017-03-24</span>
+									</div>
+								</div>
+								<div class="btns">
+																													<a  href="javascript:;"  onclick="window.open ('pdfviewer.htm?file=/upload/resource/14903460209411/小样-测试题及答案.pdf', 'newwindow', 'height=800, width=1000, top=100,left=400, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');" >部分预览</a>
+										
+										
+																												<a onclick="needLogin()">下载</a>
+																										</div>
+							</li>
+													<li>
+								<img src="upload/image/14882728246240.png">
+								<div class="cnt">
+									<p class="name">实验实训指导-《妇产科护理学》（主编：郑艾娟，徐元屏）</p>
+									<div class="info">
+										<span>所属课程： 妇产科护理学</span>
+										<span>类型：pdf</span>
+										<span>大小：990.28 KB</span>
+										<span>上传时间：2017-03-24</span>
+									</div>
+								</div>
+								<div class="btns">
+																													<a  href="javascript:;"  onclick="window.open ('pdfviewer.htm?file=/upload/resource/14903461264909/小样－实验实训指导.pdf', 'newwindow', 'height=800, width=1000, top=100,left=400, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');" >部分预览</a>
+										
+										
+																												<a onclick="needLogin()">下载</a>
+																										</div>
+							</li>
+													<li>
+								<img src="upload/image/14829143232461.jpg">
+								<div class="cnt">
+									<p class="name">课件-《急救护理学》（主编：佘金文，周文海）</p>
+									<div class="info">
+										<span>所属课程： 急救护理学</span>
+										<span>类型：rar</span>
+										<span>大小：45 MB</span>
+										<span>上传时间：2017-03-27</span>
+									</div>
+								</div>
+								<div class="btns">
+																													<a  href="javascript:;"  onclick="window.open ('pdfviewer.htm?file=/upload/resource/14905815081484/小样－课件.pdf', 'newwindow', 'height=800, width=1000, top=100,left=400, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');" >部分预览</a>
+										
+										
+																												<a onclick="needLogin()">下载</a>
+																										</div>
+							</li>
+													<li>
+								<img src="upload/image/14882728246240.png">
+								<div class="cnt">
+									<p class="name">实训-《急救护理学》（主编：佘金文，周文海）</p>
+									<div class="info">
+										<span>所属课程： 急救护理学</span>
+										<span>类型：pdf</span>
+										<span>大小：769.66 KB</span>
+										<span>上传时间：2017-03-27</span>
+									</div>
+								</div>
+								<div class="btns">
+																													<a  href="javascript:;"  onclick="window.open ('pdfviewer.htm?file=/upload/resource/14905816078083/小样-实训.pdf', 'newwindow', 'height=800, width=1000, top=100,left=400, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no');" >部分预览</a>
+										
+										
+																												<a onclick="needLogin()">下载</a>
+																										</div>
+							</li>
+												</ul>
+						<div class="wkmore">更多资源请扫教材二维码查看<p></p></div>	
+						<div class='paging'>    <div class='inr'>    <div class='page'>         <a class='bt' href='/resource.htm?p=1'>首页</a><a class='cur' href='/resource.htm?p=1'>1</a><a href='/resource.htm?p=2'>2</a><span>...</span><a class='bt' href='/resource.htm?p=2'>下一页</a>         <a class='bt' href='/resource.htm?p=368'>末页</a></div><div class='go'><form action='' method='GET'>     <label>跳转到第</label>     <input class='no inputInt' type='text' name='p' value='1' id='aaa'>     <label>页</label>     <input class='btn trst' type='button' value='确定' onclick='javascript:window.location="/resource.htm?p="+document.getElementById("aaa").value' /> </form> </div> </div>
+					</div>
+				</div>
+				<!--内容栏_end-->
+			</div>	
+		</div>
+	</div>
+	<!--删除成功-->
+		<section class="popMask2" style="display: none;"></section>
+		<section class="popAlert2" style="display: none;">
+			<div class="popTittle2">
+				温馨提示<span class="popClose2"></span>
+			</div>
+			<div class="popCnt2 textL"><!--提示文字-->请先登录</div>
+			<span class="popBtn2 sucs-delete-load">确定</span>
+		</section>
+	<!--主体模块_end-->
+	<!--尾部模块_start-->
+		
+    	<!--2017-02-15添加右侧联系我们-->
+    			<div class="contactBox-right clearFloat_t">
+			<div class="contact-inr-box clearFloat_t">
+				<div class="contactTxt">
+					在线客服
+				</div>
+				<div class="inrCntBox-top">
+				<div class="inrCnt-top">
+						<div class="inrCnt-top-tittle">QQ在线客服</div>
+                        								<a href="tencent://message/?uin=364907153&amp;Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">公共课/财经大类基础课/旅游大类</div>
+								<div class="qqTecName">欧阳老师</div>
+							</a>
+                            							<a href="tencent://message/?uin=48489372&amp;Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">电子信息大类</div>
+								<div class="qqTecName">马老师</div>
+							</a>
+                            							<a href="tencent://message/?uin=312838886&amp;Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">会计/金融保险</div>
+								<div class="qqTecName">郑老师</div>
+							</a>
+                            							<a href="tencent://message/?uin=651265333&amp;Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">装备制造大类</div>
+								<div class="qqTecName">刘老师</div>
+							</a>
+                            							<a href="tencent://message/?uin=154410019&amp;Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">交通运输/土建大类</div>
+								<div class="qqTecName">康老师</div>
+							</a>
+                            							<a href="tencent://message/?uin=547362265&amp;Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">营销/国贸/连锁/物业</div>
+								<div class="qqTecName">夏圆圆</div>
+							</a>
+							<a href="tencent://message/?uin=893509730&amp;Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">电商/物流/学前</div>
+								<div class="qqTecName">刘丹丹</div>
+							</a>
+                            								<!--联系qq后一个添加去底部border class borderB0-->
+								
+						</div>
+						</div>
+
+				<!-- <div class="inrCntBox-top">
+					<div class="inrCnt-top">
+						<div class="inrCnt-top-tittle">QQ在线客服</div>
+                        								<a href="tencent://message/?uin=364907153&Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">公共课/财经大类基础课/旅游大类</div>
+								<div class="qqTecName">欧阳老师</div>
+							</a>
+                            							<a href="tencent://message/?uin=48489372&Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">电子信息大类</div>
+								<div class="qqTecName">马老师</div>
+							</a>
+                            							<a href="tencent://message/?uin=312838886&Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">会计/金融保险</div>
+								<div class="qqTecName">郑老师</div>
+							</a>
+                            							<a href="tencent://message/?uin=651265333&Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">装备制造大类</div>
+								<div class="qqTecName">刘老师</div>
+							</a>
+                            							<a href="tencent://message/?uin=154410019&Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">交通运输/土建大类</div>
+								<div class="qqTecName">康老师</div>
+							</a>
+                            							<a href="tencent://message/?uin=155217690&Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+								<div class="courseName">营销/国贸/电商/物流/连锁/教育</div>
+								<div class="qqTecName">郭老师 </div>
+							</a>
+                            								
+						</div>
+					</div>
+ -->
+
+
+				</div>
+				<div class="inrCntBox-top" style="margin-bottom: 0px;">
+					<div class="inrCnt-top" style="margin-bottom: 0px;">
+						<div class="inrCnt-top-tittle">咨询业务</div>
+						<a href="tencent://message/?uin=电工电子&Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+							<div class="qqTecName">赵老师</div>
+						</a>
+						<div class="tel-right">
+								<span>0411-84706676</span>
+								<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		    <!--尾部模块_start-->
+	<div class="g-ft">
+		<div class="top">
+			<div class="g-inr">
+				<ul class="advantage f-cb">
+					<li>
+						<div class="cellInr">
+							<span class="ico ico1 sprite"></span>
+							<span class="text">追求卓越</span>
+						</div>
+					</li>
+					<li>
+						<div class="cellInr">
+							<span class="ico ico2 sprite"></span>
+							<span class="text">打造精品</span>
+						</div>
+					</li>
+					<li>
+						<div class="cellInr">
+							<span class="ico ico3 sprite"></span>
+							<span class="text">服务职教</span>
+						</div>
+					</li>
+					<li>
+						<div class="cellInr">
+							<span class="ico ico4 sprite"></span>
+							<span class="text">树立品牌</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="btm">
+			<div class="g-inr">
+				<div class="l">
+					<a class="logo" <a href="index.htm">
+						<img src="upload/image/14829742791809.png" />
+					</a>
+					<div class="cprt">
+						<p>&copy; 2016-2019 大连理工大学出版社，</p>
+						<p>All Rights Reserved <a href='https://beian.miit.gov.cn/#/Integrated/index' target="_blank" style="color: #a5a5a5;">辽ICP备11016033号-8 </a><a href='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21029602000039' target="_blank" style="color: #a5a5a5;">辽公网安备21029602000039号</a></p>
+					</div>
+				</div>
+				<div class="r">
+					<div class="nav navT f-cb">
+						<a href="textbook.htm?_f=textbook">教材中心</a>
+						<a href="resource.htm">资源中心</a>
+						<a href="login.htm?url=student.htm.htm" target="_blank" >在线教学</a>
+						<a href="contactus.htm">出版专栏</a>
+						<a href="about.htm">关于我们</a>
+					</div>
+					<div class="nav navB f-cb">
+						<a href="news.htm">新闻中心</a>
+						<a href="publishing.htm">出版流程</a>
+						<a href="contactus.htm">联系我们</a>
+						<a href="privacy.htm">隐私政策</a>
+						<a href="license.htm">法律声明</a>
+					</div>
+				</div>
+				<img class="qr" src="upload/image/14890245941592.jpg" />
+			</div>	
+		</div>
+	</div>
+	<!--尾部模块_end-->
+	<!--侧边栏工具条开始-->
+	<div class="sideTool" id="sideTool">
+		<ul class="list">
+			<li>
+				<span class="ico icoQq sprite"></span>
+			</li>
+			<li>
+				<span class="ico icoQr sprite"></span>
+				<div class="qrBox">
+					<img src="upload/image/14890245941592.jpg" />
+					<p class="text">扫码关注</p>
+				</div>
+			</li>
+			<li class="backTop" id="backTop">
+				<span class="ico icoTop sprite"></span>
+				<p class="text">返回顶部</p>
+			</li>
+		</ul>
+	</div>
+	<!--侧边栏工具条结束-->
+
+	<div class="alertBrowserBox">
+			<div class="posiBox">
+				<div class="inrCnt-browser">
+					<h1>
+						<img src="static/index/public/images/webIcon-browser.png"/>
+					</h1>
+					<p class="browserTip1">很抱歉！您正在使用的浏览器版本过低，无法正常使用我们的网站，请升级后再试！</p>
+					<p class="browserTip2">为获得最佳浏览体验，建议您升级或使用其他浏览器，我们列出了一些最受欢迎的浏览器供您尝试：</p>
+					<div class="browserGroup">
+						<a href="https://www.baidu.com/s?f=8&rsv_bp=1&rsv_idx=1&word=chrome&tn=98633779_hao_pg" class="browser"><img src="static/index/public/images/browser1.png"/></a>
+						<a href="https://www.baidu.com/s?rsv_idx=1&tn=98633779_hao_pg&usm=4&wd=%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8&ie=utf-8&rsv_cq=chrome&rsv_dl=0_right_recommends_merge_21102&euri=fe1378191d954bf68b3b4f3960c421ab" class="browser"><img src="static/index/public/images/browser2.png"/></a>
+						<a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=98633779_hao_pg&wd=%E6%AC%A7%E6%9C%8B&oq=%25E7%2581%25AB%25E7%258B%2590%25E6%25B5%258F%25E8%25A7%2588%25E5%2599%25A8&rsv_pq=a1ce42ad00001560&rsv_t=6260BGY0PRviIFsP61xu9%2BKmirjN8YVHF26ZPGrLzNdCrefVCzycil1PH4syDYyyNZQJS7F0&rqlang=cn&rsv_enter=1&rsv_sug3=3&rsv_sug1=1&rsv_sug7=100&rsv_sug2=0&inputT=3035&rsv_sug4=3035" class="browser"><img src="static/index/public/images/browser3.png"/></a>
+						<a href="https://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&rsv_idx=1&tn=98633779_hao_pg&wd=safari&oq=safari&rsv_pq=fa5467da00004ff2&rsv_t=ab5eGN9QCtW2BBABq3uzvvVCBkqxDKgcG8Yv12EdGhY%2BFPzC6PJixxO8ltjHkX%2BWAIRPgH6V&rqlang=cn&rsv_enter=0&prefixsug=safari&rsp=0" class="browser" style="margin-right: 0px;"><img src="static/index/public/images/browser4.png"/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+        <script>
+        //右边框的高度
+			var _cH = $('.contactBox-right').height();
+			$('.contactBox-right').css('margin-top',-_cH)
+			
+			var _cH = $('.contactBox-right').height() / 2;
+			$('.contactBox-right').css('margin-top', -_cH);
+        </script>
+        
+
+	<!--尾部模块_end-->
+	<script type="text/javascript">
+			
+		$(function(){
+	
+			//2017-03-13添加脚本
+			$('.moreBtn-r').click(function(){
+				$(this).closest('li').find('.ctrWidth').toggleClass('ctrHeight')
+			})
+
+			$('.menuTabs .tab-blue').click(function(){
+				$(this).closest('.menu').addClass('curTpye-blue').siblings('.menu').removeClass('curTpye-red');
+			})
+			
+			$('.menuTabs .tab-red').click(function(){
+				$(this).closest('.menu').addClass('curTpye-red').siblings('.menu').removeClass('curTpye-blue')
+				
+			})
+			
+			var _newsHeight = $('.clmSide').height()-30-2+10;
+			$('.clmMain').css('min-height',_newsHeight);
+			
+			//点击确定跳转链接
+			$('.sucs-delete-load').click(function(){
+				location.href="login.htm";
+			})
+
+			var href = showhref();
+			console.log(href['resourceType']);
+
+			if($("#wktx li").length < 5 & href['resourceType'] == 4 ){
+				$(".wkmore").show()
+			}else{
+				$(".wkmore").hide()
+			}
+		})
+	</script>
+	<script type="text/javascript">
+		function showhref(){
+			var shref = window.location.href;
+			var args = shref.split('?');
+			if(args[0] == shref){
+				return "";
+			}
+			var arr = args[1].split('&');
+			var obj = {};
+			for(var i = 0; i < arr.length; i++){
+				var arg = arr[i].split('=');
+				obj[arg[0]] = arg[1];
+			}
+			return obj;
+		}
+		function search(){
+			var type    = $("#typeCurText").text();
+			var keyword = $("#textbookName").val();
+			if(type =='国家规划'){
+				type=1;
+			}else{
+				type=0;
+			}
+			window.location.href="?_d=resource&_f=searchResource&keyword="+keyword+"&type="+type;
+
+		}
+
+		function needLogin(){
+			$('.popAlert2').fadeIn();
+			$('.popMask2').fadeIn();
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+﻿	<!DOCTYPE html>
+<html>
+<title>大连理工大学出版社平台管理系统</title>
+	<head>
+			<meta charset="utf-8" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_safe.css" />
+	 <link rel="stylesheet" href="static/teacher/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/iconfont.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgpt.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_wgx.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jedate/skin/jedate.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/add_t.css" />
+	<link rel="shortcut icon"  href="static/admin/public/image/favicon.ico" />
+	<link rel="stylesheet" href="static/teacher/public/css/styleL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgptL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/base.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/newleft.css" />
+
+
+
+	</head>
+
+	<body>
+
+		<div class="header">
+					<div class="head">
+				<div class="head-left">
+					<div class="logo">
+						<img src="static/teacher/public/img/logo.jpg" />
+					</div>
+					<div class="tit">
+						<h2>大连理工大学出版社</h2>
+						<h4>职教数字化服务平台<span>Dutpsve</span> <span class="span1"><img src="static/teacher/public/img/com.jpg"/></span></h4>
+					</div>
+					<div class="txt">
+						<h1><img src="static/teacher/public/img/online.jpg"/></h1>
+					</div>
+				</div>
+				<div class="head-right">
+					<ul class="nav">
+						<li>
+							<a href="teacher.php?_d=index&_f=index" >首页</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=resource&_f=index" >资源管理</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=homework&_f=index" >实训/作业</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=examination&_f=index" class="active">考试管理</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=class&_f=class" >班级管理</a>
+						</li>
+
+						<li >
+							<a href="teacher.php?_d=message&_f=index" >消息中心</a>
+						</li>
+					</ul>
+					<div class="Signin">
+						<a href="##" onclick="window.open('index.php?_d=user&_f=personal')" class="span1">
+							姜老师
+							</a>|<a href="index.php?_d=user&_f=logout" class="span2">退出</a>
+						<img class="pos" src="static/teacher/public/img/peo.jpg" />
+					</div>
+				</div>
+		</div>
+		</div>
+
+		<div class="popBody">
+			<div class="content">
+				<div class="examination">
+					<div class="examination-box examination-makecnt">商务礼仪与职业形象&nbsp;&nbsp;<span class="ex-details-date">面试考试</span>&nbsp;&nbsp;<span class="ex-details-ing">阅卷中</span></div>
+					<div class="ex-details">
+						<div class="ex-details-title">考试时间：  2021-02-02 14:40~17:43&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总参考人数：  <span>0</span>人/0人</div>
+						
+						<div class="underCntBox-ci ex-details-box">
+							<div class="toread">
+								<div class="toread-nav">
+									<ul class="floatL">
+																				<a href="source/teacher/examination/examination.xls?e=11&c=17"><li class="bgcbule">教育一班</li></a>
+																			</ul>
+								</div>
+								<div class="clear_float"></div>
+							</div>
+							<div class="toread-tab">
+								<div class="toread-test ex-test">
+								<ul>
+									<li class="floatL">
+										<span>参考人数：0/0</span><span>平均分：0分</span><span>优秀：0人</span><span>良好：0人</span><span>及格：0人</span><span>不及格：0人</span>
+									</li>
+									<li class="floatR">
+										<div class="toread-buttonli floatL look-scl ex-details-ch">分数段设定</div>
+										<a href="source/teacher/examination/excel.php?e=11&c=17"><div class="toread-buttonli floatL look-fraction ex-details-ch">下载成绩</div></a>
+										<a href="teacher.php?_d=examination&_f=down&e=11&c=17&act=down"><div class="toread-buttonli floatL look-fraction ex-details-ch">批量下载试卷</div></a>
+										<div class="toread-buttonli floatL look-reUpload ex-details-ch">发布成绩</div>
+										<div class="clear_float"></div>
+									</li>
+									<div class="clear_float"></div>
+								</ul>
+								</div>
+							</div>
+							<div class="toread-con">
+								<table class="table1 marginT10">
+									<tr class="bgceaf9">
+										<th width="80">姓名</th>
+										<th width="170">学号</th>
+										<th width="120">性别</th>
+										<th width="120">年龄</th>
+										<th width="130">评分</th>
+										<th width="130">等级</th>
+										<th width="130">本次考试排名</th>
+										<th width="243">操作</th>
+									</tr>
+																	</table>
+							</div>
+						</div>
+					
+					</div>
+				</div>	
+			</div>
+		</div>
+		
+		<!--成绩发布弹窗start-->
+		<div class="popForm " id="pop_reUpload">
+			<div class="mask"></div>
+			<div class="box ex-showbox">
+				<h1>发布成绩
+					<span class="closeIcon">×</span>
+				</h1>				
+				<!--<div class=""></div>-->
+				<form id="publishForm" method="post">
+					<input type="hidden" name="act" value="publishPost">
+				    <ul class="ex-showtext">
+				    	<li>考试名称：商务礼仪与职业形象  面试考试</li>
+				    	<li>考试班级：教育一班</li>
+				    	<li>考试时间：2021-02-02 14:40~17:43</li>
+				    	<li>参考人数：0人/0人</li>
+				    	<li>合格人数：0人/0人</li>
+				    </ul>
+					<div class="alertBtnGroup" style="margin-top: 20px;width: 300px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR">
+							<a href="javascript:document.getElementById('publishForm').submit();" class="resourceSubmitBtn">发布</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--成绩发布弹窗end-->
+		
+		<!--分数段设定弹窗start-->
+		<div class="popForm " id="pop_deleteResource">
+			<div class="mask"></div>
+			<div class="box ex-showbox">
+				<h1>分数段设定
+					<span class="closeIcon">×</span>
+				</h1>				
+				<!--<div class=""></div>-->
+				<form id="setForm" method="post">
+					<input type="hidden" name="act" value="setPost">
+					<div class="ex-sclmak-box">
+					   <table border="0" cellspacing="0" cellpadding="0" width="280" class="ex-sclmak">				   
+					   	<tr>
+					   		<td width="55" style="padding-bottom: 5px;">满分：</td>
+					   		<td style="padding-bottom: 5px;text-align: right;" ><span class="red AllScore">100</span> 分</td>
+					   		<td style="padding-bottom: 5px;"></td>
+					   	</tr>
+					   	<tr>
+					   		<td>优秀</td>
+					   		<td width="132" class="ipt-cnt"><div class="ex-mkb"><input type="text" name="excellent" value="90" class="perfectNum" /><span class="ipt">分</span></div></td>
+					   		<td class="ipt-rt"><span class="AllScore">100</span> 分</td>
+					   	</tr>
+					   	<tr>
+					   		<td>良好</td>
+					   		<td width="132" class="ipt-cnt"><div class="ex-mkb"><input type="text" name="good" value="70" class="niceNum"/><span class="ipt">分</span></div></td>
+					   		<td class="ipt-rt perfect-rt"><span class="perfectNum1">89</span> 分</td>
+					   	</tr>
+					   	<tr>
+					   		<td>及格</td>
+					   		<td width="132" class="ipt-cnt"><div class="ex-mkb"><input type="text" name="pass" value="60" class="goodNum"/><span class="ipt">分</span></div></td>
+					   		<td class="ipt-rt nice-rt"><span class="niceNum1">69</span> 分</td>
+					   	</tr>
+					   	<tr>
+					   		<td>不及格</td>
+					   		<td width="132" class="ipt-cnt" style="text-align: right;">0分</td>
+					   		<td class="ipt-rt good-rt"><span class="goodNum1">59</span> 分</td>
+					   	</tr>
+					   </table>
+				   </div>
+				   <div class="alertBtnGroup" style="margin-top: 20px;width: 280px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR">
+							<a href="" class="resourceSubmitBtn1">保存</a>
+						</div>
+						<div class="clear_float"></div>
+				   </div>
+				</form>
+			</div>
+		</div>
+		<!--分数段设定弹窗end-->
+		
+		<!--2017-04-28新增学员悬浮窗-->
+	<!--2017-04-28新增学员悬浮窗结束-->
+<div class="footer" style="margin-top: 0px;">
+			<div class="footer-top">
+				<ul>
+					<li><img src="static/teacher/public/img/footimg2.jpg"/>追求卓越<span></span></li>
+					<li><img src="static/teacher/public/img/footimg3.jpg"/>打造精品<span></span></li>
+					<li><img src="static/teacher/public/img/footimg4.jpg"/>服务职教<span></span></li>
+					<li><img src="static/teacher/public/img/footimg1.jpg"/>树立品牌</li> 
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-logo floatL">
+					<img src="upload/image/14829742791809.png" />
+					<div class="cprt">
+						<p>&copy; 2016-2019 大连理工大学出版社，</p>
+						<p>All Rights Reserved 辽ICP备11016033号-8</p>
+					</div>
+				</div>
+				<div class="footer-bottom-con floatL">
+					<ul class="ul1">
+						<li><a href="index.php?_d=textbook&_f=textbook" target="_blank">教材中心</a><span></span></li>
+						<li><a href="index.php?_d=resource&_f=resource" target="_blank">资源中心</a><span></span></li>
+						<li><a href="teacher.php?_d=index&_f=index" target="_blank" >在线教学</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column1" target="_blank">出版专栏</a><span></span></li>
+						<li><a href="index.php?_d=aboutus&_f=aboutus1" target="_blank">关于我们</a></li>
+					</ul>
+					<ul class="ul2">
+						<li><a href="index.php?_d=news&_f=news" target="_blank">新闻中心</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column3" target="_blank">出版流程</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column1" target="_blank">联系我们</a><span></span></li>
+						<li><a href="index.php?_d=login&_f=agreement&id=3" target="_blank">隐私政策</a><span></span></li>
+						<li><a href="index.php?_d=login&_f=agreement&id=2" target="_blank">法律声明</a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom-R floatL">
+					<img class="qr" src="upload/image/14890245941592.jpg" />
+				</div>
+				<div class="clear_float"></div>
+			</div>
+			
+		</div>
+
+		<!-- js脚本文件 -->
+		<script src="static/teacher/public/js/jquery-1.11.3.min.js"></script>
+		<script src="static/teacher/public/js/jqueryui/jquery-ui.min.js"></script>
+		<script src="static/teacher/public/js/index.js"></script>
+		<script src="static/teacher/public/js/addJs.js" ></script>
+		<script src="static/teacher/public/js/jquery.form.js" ></script>
+		<script src="static/teacher/public/js/jquery.treeview.min.js"></script>
+		<script src="static/teacher/public/js/commonJs.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.config.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.all.js"></script>
+		<script src="static/teacher/public/js/leftNav.js" ></script>
+		<script src="static/teacher/public/js/conL.js"></script>
+	    <!-- <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js" type="text/javascript"></script> -->
+	    <script src="static/teacher/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script>
+		<script src="static/teacher/public/js/addCourse.js" ></script>
+		<script src="static/teacher/public/js/ajax.js"></script>
+		<script src="static/teacher/public/js/rept.js"></script>
+		<script src="static/teacher/public/js/common.js"></script>
+		<script src="static/teacher/public/js/editorExam.js"></script>
+		<script src="static/teacher/public/js/exam-create-ajax.js"></script>
+		<script src="static/teacher/public/js/exam-editor-ajax.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//学员申请提示
+				$('.applyWindowBox').hover(function(){
+					$(this).find('.applyDetails').css('bottom','42px');
+				},function(){
+					$(this).find('.applyDetails').css('bottom','-90px');
+				})
+			})
+		</script>
+
+
+
+
+		<script type="text/javascript">
+
+			$(function() {
+				
+				
+				$(".datepicker2").datepicker({
+					inline: true,
+					showOtherMonths: true,
+					selectOtherMonths: true,
+					changeMonth: true,
+					changeYear: true,
+					yearRange: "1950:2050",
+					dateFormat: 'yy-mm-dd'
+				});
+				
+				$('.hasSelectTd').doSelect();
+				$('.hasSelectTd01').doSelect();
+				
+				//分数段设定
+				$('.look-scl').click(function() {
+					popFadeIn($('#pop_deleteResource'));
+				});
+				
+				//修改资源名称弹窗
+				$('.look-changercName').click(function() {
+					var _this = $(this);
+					var _rsNameChange;
+					popFadeIn($('#pop_changeResourceName'));
+					$('.Release').click(function(){
+						_rsNameChange = $('.rc-changeCnt input').val();
+						_this.closest('h1').find('.resourceName-rc').text(_rsNameChange);
+					})
+				});
+				
+				//取消发布
+				$('.look-cancelCourse').click(function() {
+					var _this = $(this);
+					popFadeIn($('#pop_cancelResource'));
+					$('.cancelReleaseBtn').click(function(){
+						
+					})
+				});
+				
+				//成绩发布
+				$('.look-reUpload').click(function() {
+					popFadeIn($('#pop_reUpload'));
+				});
+				
+			})
+
+			//分数段设定
+			$(".perfectNum").blur(function(){
+				var num = parseInt($(this).val());
+				var AllScore = parseInt($(".AllScore").html());
+				var niceNumInp = parseInt($(".niceNum").val());
+				var goodNumInp = parseInt($(".goodNum").val());
+				// console.log(num);
+				if(num >= AllScore || isNaN(num)){
+					alert("请合理设置分数段！");
+					$(this).val(" ");
+				}else{
+					var perfectNum = num -1;
+					// console.log($(this).val());
+					$(".perfectNum1").text(perfectNum);		
+				}
+				if(num <= goodNumInp || num <=  niceNumInp){
+					alert("良好和及格分数段不能大于优秀最低分，清空");
+					$(".niceNum").val("");
+					$(".goodNum").val("");
+				}
+			});
+			$("body").delegate(".niceNum","blur",function(){
+				var num = parseInt($(this).val());
+				var goodNumInp = parseInt($(".goodNum").val());				
+				var prefectNum = parseInt($(".perfectNum1").text());
+				// console.log(num);
+				// console.log(prefectNum);						
+				if(num >= prefectNum || isNaN(num)){
+					alert("请合理设置分数段！");
+					$(this).val(" ");
+					// $(this).closest("tr").find(".fff").text(prefectNum);
+				}else{
+					var niceNum = num -1;
+					// console.log($(this).val());
+					$(".niceNum1").text(niceNum);			
+				}
+				if(num <= goodNumInp){
+					alert("及格分数段不能大于良好最低分，清空");
+					$(".goodNum").val("");					
+				}
+
+			});
+			$("body").delegate(".goodNum","blur",function(){
+				var num = parseInt($(this).val());			
+				var niceNum =  parseInt($(".niceNum1").text());			
+				if(num >= niceNum || isNaN(num)){
+					alert("请合理设置分数段！");
+					$(this).val(" ");
+					// $(this).closest("tr").find(".fff").text(niceNum);
+				}else{
+					var goodNum = num -1;
+					// console.log($(this).val());
+					$(".goodNum1").text(goodNum);			
+				}
+
+			});
+
+			$(".resourceSubmitBtn1").click(function(){
+				var perfectNumInp = parseInt($(".perfectNum").val());
+				var niceNumInp = parseInt($(".niceNum").val());
+				var goodNumInp = parseInt($(".goodNum").val());
+				console.log(niceNumInp);				
+				if(isNaN(perfectNumInp) || isNaN(niceNumInp) || isNaN(goodNumInp)){
+					alert("分数段设置不完全！提交失败！");
+					$(this).attr("href","javascript:;");
+				}else{
+					$(this).attr("href","javascript:document.getElementById('setForm').submit();");
+				}
+			})
+
+		</script>
+	</body>
+
+</html>
