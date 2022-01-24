@@ -61,13 +61,13 @@
 						</li>
 
 						<li >
-							<a href="teacher.php?_d=message&_f=index" class="active">消息中心</a>
+							<a href="teacher-message.htm" class="active">消息中心</a>
 						</li>
 					</ul>
 					<div class="Signin">
-						<a href="##" onclick="window.open('index.php?_d=user&_f=personal')" class="span1">
+						<a href="##" onclick="window.open('user-personal.htm')" class="span1">
 							姜老师
-							</a>|<a href="index.php?_d=user&_f=logout" class="span2">退出</a>
+							</a>|<a href="index.htm" class="span2">退出</a>
 						<img class="pos" src="static/teacher/public/img/peo.jpg" />
 					</div>
 				</div>
@@ -81,19 +81,19 @@
 				<div class="content-left">
 					<div class="inr-left-nav clearFloat_t">
 						<ul>
-							<a href="teacher.php?_d=message&_f=new"><li class="cur-left-nav-tec">
+							<a href="teacher-message-new.htm"><li class="cur-left-nav-tec">
 								新建消息
 								<span class="arrorFont">></span>
 							</li></a>
-							<a href="teacher.php?_d=message&_f=index"><li class="left-nav-tec">
+							<a href="teacher-message.htm><li class="left-nav-tec">
 								收件箱
 								<span class="arrorFont">></span>
 							</li></a>
-							<a href="teacher.php?_d=message&_f=send"><li class="left-nav-tec">
+							<a href="teacher-message-send.htm"><li class="left-nav-tec">
 								已发送
 								<span class="arrorFont">></span>
 							</li></a>
-							<a href="teacher.php?_d=message&_f=recycle_t"><li class="left-nav-tec">
+							<a href="teacher-message-recycled.htm"><li class="left-nav-tec">
 								回收站
 								<span class="arrorFont">></span>
 							</li></a>
@@ -108,7 +108,7 @@
 					</div>
 					<div class="conR-con">
 						<div class="conR-conT">
-						<form id="form2" method="post" action="teacher.php?_d=message&_f=new&act=save">
+						<form id="form2" method="post" action="_teacher-message-save.txt">
 							<table class="table-info">
 								<tbody>
 									
@@ -241,7 +241,7 @@
 				<h1>上传资源
 					<span class="closeIcon">×</span>
 				</h1>
-				<form id="attchForm" action="source/teacher/ajax/ajax.unlinehomework.php?do=add" method="POST" enctype="multipart/form-data">
+				<form id="attchForm" action="ajax.unlinehomework-addfile.json" method="POST" enctype="multipart/form-data">
 					<input type="hidden" value="" name="resourceType" id="resourceType" />
 					<!--课程类型-->
 					<table class="alertTable">
@@ -693,7 +693,7 @@
 							if(data==1){
 								//注册成功
 								alert("发送成功");
-								location.href="teacher.php?_d=message&_f=send";
+								location.href="teacher-message-send.htm";
 							}else{
 								//弹出错误提示
 								alert(data);

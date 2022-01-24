@@ -61,13 +61,13 @@
 						</li>
 
 						<li >
-							<a href="teacher.php?_d=message&_f=index" class="active">消息中心</a>
+							<a href="teacher-message.htm" class="active">消息中心</a>
 						</li>
 					</ul>
 					<div class="Signin">
-						<a href="##" onclick="window.open('index.php?_d=user&_f=personal')" class="span1">
+						<a href="##" onclick="window.open('user-personal.htm')" class="span1">
 							姜老师
-							</a>|<a href="index.php?_d=user&_f=logout" class="span2">退出</a>
+							</a>|<a href="index.htm" class="span2">退出</a>
 						<img class="pos" src="static/teacher/public/img/peo.jpg" />
 					</div>
 				</div>
@@ -81,19 +81,19 @@
 				<div class="content-left">
 					<div class="inr-left-nav clearFloat_t">
 						<ul>
-							<a href="teacher.php?_d=message&_f=new"><li class="left-nav-tec">
+							<a href="teacher-message-new.htm"><li class="left-nav-tec">
 								新建消息
 								<span class="arrorFont">></span>
 							</li></a>
-							<a href="teacher.php?_d=message&_f=index"><li class="cur-left-nav-tec">
+							<a href="teacher-message.htm><li class="cur-left-nav-tec">
 								收件箱
 								<span class="arrorFont">></span>
 							</li></a>
-							<a href="teacher.php?_d=message&_f=send"><li class="left-nav-tec">
+							<a href="teacher-message-send.htm"><li class="left-nav-tec">
 								已发送
 								<span class="arrorFont">></span>
 							</li></a>
-							<a href="teacher.php?_d=message&_f=recycle_t"><li class="left-nav-tec">
+							<a href="teacher-message-recycled.htm"><li class="left-nav-tec">
 								回收站
 								<span class="arrorFont">></span>
 							</li></a>
@@ -116,8 +116,8 @@
 									<ul class="popSelect" hidden>
 										<li date-way="allCho">全选</li>
 										<li date-way="allnoCho">全不选</li>
-										<a href="teacher.php?_d=message&_f=index&type=2"><li date-way="read">已读</li></a>
-										<a href="teacher.php?_d=message&_f=index&type=3"><li date-way="unread">未读</li></a>
+										<a href="teacher-message.htm?type=2"><li date-way="read">已读</li></a>
+										<a href="teacher-message.htm?type=3"><li date-way="unread">未读</li></a>
 									</ul>
 								</div>
 								<div class="course-cont" style="margin-top: 9px;">
@@ -295,7 +295,7 @@
 						$('.iB-table').find('.chooseMail .iconfont').empty();
 						$('.iB-table').find('.chooseMail .iconfont').removeClass('iC-act');
 						$('.iB-table').find('.chooseMail .iconfont').html('&#xe68a;');
-						 $.post("teacher.php?_d=message&_f=index&act=read",{id:aa},function(data){
+						 $.post("teacher-message.htm?act=read",{id:aa},function(data){
 							if(data==1){
 								location.reload();
 							}else{
@@ -307,7 +307,7 @@
 						$('.iB-table').find('.chooseMail .iconfont').empty();
 						$('.iB-table').find('.chooseMail .iconfont').html('&#xe61d;');
 						$('.iB-table').find('.chooseMail .iconfont').addClass('iC-act');
-						 $.post("teacher.php?_d=message&_f=index&act=unread",{id:aa},function(data){
+						 $.post("teacher-message.htm?act=unread",{id:aa},function(data){
 							if(data==1){
 								location.reload();
 							}else{
@@ -329,7 +329,7 @@
 		        $(".chooseMail").each(function(){ 
 					aa+=$(this).attr("messageId")+","; 
 				})   
-		        $.post("teacher.php?_d=message&_f=index&act=del",{id:aa},function(data){
+		        $.post("teacher-message.htm?act=del",{id:aa},function(data){
 		       		if(data==1){
 		       			location.reload();
 		       		}else{
