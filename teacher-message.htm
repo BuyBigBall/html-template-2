@@ -2,7 +2,8 @@
 <html>
 
 	<head>
-		<title>资源中心</title>
+		<meta charset="utf-8" />
+		<title>收件箱</title>
 			<meta charset="utf-8" />
 	<link rel="stylesheet" href="static/teacher/public/css/style_safe.css" />
 	 <link rel="stylesheet" href="static/teacher/public/css/font-awesome.min.css" />
@@ -50,115 +51,134 @@
 							<a href="teacher.php?_d=resource&_f=index" >资源管理</a>
 						</li>
 						<li>
-							<a href="teacher-homework.htm" >实训/作业</a>
+							<a href="teacher.php?_d=homework&_f=index" >实训/作业</a>
 						</li>
 						<li>
-							<a href="teacher-examination.htm" >考试管理</a>
+							<a href="teacher.php?_d=examination&_f=index" >考试管理</a>
 						</li>
 						<li>
-							<a href="teacher-class.htm" >班级管理</a>
+							<a href="teacher.php?_d=class&_f=class" >班级管理</a>
 						</li>
 
 						<li >
-							<a href="teacher-message.htm" >消息中心</a>
+							<a href="teacher.php?_d=message&_f=index" class="active">消息中心</a>
 						</li>
 					</ul>
 					<div class="Signin">
 						<a href="##" onclick="window.open('index.php?_d=user&_f=personal')" class="span1">
 							姜老师
-							</a>|<a href="index.htm" class="span2">退出</a>
+							</a>|<a href="index.php?_d=user&_f=logout" class="span2">退出</a>
 						<img class="pos" src="static/teacher/public/img/peo.jpg" />
 					</div>
 				</div>
 		</div>
 		</div>
 		<!--头部导航end-->
-
-		<!--内容区-->
-		<div class="acnt-body" style="background: #eceff4 url(static/teacher/public/img/indexBg.png) bottom no-repeat;">
-			<div class="rm-inr">
-				<h1 class="acnttxt">
-					<i class="iconfont icon-wenjian1 icon-blue magrL22 dbIcon"></i>
-					选择课程
-				</h1>
-				<div class="rm-inr-cntBox">
-					<!--课程-->
-										<!-- <a href="teacher.php?_d=resource&_f=index&mid=3"> -->
-					<div class="coursePart-rm " onclick="save(3)">
-						<img src="upload/image/15153849493885.jpg" />
-						<div class="botmMsk-rm">
-							<span class="courseName">C语言设计教程</span>
-							<span class="courseStudent">
-								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
-								学员名额：<span>0</span>/<span>0</span>
-							</span>
-						</div>
-					</div>
-					<!-- <a> -->
-										<!-- <a href="teacher.php?_d=resource&_f=index&mid=1"> -->
-					<div class="coursePart-rm " onclick="save(1)">
-						<img src="upload/image/15102154306448.jpg" />
-						<div class="botmMsk-rm">
-							<span class="courseName">商务礼仪与职业形象</span>
-							<span class="courseStudent">
-								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
-								学员名额：<span>0</span>/<span>0</span>
-							</span>
-						</div>
-					</div>
-					<!-- <a> -->
-										<div class="coursePart-rm mgrR0 look-course" style="cursor: pointer;">
-						<img src="static/teacher/public/img/rm-nocourse.png" />
+		<!--内容区start-->
+		<div class="popBody">
+			<div class="content">
+				<!--内容区左侧导航栏-->
+				<div class="content-left">
+					<div class="inr-left-nav clearFloat_t">
+						<ul>
+							<a href="teacher.php?_d=message&_f=new"><li class="left-nav-tec">
+								新建消息
+								<span class="arrorFont">></span>
+							</li></a>
+							<a href="teacher.php?_d=message&_f=index"><li class="cur-left-nav-tec">
+								收件箱
+								<span class="arrorFont">></span>
+							</li></a>
+							<a href="teacher.php?_d=message&_f=send"><li class="left-nav-tec">
+								已发送
+								<span class="arrorFont">></span>
+							</li></a>
+							<a href="teacher.php?_d=message&_f=recycle_t"><li class="left-nav-tec">
+								回收站
+								<span class="arrorFont">></span>
+							</li></a>
+						</ul>
 					</div>
 				</div>
+				<!--内容区导航栏end-->
+				<!--内容区右侧-->
+				<div class="content-right infoBox">
+					<div class="content-right_tit">
+						<h1 class="paddingL28">收件箱</h1>
+					</div>
+					<div class="conR-con" style="padding-left: 0;">
+						<div class="inbox">
+							<div class="inbox-top">
+								<div class="hasSelectTd">
+									<div class="selectBox">
+										<div class="ticSel"></div>
+									</div>
+									<ul class="popSelect" hidden>
+										<li date-way="allCho">全选</li>
+										<li date-way="allnoCho">全不选</li>
+										<a href="teacher.php?_d=message&_f=index&type=2"><li date-way="read">已读</li></a>
+										<a href="teacher.php?_d=message&_f=index&type=3"><li date-way="unread">未读</li></a>
+									</ul>
+								</div>
+								<div class="course-cont" style="margin-top: 9px;">
+									<div class="cont-tBtn">
+										<style scoped="scoped">
+											.cont-tBtn .c-tBtn {
+												background: url(static/teacher/public/img/cm-btn.jpg);
+											}
+											
+											.cont-tBtn .iB-del {
+												margin-left: 10px;
+											}
+										</style>
+										<div class="c-tBtn iB-del">删除</div>
+										<div class="c-tBtn iB-read">标为已读</div>
+										<div class="c-tBtn iB-unread">标为未读</div>
+										<div class="c-tBtn iB-refresh">刷新</div>
+									</div>
+								</div>
+							</div>
+							<div class="iB-tableBox">
+								<table class="table1 iB-table">
+									<tbody>
+									 										</tbody>
+								</table>
+							</div>
+							<!--分页-->
+							
+
+						</div>
+					</div>
+				</div>
+				<!--内容区右侧end-->
+
+				<div class="clear_float"></div>
 			</div>
 		</div>
-		<!--内容区结束-->		
-		<!--整体end-->
+		<!--内容区end-->
 		
-		<!--课程激活码弹窗start-->
-		<div class="popForm " id="pop_editCourse">
+		<!--整体end-->
+		<!--删除资源弹窗start-->
+		<div class="popForm " id="pop_deleteResource">
 			<div class="mask"></div>
-			<div class="box changeCourseBox">
-				<!--<div class="closePop sprite"></div>-->
-				<h1>请输入课程激活码</h1>
-				<div class="alertInrBox">
-					<table>
-						<tr>
-							<td style="padding-bottom: 21px;">
-								<input class="courseCode-rm" id="addKey" value="" />
-							</td>
-						</tr>
-						<tr>
-							<td style="height: 16px;background: url(static/teacher/public/img/rm-msg-icon.png) no-repeat 0px 3px;padding-left: 22px;font-size: 14px;color: #333;padding-bottom: 10px;">购买课程请联系大连理工大学出版社编辑</td>
-						</tr>
-						<tr>
-							<td class="font-s14 color666" style="padding-bottom: 0px;">联系电话：0411-84706673</td>
-						</tr>
-						<tr>
-							<td class="font-s14 color666">联系人：小编</td>
-						</tr>
-					</table>
+			<div class="box deleteBox">
+				<div class="deleteErrorImg">
+					<img src="static/teacher/public/img/deleteError.jpg" />
 				</div>
-				<div class="button-group2">
-					<div class="bom-button cancel floatL btnBg-red"><a href="##">取消</a></div>
-					<div class="bom-button Release floatR" onclick="addCourse()"><a href="##" class="confirmBtn">确认</a></div>
+				<p>您确认要删除邮件么</p>
+				<div class="alertBtnGroup">
+					<div class="alertBotmBtn cancel floatL btnBg-grey">
+						<a href="##">取消</a>
+					</div>
+					<div class="alertBotmBtn Release floatR"  onclick="del()">
+						<a href="##">确认</a>
+					</div>
 					<div class="clear_float"></div>
 				</div>
 			</div>
 		</div>
-		<!--课程激活码弹窗end-->
-		<!--删除成功-->
-		<section class="popMask2" style="display: none;"></section>
-		<section class="popAlert2" style="display: none;">
-			<div class="popTittle2">
-				温馨提示<span class="popClose2">×</span>
-			</div>
-			<div class="popCnt2 textL"><!--提示文字--></div>
-			<span class="popBtn2 sucs-delete-load">确定</span>
-		</section>
+		<!--删除资源弹窗end-->
 		<!--底部start-->
-
 		<!--2017-04-28新增学员悬浮窗-->
 	<!--2017-04-28新增学员悬浮窗结束-->
 <div class="footer" style="margin-top: 0px;">
@@ -238,45 +258,85 @@
 
 
 		<!--底部end-->
-		<script type="text/javascript">
-			function save(id){
-				$.post("course-save.json",{id:id},function(data){
-					window.location.href="teacher-resource.htm";
-				})
-			}
-			//添加课程  添加名额
-			function addCourse(){
-				var key  = $("#addKey").val();
-				var type = 1;
-				if(key==""){
-					alert("请输入课程激活码");
-					return false;
-				}
-				if(type==""){
-					location.reload();
-				}
-				$.post("_addCourse.txt",{key:key,type:type},function(data){
-					if(data==1){
-						//提示框
-					 	$(".textL").text("添加成功");
-						$('.popAlert2').fadeIn();
-						$('.popMask2').fadeIn();
-					}else{
-						alert(data);
-					}
-
-				});
-
-			}
+		<script>
 			$(function() {
-				//删除成功刷新页面
-				$('.sucs-delete-load').click(function(){
-					window.location.reload()
-				})
-				$('.look-course').click(function() {
-					popFadeIn($('#pop_editCourse'));
+				$('.hasSelectTd').doSelect2();
+				//课程资源隐藏域赋值
+				$('.hasSelectTd .popSelect li').click(function() {
+					$('#resourceType').val($(this).attr('resourceType'))
 				});
+
+				//check
+				$(".iB-table").delegate('.check', 'click', function() {
+					var _this = $(this);
+					var _father = $(this).closest('tr');
+					var _val = '';
+					if(_this.hasClass('check-active')) {
+						_this.removeClass('check-active');
+						_father.removeClass('chooseMail');
+					} else {
+						_this.addClass('check-active');
+						_father.addClass('chooseMail');
+					}
+				})
+
+				//删除弹窗
+				$('.cont-tBtn').delegate('.c-tBtn', 'click', function() {
+					//选中的消息id
+					var aa = "";  
+			        $(".chooseMail").each(function(){ 
+						aa+=$(this).attr("messageId")+","; 
+					})
+					var _useBox = $('.iB-table').find('tr');
+					if($(this).hasClass('iB-del') && _useBox.hasClass('chooseMail')) {
+						popFadeIn($('#pop_deleteResource'));
+					} else if($(this).hasClass('iB-read') && _useBox.hasClass('chooseMail')) {
+						//标为已读
+						$('.iB-table').find('.chooseMail .iconfont').empty();
+						$('.iB-table').find('.chooseMail .iconfont').removeClass('iC-act');
+						$('.iB-table').find('.chooseMail .iconfont').html('&#xe68a;');
+						 $.post("teacher.php?_d=message&_f=index&act=read",{id:aa},function(data){
+							if(data==1){
+								location.reload();
+							}else{
+								alert(data);
+							}
+						 })
+					} else if($(this).hasClass('iB-unread') && _useBox.hasClass('chooseMail')) {
+						//标为未读
+						$('.iB-table').find('.chooseMail .iconfont').empty();
+						$('.iB-table').find('.chooseMail .iconfont').html('&#xe61d;');
+						$('.iB-table').find('.chooseMail .iconfont').addClass('iC-act');
+						 $.post("teacher.php?_d=message&_f=index&act=unread",{id:aa},function(data){
+							if(data==1){
+								location.reload();
+							}else{
+								alert(data);
+							}
+						 })
+					} else if($(this).hasClass('iB-refresh')) {
+						window.location.reload();
+					} else {
+						alert('请选中消息后操作');
+					}
+				})
 			})
+
+
+			//删除
+			function del(){
+		        var aa = "";  
+		        $(".chooseMail").each(function(){ 
+					aa+=$(this).attr("messageId")+","; 
+				})   
+		        $.post("teacher.php?_d=message&_f=index&act=del",{id:aa},function(data){
+		       		if(data==1){
+		       			location.reload();
+		       		}else{
+		       			alert(data);
+		       		}
+		        })
+			}
 		</script>
 	</body>
 

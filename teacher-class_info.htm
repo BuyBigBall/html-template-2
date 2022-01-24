@@ -1,0 +1,515 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+			<meta charset="utf-8" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_safe.css" />
+	 <link rel="stylesheet" href="static/teacher/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/iconfont.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgpt.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_wgx.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jedate/skin/jedate.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/add_t.css" />
+	<link rel="shortcut icon"  href="static/admin/public/image/favicon.ico" />
+	<link rel="stylesheet" href="static/teacher/public/css/styleL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgptL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/base.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/newleft.css" />
+
+
+
+		<title>班级详情</title>
+		
+	</head>
+
+	<body>
+		<!--头部导航start-->
+		<div class="header">
+					<div class="head">
+				<div class="head-left">
+					<div class="logo">
+						<img src="static/teacher/public/img/logo.jpg" />
+					</div>
+					<div class="tit">
+						<h2>大连理工大学出版社</h2>
+						<h4>职教数字化服务平台<span>Dutpsve</span> <span class="span1"><img src="static/teacher/public/img/com.jpg"/></span></h4>
+					</div>
+					<div class="txt">
+						<h1><img src="static/teacher/public/img/online.jpg"/></h1>
+					</div>
+				</div>
+				<div class="head-right">
+					<ul class="nav">
+						<li>
+							<a href="teacher.php?_d=index&_f=index" >首页</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=resource&_f=index" >资源管理</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=homework&_f=index" >实训/作业</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=examination&_f=index" >考试管理</a>
+						</li>
+						<li>
+							<a href="teacher-class.htm" class="active">班级管理</a>
+						</li>
+
+						<li >
+							<a href="teacher-message.htm" >消息中心</a>
+						</li>
+					</ul>
+					<div class="Signin">
+						<a href="##" onclick="window.open('index.php?_d=user&_f=personal')" class="span1">
+							姜老师
+							</a>|<a href="index.php?_d=user&_f=logout" class="span2">退出</a>
+						<img class="pos" src="static/teacher/public/img/peo.jpg" />
+					</div>
+				</div>
+		</div>
+		</div>
+		<!--头部导航end-->
+		<!--内容区start-->
+		<div class="popBody">
+			<div class="content cmCont">
+				<div class="cI-til">
+				<input type="hidden" value="29"  id="mycourseId">
+				<input type="hidden" value="24"    id="roomId">
+				<input type="hidden" value="3"  id="oldNum">
+					<h2>C语言 <span>班级编号：</span><span class="classNum">761103</span></h2>
+					<div class="tittleButtonGroup2">
+																								</div>
+				</div>
+				<div class="cI-cont">
+					<h3>班级人数： 0/3 
+											</h3>
+					<div class="toread-con">
+						<table class="table1">
+
+							<tr class="bgceaf9">
+								<th width="85">考试名次</th>
+								<th width="">姓名</th>
+								<th width="">学号</th>
+								<th width="">性别</th>
+								<th width="">年龄</th>
+								<th width="">作业平均成绩</th>
+								<th width="">实训平均成绩</th>
+								<th width="">考试平均成绩</th>
+								<th width="">综合成绩</th>
+															</tr>
+														
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--内容区end-->
+		
+		<!--整体end-->
+		<!--增加名额  start-->
+		<div class="popForm" id="pop_pigeonhole">
+			<div class="mask"></div>
+			<div class="box deleteBox">
+				<div class="deleteErrorImg">
+					<img src="static/teacher/public/img/deleteError.jpg" />
+				</div>
+				<p>你确认要归档当前班级？</p>
+				<h3 style="font-size: 14px; text-align: center;">该班级班级的信息将会被归档处理，归档处理后的班级信息将无法编辑和修改，只允许查看。</h3>
+				<div class="alertBtnGroup">
+					<div class="alertBotmBtn cancel floatL btnBg-grey">
+						<a href="##">取消</a>
+					</div>
+					<div class="alertBotmBtn Release floatR" onclick="roomOver()">
+						<a href="##">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<!--增加名额  end-->
+		<!--增加名额  start-->
+		<div class="popForm" id="pop_deleteTr">
+			<div class="mask"></div>
+			<div class="box" style="">
+				<div class="rc-changeName-inr">
+					<h2 class="popTil">您确认要将该学员从当前班级移除么?</h2>
+					<form>
+						<table class="menInfo">
+						</table>
+					</form>
+					<div class="alertBtnGroup">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR delTr-btn">
+							<a href="##" class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--增加名额  end-->
+
+		<!--增加名额  start-->
+		<div class="popForm" id="pop_score">
+			<div class="mask"></div>
+			<div class="box" style="">
+				<h1>综合成绩计算权重
+					<span class="closeIcon">×</span>
+				</h1>
+				<div class="rc-changeName-inr">
+					<form>
+						<table class="table1" style="width: 100%;">
+							<tr class="bgceaf9 bgcf9">
+								<td width="100">项目</td>
+								<td>所占权重</td>
+							</tr>
+							<tr>
+								<td>作业平均成绩</td>
+								<td>
+									<div class="fraction-group">
+										<input type="tel" id="val1" value="0" class="marking-on-input">
+										<div class="marking-on-fraction">%</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>实训平均成绩</td>
+								<td>
+									<div class="fraction-group">
+										<input type="tel" id="val2" value="0" class="marking-on-input">
+										<div class="marking-on-fraction">%</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>期末成绩</td>
+								<td>
+									<div class="fraction-group">
+										<input type="tel" id="val3" value="0" class="marking-on-input">
+										<div class="marking-on-fraction">%</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</form>
+					<div class="alertBtnGroup" style="margin-top: 24px">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR delTr-btn">
+							<a href="##" class="" onclick="saveWeight()">保存</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--增加名额  end-->
+
+		<!--删除资源弹窗start-->
+		<div class="popForm " id="pop_deleteResource">
+			<div class="mask"></div>
+			<div class="box deleteBox">
+				<div class="deleteErrorImg">
+					<img src="static/teacher/public/img/deleteError.jpg" />
+				</div>
+				<p>您确认要删除这个班级么</p>
+				<h3 style="font-size: 14px; text-align: center;">确认后，该班级信息将会被永久删除，且无法恢复。</h3>
+				<div class="alertBtnGroup">
+					<div class="alertBotmBtn cancel floatL btnBg-grey">
+						<a href="##">取消</a>
+					</div>
+					<div class="alertBotmBtn Release floatR" onclick="delRoom()">
+						<a href="##">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<section class="popMask2" style="display: none;"></section>
+		<section class="popAlert2" style="display: none;">
+			<div class="popTittle2">
+				温馨提示<span class="popClose2">×</span>
+			</div>
+			<div class="popCnt2 textL"><!--提示文字--></div>
+			<span class="popBtn2 sucs-delete-load">确定</span>
+		</section>
+		<!--删除资源弹窗end-->
+
+		<!--编辑班级  start-->
+		<div class="popForm " id="pop_createClass">
+			<div class="mask"></div>
+			<div class="box">
+				<h1>编辑班级<span class="closeIcon">×</span></h1>
+				<div class="rc-changeName-inr">
+					<h2 style="text-align: center; font-size: 18px; font-weight: bold;" id="courseName"></h2></br>
+					<input type="hidden" name="" id="courseId" value="">
+
+					<form>
+						<table class="cm-table alertTable"> 
+							<tbody>
+								<tr>
+									<td width="90">班级名称</td>
+									<td><input class="cm-popInput"  id="roomName" value="C语言" placeholder="请输入班级名称" style="width: 240px; margin: 0;" /></td>
+								</tr>
+								<tr>
+									<td>班级人数</td>
+									<td><input class="cm-popInput" id="studentsNum" value="3" />人</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+					<div class="alertBtnGroup" style="margin-top: 12px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR sucs-delete-block" onClick="editRoom()">
+							<a href="##" class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--创建班级  end-->
+
+
+		<!--底部start-->
+		<!--2017-04-28新增学员悬浮窗-->
+	<!--2017-04-28新增学员悬浮窗结束-->
+<div class="footer" style="margin-top: 0px;">
+			<div class="footer-top">
+				<ul>
+					<li><img src="static/teacher/public/img/footimg2.jpg"/>追求卓越<span></span></li>
+					<li><img src="static/teacher/public/img/footimg3.jpg"/>打造精品<span></span></li>
+					<li><img src="static/teacher/public/img/footimg4.jpg"/>服务职教<span></span></li>
+					<li><img src="static/teacher/public/img/footimg1.jpg"/>树立品牌</li> 
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-logo floatL">
+					<img src="upload/image/14829742791809.png" />
+					<div class="cprt">
+						<p>&copy; 2016-2019 大连理工大学出版社，</p>
+						<p>All Rights Reserved 辽ICP备11016033号-8</p>
+					</div>
+				</div>
+				<div class="footer-bottom-con floatL">
+					<ul class="ul1">
+						<li><a href="index.php?_d=textbook&_f=textbook" target="_blank">教材中心</a><span></span></li>
+						<li><a href="index.php?_d=resource&_f=resource" target="_blank">资源中心</a><span></span></li>
+						<li><a href="teacher.php?_d=index&_f=index" target="_blank" >在线教学</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column1" target="_blank">出版专栏</a><span></span></li>
+						<li><a href="index.php?_d=aboutus&_f=aboutus1" target="_blank">关于我们</a></li>
+					</ul>
+					<ul class="ul2">
+						<li><a href="index.php?_d=news&_f=news" target="_blank">新闻中心</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column3" target="_blank">出版流程</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column1" target="_blank">联系我们</a><span></span></li>
+						<li><a href="index.php?_d=login&_f=agreement&id=3" target="_blank">隐私政策</a><span></span></li>
+						<li><a href="index.php?_d=login&_f=agreement&id=2" target="_blank">法律声明</a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom-R floatL">
+					<img class="qr" src="upload/image/14890245941592.jpg" />
+				</div>
+				<div class="clear_float"></div>
+			</div>
+			
+		</div>
+
+		<!-- js脚本文件 -->
+		<script src="static/teacher/public/js/jquery-1.11.3.min.js"></script>
+		<script src="static/teacher/public/js/jqueryui/jquery-ui.min.js"></script>
+		<script src="static/teacher/public/js/index.js"></script>
+		<script src="static/teacher/public/js/addJs.js" ></script>
+		<script src="static/teacher/public/js/jquery.form.js" ></script>
+		<script src="static/teacher/public/js/jquery.treeview.min.js"></script>
+		<script src="static/teacher/public/js/commonJs.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.config.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.all.js"></script>
+		<script src="static/teacher/public/js/leftNav.js" ></script>
+		<script src="static/teacher/public/js/conL.js"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script>
+		<script src="static/teacher/public/js/addCourse.js" ></script>
+		<script src="static/teacher/public/js/ajax.js"></script>
+		<script src="static/teacher/public/js/rept.js"></script>
+		<script src="static/teacher/public/js/common.js"></script>
+		<script src="static/teacher/public/js/editorExam.js"></script>
+		<script src="static/teacher/public/js/exam-create-ajax.js"></script>
+		<script src="static/teacher/public/js/exam-editor-ajax.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//学员申请提示
+				$('.applyWindowBox').hover(function(){
+					$(this).find('.applyDetails').css('bottom','42px');
+				},function(){
+					$(this).find('.applyDetails').css('bottom','-90px');
+				})
+			})
+		</script>
+
+
+
+		<!--底部end-->
+		<script type="text/javascript">
+			//综合成绩权重修改
+			function saveWeight(){
+				var val1       = $("#val1").val();
+				var val2       = $("#val2").val();
+				var val3       = $("#val3").val();
+				var roomId     = $("#roomId").val();
+				var mycourseId = $("#mycourseId").val();
+				$.post("teacher.php?_d=class&_f=class_info&act=setWeight",{mycourseId:mycourseId,roomId:roomId,val1:val1,val2:val2,val3:val3},function(data){
+					if(data==1){
+						//提示框
+					 	$(".textL").text("操作成功");
+						$('.popAlert2').fadeIn();
+						$('.popMask2').fadeIn();
+
+					}else{
+						alert("保存失败");
+					}
+				})
+
+			}
+			//班级归档
+			function roomOver(){
+				var roomId     = $("#roomId").val();
+				var mycourseId = $("#mycourseId").val();
+				$.post("teacher.php?_d=class&_f=class_info&act=roomOver",{mycourseId:mycourseId,roomId:roomId},function(data){
+					if(data==1){
+						location.href="teacher-class.htm";
+					}else{
+						alert("保存失败");
+					}
+				})
+			}
+			//删除班级
+			function delRoom(){
+				var roomId     = $("#roomId").val();
+				var mycourseId = $("#mycourseId").val();
+				$.post("_teacher-class_delete.txt",{mycourseId:mycourseId,roomId:roomId},function(data){
+					if(data==1){
+						location.href="teacher-class.htm";
+					}else{
+						alert("删除失败");
+					}
+				})
+			}
+			$(function() {
+
+				//删除成功刷新页面
+				$('.sucs-delete-load').click(function(){
+					window.location.reload()
+				})
+
+				//班级归档
+				$('.look-pigeonhole').click(function() {
+					popFadeIn($('#pop_pigeonhole'));
+				})
+
+				//成绩
+				$('.look-score').click(function() {
+					popFadeIn($('#pop_score'));
+				})
+
+				//删除
+				$('.look-deleteResource').click(function() {
+					popFadeIn($('#pop_deleteResource'));
+				})
+
+				//移除
+				$('.look-deleteTr').click(function() {
+					$('.menInfo').empty();
+					var _ThisTr = $(this).closest('tr');
+					var _ThisDate = $(this).closest('tr').find('.dateBox');
+					var arr = [];
+					var row = {};
+					row.name = _ThisDate.attr('date-name');
+					row.sex = _ThisDate.attr('date-sex');
+					row.age = _ThisDate.attr('date-age');
+					row.id = _ThisDate.attr('date-id');
+					row.userid = _ThisDate.attr('date-userid');
+					row.school = _ThisDate.attr('date-school');
+					row.major = _ThisDate.attr('date-major');
+					arr.push(row);
+					console.log(arr);
+					var _Tr = $('<tr><td>姓名：</td> <td width="120">' + arr[0].name + '</td> <td>性别：</td> <td>' + arr[0].sex + '</td> </tr> <tr> <td>年龄：</td> <td>' + arr[0].age + '</td> <td>学号：</td> <td>' + arr[0].userid + '</td> </tr> <tr> <td>学校：</td> <td colspan="3">' + arr[0].school + '</td> </tr> <tr> <td>主修专业：</td> <td colspan="3">' + arr[0].major + '</td> </tr>')
+					$('.menInfo').append(_Tr);
+					$('.menInfo').find('tr td:odd').addClass('textL')
+					popFadeIn($('#pop_deleteTr'));
+					$('.delTr-btn').click(function() {
+						_ThisTr.remove();
+						var mycourseId = $("#mycourseId").val();
+						window.location.href="teacher.php?_d=class&_f=class_info&active=delUser&roomId=24&mycourseId="+mycourseId+"&studentId="+arr[0]['id']; 
+					})
+				});
+
+				//创建班级
+				$('.look-createClass').click(function() {
+					var courseId  = $(this).attr('courseId');
+					var courseName = $(this).attr('courseName');
+					$("#courseName").text(courseName);
+					$("#courseId").val(courseId);
+					popFadeIn($('#pop_createClass'));
+				})
+			})
+
+			//编辑班级
+			function editRoom(){
+				var mycourseId = $("#mycourseId").val();
+				var roomId    = $("#roomId").val();
+				var roomName    = $("#roomName").val();
+				var studentsNum = $("#studentsNum").val();
+				var oldNum = $("#oldNum").val();
+				if(roomName==''){
+					alert("请输入班级名称");
+					return false;
+				}
+				if(studentsNum<1){
+					alert("请输入班级人数");
+					return false;
+				}
+				$.post("teacher.php?_d=class&_f=class_info&act=editRoom",{mycourseId:mycourseId,roomId:roomId,roomName:roomName,studentsNum:studentsNum,oldNum:oldNum},function(data){
+					if(data==1){
+						//提示框
+					 	$(".textL").text("操作成功");
+						$('.popAlert2').fadeIn();
+						$('.popMask2').fadeIn();
+					}else{
+						alert(data);
+					}
+				});
+			}
+
+			//恢复班级
+			function renew(mycourseId,roomId){
+				if(mycourseId==""||roomId==""){
+					alert("网络连接错误!");
+					return false;
+				}
+				if(confirm("确定要恢复此班级吗？")){
+					$.post("teacher.php?_d=class&_f=class_info&act=renew",{mycourseId:mycourseId,roomId:roomId},function(data){
+						if(data==1){
+							location.reload();
+						}else{
+							alert(data);
+						}
+					})
+				}
+			}
+		</script>
+	</body>
+
+</html>

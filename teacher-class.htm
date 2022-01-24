@@ -1,0 +1,679 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+			<meta charset="utf-8" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_safe.css" />
+	 <link rel="stylesheet" href="static/teacher/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/iconfont.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgpt.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_wgx.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jedate/skin/jedate.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/add_t.css" />
+	<link rel="shortcut icon"  href="static/admin/public/image/favicon.ico" />
+	<link rel="stylesheet" href="static/teacher/public/css/styleL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgptL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/base.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/newleft.css" />
+
+
+
+		<title>班级管理</title>
+		
+	</head>
+
+	<body>
+		<!--头部导航start-->
+		<div class="header">
+					<div class="head">
+				<div class="head-left">
+					<div class="logo">
+						<img src="static/teacher/public/img/logo.jpg" />
+					</div>
+					<div class="tit">
+						<h2>大连理工大学出版社</h2>
+						<h4>职教数字化服务平台<span>Dutpsve</span> <span class="span1"><img src="static/teacher/public/img/com.jpg"/></span></h4>
+					</div>
+					<div class="txt">
+						<h1><img src="static/teacher/public/img/online.jpg"/></h1>
+					</div>
+				</div>
+				<div class="head-right">
+					<ul class="nav">
+						<li>
+							<a href="teacher.php?_d=index&_f=index" >首页</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=resource&_f=index" >资源管理</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=homework&_f=index" >实训/作业</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=examination&_f=index" >考试管理</a>
+						</li>
+						<li>
+							<a href="teacher-class.htm" class="active">班级管理</a>
+						</li>
+
+						<li >
+							<a href="teacher-message.htm" >消息中心</a>
+						</li>
+					</ul>
+					<div class="Signin">
+						<a href="##" onclick="window.open('index.php?_d=user&_f=personal')" class="span1">
+							姜老师
+							</a>|<a href="index.php?_d=user&_f=logout" class="span2">退出</a>
+						<img class="pos" src="static/teacher/public/img/peo.jpg" />
+					</div>
+				</div>
+		</div>
+		</div>
+		<!--头部导航end-->
+		<!--内容区start-->
+		<div class="popBody">
+			<div class="content cmCont">
+				<div class="cm-nav">
+					<div class="cm-navL cm-active">
+						<a href="teacher-class.htm">
+							<i class="iconfont">&#xe7a0;</i>
+							<span>授课班级</span>
+							<div class="cm-actDiv"></div>
+						</a>
+					</div>
+					<div class="linel"></div>
+					<div class="cm-navR">
+						<a href="teacher-class_pige.htm">
+							<i class="iconfont">&#xe629;</i>
+							<span>已归档班级</span>
+							<div class="cm-actDiv"></div>
+						</a>
+					</div>
+				</div>
+				<div class="title_txt" style="    font-size: 16px;color: red; margin-left: 33px; margin-top: 20px;position: relative; top: 4px;">学生可通过班级编号申请加入班级</div>
+												<div class="cm-course noClick">
+									<div class="course-til">
+						<h2>C语言设计教程</h2>
+						<span class="cT-info">
+							班级数量：<span class="cT-num">0</span>个 已使用名额：<span class="cT-num">5</span>人 剩余名额：<span class="cT-num">0</span>人
+						</span>
+												<!-- <div class="removeClass look-deleteResource" date-num="29">删除</div>   -->
+											</div>
+										
+				</div>
+												<div class="cm-course noClick">
+									<div class="course-til">
+						<h2>商务礼仪与职业形象</h2>
+						<span class="cT-info">
+							班级数量：<span class="cT-num">0</span>个 已使用名额：<span class="cT-num">0</span>人 剩余名额：<span class="cT-num">0</span>人
+						</span>
+												<!-- <div class="removeClass look-deleteResource" date-num="15">删除</div>   -->
+											</div>
+										
+				</div>
+								<!-- <div class="cm-course noClick">
+					<div class="course-til">
+						<h2>渠道管理</h2>
+						<span class="cT-info">
+							班级数量：<span class="cT-num">3</span>个 学生数量：<span class="cT-num">60</span>人 剩余学生名额：<span class="cT-num">20</span>人
+						</span>
+						<div class="removeClass look-deleteResource">删除</div>
+					</div>
+				</div> -->
+				<div class="addClass look-addCourse">
+					<i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;添加新课程
+				</div>
+			</div>
+		</div>
+		<!--内容区end-->
+		
+		<!--整体end-->
+
+		<!--轉移名額  start-->
+		<div class="popForm " id="pop_transfer">
+			<div class="mask"></div>
+			<div class="box" style="">
+				<h1>转移名额<span class="closeIcon">×</span></h1>
+				<div class="rc-changeName-inr">
+					<form>
+						<table class="cm-table">
+							<tbody>
+								<tr>
+								<input type="hidden" name="" id="courseId_sendPlaces"  value="">
+									<td width="90">可转移名额</td>
+									<td><span id="sendPlaces"></span>人</td>
+								</tr>
+								<tr>
+									<td>转移名额</td>
+									<td><input class="cm-popInput" id="inputSend" value="" />人</td>
+								</tr>
+								<tr>
+									<td>转入至</td>
+									<td><input class="cm-popInput" id="sendId" value="" placeholder="请输入教师账号" style="width: 240px;" /></td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+					<div class="alertBtnGroup" style="margin-top: 12px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR" onclick="sendPlaces()">
+							<a href="##" class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--轉移名額  end-->
+
+		<!--增加名额  start-->
+		<div class="popForm" id="pop_addPer">
+			<div class="mask"></div>
+			<div class="box" style="">
+				<div class="rc-changeName-inr">
+					<h2 class="popTil" id="addPer_text">请输入课程激活码</h2>
+					<form>
+						<textarea class="addPer-txt" id="addKey"></textarea>
+						<input type="hidden" id="addType" value="">
+						<div style="background: url(static/teacher/public/img/cm-popBg1.jpg) no-repeat left top;">购买课程请联系大连理工大学出版社编辑</div>
+						<p>联系电话：0411-84706673<br /> 联系人：小编
+						</p>
+					</form>
+					<div class="alertBtnGroup">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn" onclick="">
+							<a href="javascript:;">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR">
+							<a href="javascript:;" onclick="addCourse()" class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--增加名额  end-->
+
+		<!--添加班级  start-->
+		<div class="popForm " id="pop_addClass">
+			<div class="mask"></div>
+			<div class="box" style="width: 920px; margin-left: -460px;">
+				<h1>添加已有班级
+					<span class="cm-tilTxt">剩余名额：<span id="addRoom-hasPlaces"></span>人</span>
+					<input type="hidden" id="choosedClass"  value=""/>
+					<span class="closeIcon">×</span></h1>
+				<div class="rc-changeName-inr" style="width: 920px; margin: 0 auto;">
+					<form>
+						<div class="cm-addClass">
+
+
+						</div>
+					</form>
+					<div class="alertBtnGroup" style="margin-top: 12px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR" onclick="roomAdd()">
+							<a href="##" class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--添加班级  end-->
+
+		<!--创建班级  start-->
+		<div class="popForm " id="pop_createClass">
+			<div class="mask"></div>
+			<div class="box">
+				<h1>创建班级<span class="closeIcon">×</span></h1>
+				<div class="rc-changeName-inr">
+					<h2 style="text-align: center; font-size: 18px; font-weight: bold;" id="courseName"></h2></br>
+					<input type="hidden" name="" id="courseId" value="">
+
+					<form>
+						<table class="cm-table alertTable"> 
+							<tbody>
+								<tr>
+									<td width="90">班级名称</td>
+									<td><input class="cm-popInput"  id="roomName" value="" placeholder="请输入班级名称" style="width: 240px; margin: 0;" /></td>
+								</tr>
+								<tr>
+									<td>班级人数</td>
+									<td><input class="cm-popInput" id="studentsNum" value="" />人</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+					<div class="alertBtnGroup" style="margin-top: 12px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR sucs-delete-block" onclick="addRoom()">
+							<a href="##" class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--创建班级  end-->
+
+		<!--删除资源弹窗start-->
+		<div class="popForm " id="pop_deleteResource">
+			<div class="mask"></div>
+			<div class="box deleteBox">
+				<div class="deleteErrorImg">
+					<img src="static/teacher/public/img/deleteError.jpg" />
+				</div>
+				<p>您确认要删除这个课程吗(同时删除所有归档班级)？</p>
+				<div class="alertBtnGroup">
+					<div class="alertBotmBtn cancel floatL btnBg-grey">
+						<a href="">取消</a>
+					</div>
+					<div class="alertBotmBtn Release floatR delClass">
+						<a href="javascript:;">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<!--删除资源弹窗end-->
+
+		
+
+		<!--删除成功-->
+		<section class="popMask2" style="display: none;"></section>
+		<section class="popAlert2" style="display: none;">
+			<div class="popTittle2">
+				温馨提示<span class="popClose2">×</span>
+			</div>
+			<div class="popCnt2 textL"><!--提示文字--></div>
+			<span class="popBtn2 sucs-delete-load">确定</span>
+		</section>
+
+
+		<!--底部start-->
+		<!--2017-04-28新增学员悬浮窗-->
+	<!--2017-04-28新增学员悬浮窗结束-->
+<div class="footer" style="margin-top: 0px;">
+			<div class="footer-top">
+				<ul>
+					<li><img src="static/teacher/public/img/footimg2.jpg"/>追求卓越<span></span></li>
+					<li><img src="static/teacher/public/img/footimg3.jpg"/>打造精品<span></span></li>
+					<li><img src="static/teacher/public/img/footimg4.jpg"/>服务职教<span></span></li>
+					<li><img src="static/teacher/public/img/footimg1.jpg"/>树立品牌</li> 
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-logo floatL">
+					<img src="upload/image/14829742791809.png" />
+					<div class="cprt">
+						<p>&copy; 2016-2019 大连理工大学出版社，</p>
+						<p>All Rights Reserved 辽ICP备11016033号-8</p>
+					</div>
+				</div>
+				<div class="footer-bottom-con floatL">
+					<ul class="ul1">
+						<li><a href="index.php?_d=textbook&_f=textbook" target="_blank">教材中心</a><span></span></li>
+						<li><a href="index.php?_d=resource&_f=resource" target="_blank">资源中心</a><span></span></li>
+						<li><a href="teacher.php?_d=index&_f=index" target="_blank" >在线教学</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column1" target="_blank">出版专栏</a><span></span></li>
+						<li><a href="index.php?_d=aboutus&_f=aboutus1" target="_blank">关于我们</a></li>
+					</ul>
+					<ul class="ul2">
+						<li><a href="index.php?_d=news&_f=news" target="_blank">新闻中心</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column3" target="_blank">出版流程</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column1" target="_blank">联系我们</a><span></span></li>
+						<li><a href="index.php?_d=login&_f=agreement&id=3" target="_blank">隐私政策</a><span></span></li>
+						<li><a href="index.php?_d=login&_f=agreement&id=2" target="_blank">法律声明</a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom-R floatL">
+					<img class="qr" src="upload/image/14890245941592.jpg" />
+				</div>
+				<div class="clear_float"></div>
+			</div>
+			
+		</div>
+
+		<!-- js脚本文件 -->
+		<script src="static/teacher/public/js/jquery-1.11.3.min.js"></script>
+		<script src="static/teacher/public/js/jqueryui/jquery-ui.min.js"></script>
+		<script src="static/teacher/public/js/index.js"></script>
+		<script src="static/teacher/public/js/addJs.js" ></script>
+		<script src="static/teacher/public/js/jquery.form.js" ></script>
+		<script src="static/teacher/public/js/jquery.treeview.min.js"></script>
+		<script src="static/teacher/public/js/commonJs.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.config.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.all.js"></script>
+		<script src="static/teacher/public/js/leftNav.js" ></script>
+		<script src="static/teacher/public/js/conL.js"></script>
+	    <!-- <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js" type="text/javascript"></script> -->
+	    <script src="static/teacher/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script>
+		<script src="static/teacher/public/js/addCourse.js" ></script>
+		<script src="static/teacher/public/js/ajax.js"></script>
+		<script src="static/teacher/public/js/rept.js"></script>
+		<script src="static/teacher/public/js/common.js"></script>
+		<script src="static/teacher/public/js/editorExam.js"></script>
+		<script src="static/teacher/public/js/exam-create-ajax.js"></script>
+		<script src="static/teacher/public/js/exam-editor-ajax.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//学员申请提示
+				$('.applyWindowBox').hover(function(){
+					$(this).find('.applyDetails').css('bottom','42px');
+				},function(){
+					$(this).find('.applyDetails').css('bottom','-90px');
+				})
+			})
+		</script>
+
+
+
+		<!--底部end-->
+		<script type="text/javascript">
+			//添加课程  添加名额
+			function addCourse(){
+				var key  = $("#addKey").val();         //激活码
+				var type = $("#addType").val();        //操作类型 1激活课程  2添加课程名额
+				var mycourseId = $("#courseId").val(); //教师的课程id
+				if(key==""){
+					alert("请输入课程激活码");
+					return false;
+				}
+				if(type==""){
+					location.reload();
+				}
+				$.post("_teacher-class-addCourse.txt",{mycourseId:mycourseId,key:key,type:type},function(data){
+					if(data==1){
+						//操作成功弹出提示框
+					 	$(".textL").text("操作成功");
+						$('.popAlert2').fadeIn();
+						$('.popMask2').fadeIn();
+					}else{
+						//操作失败提示错误信息
+						alert(data);
+					}
+
+				});
+
+			}
+
+			//转赠名额
+			function sendPlaces(){
+				var hasNum     = $("#sendPlaces").text();
+				var sendNum    = $("#inputSend").val();
+				var sendId     = $("#sendId").val();
+				var mycourseId = $("#courseId_sendPlaces").val();
+				if(sendNum>hasNum){
+					alert("名额不足");
+					return false;
+				}
+				if(sendNum<1){
+					alert("请填写转移名额");
+					return false;
+				}
+				if(sendId==""){
+					alert("请输入教师账号");
+					return false;
+				}
+
+				$.post("teacher.php?_d=class&_f=class&act=sendPlaces",{mycourseId:mycourseId,sendNum:sendNum,sendId:sendId},function(data){
+					if(data==1){
+						//提示框
+					 	$(".textL").text("操作成功");
+						$('.popAlert2').fadeIn();
+						$('.popMask2').fadeIn();
+					}else{
+						alert(data);
+					}
+				});
+			}
+
+			//创建班级
+			function addRoom(){
+				var courseId    = $("#courseId").val();
+				var roomName    = $("#roomName").val();
+				var studentsNum = $("#studentsNum").val();
+				if(roomName==''){
+					alert("请输入班级名称");
+					return false;
+				}
+				if(studentsNum<1){
+					alert("请输入班级人数");
+					return false;
+				}
+				$.post("teacher.php?_d=class&_f=class&act=createRoom",{mycourseId:courseId,roomName:roomName,studentsNum:studentsNum},function(data){
+					if(data==1){
+						//提示框
+					 	$(".textL").text("操作成功");
+						$('.popAlert2').fadeIn();
+						$('.popMask2').fadeIn();
+					}else{
+						alert(data);
+					}
+				});
+			}
+
+			//添加班级
+			function roomAdd(){
+				var courseId = $("#courseId").val();
+				var roomId   = $("#choosedClass").val();
+				if(roomId==''){
+					alert("请选择要添加的班级");
+					return false;
+				}
+				$.post("teacher.php?_d=class&_f=class&act=addRoom",{mycourseId:courseId,roomId:roomId},function(data){
+					if(data==1){
+						//提示框
+					 	$(".textL").text("添加成功");
+						$('.popAlert2').fadeIn();
+						$('.popMask2').fadeIn();
+					}else{
+						alert(data);
+					}
+				})
+			}
+			$(function() {
+				
+				//弹框
+				// $('.cm-addClass').delegate('.tCont-box', 'click', function() {
+				// 	var _This = $(this);
+				// 	if(_This.hasClass('cm-boxNo')) {
+
+				// 	} else if(_This.hasClass('cm-boxOK')) {
+				// 		_This.removeClass('cm-boxOK');
+				// 	} else {
+				// 		_This.addClass('cm-boxOK');
+				// 	}
+				// })
+				
+				// $('.cm-addClass').delegate('.tCont-box', 'click', function() {
+				// 	var _num = 0;
+				// 	var inputValue = "";
+				// 	var hasNum = $("#addRoom-hasPlaces").text();
+				// 	$(this).toggleClass('cm-boxOK');
+					
+				// 	$('.cm-addClass .tCont-box').each(function(){
+				// 		var _this = $(this);
+				// 		if($(_this).attr("class").indexOf("cm-boxOK") != -1){
+				// 			_num+=parseInt($(this).find('h4 .score').text());
+				// 			if(hasNum-_num<0){
+				// 				$(_this).removeClass('cm-boxOK');
+				// 				alert("剩余名额不足");
+				// 				return false;
+
+				// 			}else{
+				// 				inputValue = inputValue+$(_this).find('h2').attr('data-classNum')+",";
+				// 			}
+							
+							
+							
+				// 		}
+				// 	})
+					
+				// 	// alert(inputValue);
+				// 	// alert(_num);
+				// 	// $('#choosedClass').val(inputValue);
+				// })
+
+				$('.cm-addClass').delegate('.a', 'click', function() {
+
+					var _num = 0;
+					var inputValue = "";
+					var hasNum = $("#addRoom-hasPlaces").text();
+					$(this).toggleClass('cm-boxOK');
+					
+					$('.cm-addClass .tCont-box').each(function() {
+						var _this = $(this);
+						if($(_this).attr("class").indexOf("cm-boxOK") != -1) {
+							_num += parseInt($(this).find('h4 .score').text());
+							inputValue = inputValue + $(this).find('h2').attr('data-classNum') + ",";
+						}
+					})
+					if(hasNum - _num < 0) {
+						$(this).removeClass('cm-boxOK');
+						alert("剩余名额不足");
+						return false;
+					} else{
+						$('#choosedClass').val(inputValue);
+					}
+					
+					// alert(_num);
+					 
+				})
+
+
+				// doList('.cont-tCont','.tCont-box',3);
+
+				//确定删除成功提示
+				// $('.sucs-delete-block').click(function(){
+				// 	$('.popAlert2').fadeIn();
+				// 	$('.popMask2').fadeIn();
+				// })
+				//删除成功刷新页面
+				$('.sucs-delete-load').click(function(){
+					window.location.reload()
+				})
+
+
+				//转移名额
+				$('.look-transfer').click(function() {
+					var _num      = $(this).attr('hasPlaces');
+					var _courseId = $(this).attr('courseId');
+
+					if(_num<1){
+						// alert("您的名额不足，不能转赠");
+						// return false;
+					}
+					$("#sendPlaces").text(_num);
+					$("#courseId_sendPlaces").val(_courseId);
+					popFadeIn($('#pop_transfer'));
+				})
+
+				//增加名额
+				$('.look-addPer').click(function() {
+					$("#addType").val('2');
+					var _courseId = $(this).attr('courseId');
+					$("#courseId").val(_courseId);
+					$("#addPer_text").text("请输入增加名额激活码");
+					popFadeIn($('#pop_addPer'));
+				})
+				//添加课程
+				$('.look-addCourse').click(function() {
+					$("#addType").val('1');
+					var _courseId = $(this).attr('courseId');
+					$("#courseId").val(_courseId);
+					$("#addPer_text").text("请输入课程激活码");
+					popFadeIn($('#pop_addPer'));
+				})
+
+
+				//添加班级
+				$('.look-addClass').click(function() {
+					$('#choosedClass').val("");
+					var _num      = $(this).attr('hasPlaces');
+					$("#addRoom-hasPlaces").text(_num);
+
+					var _courseId = $(this).attr('courseId');
+					$("#courseId").val(_courseId);
+					$.post("teacher.php?_d=class&_f=class&act=updateRoom",{mycourseId:_courseId},function(data){
+						// alert(data);
+						$(".cm-addClass").html(data);
+						popFadeIn($('#pop_addClass'));
+						    
+					});
+					
+				})
+
+				//创建班级
+				$('.look-createClass').click(function() {
+					var courseId  = $(this).attr('courseId');
+					var courseName = $(this).attr('courseName');
+					$("#courseName").text(courseName);
+					$("#courseId").val(courseId);
+					popFadeIn($('#pop_createClass'));
+				})
+
+				//删除弹窗
+				$('.look-deleteResource').click(function() {
+					var _num = $(this).attr('date-num');
+					popFadeIn($('#pop_deleteResource'));
+					$('.delClass').click(function(ev){
+						ev.stopPropagation();
+						$.post("teacher.php?_d=class&_f=class&act=delCourse",{courseId:_num},function(data){
+							if(data==1){
+								//提示框
+							 	$(".textL").text("删除成功");
+								$('.popAlert2').fadeIn();
+								$('.popMask2').fadeIn();
+							}
+						    
+						});
+					})
+				});
+
+				$('.hasSelectTd').doSelect();
+
+					$('.cmCont').delegate('.cm-course .course-til', 'click', function() {
+					var _This = $(this).closest('.cm-course');
+					_This.toggleClass('cm-open')
+				})
+				//弹框
+				// $('.cm-addClass').delegate('.tCont-box', 'click', function() {
+				// 	var _This = $(this);
+				// 	if(_This.hasClass('cm-boxNo')) {
+
+				// 	} else if(_This.hasClass('cm-boxOK')) {
+				// 		_This.removeClass('cm-boxOK');
+				// 	} else {
+				// 		_This.addClass('cm-boxOK');
+				// 	}
+				// })
+			})
+
+			function popCenter(obj) {
+				$('.popForm').find('.box').addClass('margin0');
+				var _bW = $(window).width();
+				var _sW = obj.width();
+				var _bH = $(window).height();
+				var _sH = obj.height();
+				var _left = _bW - _sW;
+				var _top = _bH - _sH;
+				obj.css({
+					'top': _top / 2,
+					'left': _left / 2
+				})
+			}
+		</script>
+	</body>
+
+</html>

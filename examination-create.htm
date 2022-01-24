@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<script>alert("此课程已归档，请选择其它课程！");history.back();</script>
+<!DOCTYPE html>
 <html>
-
-	<head>
-		<title>资源中心</title>
-			<meta charset="utf-8" />
+	<title>大连理工大学出版社平台管理系统</title>
+	
+		<meta charset="utf-8" />
 	<link rel="stylesheet" href="static/teacher/public/css/style_safe.css" />
 	 <link rel="stylesheet" href="static/teacher/public/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="static/teacher/public/css/iconfont.css" />
@@ -23,7 +23,6 @@
 
 
 
-	</head>
 
 	<body>
 		<!--头部导航start-->
@@ -50,10 +49,10 @@
 							<a href="teacher.php?_d=resource&_f=index" >资源管理</a>
 						</li>
 						<li>
-							<a href="teacher-homework.htm" >实训/作业</a>
+							<a href="teacher.php?_d=homework&_f=index" >实训/作业</a>
 						</li>
 						<li>
-							<a href="teacher-examination.htm" >考试管理</a>
+							<a href="teacher.php?_d=examination&_f=index" class="active">考试管理</a>
 						</li>
 						<li>
 							<a href="teacher-class.htm" >班级管理</a>
@@ -66,67 +65,70 @@
 					<div class="Signin">
 						<a href="##" onclick="window.open('index.php?_d=user&_f=personal')" class="span1">
 							姜老师
-							</a>|<a href="index.htm" class="span2">退出</a>
+							</a>|<a href="index.php?_d=user&_f=logout" class="span2">退出</a>
 						<img class="pos" src="static/teacher/public/img/peo.jpg" />
 					</div>
 				</div>
 		</div>
 		</div>
 		<!--头部导航end-->
-
-		<!--内容区-->
-		<div class="acnt-body" style="background: #eceff4 url(static/teacher/public/img/indexBg.png) bottom no-repeat;">
-			<div class="rm-inr">
-				<h1 class="acnttxt">
-					<i class="iconfont icon-wenjian1 icon-blue magrL22 dbIcon"></i>
-					选择课程
-				</h1>
-				<div class="rm-inr-cntBox">
-					<!--课程-->
-										<!-- <a href="teacher.php?_d=resource&_f=index&mid=3"> -->
-					<div class="coursePart-rm " onclick="save(3)">
-						<img src="upload/image/15153849493885.jpg" />
-						<div class="botmMsk-rm">
-							<span class="courseName">C语言设计教程</span>
-							<span class="courseStudent">
-								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
-								学员名额：<span>0</span>/<span>0</span>
-							</span>
+		<!--内容区start-->
+		<div class="popBody">
+			<div class="content">
+				<div class="examination">
+					<div class="examination-box">考试管理</div>
+					<div class="examination-cnt">
+						<div class="examination-cnt-top">
+							<table class="alertTable  examination-select">
+								<tr>
+									<td class="hasSelectTd">
+										<div class="selectBox">C语言设计教程</div>
+										<ul class="popSelect">
+																																	<a href="teacher.php?_d=examination&_f=index&act=changeCourse&cid=1"><li>商务礼仪与职业形象</li></a>
+																																																							<li class="look-course">添加新课程</li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+							<div class="examination-cnt-toprgt">
+								<div class="lft">
+									<span class="stud">考试场数：  1场    </span>
+								</div>
+								<div class="examination-make">
+									<a href="teacher.php?_d=examination&_f=index&act=create">+ 新建考试</a>
+								</div>
+							</div>
+						</div>
+						<ul class="examination-cnt-box">
+														<li>
+								<h2>C语言考试<span class="no red">待阅卷</span></h2>
+								<p>考试试卷：<a href="teacher.php?_d=examination&_f=testpaperpreview&tp=11&e=look" target="_blank" rel="nofollow" class="examination-time"> 测试（30分）</a></p>
+								<p>考试时间： <span class="tm">2021-12-06  13:09~18:09</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参考人数：<span class="tm">1人</span></p>
+								<p>考试班级：<span class="tm">C语言、C语言二班</span></p>
+																								<div class="note"><a href="teacher.php?_d=examination&_f=examinfo&e=12">阅卷</a></div>
+																							</li>
+													</ul>
+						<div class="ex-default-btm">
+							
 						</div>
 					</div>
-					<!-- <a> -->
-										<!-- <a href="teacher.php?_d=resource&_f=index&mid=1"> -->
-					<div class="coursePart-rm " onclick="save(1)">
-						<img src="upload/image/15102154306448.jpg" />
-						<div class="botmMsk-rm">
-							<span class="courseName">商务礼仪与职业形象</span>
-							<span class="courseStudent">
-								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
-								学员名额：<span>0</span>/<span>0</span>
-							</span>
-						</div>
-					</div>
-					<!-- <a> -->
-										<div class="coursePart-rm mgrR0 look-course" style="cursor: pointer;">
-						<img src="static/teacher/public/img/rm-nocourse.png" />
-					</div>
-				</div>
+				</div>	
 			</div>
 		</div>
-		<!--内容区结束-->		
-		<!--整体end-->
-		
+
 		<!--课程激活码弹窗start-->
+		<form id="courseForm" method="post">
+		<input type="hidden" name="act" value="coursePost" />
 		<div class="popForm " id="pop_editCourse">
 			<div class="mask"></div>
 			<div class="box changeCourseBox">
 				<!--<div class="closePop sprite"></div>-->
-				<h1>请输入课程激活码</h1>
+				<h1>课程激活码</h1>
 				<div class="alertInrBox">
 					<table>
 						<tr>
 							<td style="padding-bottom: 21px;">
-								<input class="courseCode-rm" id="addKey" value="" />
+								<input class="courseCode-rm" id="addKey" name="key" value="" placeholder="请输入课程激活码" />
 							</td>
 						</tr>
 						<tr>
@@ -141,24 +143,15 @@
 					</table>
 				</div>
 				<div class="button-group2">
-					<div class="bom-button cancel floatL btnBg-red"><a href="##">取消</a></div>
-					<div class="bom-button Release floatR" onclick="addCourse()"><a href="##" class="confirmBtn">确认</a></div>
+					<div class="bom-button cancel floatL btnBg-red"><a href="javascript:void(0);">取消</a></div>
+					<div class="bom-button Release floatR"><a href="javascript:document.getElementById('courseForm').submit();" class="confirmBtn">确认</a></div>
 					<div class="clear_float"></div>
 				</div>
 			</div>
 		</div>
+		</form>
 		<!--课程激活码弹窗end-->
-		<!--删除成功-->
-		<section class="popMask2" style="display: none;"></section>
-		<section class="popAlert2" style="display: none;">
-			<div class="popTittle2">
-				温馨提示<span class="popClose2">×</span>
-			</div>
-			<div class="popCnt2 textL"><!--提示文字--></div>
-			<span class="popBtn2 sucs-delete-load">确定</span>
-		</section>
-		<!--底部start-->
-
+		
 		<!--2017-04-28新增学员悬浮窗-->
 	<!--2017-04-28新增学员悬浮窗结束-->
 <div class="footer" style="margin-top: 0px;">
@@ -237,45 +230,76 @@
 
 
 
-		<!--底部end-->
+
+		<script src="../public/js/jquery-1.11.3.min.js"></script>
+		<script src="../public/js/jquery.treeview.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="../public/js/demo.js"></script>
+		<script type="text/javascript" src="../public/js/commonJs.js" ></script>
+		<script src="../public/js/index.js"></script>
 		<script type="text/javascript">
-			function save(id){
-				$.post("course-save.json",{id:id},function(data){
-					window.location.href="teacher-resource.htm";
-				})
-			}
-			//添加课程  添加名额
-			function addCourse(){
-				var key  = $("#addKey").val();
-				var type = 1;
-				if(key==""){
-					alert("请输入课程激活码");
-					return false;
-				}
-				if(type==""){
-					location.reload();
-				}
-				$.post("_addCourse.txt",{key:key,type:type},function(data){
-					if(data==1){
-						//提示框
-					 	$(".textL").text("添加成功");
-						$('.popAlert2').fadeIn();
-						$('.popMask2').fadeIn();
-					}else{
-						alert(data);
-					}
 
-				});
-
-			}
 			$(function() {
-				//删除成功刷新页面
-				$('.sucs-delete-load').click(function(){
-					window.location.reload()
-				})
-				$('.look-course').click(function() {
-					popFadeIn($('#pop_editCourse'));
+				
+				$('.hasSelectTd').doSelect();
+				
+				// 		删除弹窗
+				$('.look-deleteResource').click(function() {
+					popFadeIn($('#pop_deleteResource'));
 				});
+				
+				//		修改资源名称弹窗
+				$('.look-changercName').click(function() {
+					var _this = $(this);
+					var _rsNameChange;
+					popFadeIn($('#pop_changeResourceName'));
+					$('.Release').click(function(){
+						_rsNameChange = $('.rc-changeCnt input').val();
+						_this.closest('h1').find('.resourceName-rc').text(_rsNameChange);
+					})
+				});
+				
+				//取消发布
+				$('.look-cancelCourse').click(function() {
+					var _this = $(this);
+					popFadeIn($('#pop_cancelResource'));
+					$('.cancelReleaseBtn').click(function(){
+						
+					})
+				});
+				
+				//重新上传资源
+				$('.look-reUpload').click(function() {
+					popFadeIn($('#pop_reUpload'));
+				});
+				
+			//删除试卷
+			$('.examination-cnt-box li').each(function(index){
+			    $('.edel').eq(index).click(function(){
+			    if(confirm('确认要删除？')){
+			    	$(this).parent().parent().remove();
+			    	var url =$(this).attr("data");
+			    	 $.ajax({
+			            type: "get",
+			            url: url,
+			            data: {},
+			            success: function(data){
+							history.go(0);			                         
+			            }
+			         });
+				    }
+				})
+				
+			})
+
+			//删除成功刷新页面
+			$('.sucs-delete-load').click(function(){
+				window.location.reload()
+			})
+			$('.look-course').click(function() {
+				popFadeIn($('#pop_editCourse'));
+			});
+				
+				
 			})
 		</script>
 	</body>

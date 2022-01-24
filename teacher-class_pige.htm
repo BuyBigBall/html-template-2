@@ -2,7 +2,7 @@
 <html>
 
 	<head>
-		<title>资源中心</title>
+		<title>班级管理</title>
 			<meta charset="utf-8" />
 	<link rel="stylesheet" href="static/teacher/public/css/style_safe.css" />
 	 <link rel="stylesheet" href="static/teacher/public/css/font-awesome.min.css" />
@@ -50,13 +50,13 @@
 							<a href="teacher.php?_d=resource&_f=index" >资源管理</a>
 						</li>
 						<li>
-							<a href="teacher-homework.htm" >实训/作业</a>
+							<a href="teacher.php?_d=homework&_f=index" >实训/作业</a>
 						</li>
 						<li>
-							<a href="teacher-examination.htm" >考试管理</a>
+							<a href="teacher.php?_d=examination&_f=index" >考试管理</a>
 						</li>
 						<li>
-							<a href="teacher-class.htm" >班级管理</a>
+							<a href="teacher-class.htm" class="active">班级管理</a>
 						</li>
 
 						<li >
@@ -66,88 +66,121 @@
 					<div class="Signin">
 						<a href="##" onclick="window.open('index.php?_d=user&_f=personal')" class="span1">
 							姜老师
-							</a>|<a href="index.htm" class="span2">退出</a>
+							</a>|<a href="index.php?_d=user&_f=logout" class="span2">退出</a>
 						<img class="pos" src="static/teacher/public/img/peo.jpg" />
 					</div>
 				</div>
 		</div>
 		</div>
 		<!--头部导航end-->
+		<!--内容区start-->
+		<div class="popBody">
+			<div class="content cmCont">
+				<div class="cm-nav">
+					<div class="cm-navL">
+						<a href="teacher-class.htm">
+							<i class="iconfont">&#xe7a0;</i>
+							<span>授课班级</span>
+							<div class="cm-actDiv"></div>
+						</a>
+					</div>
+					<div class="linel"></div>
+					<div class="cm-navR cm-active">
+						<a href="teacher-class_pige.htm">
+							<i class="iconfont">&#xe629;</i>
+							<span>已归档班级</span>
+							<div class="cm-actDiv"></div>
+						</a>
+					</div>
+				</div>
+				
+				 					<div class="cm-course cm-open">
+					
+						<div class="course-til">
+							<h2>C语言设计教程</h2>
+							<span class="cT-info">
+								归档班级数量：<span class="cT-num">2</span>个
+							</span>
+							<i class="fa fa-caret-up faIcon" aria-hidden="true"></i><i class="fa fa-caret-down faIcon" aria-hidden="true"></i>
+						</div>
+						<div class="course-cont">
+							<div class="cont-tBtn"></div>
+							<div class="cont-tCont">
+																<div class="tCont-box  mgrL0">
+									<a href="teacher-class_info.htm?roomId=24" target="_blank">
+										<h2>C语言</h2>
+										<h3>班级编号：  <span>761103</span></h3>
+										<h4>班级人数： <span>0</span>/<span>3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平均分：<span class="score">-</span> 分</h4>
+									</a>
+																		<div class="delBtn" onclick="delRoom(24,29)" style="background: url(static/teacher/public/img/delBtn.jpg);"></div>
+																	</div>
+																<div class="tCont-box ">
+									<a href="teacher-class_info.htm?roomId=25" target="_blank">
+										<h2>C语言二班</h2>
+										<h3>班级编号：  <span>761116</span></h3>
+										<h4>班级人数： <span>1</span>/<span>2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平均分：<span class="score">-</span> 分</h4>
+									</a>
+																	</div>
+																
+							</div>
 
-		<!--内容区-->
-		<div class="acnt-body" style="background: #eceff4 url(static/teacher/public/img/indexBg.png) bottom no-repeat;">
-			<div class="rm-inr">
-				<h1 class="acnttxt">
-					<i class="iconfont icon-wenjian1 icon-blue magrL22 dbIcon"></i>
-					选择课程
-				</h1>
-				<div class="rm-inr-cntBox">
-					<!--课程-->
-										<!-- <a href="teacher.php?_d=resource&_f=index&mid=3"> -->
-					<div class="coursePart-rm " onclick="save(3)">
-						<img src="upload/image/15153849493885.jpg" />
-						<div class="botmMsk-rm">
-							<span class="courseName">C语言设计教程</span>
-							<span class="courseStudent">
-								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
-								学员名额：<span>0</span>/<span>0</span>
-							</span>
 						</div>
 					</div>
-					<!-- <a> -->
-										<!-- <a href="teacher.php?_d=resource&_f=index&mid=1"> -->
-					<div class="coursePart-rm " onclick="save(1)">
-						<img src="upload/image/15102154306448.jpg" />
-						<div class="botmMsk-rm">
-							<span class="courseName">商务礼仪与职业形象</span>
-							<span class="courseStudent">
-								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
-								学员名额：<span>0</span>/<span>0</span>
+								
+				 					<div class="cm-course cm-open">
+					
+						<div class="course-til">
+							<h2>商务礼仪与职业形象</h2>
+							<span class="cT-info">
+								归档班级数量：<span class="cT-num">1</span>个
 							</span>
+							<i class="fa fa-caret-up faIcon" aria-hidden="true"></i><i class="fa fa-caret-down faIcon" aria-hidden="true"></i>
+						</div>
+						<div class="course-cont">
+							<div class="cont-tBtn"></div>
+							<div class="cont-tCont">
+																<div class="tCont-box  mgrL0">
+									<a href="teacher-class_info.htm?roomId=17" target="_blank">
+										<h2>教育一班</h2>
+										<h3>班级编号：  <span>SW247722</span></h3>
+										<h4>班级人数： <span>0</span>/<span>5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平均分：<span class="score">-</span> 分</h4>
+									</a>
+																		<div class="delBtn" onclick="delRoom(17,15)" style="background: url(static/teacher/public/img/delBtn.jpg);"></div>
+																	</div>
+																
+							</div>
+
 						</div>
 					</div>
-					<!-- <a> -->
-										<div class="coursePart-rm mgrR0 look-course" style="cursor: pointer;">
-						<img src="static/teacher/public/img/rm-nocourse.png" />
-					</div>
-				</div>
-			</div>
+											</div>
 		</div>
-		<!--内容区结束-->		
+		<!--内容区end-->
 		<!--整体end-->
-		
-		<!--课程激活码弹窗start-->
-		<div class="popForm " id="pop_editCourse">
+		<!--删除资源弹窗start-->
+		<div class="popForm " id="pop_deleteResource">
 			<div class="mask"></div>
-			<div class="box changeCourseBox">
-				<!--<div class="closePop sprite"></div>-->
-				<h1>请输入课程激活码</h1>
-				<div class="alertInrBox">
-					<table>
-						<tr>
-							<td style="padding-bottom: 21px;">
-								<input class="courseCode-rm" id="addKey" value="" />
-							</td>
-						</tr>
-						<tr>
-							<td style="height: 16px;background: url(static/teacher/public/img/rm-msg-icon.png) no-repeat 0px 3px;padding-left: 22px;font-size: 14px;color: #333;padding-bottom: 10px;">购买课程请联系大连理工大学出版社编辑</td>
-						</tr>
-						<tr>
-							<td class="font-s14 color666" style="padding-bottom: 0px;">联系电话：0411-84706673</td>
-						</tr>
-						<tr>
-							<td class="font-s14 color666">联系人：小编</td>
-						</tr>
-					</table>
+			<div class="box deleteBox">
+				<div class="deleteErrorImg">
+					<img src="static/teacher/public/img/deleteError.jpg" />
 				</div>
-				<div class="button-group2">
-					<div class="bom-button cancel floatL btnBg-red"><a href="##">取消</a></div>
-					<div class="bom-button Release floatR" onclick="addCourse()"><a href="##" class="confirmBtn">确认</a></div>
+				<p>您确认要删除这个班级么</p>
+
+				<input type="hidden" id="roomId" value="">
+				<input type="hidden" id="mycourseId" value="">
+
+				<h3 style="font-size: 14px; text-align: center;">确认后，该班级信息将会被永久删除，且无法恢复。</h3>
+				<div class="alertBtnGroup">
+					<div class="alertBotmBtn cancel floatL btnBg-grey">
+						<a href="##">取消</a>
+					</div>
+					<div class="alertBotmBtn Release floatR" onclick="del()">
+						<a href="##">确认</a>
+					</div>
 					<div class="clear_float"></div>
 				</div>
 			</div>
 		</div>
-		<!--课程激活码弹窗end-->
+		<!--删除资源弹窗end-->
 		<!--删除成功-->
 		<section class="popMask2" style="display: none;"></section>
 		<section class="popAlert2" style="display: none;">
@@ -157,8 +190,8 @@
 			<div class="popCnt2 textL"><!--提示文字--></div>
 			<span class="popBtn2 sucs-delete-load">确定</span>
 		</section>
-		<!--底部start-->
 
+		<!-- 底部start -->
 		<!--2017-04-28新增学员悬浮窗-->
 	<!--2017-04-28新增学员悬浮窗结束-->
 <div class="footer" style="margin-top: 0px;">
@@ -237,46 +270,47 @@
 
 
 
-		<!--底部end-->
+		<!-- 底部end -->
 		<script type="text/javascript">
-			function save(id){
-				$.post("course-save.json",{id:id},function(data){
-					window.location.href="teacher-resource.htm";
-				})
-			}
-			//添加课程  添加名额
-			function addCourse(){
-				var key  = $("#addKey").val();
-				var type = 1;
-				if(key==""){
-					alert("请输入课程激活码");
-					return false;
-				}
-				if(type==""){
-					location.reload();
-				}
-				$.post("_addCourse.txt",{key:key,type:type},function(data){
-					if(data==1){
-						//提示框
-					 	$(".textL").text("添加成功");
-						$('.popAlert2').fadeIn();
-						$('.popMask2').fadeIn();
-					}else{
-						alert(data);
-					}
-
-				});
-
-			}
 			$(function() {
 				//删除成功刷新页面
 				$('.sucs-delete-load').click(function(){
 					window.location.reload()
 				})
-				$('.look-course').click(function() {
-					popFadeIn($('#pop_editCourse'));
-				});
+
+				// doList('.cont-tCont','.tCont-box',3);
+				//开关课程分栏
+				$('.cmCont').delegate('.cm-course .course-til', 'click', function() {
+					var _This = $(this).closest('.cm-course');
+					_This.toggleClass('cm-open')
+				})
+				//删除
+				// $('.delBtn').click(function() {
+					
+				// })
+				
 			})
+			//删除班级
+			function delRoom(roomId,mycourseId){
+				$("#roomId").val(roomId);
+				$("#mycourseId").val(mycourseId);
+				popFadeIn($('#pop_deleteResource'));
+			}
+
+			function del(){
+				var roomId    =$("#roomId").val();
+				var mycourseId=$("#mycourseId").val();
+				$.post("_teacher-class_delete.txt",{mycourseId:mycourseId,roomId:roomId},function(data){
+					if(data==1){
+						$(".textL").text("删除成功");
+						$('.popAlert2').fadeIn();
+						$('.popMask2').fadeIn();
+					}else{
+						alert(data);
+					}
+				})
+
+			}
 		</script>
 	</body>
 
