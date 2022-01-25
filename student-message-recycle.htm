@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>回收站</title>
+			<meta charset="utf-8" />
+	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
+	<link rel="stylesheet" href="static/student/public/css/base.css" />
+	<link rel="stylesheet" href="static/student/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="static/student/public/css/iconfont.css" />
+	<link rel="stylesheet" href="static/student/public/css/style.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_lgpt.css" />
+	<link rel="stylesheet" href="static/student/public/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_wgx.css" />
+	<link rel="stylesheet" href="static/student/public/js/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="static/student/public/js/jqueryui/jquery-ui-timepicker-addon.css" />
+
+	<link rel="stylesheet" href="static/student/public/css/add_t.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
+	<link rel="shortcut icon"              href="static/admin/public/image/favicon.ico" />
+	
+
+
+
+	</head>
+
+	<body class="body-student">
+		<!--头部模块开始-->
+		<div class="header header_student cl">
+			<div class="head">
+		<div class="head-left">
+			<a href="student.htm">
+				<img src="static/student/public/img/webIcon_stud.jpg"/>
+
+			</a>
+		</div>
+		<div class="head-right">
+			<ul class="nav">
+				<li class="mgrL0">
+					<a href="student.htm" >首页</a>
+				</li>
+				<li>
+					<a href="student-resource.htm" >课程资源</a>
+				</li>
+				<li>
+					<a href="student-homework.htm" >实训/作业</a>
+				</li>
+				<li>
+
+					<a href="student-examination.htm"  style="position:relative;">我的考试</a>
+				</li>
+				<li>
+					<a href="student-class.htm" >我的班级</a>
+				</li>
+				<!-- <li class="newbgc"> -->
+				<li >
+					<a href="student-message.htm"  class="active">消息中心</a>
+				</li>
+			</ul>
+			<div class="Signin">
+				<a href="user-personal.htm" class="span1">
+					李小明
+				</a> |
+				<a href="index.htm" class="span2">退出</a>
+				<img class="pos" src="static/student/public/img/head_p_stud.jpg" />
+			</div>
+		</div>
+	</div>
+		</div>
+		<!--头部模块结束-->
+		<!--内容区start-->
+		<div class="popBody popBody_student">
+			<div class="content">
+				<!--内容区左侧导航栏-->
+				<div class="content-left">
+					<div class="inr-left-nav clearFloat_t">
+						<ul>
+							<a href="student-message-new.htm"><li>
+								新建消息
+								<span class="arrorFont">></span>
+							</li></a>
+							<a href="student-message.htm"><li >
+								收件箱
+								<span class="arrorFont">></span>
+							</li></a>
+							<a href="student-message-send.htm"><li>
+								已发送
+								<span class="arrorFont">></span>
+							</li></a>
+							<a href="student-message-recycle.htm"><li class="cur-left-nav-stu">
+								回收站
+								<span class="arrorFont">></span>
+							</li></a>
+						</ul>
+					</div>
+				</div>
+				<!--内容区导航栏end-->
+				<!--内容区右侧-->
+				<div class="content-right infoBox">
+					<div class="content-right_tit">
+						<h1 class="paddingL28">回收站
+						</h1>
+					</div>
+					<div class="conR-con" style="padding-left: 0;">
+						<div class="inbox">
+							<div class="inbox-top">
+								<div class="hasSelectTd">
+									<div class="selectBox">
+										<div class="ticSel"></div>
+									</div>
+									<ul class="popSelect" hidden>
+										<li date-way="allCho">全选</li>
+										<li date-way="allnoCho">全不选</li>
+										<a href="student-message-recycle.htm&type=2"><li date-way="read">已读</li></a>
+										<a href="student-message-recycle.htm&type=1"><li date-way="unread">未读</li></a>
+									</ul>
+								</div>
+								<div class="course-cont" style="margin-top: 9px;">
+									<div class="cont-tBtn">
+										<style scoped="scoped">
+											.cont-tBtn .c-tBtn {
+												background: url(static/student/public/img/cm-btn.jpg);
+											}
+											
+											.cont-tBtn .iB-findDel {
+												margin-left: 10px;
+											}
+										</style>
+										<div class="c-tBtn iB-findDel">彻底删除</div>
+										<div class="c-tBtn iB-restore">还原</div>
+									</div>
+								</div>
+							</div>
+							<div class="iB-tableBox">
+								<table class="table1 iB-table">
+									<tbody>
+																			</tbody>
+								</table>
+							</div>
+							<!--分页-->
+							
+
+						</div>
+					</div>
+				</div>
+				<!--内容区右侧end-->
+
+				<div class="clear_float"></div>
+			</div>
+		</div>
+		<!--内容区end-->
+		
+		<!--整体end-->
+		<!--删除资源弹窗start-->
+		<div class="popForm " id="pop_deleteResource">
+			<div class="mask"></div>
+			<div class="box deleteBox">
+				<div class="deleteErrorImg">
+					<img src="static/student/public/img/deleteError.jpg" />
+				</div>
+				<p>您确认要彻底删除邮件么</p>
+				<div class="alertBtnGroup">
+					<div class="alertBotmBtn cancel floatL btnBg-grey">
+						<a href="##">取消</a>
+					</div>
+					<div class="alertBotmBtn Release floatR" onclick="del()">
+						<a href="##">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<!--删除资源弹窗end-->
+
+		<!--恢复确认弹窗start-->
+		<div class="popForm " id="pop_recoveryResource">
+			<div class="mask"></div>
+			<div class="box deleteBox">
+				<div class="deleteErrorImg">
+					<img src="static/teacher/public/img/deleteError.jpg" />
+				</div>
+				<p>您确认要恢复邮件么</p>
+				<div class="alertBtnGroup">
+					<div class="alertBotmBtn cancel floatL btnBg-grey">
+						<a href="##">取消</a>
+					</div>
+					<div class="alertBotmBtn Release floatR" onclick="recovery()">
+						<a href="##">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<!--恢复确认弹窗end-->
+		<!--底部start-->
+		
+
+<div class="footer" style="margin-top: 0px;">
+	<div class="footer-top">
+		<ul>
+			<li><img src="static/student/public/img/footimg2.jpg" />追求卓越<span></span></li>
+			<li><img src="static/student/public/img/footimg3.jpg" />打造精品<span></span></li>
+			<li><img src="static/student/public/img/footimg4.jpg" />服务职教<span></span></li>
+			<li><img src="static/student/public/img/footimg1.jpg" />树立品牌</li>
+		</ul>
+	</div>
+	<div class="footer-bottom">
+		<div class="footer-bottom-logo floatL">
+			<img src="upload/image/14829742791809.png" />
+			<div class="cprt">
+				<p>&copy; 2016-2019 大连理工大学出版社，</p>
+				<p>All Rights Reserved 辽ICP备11016033号-8</p>
+			</div>
+		</div>
+		<div class="footer-bottom-con floatL">
+			<ul class="ul1">
+				<li><a href="textbook.htm" target="_blank">教材中心</a><span></span></li>
+				<li><a href="resource.htm" target="_blank">资源中心</a><span></span></li>
+				<li>	<a href="student.htm" target="_blank" >在线教学</a><span></span></li>
+				<li><a href="contactus.htm" target="_blank">出版专栏</a><span></span></li>
+				<li><a href="about.htm" target="_blank">关于我们</a></li>
+			</ul>
+			<ul class="ul2">
+				<li><a href="news.htm" target="_blank">新闻中心</a><span></span></li>
+				<li><a href="publishing.htm" target="_blank">出版流程</a><span></span></li>
+				<li><a href="contactus.htm" target="_blank">联系我们</a><span></span></li>
+				<li><a href="privacy.htm" target="_blank">隐私政策</a><span></span></li>
+				<li><a href="license.htm" target="_blank">法律声明</a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom-R floatL">
+			<img src="upload/image/14890245941592.jpg" />
+		</div>
+		<div class="clear_float"></div>
+	</div>
+</div>
+<div class="popForm " id="pop_joinCourse">
+	<div class="mask"></div>
+	<div class="box activateCourseBox">
+		<!--<div class="closePop sprite"></div>-->
+		<h1>加入班级</h1>
+		<div class="alertInrBox">
+			<table>
+				<tr>
+					<td style="padding-bottom: 21px;">
+						<!-- <input  id="addKey" /> -->
+						<textarea class="courseCode-rm" id="addKey2017"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td style="height: 16px;background: url(static/student/public/img/rm-msg-icon.png) no-repeat 0px 3px;padding-left: 22px;font-size: 14px;color: #333;padding-bottom: 10px;">请输入班级代码</td>
+				</tr>
+			</table>
+		</div>
+		<div class="alertBtnGroup marginT32">
+			<div class="bom-button cancel floatL btnBg-grey"><a href="##">取消</a></div>
+			<div class="bom-button Release floatR" onclick="addroom2017();"><a href="##" class="">申请加入</a></div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div>
+	<!-- 脚本文件 -->
+	<script src="static/student/public/js/jquery-1.11.3.min.js"></script>
+    <script src="static/student/public/js/commonJs.js" ></script>
+    <script src="static/student/public/js/addJs.js"></script>
+    <script src="static/student/public/js/jquery.form.js"></script>
+	<script src="static/student/public/js/jqueryui/jquery-ui.min.js" ></script>
+	<script src="static/student/public/js/index.js"></script>
+	<script src="static/student/public/js/jquery.treeview.min.js"></script>
+	
+
+
+
+
+	<script src="static/student/public/js/ueditor/ueditor.config.js"></script>
+	<script src="static/student/public/js/ueditor/ueditor.all.js"></script>
+	<script src="static/student/public/js/conL.js"></script>
+	<!-- <script src="static/student/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script> -->
+    <!-- <script src="static/student/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js.js"></script> -->
+    
+    <!--  -->
+    <script src="static/student/public/js/addCourse.js" ></script>
+	<script src="static/student/public/js/leftNav.js"></script>
+	<script type="text/javascript">
+		
+
+	//加入班级
+	function addroom2017(){
+		var number = $("#addKey2017").val();
+		if(number==''){
+			alert("请输入班级代码");
+			return false;
+		}
+		
+		$.post("student-class.htm&act=addRoom",{number:number},function(data){
+			if(data==1){
+				popFadeOut($('#pop_joinCourse'));
+				popFadeOut($('#pop_addPer'));
+				$("#number").val("");
+				alert("提交成功，等待审核");
+			}else{
+				alert(data);
+				popFadeOut($('#pop_joinCourse'));
+				popFadeOut($('#pop_addPer'));
+			}
+		})
+	}
+		
+	</script>
+
+		<!--底部end-->
+		
+		<script>
+			$(function() {
+
+				$('.hasSelectTd').doSelect2();
+				//课程资源隐藏域赋值
+				$('.hasSelectTd .popSelect li').click(function() {
+					$('#resourceType').val($(this).attr('resourceType'))
+				});
+
+				//check
+				$(".iB-table").delegate('.check', 'click', function() {
+					var _this = $(this);
+					var _father = $(this).closest('tr');
+					var _val = '';
+					if(_this.hasClass('check-active')) {
+						_this.removeClass('check-active');
+						_father.removeClass('chooseMail');
+					} else {
+						_this.addClass('check-active');
+						_father.addClass('chooseMail');
+					}
+				})
+
+				//删除弹窗
+				$('.cont-tBtn').delegate('.c-tBtn', 'click', function() {
+					var _useBox = $('.iB-table').find('tr');
+					if($(this).hasClass('iB-findDel') && _useBox.hasClass('chooseMail')) {
+						popFadeIn($('#pop_deleteResource'));
+					} else if($(this).hasClass('iB-restore') && _useBox.hasClass('chooseMail')) {
+						//还原操作
+						popFadeIn($('#pop_recoveryResource'));
+					} else {
+						alert('请选中消息后操作');
+					}
+				})
+			})
+
+			//彻底删除
+			function del(){
+		        var aa = "";  
+		        $(".chooseMail").each(function(){ 
+					aa+=$(this).attr("messageId")+","; 
+				})   
+		        $.post("student-message-recycle.htm&act=del",{id:aa},function(data){
+		       		if(data==1){
+		       			location.reload();
+		       		}else{
+		       			alert(data);
+		       		}
+		        })
+			}
+
+			//恢复
+			function recovery(){
+		        var aa = "";  
+		        $(".chooseMail").each(function(){ 
+					aa+=$(this).attr("messageId")+","; 
+				})   
+		        $.post("student-message-recycle.htm&act=recovery",{id:aa},function(data){
+		       		if(data==1){
+		       			location.reload();
+		       		}else{
+		       			alert(data);
+		       		}
+		        })
+			}
+		</script>
+	</body>
+
+</html>

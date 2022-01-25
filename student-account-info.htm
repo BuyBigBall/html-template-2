@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>账户安全</title>
+			<meta charset="utf-8" />
+	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
+	<link rel="stylesheet" href="static/student/public/css/base.css" />
+	<link rel="stylesheet" href="static/student/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="static/student/public/css/iconfont.css" />
+	<link rel="stylesheet" href="static/student/public/css/style.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_lgpt.css" />
+	<link rel="stylesheet" href="static/student/public/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_wgx.css" />
+	<link rel="stylesheet" href="static/student/public/js/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="static/student/public/js/jqueryui/jquery-ui-timepicker-addon.css" />
+
+	<link rel="stylesheet" href="static/student/public/css/add_t.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
+	<link rel="shortcut icon"              href="static/admin/public/image/favicon.ico" />
+	
+
+
+
+	</head>
+
+	<body class="body-student">
+		<!--头部模块开始-->
+		<div class="header header_student">
+			<div class="head">
+		<div class="head-left">
+			<a href="student.htm">
+				<img src="static/student/public/img/webIcon_stud.jpg"/>
+
+			</a>
+		</div>
+		<div class="head-right">
+			<ul class="nav">
+				<li class="mgrL0">
+					<a href="student.htm" >首页</a>
+				</li>
+				<li>
+					<a href="student-resource.htm" >课程资源</a>
+				</li>
+				<li>
+					<a href="student-homework.htm" >实训/作业</a>
+				</li>
+				<li>
+
+					<a href="student-examination.htm"  style="position:relative;">我的考试</a>
+				</li>
+				<li>
+					<a href="student-class.htm" >我的班级</a>
+				</li>
+				<!-- <li class="newbgc"> -->
+				<li >
+					<a href="student-message.htm" >消息中心</a>
+				</li>
+			</ul>
+			<div class="Signin">
+				<a href="user-personal.htm" class="span1">
+					李小明
+				</a> |
+				<a href="index.htm" class="span2">退出</a>
+				<img class="pos" src="static/student/public/img/head_p_stud.jpg" />
+			</div>
+		</div>
+	</div>
+		</div>
+		<!--头部模块结束-->
+		<!--内容区start-->
+		<div class="popBody popBody_student">
+			<div class="pi-inr-box">
+				<div class="inr-left-nav clearFloat_t">
+					<ul>
+						<a href="user-personal.htm"><li >
+							个人信息
+							<span class="arrorFont">></span>
+						</li></a>
+						<a href="student-exam-results.htm"><li>
+							我的成绩
+							<span class="arrorFont">></span>
+						</li></a>
+						<a href="student-account-info.htm"><li class="cur-left-nav-stu">
+							账户安全
+							<span class="arrorFont">></span>
+						</li></a>
+						<a href="student-change-pwd.htm"><li >
+							修改密码
+							<span class="arrorFont">></span>
+						</li></a>
+					</ul>
+				</div>
+				<div class="inr-right-cnt">
+					<h1>账户安全<span>请尽早完善账户安全信息，更好地保护您的数据安全！</span></h1>
+					<div class="resultsBox">
+						<div class="r1-as">
+							<i class="iconfont icon-shouji dbIcon-zh-as" style="color: #41CB83 !important;"></i>
+							<span style="display: inline-block;width: 126px;">手机账号</span>
+							<span class="color333">13664219664</span>
+							<a class="btn-as look-changePnum">更换</a>
+						</div>
+						<div class="r1-as marginT24">
+							<i class="iconfont icon-youxiang dbIcon-zh-as" style="color: #41CB83 !important;"></i>
+							<span style="display: inline-block;width: 126px;">邮箱账号</span>
+							<span class="color333">505252226@qq.com</span>
+							<a class="btn-as look-changeEmail">更换</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--内容区end-->
+		
+		<!--整体end-->
+		
+		
+		<!--修改手机弹窗start-->
+		<div class="popForm " id="pop_changePnum">
+			<div class="mask"></div>
+			<div class="box changeCourseBox changePnumInr">
+				<!--<div class="closePop sprite"></div>-->
+				<!--修改手机第一步-->
+				<div class="step1-pnum-safe">
+					<h1 class="alertTittle-stu">验证旧手机</h1>
+					<div class="alertInrBox" style="width: 402px;">
+						<table class="pnumStep1">
+							<tr>
+								<td width="82">手机号码</td>
+								<td><span id="oldTel">13664219664</span></td>
+							</tr>
+							<tr>
+								<td width="">验证码</td>
+								<td>
+									<div class="yzBox">
+										<input class="yzmIpt ipt2" />
+										<input type="button" class="sendBtn btnBg-green colorfff" value="发送短信验证码" style="background: #ddd;color: #999;"/>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="alertBtnGroup" style="margin-top: 12px;width: 324px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn floatR btnBg-green nextStep">
+							<a class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+				
+				<!--修改手机第二步-->
+				<div class="step2-pnum-safe" style="display: none;">
+					<h1 class="alertTittle-stu">绑定新手机</h1>
+					<div class="alertInrBox" style="width: 402px;">
+						<table class="pnumStep1">
+							<tr>
+								<td width="82">手机号码</td>
+								<td>
+									<input class="ipt2 pnumIpt-safe" />
+								</td>
+							</tr>
+							<tr>
+								<td width="">验证码</td>
+								<td>
+									<div class="yzBox">
+										<input class="yzmIpt2 ipt2" />
+										<input type="button" class="sendBtn2 disabled" value="发送短信验证码" />
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="alertBtnGroup" style="margin-top: 12px;width: 324px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn floatR btnBg-green nextStep2">
+							<a class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+				
+				<!--修改手机第三步-->
+				<div class="step3-pnum-safe" style="display: none;">
+					<div class="alertInrBox" style="width: 402px;">
+						<div class="successImgBox">
+							<img src="static/student/public/img/success.png" />
+						</div>
+						<p class="msg">手机号更换成功</p>
+						<p class="tip">欢迎使用大连理工大学出版社职教数字化服务平台</p>
+					</div>
+					<div class="alertBtnGroup" style="margin-top: 12px;width: 130px;">
+						<div class="alertBotmBtn floatR btnBg-green confirmBtn" onclick="reload()">
+							<a class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!----------修改手机结束----------->
+		
+		<!--更换邮箱弹窗start-->
+		<div class="popForm " id="pop_changeEmail">
+			<div class="mask"></div>
+			<div class="box changeCourseBox changePnumInr">
+				<!--<div class="closePop sprite"></div>-->
+				<!--更换邮箱第一步-->
+				<div class="step2-email-safe" id="step1">
+					<h1 class="alertTittle-stu">更换邮箱</h1>
+					<div class="alertInrBox" style="width: 402px;">
+						<table>
+							<tr>
+								<td width="82">邮箱地址</td>
+								<td>
+									<input class="ipt2 emailIpt-safe" />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="tip textL">
+									<p>我们将会向您的新邮箱发送一封验证邮件，请获取邮箱中的验证码来验证新邮箱</p>
+								</td>
+							</tr>
+							<tr>
+								<td width="">验证码</td>
+								<td>
+									<div class="yzBox">
+										<input class="yzmIpt-email-safe ipt2" />
+										<div class="captchaBox-img">
+											<img src="source/admin/provenum.php.jpg" name="imgCaptcha" id="imgCaptcha"/>
+											<span onClick="RefreshImage('imgCaptcha');">换一换</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="alertBtnGroup" style="margin-top: 12px;width: 324px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn floatR btnBg-green nextStep-email">
+							<a class="">发送验证邮箱</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+				
+				<!--更换邮箱第二步-->
+				<div class="step2-email-safe" id="step2" style="display: none;">
+					<h1 class="alertTittle-stu">输入验证码</h1>
+					<div class="alertInrBox" style="width: 402px;">
+						<table class="pnumStep1">
+							<tr>
+								<td width="82">验证码</td>
+								<td>
+									<input class="ipt2 yzmIpt2-email-safe" />
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="alertBtnGroup" style="margin-top: 12px;width: 324px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn floatR btnBg-green nextStep2-email">
+							<a class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+				
+				<!--更换邮箱第三步-->
+				<div class="step2-email-safe" id="step3" style="display: none;">
+					<div class="alertInrBox" style="width: 402px;">
+						<div class="successImgBox">
+							<img src="static/student/public/img/success.png" />
+						</div>
+						<p class="msg">邮箱更换成功</p>
+						<p class="tip">欢迎使用大连理工大学出版社职教数字化服务平台</p>
+					</div>
+					<div class="alertBtnGroup" style="margin-top: 12px;width: 130px;">
+						<div class="alertBotmBtn floatR btnBg-green confirmBtn" onclick="reload()">
+							<a class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!------x修改邮箱结束------>
+		
+		
+		<!--底部start-->
+		
+
+<div class="footer" style="margin-top: 0px;">
+	<div class="footer-top">
+		<ul>
+			<li><img src="static/student/public/img/footimg2.jpg" />追求卓越<span></span></li>
+			<li><img src="static/student/public/img/footimg3.jpg" />打造精品<span></span></li>
+			<li><img src="static/student/public/img/footimg4.jpg" />服务职教<span></span></li>
+			<li><img src="static/student/public/img/footimg1.jpg" />树立品牌</li>
+		</ul>
+	</div>
+	<div class="footer-bottom">
+		<div class="footer-bottom-logo floatL">
+			<img src="upload/image/14829742791809.png" />
+			<div class="cprt">
+				<p>&copy; 2016-2019 大连理工大学出版社，</p>
+				<p>All Rights Reserved 辽ICP备11016033号-8</p>
+			</div>
+		</div>
+		<div class="footer-bottom-con floatL">
+			<ul class="ul1">
+				<li><a href="textbook.htm" target="_blank">教材中心</a><span></span></li>
+				<li><a href="resource.htm" target="_blank">资源中心</a><span></span></li>
+				<li>	<a href="student.htm" target="_blank" >在线教学</a><span></span></li>
+				<li><a href="contactus.htm" target="_blank">出版专栏</a><span></span></li>
+				<li><a href="about.htm" target="_blank">关于我们</a></li>
+			</ul>
+			<ul class="ul2">
+				<li><a href="news.htm" target="_blank">新闻中心</a><span></span></li>
+				<li><a href="publishing.htm" target="_blank">出版流程</a><span></span></li>
+				<li><a href="contactus.htm" target="_blank">联系我们</a><span></span></li>
+				<li><a href="privacy.htm" target="_blank">隐私政策</a><span></span></li>
+				<li><a href="license.htm" target="_blank">法律声明</a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom-R floatL">
+			<img src="upload/image/14890245941592.jpg" />
+		</div>
+		<div class="clear_float"></div>
+	</div>
+</div>
+<div class="popForm " id="pop_joinCourse">
+	<div class="mask"></div>
+	<div class="box activateCourseBox">
+		<!--<div class="closePop sprite"></div>-->
+		<h1>加入班级</h1>
+		<div class="alertInrBox">
+			<table>
+				<tr>
+					<td style="padding-bottom: 21px;">
+						<!-- <input  id="addKey" /> -->
+						<textarea class="courseCode-rm" id="addKey2017"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td style="height: 16px;background: url(static/student/public/img/rm-msg-icon.png) no-repeat 0px 3px;padding-left: 22px;font-size: 14px;color: #333;padding-bottom: 10px;">请输入班级代码</td>
+				</tr>
+			</table>
+		</div>
+		<div class="alertBtnGroup marginT32">
+			<div class="bom-button cancel floatL btnBg-grey"><a href="##">取消</a></div>
+			<div class="bom-button Release floatR" onclick="addroom2017();"><a href="##" class="">申请加入</a></div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div>
+	<!-- 脚本文件 -->
+	<script src="static/student/public/js/jquery-1.11.3.min.js"></script>
+    <script src="static/student/public/js/commonJs.js" ></script>
+    <script src="static/student/public/js/addJs.js"></script>
+    <script src="static/student/public/js/jquery.form.js"></script>
+	<script src="static/student/public/js/jqueryui/jquery-ui.min.js" ></script>
+	<script src="static/student/public/js/index.js"></script>
+	<script src="static/student/public/js/jquery.treeview.min.js"></script>
+	
+
+
+
+
+	<script src="static/student/public/js/ueditor/ueditor.config.js"></script>
+	<script src="static/student/public/js/ueditor/ueditor.all.js"></script>
+	<script src="static/student/public/js/conL.js"></script>
+	<!-- <script src="static/student/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script> -->
+    <!-- <script src="static/student/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js.js"></script> -->
+    
+    <!--  -->
+    <script src="static/student/public/js/addCourse.js" ></script>
+	<script src="static/student/public/js/leftNav.js"></script>
+	<script type="text/javascript">
+		
+
+	//加入班级
+	function addroom2017(){
+		var number = $("#addKey2017").val();
+		if(number==''){
+			alert("请输入班级代码");
+			return false;
+		}
+		
+		$.post("student-class.htm&act=addRoom",{number:number},function(data){
+			if(data==1){
+				popFadeOut($('#pop_joinCourse'));
+				popFadeOut($('#pop_addPer'));
+				$("#number").val("");
+				alert("提交成功，等待审核");
+			}else{
+				alert(data);
+				popFadeOut($('#pop_joinCourse'));
+				popFadeOut($('#pop_addPer'));
+			}
+		})
+	}
+		
+	</script>
+
+		<!--底部end-->
+		<script type="text/javascript">
+			//刷新页面
+			function reload(){
+				location.reload();
+			}
+
+			//更换验证码
+			function RefreshImage(valImageId) {
+				var objImage = document.images[valImageId];
+				if (objImage == undefined) {
+					return;
+				}
+				var now = new Date();
+				objImage.src = objImage.src.split('?')[0] + '?x=' + now.toUTCString();
+			}
+
+			$(function() {
+				//修改手机弹窗
+				$('.look-changePnum').click(function() {
+					popFadeIn($('#pop_changePnum'));
+				});
+				
+				//修改邮箱弹窗
+				$('.look-changeEmail').click(function(){
+					popFadeIn($('#pop_changeEmail'))
+				})
+
+				//更换手机第一步
+				$('.nextStep').click(function() {
+					var _yzm = $('.yzmIpt').val();
+					if(_yzm == "") {
+						alert('请输入验证码');
+						return false;
+					}
+					$.post("_checkOldTel.txt",{key:_yzm},function(data){
+						if(data==1){ 
+							//验证成功隐藏第一步操作 显示第二部操作
+							$(".step1-pnum-safe").hide();
+							$(".step2-pnum-safe").show();
+
+						}else{
+							alert("验证码输入错误");
+						}
+					})
+				})
+
+				$('.sendBtn').click(function() {
+					var tel = document.getElementById('oldTel').innerText;
+					var _this = $(this)
+					var _num = 60;
+					if(_this.hasClass('disabled')) {
+						return false;
+					} else {
+						$.post("source/student/ajax/sendMsg.txt",{tel:tel},function(data){
+							alert(data);
+							
+							//发送成功 开始倒计时
+							_this.addClass('disabled').val(_num + '秒后重新获取').removeClass('btnBg-green');
+							var _st = setInterval(function() {
+								--_num;
+								_this.addClass('disabled').val(_num + '秒后重新获取').removeClass('btnBg-green');
+								if(_num <= 0) {
+									_this.removeClass('disabled').val('发送短信验证码').addClass('btnBg-green');
+									clearInterval(_st);
+								}
+							}, 1000)
+							
+						})
+					}
+				})
+
+				//更换手机号码第二部
+				var regPnone = /^[1][0-9]{10}$/;
+				$('.pnumIpt-safe').keyup(function() {
+					var _pnum = $(this).val();
+					if(regPnone.test(_pnum)) {
+						$('.sendBtn2').removeClass('disabled').addClass('btnBg-green').addClass('colorfff');
+					}else{
+						$('.sendBtn2').addClass('disabled').removeClass('btnBg-green').removeClass('colorfff')
+					}
+				})
+				
+				$('.sendBtn2').click(function(){
+					var _this = $(this);
+					var _pnum = $('.pnumIpt-safe').val()
+					if(_this.hasClass('disabled')){
+						return false;
+					}else{
+						$.post("source/student/ajax/sendMsg.txt",{tel:_pnum},function(data){
+							alert(data);
+							//发送成功  开始倒计时
+							var _cd = 60;
+							_this.addClass('disabled').val(_cd+'秒后重新获取').removeClass('btnBg-green');
+							var _st = setInterval(function(){
+								--_cd;
+								_this.addClass('disabled').val(_cd+'秒后重新获取').removeClass('btnBg-green');
+								if(_cd<=0){
+									_this.removeClass('disabled').val('发送短信验证码').addClass('btnBg-green');
+									clearInterval(_st);
+								}
+							},1000)
+								
+						})
+					}
+				})
+
+				//验证手机号 第二部
+				$('.nextStep2').click(function(){
+					var _pnum = $('.pnumIpt-safe').val();
+					var _yzm2 = $('.yzmIpt2').val();
+					if(!regPnone.test(_pnum)){
+						alert('请输入手机号');
+						return false;
+					}else if(_yzm2==""){
+						alert('请输入验证码');
+						return false;
+					}
+					//验证新手机验证码
+					$.post("_checkNewTel.txt",{key:_yzm2},function(data){
+						if(data==1){
+							$(".step2-pnum-safe").hide();
+							$(".step3-pnum-safe").show();
+						}else{
+							alert(data);
+						}
+					})
+
+				})
+				
+				//更换邮箱
+				var regEamil = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+				$('.nextStep-email').click(function(){
+					//console.log('11')
+					var _email = $('.emailIpt-safe').val();
+					var _emailyzm = $('.yzmIpt-email-safe').val()
+					if(!regEamil.test(_email)){
+						alert('请输入正确的邮箱')
+					}else{
+						$.post("_sendEmailKey.txt",{email:_email,newProv:_emailyzm},function(data){
+							if(data==1){
+								//邮件发送成功 显示下一步操作
+								$("#step1").hide();
+								$("#step2").show();
+							}else{
+								alert(data);
+							}
+						})
+					}
+				})
+				
+				$('.nextStep2-email').click(function(){
+					var _emailCaptcha2 = $('.yzmIpt2-email-safe').val();
+					if(_emailCaptcha2==""){
+						alert('请输入验证码');
+					}
+					$.post("_checkEmail.txt",{key:_emailCaptcha2},function(data){
+						if(data==1){
+							//更换成功 显示成功提示
+							$("#step2").hide();
+							$("#step3").show();
+						}else{
+							alert("验证码输入错误");
+						}
+					})
+				})
+				
+			})
+		</script>
+	</body>
+
+</html>

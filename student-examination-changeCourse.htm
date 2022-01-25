@@ -1,0 +1,286 @@
+﻿<script>window.location.href="student-examination.htm";</script><!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>在线考试</title>
+		<link rel="stylesheet" href="static/student/public/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="static/student/public/css/jquery.treeview.css" />
+		<link rel="stylesheet" href="static/student/public/css/style.css"/>
+		<link rel="stylesheet" href="static/student/public/css/iconfont.css" />
+		<link rel="stylesheet" href="static/student/public/css/style_lgpt.css" />
+		<link rel="stylesheet" href="static/student/public/css/base.css" />
+	</head>
+
+	<body class="body-student">
+		<!--头部模块开始-->
+		<div class="header header_student cl">
+			<div class="head">
+		<div class="head-left">
+			<a href="student.htm">
+				<img src="static/student/public/img/webIcon_stud.jpg"/>
+
+			</a>
+		</div>
+		<div class="head-right">
+			<ul class="nav">
+				<li class="mgrL0">
+					<a href="student.htm" >首页</a>
+				</li>
+				<li>
+					<a href="student-resource.htm" >课程资源</a>
+				</li>
+				<li>
+					<a href="student-homework.htm" >实训/作业</a>
+				</li>
+				<li>
+
+					<a href="student-examination.htm"  class="active" style="position:relative;">我的考试</a>
+				</li>
+				<li>
+					<a href="student-class.htm" >我的班级</a>
+				</li>
+				<!-- <li class="newbgc"> -->
+				<li >
+					<a href="student-message.htm" >消息中心</a>
+				</li>
+			</ul>
+			<div class="Signin">
+				<a href="user-personal.htm" class="span1">
+					李小明
+				</a> |
+				<a href="index.htm" class="span2">退出</a>
+				<img class="pos" src="static/student/public/img/head_p_stud.jpg" />
+			</div>
+		</div>
+	</div>
+		</div>
+		<!--头部模块结束-->
+		<!--内容区start-->
+		<div class="popBody popBody_student">
+			<div class="content">
+				<div class="examination">
+					<div class="examination-box">考试管理</div>
+					<div class="examination-cnt">
+						<div class="examination-cnt-top">
+							<table class="alertTable examination-select">
+								<tr>
+									<td class="hasSelectTd">
+										<div class="selectBox" style="position:relative;">计算机应用基础</div>
+										<ul class="popSelect">
+																																																							<a href="student-examination-changeCourse.htm?cid=3"><li style="position:relative;">C语言设计教程</li></a>
+																																												<a href="student-examination-changeCourse.htm?cid=7"><li style="position:relative;">计算机网络及应用</li></a>
+																																	<li class="look-addClass">添加新课程</li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+							<div class="examination-cnt-toprgt">
+								<div class="lft">
+									<span class="stud">等待场数：  0场    </span><span class="stud">完成考试： 0场</span><span class="stud">参考率：0%</span><span>平均分数：0分</span>
+								</div>
+							</div>
+						</div>
+						<ul class="examination-cnt-box">
+														<li>
+								<h2>计算机应用基础课程考试<span class="no green">已结束</span></h2>
+								<p>考试试卷：
+									计算机应用基础课程考试（100分）
+								</p>
+								<div class="stud-date">考试时间： <span class="tm">2019-07-31  11:10~12:10</span></div>
+								<div class="stud-date01">考试成绩：<span class="tm">————</span> </div>
+								<div class="stud-date">班级排名：<span class="tm">————</span></div>
+								<div class="stud-date01">专业排名：<span class="tm">————</span> </div>
+																								<div class="note">
+									<a href="student-examinfo.htm?e=8">详情</a>
+								</div>
+															</li>
+													</ul>
+						<div class="ex-default-btm">
+							
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--添加班级  start-->
+		<form id="courseForm" method="post">
+		<input type="hidden" name="act" value="coursePost" />
+		<div class="popForm" id="pop_addClass">
+			<div class="mask"></div>
+			<div class="box">
+				<h1>申请加入班级<span class="closeIcon">×</span>
+				</h1>
+				<div class="rc-changeName-inr">
+					<table style=" border-bottom: none;" class="cm-table alertTable">
+						<tbody>
+							<tr>
+								<td width="200">请输入班级代码</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td colspan="2"><input style="width: 340px;height: 30px;padding-left: 10px;border: 1px solid #ccc;" name="key" placeholder="班级代码" class="cm-popInput" value="" id="number" /></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="alertBtnGroup" style="margin-top: 12px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="javascript:void(0);">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR">
+							<a href="javascript:document.getElementById('courseForm').submit();">申请加入</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--添加班级 end-->
+		</form>
+		<!--内容区end-->
+		<!--底部start-->
+		<div class="footer">
+			
+
+<div class="footer" style="margin-top: 0px;">
+	<div class="footer-top">
+		<ul>
+			<li><img src="static/student/public/img/footimg2.jpg" />追求卓越<span></span></li>
+			<li><img src="static/student/public/img/footimg3.jpg" />打造精品<span></span></li>
+			<li><img src="static/student/public/img/footimg4.jpg" />服务职教<span></span></li>
+			<li><img src="static/student/public/img/footimg1.jpg" />树立品牌</li>
+		</ul>
+	</div>
+	<div class="footer-bottom">
+		<div class="footer-bottom-logo floatL">
+			<img src="upload/image/14829742791809.png" />
+			<div class="cprt">
+				<p>&copy; 2016-2019 大连理工大学出版社，</p>
+				<p>All Rights Reserved 辽ICP备11016033号-8</p>
+			</div>
+		</div>
+		<div class="footer-bottom-con floatL">
+			<ul class="ul1">
+				<li><a href="textbook.htm" target="_blank">教材中心</a><span></span></li>
+				<li><a href="resource.htm" target="_blank">资源中心</a><span></span></li>
+				<li>	<a href="student.htm" target="_blank" >在线教学</a><span></span></li>
+				<li><a href="contactus.htm" target="_blank">出版专栏</a><span></span></li>
+				<li><a href="about.htm" target="_blank">关于我们</a></li>
+			</ul>
+			<ul class="ul2">
+				<li><a href="news.htm" target="_blank">新闻中心</a><span></span></li>
+				<li><a href="publishing.htm" target="_blank">出版流程</a><span></span></li>
+				<li><a href="contactus.htm" target="_blank">联系我们</a><span></span></li>
+				<li><a href="privacy.htm" target="_blank">隐私政策</a><span></span></li>
+				<li><a href="license.htm" target="_blank">法律声明</a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom-R floatL">
+			<img src="upload/image/14890245941592.jpg" />
+		</div>
+		<div class="clear_float"></div>
+	</div>
+</div>
+<div class="popForm " id="pop_joinCourse">
+	<div class="mask"></div>
+	<div class="box activateCourseBox">
+		<!--<div class="closePop sprite"></div>-->
+		<h1>加入班级</h1>
+		<div class="alertInrBox">
+			<table>
+				<tr>
+					<td style="padding-bottom: 21px;">
+						<!-- <input  id="addKey" /> -->
+						<textarea class="courseCode-rm" id="addKey2017"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td style="height: 16px;background: url(static/student/public/img/rm-msg-icon.png) no-repeat 0px 3px;padding-left: 22px;font-size: 14px;color: #333;padding-bottom: 10px;">请输入班级代码</td>
+				</tr>
+			</table>
+		</div>
+		<div class="alertBtnGroup marginT32">
+			<div class="bom-button cancel floatL btnBg-grey"><a href="##">取消</a></div>
+			<div class="bom-button Release floatR" onclick="addroom2017();"><a href="##" class="">申请加入</a></div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div>
+	<!-- 脚本文件 -->
+	<script src="static/student/public/js/jquery-1.11.3.min.js"></script>
+    <script src="static/student/public/js/commonJs.js" ></script>
+    <script src="static/student/public/js/addJs.js"></script>
+    <script src="static/student/public/js/jquery.form.js"></script>
+	<script src="static/student/public/js/jqueryui/jquery-ui.min.js" ></script>
+	<script src="static/student/public/js/index.js"></script>
+	<script src="static/student/public/js/jquery.treeview.min.js"></script>
+	
+
+
+
+
+	<script src="static/student/public/js/ueditor/ueditor.config.js"></script>
+	<script src="static/student/public/js/ueditor/ueditor.all.js"></script>
+	<script src="static/student/public/js/conL.js"></script>
+	<!-- <script src="static/student/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script> -->
+    <!-- <script src="static/student/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js.js"></script> -->
+    
+    <!--  -->
+    <script src="static/student/public/js/addCourse.js" ></script>
+	<script src="static/student/public/js/leftNav.js"></script>
+	<script type="text/javascript">
+		
+
+	//加入班级
+	function addroom2017(){
+		var number = $("#addKey2017").val();
+		if(number==''){
+			alert("请输入班级代码");
+			return false;
+		}
+		
+		$.post("student-class.htm&act=addRoom",{number:number},function(data){
+			if(data==1){
+				popFadeOut($('#pop_joinCourse'));
+				popFadeOut($('#pop_addPer'));
+				$("#number").val("");
+				alert("提交成功，等待审核");
+			}else{
+				alert(data);
+				popFadeOut($('#pop_joinCourse'));
+				popFadeOut($('#pop_addPer'));
+			}
+		})
+	}
+		
+	</script>
+
+		</div>
+		<!--底部end-->
+		<!--整体end-->
+
+		<script type="text/javascript">
+			$(function() {
+
+				$('.hasSelectTd').doSelect();
+
+				$(".treleased-content-con p:first").addClass("marginT0");
+
+			})
+		</script>
+
+		<script type="text/javascript">
+			$(function() {
+				//添加班级
+				$('.look-addClass').click(function() {
+					popFadeIn($('#pop_addClass'));
+				})
+			})
+		</script>
+
+	</body>
+
+</html>

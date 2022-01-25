@@ -1,0 +1,383 @@
+/*------2017-03-24------*/
+.mnSelect-info-tec{
+	width: 305px;
+	padding-left: 13px;
+	height: 43px;
+	line-height: 43px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	color: #666;
+	background: url(../../public/img/select.jpg) no-repeat 292px 13px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.td-selectBox{
+	position: relative;
+}
+
+.mnOption-info-tec{
+	position: absolute;
+	left: 20px;
+	top: 44px;
+	border: 1px solid #ddd;
+	background: #fff;
+	box-shadow: 0px 5px 24px #e7e7e7;
+	display: none;
+	z-index: 12;	
+}
+
+.mnOption-info-tec li{
+	width: 305px;
+	padding-left: 13px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	color: #333;
+	cursor: pointer;
+}
+
+.mnOption-info-tec li:hover{
+	background: #f4f5f9;
+}
+
+.checkgroup-class{
+	margin-left: 20px;
+	overflow: hidden;
+}
+
+.mgrR18{
+	margin-right: 18px;
+	/*margin-bottom: 6px;*/
+}
+
+.disB{
+	display: block !important;
+}
+
+
+/*----2017-03-29添加*/
+
+.paperBtn{
+	cursor: pointer;
+}
+
+/*----2017-04-08添加修改案例分析弹出层样式*/
+.question-case-box{
+	width: 836px;
+	height: auto;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.question-case-mainTitle{
+	border: 1px solid #e4e6ee;
+	height: 43px;
+	line-height: 43px;
+	padding-left: 19px;
+	background: #eaf9ff;
+}
+
+.question-case-mainTitle span{
+	float: left;
+}
+
+.question-case-mainTitle span.mainTitleTxt{
+	font-size: 18px;
+	font-weight: bold;
+	color: #34495e;
+	margin-right: 18px;
+}
+
+.question-case-mainTitle span.toggleBtn-case{
+	font-size: 12px;
+	color: #1261c3;
+	cursor: pointer;
+}
+
+.question-case-mainTitle span.toggleBtn-open{
+	width: 66px;
+	background: url(../img/toggle-open.png) no-repeat 56px 18px;
+	cursor: pointer;
+}
+
+.question-case-mainTitle span.toggleBtn-close{
+	width: 66px;
+	background: url(../img/toggle-close.png) no-repeat 56px 20px !important;
+	cursor: pointer;
+}
+
+.question-chooseBtn{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	float: right;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 2px;
+	margin-right: 19px;
+	margin-top: 6px;
+}
+
+.caseChooseBtn{
+	position: absolute;
+	right:0;
+	top:0;	
+}
+
+.exam-case-question{
+	padding-bottom: 24px;
+	border-bottom: 1px dashed #ddd;
+	position: relative;
+}
+
+.question-case-cnt{
+	display: none;
+}
+
+.question-case-cnt p{
+	padding-left: 19px;
+	padding-top: 27px;
+	font-size: 14px;
+	color: #333;
+	border-bottom: 1px dashed #ddd;
+	overflow-y: auto;
+	height: 136px;
+}
+
+.exam-case-question h1{
+	font-size: 14px;
+	color: #333;
+	background: none;
+	padding-left: 19px;
+	margin-bottom: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.trueTip{
+	padding-left: 21px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	color: #f16300;
+	background: url(../img/trueTipIcon.png) no-repeat;
+	margin-left: 19px;
+	margin-bottom: 9px;
+}
+
+.question-case-anwser{
+	font-size: 14px;
+	color: #333;
+	padding-left: 19px;
+	margin-bottom: 24px;
+}
+
+
+/*----新增编辑试题弹出层样式*/
+.exam-edit-table{
+	margin-top: 22px;
+}
+
+.exam-edit-table tr td{
+	padding-bottom: 24px;
+	font-size: 14px;
+}
+
+.padL27{
+	padding-left: 27px;
+}
+
+.table1 tr td{
+	padding-bottom: 0px;
+}
+
+.overY-auto{
+	overflow-y: auto;
+	height: 580px;
+}
+
+.Release-delete{
+	background: #008fef;
+}
+
+#edui150_bottombar{
+	display: none;
+}
+
+.look-option{
+	cursor: pointer;
+}
+
+.edui-editor-bottomContainer{
+	display: none !important;
+}
+
+/*----2017-04-11 添加案例分析题样式*/
+
+.question-case-box .coleaf9ff{
+	background-color: #eaf9ff;
+}
+
+
+}
+}
+
+
+/*----2017-04-14添加样式*/
+.header_student_exam{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 24;
+	zoom: 1;
+}
+
+.ex-paper-box{
+	/*top: 70px;*/
+}
+
+.stud-name{
+	position: fixed;
+	top: 70px;
+	z-index: 24;
+	zoom: 1;
+}
+
+.footer-exam{
+	position: relative;
+	top:70px;
+}
+
+.scored-color{
+	color: #f16300;
+	padding-left: 6px;
+}
+
+.radio-disable{
+	width: 17px;
+	height: 17px;
+	background-image: url(../img/radio.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	margin-right: 7px;
+	position: relative;
+	top: 2px;
+}
+
+.ans_true_exam{
+	color: #f16300
+}
+
+.check-disable {
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/check.jpg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.textarea-exam-end{
+	padding: 16px 20px;
+	font-size: 14px;
+	color: #666;
+	background: #f9f9f9;
+	width: 1098px;
+	min-height: 93px;
+}
+
+.ex-showbox h3{
+	width: 100%;
+	text-align: center;
+	padding-top: 27px;
+	padding-bottom: 18px;
+	font-size: 20px;
+	color: #333;
+}
+
+.exam-error-form textarea{
+	width: 398px;
+	min-height: 128px;
+	margin: 0 auto;
+	border: 1px solid #dee0ea;
+	display: block;
+}
+
+.examination-cnt-box{
+	min-height: 480px;
+}
+.questionsNumBg{
+	width: 42px;
+	height: 35px;
+	background: url(../img/numberBG.png) no-repeat;
+	line-height: 35px;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	font-style: italic;
+}
+.exam-box-get .question-case-box li{
+	width: 100%;
+}
+.exam-box-get .question-case-box .question-case-mainTitle{
+	width: 815px !important;
+}
+
+.header_student_exam {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 24;
+    zoom: 1;
+}
+
+.ex-paper-box .txtare{
+	padding-left: 14px;
+	padding-top: 14px;
+	width: 1126px !important;
+	height: 79px;
+}
+
+#edui1{
+	z-index:1 !important;
+}
+.checkgroup-course {
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+
+.addinfoIpt1{
+	width:320px;
+	position:relative;
+    border: 1px solid #ddd;
+    height: 43px;
+    line-height: 45px;
+    padding-left: 10px;
+    width: 308px;	
+}
+.imitateSelect{
+	display:block;
+	position:absolute;
+	width:330px;
+	height:150px;
+	overflow-y:scroll;
+	z-index:1;
+	background-color:#fff;
+	border:1px solid #008fef; 
+	display: none;
+}
+.imitateSelect li{
+	width:310px;
+	height:20px;
+	line-height: 20px;
+	padding-left: 10px;
+	cursor:pointer; 
+	font-size: 12px;
+	box-sizing:border-box;
+}	
+.imitateSelect li:hover{
+	background-color:#008fef; 
+	color:#fff;
+}
