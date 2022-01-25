@@ -100,7 +100,7 @@
 						<a href="mycollect.htm">我的收藏<span class="ico">&gt;</span></a>
 						<a href="myresource.htm">资源上传<span class="ico">&gt;</span></a>
 						<a href="mypwd-edit.htm">修改密码<span class="ico">&gt;</span></a>
-						<a class="cur" href="user-min5.htm">账户安全<span class="ico">&gt;</span></a>
+						<a class="cur" href="user-mine5.htm">账户安全<span class="ico">&gt;</span></a>
 						<a href="teacher.htm">在线教学<span class="ico">&gt;</span></a>
 						<a href="logout.htm">退出登录<span class="ico">&gt;</span></a>
 						<a onclick="screturn()">注销账号<span class="ico">&gt;</span></a>
@@ -697,7 +697,7 @@
 			function setName(){
 				var newName = $("#userName").val();
 				var act  = "setName";
-				$.post('user-min5.htm', { newName: newName,act:act}, function (data) {
+				$.post('user-mine5.htm', { newName: newName,act:act}, function (data) {
 				 	if(data==-1){
 				 		alert("用户名格式不正确");
 				 	}else if(data==-2){
@@ -729,7 +729,7 @@
 
 					var newTel = $("#phoneNew").val();
 					var act     = "setTel";
-					$.post('user-min5.htm', { newTel: newTel,act:act,num:newNumber1}, function (data) {
+					$.post('user-mine5.htm', { newTel: newTel,act:act,num:newNumber1}, function (data) {
 					 	if(data==1){
 					 		$("#step2T").hide();
 					 		$("#step3T").show();
@@ -864,7 +864,7 @@
 							if(newProv=='666'){
 								dat=1
 							}else{
-							  $.post('user-min5.htm', { newProv: newProv,act:'prov'}, function (data) {
+							  $.post('user-mine5.htm', { newProv: newProv,act:'prov'}, function (data) {
 							  	if(data!=1){
 							  		alert("图片验证码输入错误");
 									return false;
@@ -873,7 +873,7 @@
 							  		var re = new RegExp(regu);
 							  		if(re.test(email)) {
 							  			//在这里发送邮件
-							  			$.post('user-min5.htm?act=sendEmail', { email: email}, function (data) {
+							  			$.post('user-mine5.htm?act=sendEmail', { email: email}, function (data) {
 							  				if(data==1){
 							  					$("#step1E").hide();
 							  					$("#step2E").show();
@@ -920,7 +920,7 @@
 									alert("请输入邮箱地址");
 									return false;
 								}
-								$.post('user-min5.htm', { num:number,email: email,act:'email'}, function (data) {
+								$.post('user-mine5.htm', { num:number,email: email,act:'email'}, function (data) {
 							  	if(data==1){
 							  		$("#step3E").show();
 							  		$("#step2E").hide();
