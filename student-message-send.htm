@@ -107,7 +107,7 @@
 								<h2>
 									<a href="student-message-send.htm_detail&id=11"/><span style="background: url(static/student/public/img/sentTic.png) no-repeat left center;">好的</span></a>
 									<div class="sC-operate">
-										<a href="student-message-new.htm&id=11"><div><i class="icon iconfont">&#xe609;</i></div></a>
+										<a href="student-message-new.htm?id=11"><div><i class="icon iconfont">&#xe609;</i></div></a>
 										<div onclick="show(11)" class="look-deleteResource"><i class="icon iconfont">&#xe604;</i></div>
 									</div>
 								</h2>
@@ -121,7 +121,7 @@
 								<h2>
 									<a href="student-message-send.htm_detail&id=7"/><span style="background: url(static/student/public/img/sentTic.png) no-repeat left center;">明天不上课了</span></a>
 									<div class="sC-operate">
-										<a href="student-message-new.htm&id=7"><div><i class="icon iconfont">&#xe609;</i></div></a>
+										<a href="student-message-new.htm?id=7"><div><i class="icon iconfont">&#xe609;</i></div></a>
 										<div onclick="show(7)" class="look-deleteResource"><i class="icon iconfont">&#xe604;</i></div>
 									</div>
 								</h2>
@@ -288,7 +288,7 @@
 			//删除邮件
 			function del(){
 				var id = $("#id").val();
-				$.post("student-message-send.htm&act=del",{id:id},function(data){
+				$.post("_message-del.txt",{id:id},function(data){
 					if(data==1){
 						location.reload();
 					}else{

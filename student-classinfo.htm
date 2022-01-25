@@ -261,7 +261,7 @@
 			function del(){
 				var roomId = 7;
 				var mycourseId = 8;
-				$.post("student-class.htm_info&act=del",{roomId:roomId,mycourseId:mycourseId},function(data){
+				$.post("student-classinfo.htm?act=del",{roomId:roomId,mycourseId:mycourseId},function(data){
 					if(data==1){
 						location.href="student-class.htm";
 					}else{
