@@ -95,7 +95,7 @@ function popFadeOut(pop) {
 			})
 
 		}else{
-			$.post("teacher.php?_d=resource&_f=resource_view&act=resourceUp",{id:_id,nextId:_id2},function(data){
+			$.post("_resourceUp.txt",{id:_id,nextId:_id2},function(data){
 				if(data==1){
 					
 				}else{
@@ -122,7 +122,7 @@ function popFadeOut(pop) {
 
 		}else{
 			//操作实训模块
-			$.post("teacher.php?_d=resource&_f=resource_view&act=resourceUp",{id:_id,nextId:_id2},function(data){
+			$.post("_resourceUp.txt",{id:_id,nextId:_id2},function(data){
 				if(data==1){
 					
 				}else{

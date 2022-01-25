@@ -667,7 +667,7 @@
 			//无刷新删除附件-by sunjialiang
 			function delattach(id){
 				if(id != ''){
-					$.post("source/teacher/ajax/ajax.unlinehomework.php?do=del", {id:id},
+					$.post("_homework-del.txt", {id:id},
 				   	function(data){
 				   		popFadeOut($(".popForm"));//关闭弹出
 				   	});

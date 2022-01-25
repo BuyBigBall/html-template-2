@@ -243,7 +243,7 @@ $(function(){
 				// console.log(table2Leng);
 				$.ajax({
 					type: "post",
-					url: "source/teacher/ajax/ajax.exam.createquestion.php",
+					url: "source/teacher/ajax/ajax.exam.createquestion.json",
 					dataType:'json',
 					data:{				
 						c   		:returnData.testType,
@@ -505,7 +505,7 @@ $(function(){
 				// return false;
 				$.ajax({
 					type: "post",
-					url: "source/teacher/ajax/ajax.exam.createquestion.php",
+					url: "source/teacher/ajax/ajax.exam.createquestion.json",
 					dataType:'json',
 					data:{				
 						c   		:returnData.testType,
@@ -589,7 +589,7 @@ $(function(){
 				var table2Leng =table2.length;
 				$.ajax({
 					type: "post",
-					url: "source/teacher/ajax/ajax.exam.createquestion.php",
+					url: "source/teacher/ajax/ajax.exam.createquestion.json",
 					dataType:'json',
 					data:{				
 						c   		:returnData.testType,
@@ -661,7 +661,7 @@ $(function(){
 				// console.log(table2Leng);
 				$.ajax({
 					type: "post",
-					url: "source/teacher/ajax/ajax.exam.createquestion.php",
+					url: "source/teacher/ajax/ajax.exam.createquestion.json",
 					dataType:'json',
 					data:{				
 						c   		:returnData.testType,
@@ -769,7 +769,7 @@ $(function(){
 				console.log(returnData.sonAns);
 				$.ajax({
 					type: "post",
-					url: "source/teacher/ajax/ajax.exam.createquestion.php",
+					url: "source/teacher/ajax/ajax.exam.createquestion.json",
 					dataType:'json',
 					data:{				
 						c   		:returnData.testType,

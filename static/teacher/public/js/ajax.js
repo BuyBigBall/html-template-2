@@ -48,7 +48,7 @@ $(function() {
 				type:"post",
 				data:{id:_id,ctype:_type},
 				dataType:"json",
-				url:"source/teacher/ajax/ajax.exam.selectquestion.php", 
+				url:"source/teacher/ajax/ajax.exam.selectquestion.json", 
 				success:function(data){
 				console.log(data);
 				// console.log($(".look-questions1btn").closest('li').prev().length);
@@ -223,7 +223,7 @@ $(function() {
 					type:"post",
 					data:{ctype:_type,keyword:_val},
 					dataType:'json',
-					url:"source/teacher/ajax/ajax.exam.selectquestion.php",
+					url:"source/teacher/ajax/ajax.exam.selectquestion.json",
 				/*var data = {
 						//     			status : "success", //非success则均为错误结果，会忽略body数据
 						//     			message : "",  //自定义错误提示,为空则使用JS默认的提示

@@ -25,7 +25,7 @@
 				type:"post",
 				data:{id:_id},
 				dataType:'json',
-				url:"source/teacher/ajax/ajax.exam.editquestion.php",
+				url:"source/teacher/ajax/ajax.exam.editquestion.json",
 				success:function(data){
 				// console.log(data);
 					
@@ -542,7 +542,7 @@
 					pdAnt:returnData.pdAnt
 				},
 				dataType:'json',
-				url:"source/teacher/ajax/ajax.exam.editsavequestion.php",
+				url:"source/teacher/ajax/ajax.exam.editsavequestion.json",
 				success:function(data){
 					console.log(data);
 					/*var data = {
@@ -653,7 +653,7 @@
 		})
 		 //$("#paperForm").submit();
 		 var data = $('#paperForm').serialize();
-		 window.open("teacher.php?_d=examination&_f=preview&"+data); 
+		 window.open("teacher-examination-preview.htm?"+data); 
 
 	})
 	function editorInit(id,val){

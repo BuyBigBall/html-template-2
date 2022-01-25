@@ -479,7 +479,7 @@
 				}
 				var tel=$("#phone").val();
 				$.ajax({
-	                url:"source/index/ajax/sendMsg.php",
+	                url:"source/index/ajax/sendMsg.txt",
 	                type:"post",
 					data: {tel:tel},
 	                success:function(data) { 
@@ -714,7 +714,7 @@
 						success: function(data) {
 							if(data==1){
 								//注册成功
-								location.href="student.php?_d=login&_f=add_info";
+								location.href="student-addinfo.htm";
 							}else{
 								//弹出错误提示
 								alert(data);
@@ -736,10 +736,10 @@
 						success: function(data) {
 							if(data==1){
 								//登陆成功并且资料完善
-								location.href="student.phpindex.htm";
+								location.href="student.htm";
 							}else if(data==2){
 								//登陆成功但未完善资料
-								location.href="student.php?_d=login&_f=add_info";
+								location.href="student-addinfo.htm";
 							}else{
 								//弹出错误提示
 								alert1(data);
@@ -864,7 +864,7 @@ $(".closePop,.popForm .mask,.closeBtn,.confirmBtn,.closeIcon,.closeBtn,.cancel")
 			$.ajax({
 				cache: true,
 				type: "GET",
-				url:"source/index/ajax/register.php",
+				url:"source/index/ajax/register.txt",
 				data:$('#form1').serialize(),// 你的formid
 				async: false,
 				error: function(request) {

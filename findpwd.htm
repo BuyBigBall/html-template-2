@@ -267,7 +267,7 @@
 					<div class="nav navT f-cb">
 						<a href="textbook.htm?_f=textbook">教材中心</a>
 						<a href="resource.htm">资源中心</a>
-						<a href="student.phplogin.htm" target="_blank" >在线教学</a>
+						<a href="login.htm" target="_blank" >在线教学</a>
 						<a href="contactus.htm">出版专栏</a>
 						<a href="about.htm">关于我们</a>
 					</div>
@@ -354,7 +354,7 @@
 				}
 				var tel=$("#phone").val();
 				$.ajax({
-	                url:"source/index/ajax/sendMsg.php",
+	                url:"source/index/ajax/sendMsg.txt",
 	                type:"post",
 					data: {tel:tel},
 	                success:function(data) { 
@@ -381,14 +381,14 @@
 				var sendkey  = $("#sendkey").val();      //发送的手机验证码
 				var writekey = $("#writekey").val();	 //填写的手机验证码
 				var _check;
-				$.post("source/index/ajax/prove.php",{provenum:provenum},function(data){
+				$.post("source/index/ajax/prove.txt",{provenum:provenum},function(data){
 					_check=data
 					if(data == -1){
 						alert("验证码错误");
 						return false;
 					}else{
 						$.ajax({
-			                url:"source/index/ajax/checkNum.php",
+			                url:"source/index/ajax/checkNum.txt",
 			                type:"post",
 							data: {writekey:writekey},
 			                success:function(data) { 

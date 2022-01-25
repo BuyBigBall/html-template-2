@@ -8,7 +8,7 @@ function addCourse(){
 		alert("请输入课程激活码");
 		return false;
 	}
-	$.post("teacher.php?_d=class&_f=class&act=addCourse",{key:key,type:'1'},function(data){
+	$.post("_teacher-class-addCourse.txt",{key:key,type:'1'},function(data){
 		if(data==1){
 			//操作成功弹出提示框
 		 	alert("操作成功");
