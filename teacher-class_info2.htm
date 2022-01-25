@@ -45,19 +45,19 @@
 				<div class="head-right">
 					<ul class="nav">
 						<li>
-							<a href="teacher.php?_d=index&_f=index" >首页</a>
+							<a href="teacher.htm" >首页</a>
 						</li>
 						<li>
-							<a href="teacher.php?_d=resource&_f=index" >资源管理</a>
+							<a href="teacher-resource.htm" >资源管理</a>
 						</li>
 						<li>
-							<a href="teacher.php?_d=homework&_f=index" >实训/作业</a>
+							<a href="teacher-homework.htm" >实训/作业</a>
 						</li>
 						<li>
-							<a href="teacher.php?_d=examination&_f=index" >考试管理</a>
+							<a href="teacher-examination.htm" >考试管理</a>
 						</li>
 						<li>
-							<a href="teacher.php?_d=class&_f=class" class="active">班级管理</a>
+							<a href="teacher-class.htm" class="active">班级管理</a>
 						</li>
 
 						<li >
@@ -304,18 +304,18 @@
 				</div>
 				<div class="footer-bottom-con floatL">
 					<ul class="ul1">
-						<li><a href="index.php?_d=textbook&_f=textbook" target="_blank">教材中心</a><span></span></li>
-						<li><a href="index.php?_d=resource&_f=resource" target="_blank">资源中心</a><span></span></li>
-						<li><a href="teacher.php?_d=index&_f=index" target="_blank" >在线教学</a><span></span></li>
-						<li><a href="index.php?_d=column&_f=column1" target="_blank">出版专栏</a><span></span></li>
-						<li><a href="index.php?_d=aboutus&_f=aboutus1" target="_blank">关于我们</a></li>
+						<li><a href="textbook.htm" target="_blank">教材中心</a><span></span></li>
+						<li><a href="resource.htm" target="_blank">资源中心</a><span></span></li>
+						<li><a href="teacher.htm" target="_blank" >在线教学</a><span></span></li>
+						<li><a href="contactus.htm" target="_blank">出版专栏</a><span></span></li>
+						<li><a href="about.htm" target="_blank">关于我们</a></li>
 					</ul>
 					<ul class="ul2">
-						<li><a href="index.php?_d=news&_f=news" target="_blank">新闻中心</a><span></span></li>
-						<li><a href="index.php?_d=column&_f=column3" target="_blank">出版流程</a><span></span></li>
-						<li><a href="index.php?_d=column&_f=column1" target="_blank">联系我们</a><span></span></li>
-						<li><a href="index.php?_d=login&_f=agreement&id=3" target="_blank">隐私政策</a><span></span></li>
-						<li><a href="index.php?_d=login&_f=agreement&id=2" target="_blank">法律声明</a></li>
+						<li><a href="news.htm" target="_blank">新闻中心</a><span></span></li>
+						<li><a href="publishing.htm" target="_blank">出版流程</a><span></span></li>
+						<li><a href="contactus.htm" target="_blank">联系我们</a><span></span></li>
+						<li><a href="privacy.htm" target="_blank">隐私政策</a><span></span></li>
+						<li><a href="license.htm" target="_blank">法律声明</a></li>
 					</ul>
 				</div>
 				<div class="footer-bottom-R floatL">
@@ -338,7 +338,7 @@
 		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.all.js"></script>
 		<script src="static/teacher/public/js/leftNav.js" ></script>
 		<script src="static/teacher/public/js/conL.js"></script>
-	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js" type="text/javascript"></script>
+	    <!--<scriptsrc="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js"type="text/javascript"></script>-->
 	    <script src="static/teacher/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js" type="text/javascript"></script>
 	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script>
 		<script src="static/teacher/public/js/addCourse.js" ></script>
@@ -370,7 +370,7 @@
 				var val3       = $("#val3").val();
 				var roomId     = $("#roomId").val();
 				var mycourseId = $("#mycourseId").val();
-				$.post("teacher.php?_d=class&_f=class_info&act=setWeight",{mycourseId:mycourseId,roomId:roomId,val1:val1,val2:val2,val3:val3},function(data){
+				$.post("teacher-class_info.htm?act=setWeight",{mycourseId:mycourseId,roomId:roomId,val1:val1,val2:val2,val3:val3},function(data){
 					if(data==1){
 						//提示框
 					 	$(".textL").text("操作成功");
@@ -387,9 +387,9 @@
 			function roomOver(){
 				var roomId     = $("#roomId").val();
 				var mycourseId = $("#mycourseId").val();
-				$.post("teacher.php?_d=class&_f=class_info&act=roomOver",{mycourseId:mycourseId,roomId:roomId},function(data){
+				$.post("teacher-class_info.htm?act=roomOver",{mycourseId:mycourseId,roomId:roomId},function(data){
 					if(data==1){
-						location.href="teacher.php?_d=class&_f=class";
+						location.href="teacher-class.htm";
 					}else{
 						alert("保存失败");
 					}
@@ -399,9 +399,9 @@
 			function delRoom(){
 				var roomId     = $("#roomId").val();
 				var mycourseId = $("#mycourseId").val();
-				$.post("teacher.php?_d=class&_f=class_pige&act=delRoom",{mycourseId:mycourseId,roomId:roomId},function(data){
+				$.post("_teacher-class_delete.txt",{mycourseId:mycourseId,roomId:roomId},function(data){
 					if(data==1){
-						location.href="teacher.php?_d=class&_f=class";
+						location.href="teacher-class.htm";
 					}else{
 						alert("删除失败");
 					}
@@ -452,7 +452,7 @@
 					$('.delTr-btn').click(function() {
 						_ThisTr.remove();
 						var mycourseId = $("#mycourseId").val();
-						window.location.href="teacher.php?_d=class&_f=class_info&active=delUser&roomId=17&mycourseId="+mycourseId+"&studentId="+arr[0]['id']; 
+						window.location.href="teacher-class_info.htm?active=delUser&roomId=17&mycourseId="+mycourseId+"&studentId="+arr[0]['id']; 
 					})
 				});
 
@@ -481,7 +481,7 @@
 					alert("请输入班级人数");
 					return false;
 				}
-				$.post("teacher.php?_d=class&_f=class_info&act=editRoom",{mycourseId:mycourseId,roomId:roomId,roomName:roomName,studentsNum:studentsNum,oldNum:oldNum},function(data){
+				$.post("teacher-class_info.htm?act=editRoom",{mycourseId:mycourseId,roomId:roomId,roomName:roomName,studentsNum:studentsNum,oldNum:oldNum},function(data){
 					if(data==1){
 						//提示框
 					 	$(".textL").text("操作成功");
@@ -500,7 +500,7 @@
 					return false;
 				}
 				if(confirm("确定要恢复此班级吗？")){
-					$.post("teacher.php?_d=class&_f=class_info&act=renew",{mycourseId:mycourseId,roomId:roomId},function(data){
+					$.post("teacher-class_info.htm?act=renew",{mycourseId:mycourseId,roomId:roomId},function(data){
 						if(data==1){
 							location.reload();
 						}else{

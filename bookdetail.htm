@@ -101,7 +101,7 @@
 				</li>
 				<li  >
 					<a class="nav1" href="
-													index.php?_d=login&type=1&_f=login
+													login.htm
 						" target="_blank" >
 					在线教学</a>
 				</li>
@@ -750,7 +750,7 @@
 				location.href="login.htm";
 			}else{
 				var textbookId = $("#textbookId").val();
-				$.post("source/index/ajax/collect.php",{textbookId:textbookId},function(data){
+				$.post("source/index/ajax/collect.txt",{textbookId:textbookId},function(data){
 						if(data==1){
 							//收藏成功 
 							location.reload();
