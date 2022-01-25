@@ -78,7 +78,7 @@
 	<!--头部模块_end-->
 	<!--banner模块_start-->
 	<div class="g-bnr g-bnr1">
-		<a href=""><img src="upload/image/14830045881811.jpg"></a>
+		<a><img src="upload/image/14830045881811.jpg"></a>
 	</div>
 	<!--banner模块_end-->
 	<!--主体模块_start-->
@@ -95,11 +95,11 @@
 			<div class="clmContainer">
 				<!--侧边栏_start-->
 				<div class="columnMenu f-fl">
-					<a class="cur" href="user-personal.htm">个人信息<span class="ico">&gt;</span></a>
+					<a href="user-personal.htm">个人信息<span class="ico">&gt;</span></a>
 					<a href="mycollect.htm">我的收藏<span class="ico">&gt;</span></a>
-					<a href="myresource.htm">资源上传<span class="ico">&gt;</span></a>
+					<a class="cur" href="myresource.htm">资源上传<span class="ico">&gt;</span></a>
 					<a href="mypwd-edit.htm">修改密码<span class="ico">&gt;</span></a>
-					<a href="user-mine5.htm">账户安全<span class="ico">&gt;</span></a>
+					<a href="user-min5.htm">账户安全<span class="ico">&gt;</span></a>
 					<a href="teacher.htm">在线教学<span class="ico">&gt;</span></a>
 					<a href="logout.htm">退出登录<span class="ico">&gt;</span></a>
 					<a onclick="screturn()">注销账号<span class="ico">&gt;</span></a>
@@ -107,62 +107,28 @@
 				<!--侧边栏_end-->
 				<!--内容栏_start-->
 				<div class="columnCnt f-fr">
-					<h5 class="clmTitle">个人信息</h5>
-					<div class="mineForm">
-						<form id="form1" action="user-personal.htm""  method="POST" >
-							<table>
-								<tr>
-									<th>姓名</th>
-									<td>
-										<div class="inputWrap">
-											<input class="inputField" type="text" id="name" value="姜老师"/>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th width="85">性别：</th>
-									<td>
-										<div class="a-mnCheckBox sexChecked" style="margin-right: 34px;">男</div>
-										<div class="a-mnCheckBox ">女</div>
-										<input type="hidden" class="a-sex" name="sex" id="sex" value="1" />
-									</td>
-								</tr>
-								<tr>
-									<th>所在学校</th>
-									<td>
-										<div class="inputWrap">
-											<input class="inputField" type="text" id="school" value="大连轻工业学院"/>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>所属专业</th>
-									<td>
-										<div class="inputWrap">
-											<input class="inputField" type="text" id="major" value="计算机软件与多媒体"/>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>职称</th>
-									<td>
-										<div class="inputWrap">
-											<input class="inputField" type="text" id="zhicheng" value="高级教授"/>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th></th>
-									<td>
-										<input class="submit" type="button" value="保存" onclick="submit1()" />
-									</td>
-								</tr>
-							</table>
-						</form>
-					</div>
+					<h5 class="clmTitle">资源上传</h5>
+					<ul class="resourceList uploadList">
+												
+					</ul>
 				</div>
 				<!--内容栏_end-->
 			</div>	
+		</div>
+	</div>
+	
+	<!--上传资源的弹出层列表-->
+		
+	<!--放弃审核的确认弹出层-->
+	<div class="pop popUploadCfm" id="popUploadCfm">
+		<div class="mask"></div>
+		<div class="popBox">
+			<span class="ico sprite"></span>
+			<p class="text">您上传的资源正在审核中，确认要放弃审核吗？</p>
+			<div class="btns">
+				<button class="btn btn1" id="uploadCfmCancel">取消</button>
+				<a class="btn btn3" id="uploadCfmSure">确认</a>
+			</div>
 		</div>
 	</div>
 	<!--主体模块_end-->
@@ -247,7 +213,7 @@
 				<div class="inrCntBox-top" style="margin-bottom: 0px;">
 					<div class="inrCnt-top" style="margin-bottom: 0px;">
 						<div class="inrCnt-top-tittle">咨询业务</div>
-						<a href="tencent://message/?uin=155217690&Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
+						<a href="tencent://message/?uin=&Site=大连理工大学出版社;Menu=yes" class="inrCnt-top-tec">
 							<div class="qqTecName">赵老师</div>
 						</a>
 						<div class="tel-right">
@@ -370,57 +336,32 @@
         </script>
         
 
-	<!--尾部模块_end-->
 	
-	<script type="text/javascript">
-		function submit1(){
-			var name     = $("#name").val();
-			var school   = $("#school").val();
-			var major    = $("#major").val();
-			var zhicheng = $("#zhicheng").val();
-			var sex      = $("#sex").val();
-			if(name==''){
-				alert("请填写姓名");
-				return false;
-			}
-			if(school==''){
-				alert("请填写学校");
-				return false;
-			}
-			if(major==''){
-				alert("请填写专业");
-				return false;
-			}
-			if(zhicheng==''){
-				alert("请填写职称");
-				return false;
-			}
-			if(sex==''){
-				alert("请选择性别");
-				return false;
-			}
-			$.post('user-personal.htm', { name: name,school:school,major:major,zhicheng:zhicheng,sex:sex }, function (data) {
-			 	if(data==1){
-			 		alert("修改成功");
-			 		// location.reload();
-			 	}else{
-			 		alert("修改失败");
-			 		// location.reload();
-			 	}
-			});
-		}	
-	</script>
-	<script type="text/javascript">
+	<script>
 		$(function(){
-			//模拟选择性别
-			$('.a-mnCheckBox').click(function(){
-				$('.a-mnCheckBox').removeClass('sexChecked');
-				$(this).addClass('sexChecked');
-				$('.a-sex').val($(this).text());
+			var _hideVal;
+			$(".uploadDele").click(function(){
+				_hideVal = $(this).closest('.popBox').find('#hidevalue').val();
+				$("#uploadCfmSure").attr("href",$(this).data("url"));
+				$("#popUploadCfm").show();
 			})
+			$("#uploadCfmCancel").click(function(){
+				$("#popUploadCfm").hide();
+			})
+			$("#uploadCfmSure").click(function(){
+				$.post('myresource.htm', { id: _hideVal}, function (data) {
+				 	if(data==1){
+				 		alert("删除成功");
+				 		location.reload();
+				 	}else{
+				 		alert("删除失败");
+				 		location.reload();
+				 	}
+				});
+				
+			}) //如果用点击删除按钮请求href形式则无需绑定此事件，若用ajax方式请自行绑定事件
 		})
 	</script>
-
 	<script type="text/javascript">
 		function screturn() {
 			$('.rtnpop').css('display','block');

@@ -95,11 +95,11 @@
 			<div class="clmContainer">
 				<!--侧边栏_start-->
 				<div class="columnMenu f-fl">
-					<a class="cur" href="user-personal.htm">个人信息<span class="ico">&gt;</span></a>
+					<a href="user-personal.htm">个人信息<span class="ico">&gt;</span></a>
 					<a href="mycollect.htm">我的收藏<span class="ico">&gt;</span></a>
 					<a href="myresource.htm">资源上传<span class="ico">&gt;</span></a>
-					<a href="mypwd-edit.htm">修改密码<span class="ico">&gt;</span></a>
-					<a href="user-mine5.htm">账户安全<span class="ico">&gt;</span></a>
+					<a class="cur" href="mypwd-edit.htm">修改密码<span class="ico">&gt;</span></a>
+					<a href="user-min5.htm">账户安全<span class="ico">&gt;</span></a>
 					<a href="teacher.htm">在线教学<span class="ico">&gt;</span></a>
 					<a href="logout.htm">退出登录<span class="ico">&gt;</span></a>
 					<a onclick="screturn()">注销账号<span class="ico">&gt;</span></a>
@@ -107,54 +107,41 @@
 				<!--侧边栏_end-->
 				<!--内容栏_start-->
 				<div class="columnCnt f-fr">
-					<h5 class="clmTitle">个人信息</h5>
+					<h5 class="clmTitle">修改密码</h5>
 					<div class="mineForm">
-						<form id="form1" action="user-personal.htm""  method="POST" >
+						<form class="formValidate" action="mypwd-edit.htm" method="POST">
 							<table>
 								<tr>
-									<th>姓名</th>
-									<td>
+									<th>旧密码</th>
+									<td class="validateItem">
 										<div class="inputWrap">
-											<input class="inputField" type="text" id="name" value="姜老师"/>
+											<input class="inputField" type="password" name="oldPwd" data-nulltip="请输入原密码" />
+											<p class="inputPh">请输入原密码</p>
 										</div>
 									</td>
 								</tr>
 								<tr>
-									<th width="85">性别：</th>
-									<td>
-										<div class="a-mnCheckBox sexChecked" style="margin-right: 34px;">男</div>
-										<div class="a-mnCheckBox ">女</div>
-										<input type="hidden" class="a-sex" name="sex" id="sex" value="1" />
-									</td>
-								</tr>
-								<tr>
-									<th>所在学校</th>
-									<td>
+									<th>新密码</th>
+									<td class="validateItem">
 										<div class="inputWrap">
-											<input class="inputField" type="text" id="school" value="大连轻工业学院"/>
+											<input class="inputField" type="password" name="pwd1" data-nulltip="请输入新密码" equalOrigin="pwd" /><!--如果需要格式正则验证则添加属性data-reg及正则错误提示语句data-regtip，例如:data-reg="/^[1][0-9]{10}$/" data-regtip="请检查手机号正确性"-->
+											<p class="inputPh">请输入新密码</p>
 										</div>
 									</td>
 								</tr>
 								<tr>
-									<th>所属专业</th>
-									<td>
+									<th>确认密码</th>
+									<td class="validateItem">
 										<div class="inputWrap">
-											<input class="inputField" type="text" id="major" value="计算机软件与多媒体"/>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th>职称</th>
-									<td>
-										<div class="inputWrap">
-											<input class="inputField" type="text" id="zhicheng" value="高级教授"/>
+											<input class="inputField" type="password" name="pwd2" data-nulltip="请再次输入新密码" data-equal="pwd" data-equaltip="两次密码输入不一致" />
+											<p class="inputPh">请再次输入新密码</p>
 										</div>
 									</td>
 								</tr>
 								<tr>
 									<th></th>
 									<td>
-										<input class="submit" type="button" value="保存" onclick="submit1()" />
+										<input class="submit" type="submit" value="确认修改" />
 									</td>
 								</tr>
 							</table>
@@ -371,56 +358,6 @@
         
 
 	<!--尾部模块_end-->
-	
-	<script type="text/javascript">
-		function submit1(){
-			var name     = $("#name").val();
-			var school   = $("#school").val();
-			var major    = $("#major").val();
-			var zhicheng = $("#zhicheng").val();
-			var sex      = $("#sex").val();
-			if(name==''){
-				alert("请填写姓名");
-				return false;
-			}
-			if(school==''){
-				alert("请填写学校");
-				return false;
-			}
-			if(major==''){
-				alert("请填写专业");
-				return false;
-			}
-			if(zhicheng==''){
-				alert("请填写职称");
-				return false;
-			}
-			if(sex==''){
-				alert("请选择性别");
-				return false;
-			}
-			$.post('user-personal.htm', { name: name,school:school,major:major,zhicheng:zhicheng,sex:sex }, function (data) {
-			 	if(data==1){
-			 		alert("修改成功");
-			 		// location.reload();
-			 	}else{
-			 		alert("修改失败");
-			 		// location.reload();
-			 	}
-			});
-		}	
-	</script>
-	<script type="text/javascript">
-		$(function(){
-			//模拟选择性别
-			$('.a-mnCheckBox').click(function(){
-				$('.a-mnCheckBox').removeClass('sexChecked');
-				$(this).addClass('sexChecked');
-				$('.a-sex').val($(this).text());
-			})
-		})
-	</script>
-
 	<script type="text/javascript">
 		function screturn() {
 			$('.rtnpop').css('display','block');
@@ -431,7 +368,6 @@
 		}
 	</script>
 </body>
-
 <style>
 	.rtnpop {
 		position: fixed;
