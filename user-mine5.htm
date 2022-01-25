@@ -873,7 +873,7 @@
 							  		var re = new RegExp(regu);
 							  		if(re.test(email)) {
 							  			//在这里发送邮件
-							  			$.post('user-min5.htm&act=sendEmail', { email: email}, function (data) {
+							  			$.post('user-min5.htm?act=sendEmail', { email: email}, function (data) {
 							  				if(data==1){
 							  					$("#step1E").hide();
 							  					$("#step2E").show();
