@@ -31,10 +31,10 @@
 	<div class="g-hd">
 			<!--头部模块_start-->
 		<div class="g-inr">
-			<a class="logo" <a href="index.htm"><img src="upload/image/14829742798015.png"/></a>
+			<a class="logo" href="index.htm"><img src="upload/image/14829742798015.png"/></a>
 			<ul class="nav f-cb">
 				<li  >
-					<a class="nav1" <a href="index.htm">首页</a>
+					<a class="nav1" href="index.htm">首页</a>
 				</li>
 				<li  class="cur"  >
 					<a class="nav1" href="textbook.htm?_f=textbook">教材中心 </a>
@@ -92,7 +92,7 @@
 					<h1 class="title">意见反馈</h1>
 					<img src="static/index/public/images/adviceText.jpg">
 					<div class="adviceForm">
-						<form id="form1" action="textbook_advice.htm?id=80" enctype="multipart/form-data" method="POST" >
+						<form id="form1" action="_textbook-advice-save.txt?id=80" enctype="multipart/form-data" method="POST" >
 							<table>
 							<input type="hidden" name="textbookId" value="80">
 								<tr>
@@ -329,7 +329,7 @@
 		<div class="btm">
 			<div class="g-inr">
 				<div class="l">
-					<a class="logo" <a href="index.htm">
+					<a class="logo" href="index.htm">
 						<img src="upload/image/14829742791809.png" />
 					</a>
 					<div class="cprt">
@@ -427,6 +427,7 @@
 					alert("操作失败，请稍后再试");
 				} 
 			}); 
+			//return false;
 		}
 		//点击确定跳转链接
 			$('.sucs-delete-load').click(function(){
