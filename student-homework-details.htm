@@ -1,0 +1,555 @@
+<!DOCTYPE HTML>
+<html>
+<title>实训/作业</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
+	<link rel="stylesheet" href="static/student/public/css/base.css" />
+	<link rel="stylesheet" href="static/student/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="static/student/public/css/iconfont.css" />
+	<link rel="stylesheet" href="static/student/public/css/style.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_lgpt.css" />
+	<link rel="stylesheet" href="static/student/public/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_wgx.css" />
+	<link rel="stylesheet" href="static/student/public/js/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="static/student/public/js/jqueryui/jquery-ui-timepicker-addon.css" />
+
+	<link rel="stylesheet" href="static/student/public/css/add_t.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
+	<link rel="shortcut icon"              href="static/admin/public/image/favicon.ico" />
+	
+
+
+
+<body class="body-student">
+
+	<div class="header header_student">
+		<div class="head">
+		<div class="head-left">
+			<a href="student.htm">
+				<img src="static/student/public/img/webIcon_stud.jpg"/>
+
+			</a>
+		</div>
+		<div class="head-right">
+			<ul class="nav">
+				<li class="mgrL0">
+					<a href="student.htm" >首页</a>
+				</li>
+				<li>
+					<a href="student-resource.htm" >课程资源</a>
+				</li>
+				<li>
+					<a href="student-homework.htm"  class="active">实训/作业</a>
+				</li>
+				<li>
+
+					<a href="student-select-examcourse.htm"  style="position:relative;">我的考试</a>
+				</li>
+				<li>
+					<a href="student-class.htm" >我的班级</a>
+				</li>
+				<!-- <li class="newbgc"> -->
+				<li >
+					<a href="student-message.htm" >消息中心</a>
+				</li>
+			</ul>
+			<div class="Signin">
+				<a href="student-profile.htm" class="span1">
+					李小明
+				</a> |
+				<a href="index.htm" class="span2">退出</a>
+				<img class="pos" src="static/student/public/img/head_p_stud.jpg" />
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="popBody">
+		<div class="content">
+
+			<div class="content-left">
+	<div class="contentL_top">
+		计算机应用基础<i class="fa fa-sort-desc" aria-hidden="true"></i>
+		<ul>
+									<a href="##">
+				<li onclick="location.href='student-homework.htm?mid=5'">计算机应用基础</li>
+			</a>
+												<a href="##">
+				<li onclick="location.href='student-homework.htm?mid=3'">C语言设计教程</li>
+			</a>
+												<a href="##">
+				<li onclick="location.href='student-homework.htm?mid=7'">计算机网络及应用</li>
+			</a>
+									<li ><span onclick="show()">添加课程</span></li>
+		</ul>
+	</div>
+		<div class="contentL_bottom">
+			<input type="hidden" id="nid" value="2" />
+			<input type="hidden" id="cid" value="" />
+						<div class="contentL_bottom_nav "  >
+				<div  class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  contentL_bottom_nav_tit-trg  cur-left-nav1">  
+					<h1  class=" colorfff">项目1 了解计算机与网络<i class="  fa fa-caret-up  " aria-hidden="true"></i></h1></div>
+				<ul id="browser" class="filetree  disNo  tabUl">
+										<li><span class="folder">任务1-1 计算机的发展及其应用</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务1-2 信息在计算机中的表述</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务1-3 计算机系统的基本组成与性能指标</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务1-4 计算机的安全使用</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务1-5 多媒体计算机</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务1-6 计算机网络的发展及其应用</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+														</ul>
+
+			</div>
+						<div class="contentL_bottom_nav "  >
+				<div  class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">  
+					<h1  class="">项目2 个人计算机资源管理<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+				<ul id="browser" class="filetree  disOff tabUl">
+										<li><span class="folder">任务2-1 认识Windows 7的桌面与窗口</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务2-2 管理我的文件</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务2-3 设置文件与文件夹的属性和显示方式</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务2-4 查找对象</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务2-5 复制、删除和移动文件与文件夹</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务2-6 共享计算机中的资源</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务2-7 新建快速访问方式</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+														</ul>
+
+			</div>
+						<div class="contentL_bottom_nav "  >
+				<div  id="navcur" class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">  
+					<h1  class="">项目3 求职自荐书的设计与制作<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+				<ul id="browser" class="filetree  disOff tabUl">
+										<li><span class="folder">任务3-1 制作求职自荐书封面</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务3-2 制作求职自荐信</span>
+						<ul>
+																					<ul id="folder21">
+																								<li>
+									<a class="file1" href="student-homework-details.htm?cid=171&uid=11&nid=2&status=" >
+										[实训] 文档编辑作业
+																					<img class="fa-check-circle" src="static/teacher/public/img/lfnavbg02.jpg" />
+																			</a>
+								</li>
+																
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务3-3 制作个人简历表</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务3-4 制作毕业生就业推荐表</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务3-5 展示荣誉证书</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务3-6 制作目录</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+														</ul>
+
+			</div>
+						<div class="contentL_bottom_nav "  >
+				<div  class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">  
+					<h1  class="">项目4 员工查询系统<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+				<ul id="browser" class="filetree  disOff tabUl">
+										<li><span class="folder">任务4-1 制作员工基本信息表</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务4-2 制作员工工资表</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务4-3 制作员工工资管理分析表</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+														</ul>
+
+			</div>
+						<div class="contentL_bottom_nav "  >
+				<div  class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">  
+					<h1  class="">项目5 公司简介的制作<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+				<ul id="browser" class="filetree  disOff tabUl">
+										<li><span class="folder">任务5-1 制作公司简介模板</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务5-2 制作公司简介的幻灯片</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务5-3 制作产品展示幻灯片</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+														</ul>
+
+			</div>
+						<div class="contentL_bottom_nav "  >
+				<div  class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">  
+					<h1  class="">项目六 利用网络求职<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+				<ul id="browser" class="filetree  disOff tabUl">
+										<li><span class="folder">任务6-1 将计算机接入互联网</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务6-2 利用搜索引擎收集就业信息</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+										<li><span class="folder">任务6-3 利用电子邮件发送求职自荐书</span>
+						<ul>
+																					<ul id="folder21">
+																								
+							</ul>
+													</ul>
+					</li>
+														</ul>
+
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<!--添加课程  start-->
+<div class="popForm" id="pop_addPer">
+	<div class="mask"></div>
+	<div class="box" style="">
+		<div class="rc-changeName-inr">
+			<h2 class="popTil">请输入班级代码:</h2>
+			<form>
+				<textarea class="addPer-txt" id="addKey"></textarea>
+				<!-- <div style="background: url(static/teacher/public/img/cm-popBg1.jpg) no-repeat left top;">购买课程请联系大连理工大学出版社编辑</div> -->
+				<!-- <p>联系电话：<br /> 联系人： -->
+				<!-- </p> -->
+				</br>
+			</form>
+			<div class="alertBtnGroup">
+				<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn" onclick="">
+					<a href="javascript:;">取消</a>
+				</div>
+				<div class="alertBotmBtn Release floatR">
+					<a href="javascript:;" onclick="addroom()" class="">确认</a>
+				</div>
+				<div class="clear_float"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--添加课程  end-->
+<!-- 提示框 -->
+<section class="popMask2" style="display: none;"></section>
+<section class="popAlert2" style="display: none;">
+	<div class="popTittle2">
+		温馨提示<span class="popClose2">×</span>
+	</div>
+	<div class="popCnt2 textL"><!--提示文字--></div>
+	<span class="popBtn2 sucs-delete-load" onclick="location.reload();">确定</span>
+</section>
+
+
+			<div class="content-right">
+				<div class="content-right_tit">
+					<h1 class="paddingL28">
+						[实训] 文档编辑作业 											</h1>
+									</div>
+
+								<div class="classes-published treleased-content">
+					<h1 class="trekeased-h1">文档编辑作业</h1>
+					<h6 class="trekeased-h6">
+						专业课程：<span style="margin-right: 42px;">计算机应用基础</span>
+						截止时间：<span>2019-11-13 00:00</span>
+					</h6>
+										<img class="overdueImg" src="static/student/public/img/overdueImg.png" style="margin-right: 330px; margin-top: 100px;" />
+									</div>
+								<div class="conR-con ">
+					<div class="conR-conT  treleased-content-con">
+						<p style="margin-top:auto;margin-bottom: auto;text-align:left"><strong><span style=";font-family:宋体;color:#337FE5">题目要求：</span></strong><span style="font-size:16px;font-family:宋体"> </span></p><p style="margin-top:auto;margin-bottom: auto;text-align:left"><span style="font-size:12px;font-family:宋体">1.</span><span style="font-size:12px;font-family:宋体">将标题设置为隶书、二号字，居中、倾斜，文字效果：填充茶色，文本<span>2</span>，轮廓背景<span>2</span>；<span><br/> 2.</span>将正文字体设置为小四号；<span><br/> 3.</span>将正文段落文字设置为首行缩进<span>2</span>字符，<span>1.5</span>倍行距；<span><br/> 4.</span>将文档中所有的<span>“</span>母亲<span>”</span>两字都设置为蓝色，强调文字颜色<span>1</span>；<span><br/> 5.</span>将纸张大小设置为<span>A4</span>，上、下、左、右边距均设置为<span>3</span>厘米；<span><br/> 6.</span>插入页眉，文字设置为<span>“</span>母亲节的来源<span>”</span>。</span><span style="font-size:16px;font-family:宋体"> </span></p><p><br/></p>
+												<div class="treleased-tableT">附件</div>
+						<div class="treleased-table">
+						<table class="table1" style="">
+							<tr>
+								<th width="105">操作</th>
+								<th width="209">文件名</th>
+								<th width="420">说明</th>
+								<th width="124">大小</th>
+							</tr>
+														<tr>
+								<td width="105">
+									<a class="download" href="homework-download.htmid=298">下载</a>
+								</td>
+								<td width="209">素材.docx</td>
+								<td width="420">根据题目要求在素材中完成</td>
+								<td width="124">16.42 KB</td>
+							</tr>
+														<tr>
+								<td width="105">
+									<a class="download" href="homework-download.htmid=299">下载</a>
+								</td>
+								<td width="209">样例.pdf</td>
+								<td width="420">作业完成样例</td>
+								<td width="124">94.67 KB</td>
+							</tr>
+								
+							</table>
+													</div>
+					</div>
+					</br>
+							</div>
+
+			<div class="clear_float"></div>
+
+		</div>
+	</div>
+
+	
+
+<div class="footer" style="margin-top: 0px;">
+	<div class="footer-top">
+		<ul>
+			<li><img src="static/student/public/img/footimg2.jpg" />追求卓越<span></span></li>
+			<li><img src="static/student/public/img/footimg3.jpg" />打造精品<span></span></li>
+			<li><img src="static/student/public/img/footimg4.jpg" />服务职教<span></span></li>
+			<li><img src="static/student/public/img/footimg1.jpg" />树立品牌</li>
+		</ul>
+	</div>
+	<div class="footer-bottom">
+		<div class="footer-bottom-logo floatL">
+			<img src="upload/image/14829742791809.png" />
+			<div class="cprt">
+				<p>&copy; 2016-2019 大连理工大学出版社，</p>
+				<p>All Rights Reserved 辽ICP备11016033号-8</p>
+			</div>
+		</div>
+		<div class="footer-bottom-con floatL">
+			<ul class="ul1">
+				<li><a href="textbook.htm" target="_blank">教材中心</a><span></span></li>
+				<li><a href="resource.htm" target="_blank">资源中心</a><span></span></li>
+				<li>	<a href="student.htm" target="_blank" >在线教学</a><span></span></li>
+				<li><a href="contactus.htm" target="_blank">出版专栏</a><span></span></li>
+				<li><a href="about.htm" target="_blank">关于我们</a></li>
+			</ul>
+			<ul class="ul2">
+				<li><a href="news.htm" target="_blank">新闻中心</a><span></span></li>
+				<li><a href="publishing.htm" target="_blank">出版流程</a><span></span></li>
+				<li><a href="contactus.htm" target="_blank">联系我们</a><span></span></li>
+				<li><a href="privacy.htm" target="_blank">隐私政策</a><span></span></li>
+				<li><a href="license.htm" target="_blank">法律声明</a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom-R floatL">
+			<img src="upload/image/14890245941592.jpg" />
+		</div>
+		<div class="clear_float"></div>
+	</div>
+</div>
+<div class="popForm " id="pop_joinCourse">
+	<div class="mask"></div>
+	<div class="box activateCourseBox">
+		<!--<div class="closePop sprite"></div>-->
+		<h1>加入班级</h1>
+		<div class="alertInrBox">
+			<table>
+				<tr>
+					<td style="padding-bottom: 21px;">
+						<!-- <input  id="addKey" /> -->
+						<textarea class="courseCode-rm" id="addKey2017"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td style="height: 16px;background: url(static/student/public/img/rm-msg-icon.png) no-repeat 0px 3px;padding-left: 22px;font-size: 14px;color: #333;padding-bottom: 10px;">请输入班级代码</td>
+				</tr>
+			</table>
+		</div>
+		<div class="alertBtnGroup marginT32">
+			<div class="bom-button cancel floatL btnBg-grey"><a href="##">取消</a></div>
+			<div class="bom-button Release floatR" onclick="addroom2017();"><a href="##" class="">申请加入</a></div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div>
+	<!-- 脚本文件 -->
+	<script src="static/student/public/js/jquery-1.11.3.min.js"></script>
+    <script src="static/student/public/js/commonJs.js" ></script>
+    <script src="static/student/public/js/addJs.js"></script>
+    <script src="static/student/public/js/jquery.form.js"></script>
+	<script src="static/student/public/js/jqueryui/jquery-ui.min.js" ></script>
+	<script src="static/student/public/js/index.js"></script>
+	<script src="static/student/public/js/jquery.treeview.min.js"></script>
+	
+
+
+
+
+	<script src="static/student/public/js/ueditor/ueditor.config.js"></script>
+	<script src="static/student/public/js/ueditor/ueditor.all.js"></script>
+	<script src="static/student/public/js/conL.js"></script>
+	<!-- <script src="static/student/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script> -->
+    <!-- <script src="static/student/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js.js"></script> -->
+    
+    <!--  -->
+    <script src="static/student/public/js/addCourse.js" ></script>
+	<script src="static/student/public/js/leftNav.js"></script>
+	<script type="text/javascript">
+		
+
+	//加入班级
+	function addroom2017(){
+		var number = $("#addKey2017").val();
+		if(number==''){
+			alert("请输入班级代码");
+			return false;
+		}
+		
+		$.post("student-class.htm&act=addRoom",{number:number},function(data){
+			if(data==1){
+				popFadeOut($('#pop_joinCourse'));
+				popFadeOut($('#pop_addPer'));
+				$("#number").val("");
+				alert("提交成功，等待审核");
+			}else{
+				alert(data);
+				popFadeOut($('#pop_joinCourse'));
+				popFadeOut($('#pop_addPer'));
+			}
+		})
+	}
+		
+	</script>
+
+
+</body>
+<script type="text/javascript">
+	$(function(){
+		//展开对应左侧菜单
+		if(2>0){
+			$(".contentL_bottom_nav_tit2").eq(2).click();
+		}
+	})
+</script>
+
+</html>

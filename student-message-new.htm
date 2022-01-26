@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>新建消息</title>
+			<meta charset="utf-8" />
+	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
+	<link rel="stylesheet" href="static/student/public/css/base.css" />
+	<link rel="stylesheet" href="static/student/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="static/student/public/css/iconfont.css" />
+	<link rel="stylesheet" href="static/student/public/css/style.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_lgpt.css" />
+	<link rel="stylesheet" href="static/student/public/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_wgx.css" />
+	<link rel="stylesheet" href="static/student/public/js/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="static/student/public/js/jqueryui/jquery-ui-timepicker-addon.css" />
+
+	<link rel="stylesheet" href="static/student/public/css/add_t.css" />
+	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
+	<link rel="shortcut icon"              href="static/admin/public/image/favicon.ico" />
+	
+
+
+
+	</head>
+
+	<body class="body-student">
+		<!--头部模块开始-->
+		<div class="header header_student cl">
+			<div class="head">
+		<div class="head-left">
+			<a href="student.htm">
+				<img src="static/student/public/img/webIcon_stud.jpg"/>
+
+			</a>
+		</div>
+		<div class="head-right">
+			<ul class="nav">
+				<li class="mgrL0">
+					<a href="student.htm" >首页</a>
+				</li>
+				<li>
+					<a href="student-resource.htm" >课程资源</a>
+				</li>
+				<li>
+					<a href="student-homework.htm" >实训/作业</a>
+				</li>
+				<li>
+
+					<a href="student-select-examcourse.htm"  style="position:relative;">我的考试</a>
+				</li>
+				<li>
+					<a href="student-class.htm" >我的班级</a>
+				</li>
+				<!-- <li class="newbgc"> -->
+				<li >
+					<a href="student-message.htm"  class="active">消息中心</a>
+				</li>
+			</ul>
+			<div class="Signin">
+				<a href="student-profile.htm" class="span1">
+					李小明
+				</a> |
+				<a href="index.htm" class="span2">退出</a>
+				<img class="pos" src="static/student/public/img/head_p_stud.jpg" />
+			</div>
+		</div>
+	</div>
+		</div>
+				<!--头部导航end-->
+		<!--内容区start-->
+		<div class="popBody popBody_student">
+			<div class="content">
+				<!--内容区左侧导航栏-->
+				<div class="content-left">
+					<div class="inr-left-nav clearFloat_t">
+						<ul>
+							<a href="student-message-new.htm"><li class="cur-left-nav-stu">
+								新建消息
+								<span class="arrorFont">></span>
+							</li></a>
+							<a href="student-message.htm"><li >
+								收件箱
+								<span class="arrorFont">></span>
+							</li></a>
+							<a href="student-message-send.htm"><li>
+								已发送
+								<span class="arrorFont">></span>
+							</li></a>
+							<a href="student-message-recycle.htm"><li>
+								回收站
+								<span class="arrorFont">></span>
+							</li></a>
+						</ul>
+					</div>
+				</div>
+				<!--内容区导航栏end-->
+				<!--内容区右侧-->
+				<div class="content-right infoBox">
+					<div class="content-right_tit">
+						<h1 class="paddingL28">新建消息</h1>
+					</div>
+					<div class="conR-con">
+						<div class="conR-conT">
+						<form id="form2" method="post" action="_student-message-save.txt">
+						<input type="hidden" class="recipient-hide-val" name="studentId" value="" />
+							<table class="table-info">
+								<tbody>
+									<tr>
+										<td width="80" style="">
+											<div style="">收件人</div>
+										</td>
+										<td class="td-send-chooseType">
+											
+											<div class="add-linkman send-type" style="display: block;">
+																																				<div class="add-lkBtn look-addmenber" style="background-image: url(static/teacher/public/img/sprite.png);"></div>
+																							</div>
+											
+										</td>
+									</tr>
+									<tr>
+										<td width="80">标题</td>
+										<td>
+											<input style="width: 760px;" type="text" name="title" class="in-put"  value=""/>
+										</td>
+									</tr>
+									<tr>
+										<td width="80">正文</td>
+										<td></td>
+									</tr>
+									<tr class="marginT10">
+										<td colspan="2">
+											<!-- <div id="container" name="content" type="text/plain"></div> -->
+											<script id="container" name="content" type="text/plain"></script>
+										</td>
+									</tr>
+									<tr class="zindex20">
+										<td>附件</td>
+										<td>
+											<div class="add-fu marginL20 look-uploadfile">
+												添加附件
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<table class="table1">
+												<thead>
+													<tr>
+														<th width="105">操作</th>
+														<th width="209">文件名</th>
+														<th width="420">说明</th>
+														<th width="124">大小</th>
+													</tr>
+												</thead>
+												<tbody>
+																								</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						<input type="hidden" name="attachIds" value="">
+						</form>
+						</div>
+
+						<div class="button-group3 marginT32">
+							<div class="bom-button cancel floatL bgcb8c4 magrL22" onclick="history.go(-1)">
+								<a href="##">取消</a>
+							</div>
+							<!-- <div class="bom-button Release floatL bgcbule magrL22" style="width: 152px !important;">
+								<a href="##">保存</a>
+							</div> -->
+							<div class="bom-button bom-button1  Release floatL magrL22">
+								<a href="##">发送</a>
+							</div>
+							<div class="clear_float"></div>
+						</div>
+					</div>
+				</div>
+				<!--内容区右侧end-->
+
+				<div class="clear_float"></div>
+			</div>
+		</div>
+		<!--内容区end-->
+		<!--整体end-->
+
+		<!--上传弹窗start-->
+	<div class="popForm" id="pop_uploadfile">
+		<div class="mask"></div>
+		<div class="box rc-reUploadBox" style="height: 413px;">
+			
+			<!-- <div class="percentTxt"></div> -->
+
+			<div id="attachPanel">
+				<h1>上传资源
+					<span class="closeIcon">×</span>
+				</h1>
+				<form id="attchForm" action="ajax.unlinehomework-addfile.json" method="POST" enctype="multipart/form-data">
+					<input type="hidden" value="" name="resourceType" id="resourceType" />
+					<!--课程类型-->
+					<table class="alertTable">
+						<tr>
+							<td width="86"><span style="position: relative;top: -12px;">选择文件</span></td>
+							<td>
+								<input type="text" class="alertIptFileVal" readonly="readonly" id="filedInput1" />
+								<div class="fileUploaderBox">
+									<input type="file" name="attchment" class="fileField" for='filedInput1' />
+									<input type="button" class="filedBtn" value="选择" />
+								</div>
+								<p class="fileTip">支持JPG、PNG、PDF、MP3、MP4格式</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="86"><span style="position: relative;top: -34px;">附件说明</span></td>
+							<td>
+								<textarea name="content"> </textarea>
+							</td>
+						</tr>
+					</table>
+					<div class="alertBtnGroup" style="margin-top: 20px;width: 131px;">
+						<div class="alertBotmBtn Release">
+							<input type="hidden" name="cid" value="1"/>
+							<input type="hidden" name="userId" value="8945"/>
+							<a href="##" class="resourceSubmitBtn">确认上传</a>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<!--上传弹窗end-->
+
+		<!--添加收件人  start-->
+		<div class="popForm " id="pop_addmenber" style="z-index: 999;">
+			<div class="mask"></div>
+			<div class="box" style="height: 550px;">
+				<h1>选择收件人
+				<span class="add-menTxt">已选择<span class="add-menNum">0</span>人</span>
+					<span class="closeIcon">×</span>
+				</h1>
+				<form>
+					<div class="addMen-box">
+						<div class="add-class">
+							<ul>
+																<li  class="add-classAct" >商务二班</li>
+																<li >1班</li>
+																<li >2班</li>
+															</ul>
+						</div>
+												<div class="add-student"   style="display: block;">
+							<table class="add-sTab">
+								<tr data-recipient="265" class="">
+									<td width="60">
+										<div class="check "></div>
+									</td>
+									<td><span class="add-sName" date-mail="265">凯鹏</span></td>
+									<td><span class="add-sNum">教师</span></td>
+								</tr>
+														</table>
+						</div>
+												<div class="add-student"   style="display: none;" >
+							<table class="add-sTab">
+								<tr data-recipient="307" class="">
+									<td width="60">
+										<div class="check "></div>
+									</td>
+									<td><span class="add-sName" date-mail="307">柏柏</span></td>
+									<td><span class="add-sNum">教师</span></td>
+								</tr>
+															<tr data-recipient="311" class="">
+									<td width="60">
+										<div class="check "></div>
+									</td>
+									<td><span class="add-sName" date-mail="311">学生</span></td>
+									<td>学号：<span class="add-sNum">189010101</span></td>
+									<td>性别：<span class="add-sSex">男</span></td>
+									<td>年龄：<span class="add-sAge">22</span></td>
+								</tr>
+																<tr data-recipient="312" class="">
+									<td width="60">
+										<div class="check "></div>
+									</td>
+									<td><span class="add-sName" date-mail="312">学生1</span></td>
+									<td>学号：<span class="add-sNum">191901</span></td>
+									<td>性别：<span class="add-sSex">男</span></td>
+									<td>年龄：<span class="add-sAge">22</span></td>
+								</tr>
+															</table>
+						</div>
+												<div class="add-student"   style="display: none;" >
+							<table class="add-sTab">
+								<tr data-recipient="307" class="">
+									<td width="60">
+										<div class="check "></div>
+									</td>
+									<td><span class="add-sName" date-mail="307">柏柏</span></td>
+									<td><span class="add-sNum">教师</span></td>
+								</tr>
+														</table>
+						</div>
+												</div>
+					<div class="alertBtnGroup" style="margin-top: 24px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn" onclick="hide()">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn addUse floatR">
+							<a href="##" class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!--添加收件人  end-->
+
+
+	<!--删除资源弹窗start-->
+	<div class="popForm" id="pop_deleteResource">
+		<div class="mask"></div>
+		<div class="box deleteBox">
+			<div class="deleteErrorImg">
+				<img src="static/teacher/public/img/deleteError.jpg"/>
+			</div>
+			<p>您确认要删除这个资源么</p>
+			<div class="alertBtnGroup">
+				<div class="alertBotmBtn cancel floatL btnBg-grey">
+					<a href="##" >取消</a>
+				</div>
+				<div class="alertBotmBtn Release floatR buttonO">
+					<a href="##">确认</a>
+				</div>
+				<div class="clear_float"></div>
+			</div>
+		</div>
+	</div>
+	<!--删除资源弹窗end-->
+	<!--删除资源弹窗start-->
+		<!-- <div class="popForm " id="pop_deleteResource">
+			<div class="mask"></div>
+			<div class="box deleteBox">
+				<div class="deleteErrorImg">
+					<img src="../public/img/deleteError.jpg"/>
+				</div>
+				<p>您确认要删除这个资源么</p>
+				<div class="alertBtnGroup">
+						<div class="alertBotmBtn cancel floatL btnBg-grey">
+							<a href="##" >取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR J-sureDelete">
+							<a href="##">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+			</div>
+		</div> -->
+		<!--删除资源弹窗end-->
+		<div class="popMask" style="z-index: 6;display: none;"></div>
+	<!--加载进度条弹出层-->
+	<div class="loadingBox" style="display: none;">
+		<div class="loadingImgBox">
+			<img src="static/teacher/public/img/loading-2.gif"/>
+			<span class="percentTxt">0%</span>
+		</div>
+		<span class="promptTxt">资源正在上传中...</span>
+	</div>
+
+
+		<!--2017-04-28新增学员悬浮窗-->
+	<!--2017-04-28新增学员悬浮窗结束-->
+<div class="footer" style="margin-top: 0px;">
+			<div class="footer-top">
+				<ul>
+					<li><img src="static/teacher/public/img/footimg2.jpg"/>追求卓越<span></span></li>
+					<li><img src="static/teacher/public/img/footimg3.jpg"/>打造精品<span></span></li>
+					<li><img src="static/teacher/public/img/footimg4.jpg"/>服务职教<span></span></li>
+					<li><img src="static/teacher/public/img/footimg1.jpg"/>树立品牌</li> 
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-logo floatL">
+					<img src="upload/image/14829742791809.png" />
+					<div class="cprt">
+						<p>&copy; 2016-2019 大连理工大学出版社，</p>
+						<p>All Rights Reserved 辽ICP备11016033号-8</p>
+					</div>
+				</div>
+				<div class="footer-bottom-con floatL">
+					<ul class="ul1">
+						<li><a href="textbook.htm" target="_blank">教材中心</a><span></span></li>
+						<li><a href="resource.htm" target="_blank">资源中心</a><span></span></li>
+						<li><a href="student.htm" target="_blank" >在线教学</a><span></span></li>
+						<li><a href="contactus.htm" target="_blank">出版专栏</a><span></span></li>
+						<li><a href="about.htm" target="_blank">关于我们</a></li>
+					</ul>
+					<ul class="ul2">
+						<li><a href="news.htm" target="_blank">新闻中心</a><span></span></li>
+						<li><a href="publishing.htm" target="_blank">出版流程</a><span></span></li>
+						<li><a href="contactus.htm" target="_blank">联系我们</a><span></span></li>
+						<li><a href="privacy.htm" target="_blank">隐私政策</a><span></span></li>
+						<li><a href="license.htm" target="_blank">法律声明</a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom-R floatL">
+					<img class="qr" src="upload/image/14890245941592.jpg" />
+				</div>
+				<div class="clear_float"></div>
+			</div>
+			
+		</div>
+
+		<!-- js脚本文件 -->
+		<script src="static/teacher/public/js/jquery-1.11.3.min.js"></script>
+		<script src="static/teacher/public/js/jqueryui/jquery-ui.min.js"></script>
+		<script src="static/teacher/public/js/index.js"></script>
+		<script src="static/teacher/public/js/addJs.js" ></script>
+		<script src="static/teacher/public/js/jquery.form.js" ></script>
+		<script src="static/teacher/public/js/jquery.treeview.min.js"></script>
+		<script src="static/teacher/public/js/commonJs.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.config.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.all.js"></script>
+		<script src="static/teacher/public/js/leftNav.js" ></script>
+		<script src="static/teacher/public/js/conL.js"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script>
+		<script src="static/teacher/public/js/addCourse.js" ></script>
+		<script src="static/teacher/public/js/ajax.js"></script>
+		<script src="static/teacher/public/js/rept.js"></script>
+		<script src="static/teacher/public/js/common.js"></script>
+		<script src="static/teacher/public/js/editorExam.js"></script>
+		<script src="static/teacher/public/js/exam-create-ajax.js"></script>
+		<script src="static/teacher/public/js/exam-editor-ajax.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//学员申请提示
+				$('.applyWindowBox').hover(function(){
+					$(this).find('.applyDetails').css('bottom','42px');
+				},function(){
+					$(this).find('.applyDetails').css('bottom','-90px');
+				})
+			})
+		</script>
+
+
+
+<script type="text/javascript">
+			$(function() { 
+				// 		删除弹窗
+				var _curThis;
+				$('body').delegate('.look-deleteResource','click',function(){
+					popFadeIn($('#pop_deleteResource'));
+					_curThis = $(this)
+				})
+				
+				$('.J-sureDelete').click(function(){
+					_curThis.closest('tr').remove()
+				})
+				//上传附件-by sunjialiang
+			$("#pop_uploadfile .resourceSubmitBtn").click(function(){
+				$("#attchForm").ajaxSubmit({ 
+					dataType: 'json', //数据格式为json 
+					beforeSend: function() { //开始上传 
+						var percentVal = '0%';
+					}, 
+					uploadProgress: function(event, position, total, percentComplete) { 
+						var percentVal = percentComplete + '%'; //上传进度百分比
+						$(".percentTxt").text(percentVal);
+						//显示上传进度
+						$(".popMask").show();
+						$(".loadingBox").show();
+						if(percentComplete == 100){
+							//隐藏上传进度弹窗
+							$(".popMask").hide();
+							$(".loadingBox").hide();
+
+							$("#attachPanel").show();//显示表单
+
+							$(".percentTxt").text('');//清空数值
+
+							popFadeOut($(".popForm"));//关闭弹出
+
+						}else{
+							$("#attachPanel").hide();//隐藏表单
+						}
+					}, 
+					success: function(data) {
+						var json = eval(data);
+						if(json.returnStatus > 0){
+
+							var v = $("input[name=attachIds]").val();
+							v += json.id+",";
+							//表单赋值
+							$("input[name=attachIds]").val(v);
+
+							var tr = "<tr><td width=\"105\"><a class=\"look-deleteResource colorRed\" id="+json.id+">删除</a></td><td width=\"209\" style=\"max-width:209px;overflow:hidden;text-overflow:ellipsis;\" >"+json.name+"</td><td width=\"420\">"+json.content+"</td><td width=\"124\">"+json.size+"</td></tr>";
+
+							$(".table1 tbody").append(tr);
+
+						}else{
+							alert(data);
+						}
+
+						$("#filedInput1").val('');
+						$(".alertTable textarea").val('');
+					}, 
+					error:function(data){ 
+						//上传失败 
+						alert("上传失败");
+					} 
+				}); 
+			});
+				$('body').delegate('.class-checkBox','click',function(){
+					var _val="";
+					var _val2 = "";
+			//		var _val;
+					var _this = $(this).find('.check');
+					_this.toggleClass('check-active');
+					$('.checkgroup-class .check').each(function(){
+						var _that = this
+						if($(_that).attr('class').indexOf('check-active')!=-1){
+							 _val = _val+$(_that).closest('.class-checkBox').attr('data-classVal')+',';
+						}
+						
+					})
+					$('.checkgroup-course .check').each(function(){
+						var _that = this
+						if($(_that).attr('class').indexOf('check-active')!=-1){
+							 _val2 = _val2+$(_that).closest('.class-checkBox').attr('data-classVal')+',';
+						}
+						
+					})
+					_this.closest('.checkgroup-class').find('.choose-val-hide').val(_val)
+					_this.closest('.checkgroup-course').find('.choose-val-hide').val(_val2)
+				})
+
+				//		 <!-- 实例化编辑器 -->
+				var ue = UE.getEditor('container');
+				//check
+				var _thisGroup;
+				$(".add-sTab").delegate('tr', 'click', function() {
+					var _this = $(this).find(".check");
+					var _father = $(this).closest('tr');
+					var _thisval = $(this).find(".check-text").text();
+					_thisGroup = $(this).parent();
+					if(_this.hasClass('check-active')) {
+						_this.removeClass('check-active');
+						_father.removeClass('add-sBg');
+					} else {
+						_this.addClass('check-active');
+						_father.addClass('add-sBg');
+					}
+					checkNum($('.add-sTab'));
+				})
+				
+				//添加收件人
+				var _curThis;
+				$('.look-addmenber').click(function() {
+					popFadeIn($('#pop_addmenber'));
+					_curThis = $(this);
+				})
+				$('#pop_addmenber').delegate('.addUse', 'click', function() {
+//					$('.add-linkman').empty()
+					$('.add-member').remove();
+					
+					var _val="";
+					var dataArr = [];
+					$('.add-sBg').each(function(i, elem) {
+						var count = 0;
+						var _name = $(elem).find('.add-sName').text();
+						var _num = $(elem).find('.add-sNum').text();
+						var _chosen = $(elem).attr('data-recipient')
+						var _mail = $(elem).find('.add-sName').attr('date-mail');
+						var _addShow = $('<div class="add-member" data-recipientAdd="'+_chosen+'"><span class="lm-name" date-mail="' + _mail + '">' + _name + '</span> (<span class="lm-num">' + _num + '</span>)<i class="fa removeMem fa-times" aria-hidden="true"></i></div>');
+						$.each(dataArr, function(i,item) {
+							if(item == _chosen){
+								count = 1;
+								return false;
+							}
+						});
+						if(count == 0){
+							dataArr.push(_chosen);
+							_addShow.insertBefore('.add-lkBtn');
+							//					2017.4.26添加隐藏域内容
+							$('.recipient-hide-val').val(dataArr.join(","));
+						}
+					});
+//					$('.add-sBg').each(function(i, elem) {
+//						var _name = $(elem).find('.add-sName').text();
+//						var _num = $(elem).find('.add-sNum').text();
+//						var _chosen = $(elem).attr('data-recipient')
+//						var _mail = $(elem).find('.add-sName').attr('date-mail');
+//						var _addShow = $('<div class="add-member" data-recipientAdd="'+_chosen+'"><span class="lm-name" date-mail="' + _mail + '">' + _name + '</span> (<span class="lm-num">' + _num + '</span>)<i class="fa removeMem fa-times" aria-hidden="true"></i></div>');
+//						_addShow.insertBefore('.add-lkBtn');
+//					});
+					
+//					2017.4.26注释可删除
+//					for(var i = 0; i < _thisGroup.find('.check-active').length; i++) {
+//						if(_val.indexOf())
+//						if(_val){
+//							_val += "," + _thisGroup.find('.check-active').closest('tr').eq(i).attr('data-recipient')
+//						}else{
+//							_val = _thisGroup.find('.check-active').closest('tr').eq(i).attr('data-recipient');
+//						}
+//					}
+					
+					//					2017.4.26注释可删除结束
+					popFadeOut($('#pop_addmenber'));
+				})
+
+				
+				//2017-04-21 收件人tab切换
+				//选择收件人  --- 班级
+				$('.add-class').delegate('li', 'click', function() {
+					var _index = $(this).index()
+					$(this).addClass('add-classAct').siblings('li').removeClass('add-classAct');
+					$(this).closest('.addMen-box').find('.add-student').eq(_index).show().siblings('.add-student').hide()
+				});
+				
+				$('.add-linkman').delegate('.removeMem', 'click', function() {
+					//					2017.4.26修改判断的内容
+					var _txt = $(this).parents('div').attr('data-recipientadd');
+					deleteMem(_txt);
+					//					2017.4.26删除隐藏域对应的内容
+					var ary = $(this).closest("#form2").find(".recipient-hide-val").val().split(",");
+					console.log(ary)
+					$.each(ary, function(i,item) {
+						if(item == _txt){
+							ary.splice(i,1);
+							return false;
+						}
+					});
+					$(this).closest("#form2").find(".recipient-hide-val").val(ary.join(","))
+					$(this).closest('.add-member').remove();
+				})
+
+				$('body').delegate('.bom-button1','click',function(){
+					var k="";
+					$("input[name=attachIds]").val("");
+					for(var m=0;m<$('.look-deleteResource').length;m++){
+						k+= $('.look-deleteResource').eq(m).attr('id')+",";
+					}
+					$("input[name=attachIds]").val(k);
+					send()
+				})
+
+				
+			})
+
+			//添加收件人数量
+			function checkNum(obj) {
+				var _num = obj.find('.add-sBg').length;
+				$('.add-menNum').html(_num);
+			}
+
+			//删除添加的收件人对应探矿中的删除
+			function deleteMem(txt) {
+				$('.add-sBg').each(function(i, elem) {
+					//					2017.4.26修改判断的条件
+					if($(elem).attr('data-recipient') == txt) {
+						$(elem).removeClass('add-sBg');
+						$(elem).find('.check').removeClass('check-active');
+					}
+				})
+			}
+			//取消选择收件人
+			function hide(){
+				popFadeOut($('#pop_addmenber'));
+			}
+
+
+			//无刷新删除附件-by sunjialiang
+			function delattach(id){
+				if(id != ''){
+					$.post("_homework-del.txt", {id:id},
+				   	function(data){
+				   		popFadeOut($(".popForm"));//关闭弹出
+				   	});
+				}
+			}
+
+			//发送邮件
+			function  send(){
+				$("#form2").ajaxSubmit({ 
+						dataType: 'text', //数据格式为json 
+						success: function(data) {
+							if(data==1){
+								//注册成功
+								alert("发送成功");
+								location.href="student-message-send.htm";
+							}else{
+								//弹出错误提示
+								alert(data);
+							}
+						}, 
+						error:function(data){  
+							alert("发送失败，请稍后再试");
+						} 
+					}); 
+			}
+		</script>
+
+	</body>
+
+</html>

@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 	<head>
-		<title>资源中心</title>
+		<title>资源管理</title>
 			<meta charset="utf-8" />
 	<link rel="stylesheet" href="static/teacher/public/css/style_safe.css" />
 	 <link rel="stylesheet" href="static/teacher/public/css/font-awesome.min.css" />
@@ -23,6 +23,9 @@
 
 
 
+		<link rel="stylesheet" href="static/teacher/public/css/styleL1.css" />
+		<link rel="stylesheet" href="static/teacher/public/css/style_lgptL1.css" />
+		<link rel="stylesheet" href="static/teacher/public/css/newleft.css" />
 	</head>
 
 	<body>
@@ -47,7 +50,7 @@
 							<a href="teacher.htm" >首页</a>
 						</li>
 						<li>
-							<a href="teacher-resource.htm" >资源管理</a>
+							<a href="teacher-select-course.htm" class="active">资源管理</a>
 						</li>
 						<li>
 							<a href="teacher-homework.htm" >实训/作业</a>
@@ -71,94 +74,890 @@
 					</div>
 				</div>
 		</div>
+			<!--<script src="static/admin/public/js/leftNav.js"></script>
+			<script src="static/admin/public/js/newleft.js"></script>-->
+			<!--<script src="static/admin/public/js/rept.js"></script>-->
 		</div>
 		<!--头部导航end-->
+		<!--内容区start-->
+		<div class="popBody">
+			<div class="content">
+				<!--内容区左侧导航栏-->
+				<div class="content-left">
+	<div class="contentL_top">
+		商务礼仪与职业形象<i class="fa fa-sort-desc" aria-hidden="true"></i>
+		<ul>
+			 			<li onClick="location.href='teacher-resource.htm?mid=1';">商务礼仪与职业形象</li>
+			  			<li onClick="location.href='teacher-resource.htm?mid=3';">C语言设计教程</li>
+			 			<li onClick="show()">添加课程</li>
+		</ul>
+	</div>
+	<div class="contentL_middle">
+		<div class="contentL_middleB contentL_middleR floatR res-res1" onclick="showEditNav('0','add','',1)">添加一级目录<i class="fa fa-plus" aria-hidden="true"></i></div>
+		<div class="clear_float"></div>
+	</div>
+	<div class="contentL_bottom collapsable4">
+		<div class="contentL_bottom_nav posiR4" style="display: none;">
+			<div class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">
+				<h1 class=""><i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+			<ul id="browser" class="filetree disOff tabUl">
+				<li><span class="folder"></span>
+					<ul>
+						<li><span class="folder paddingB0"></span>
+							<ul id="folder21">
+							</ul>
+						</li>
+					</ul>
+				</li>
 
-		<!--内容区-->
-		<div class="acnt-body" style="background: #eceff4 url(static/teacher/public/img/indexBg.png) bottom no-repeat;">
-			<div class="rm-inr">
-				<h1 class="acnttxt">
-					<i class="iconfont icon-wenjian1 icon-blue magrL22 dbIcon"></i>
-					选择课程
-				</h1>
-				<div class="rm-inr-cntBox">
-					<!--课程-->
-										<!-- <a href="teacher-resource.htm?mid=3"> -->
-					<div class="coursePart-rm " onclick="save(3)">
-						<img src="upload/image/15153849493885.jpg" />
-						<div class="botmMsk-rm">
-							<span class="courseName">C语言设计教程</span>
-							<span class="courseStudent">
-								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
-								学员名额：<span>0</span>/<span>0</span>
-							</span>
-						</div>
-					</div>
-					<!-- <a> -->
-										<!-- <a href="teacher-resource.htm?mid=1"> -->
-					<div class="coursePart-rm " onclick="save(1)">
-						<img src="upload/image/15102154306448.jpg" />
-						<div class="botmMsk-rm">
-							<span class="courseName">商务礼仪与职业形象</span>
-							<span class="courseStudent">
-								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
-								学员名额：<span>0</span>/<span>0</span>
-							</span>
-						</div>
-					</div>
-					<!-- <a> -->
-										<div class="coursePart-rm mgrR0 look-course" style="cursor: pointer;">
-						<img src="static/teacher/public/img/rm-nocourse.png" />
-					</div>
-				</div>
+			</ul>
+		</div>
+				<div class="contentL_bottom_nav posiR4" id="626">
+			<div class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">
+				<h1 class="">ddddd<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+			<ul id="browser" class="filetree collapsable3 disOff tabUl">
+
+				 				<ul id="folder21">
+					  				</ul>
+				<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=626&nid=0&attrId=-1">
+					<li class="paddingB0 ">
+						<span class="file1 add-resource add-resourceLLL"></span>
+					</li>
+				</a>
+							</ul>
+
+			<div class="left-nav-handle4">
+				<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+				<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+				<span class="res-res res-res1" onclick="showEditNav('626','add','ddddd',2,'0')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+				<span class="res-res res-res2" onclick="showEditNav('626','edit','ddddd',1,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+				<span class="delete-res borderR0" onclick="showDelNav('626','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
 			</div>
 		</div>
-		<!--内容区结束-->		
-		<!--整体end-->
-		
-		<!--课程激活码弹窗start-->
-		<div class="popForm " id="pop_editCourse">
-			<div class="mask"></div>
-			<div class="box changeCourseBox">
-				<!--<div class="closePop sprite"></div>-->
-				<h1>请输入课程激活码</h1>
-				<div class="alertInrBox">
-					<table>
-						<tr>
-							<td style="padding-bottom: 21px;">
-								<input class="courseCode-rm" id="addKey" value="" />
-							</td>
-						</tr>
-						<tr>
-							<td style="height: 16px;background: url(static/teacher/public/img/rm-msg-icon.png) no-repeat 0px 3px;padding-left: 22px;font-size: 14px;color: #333;padding-bottom: 10px;">购买课程请联系大连理工大学出版社编辑</td>
-						</tr>
-						<tr>
-							<td class="font-s14 color666" style="padding-bottom: 0px;">联系电话：0411-84706673</td>
-						</tr>
-						<tr>
-							<td class="font-s14 color666">联系人：小编</td>
-						</tr>
-					</table>
+				<div class="contentL_bottom_nav posiR4" id="385">
+			<div class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">
+				<h1 class="">项目一 认识商务礼仪<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+			<ul id="browser" class="filetree collapsable3 disOff tabUl">
+
+								<li class="collapsable posiR3" id="445"><span class="folder">素质点</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							 							<li class="posiR" id="44">
+								<a class="file1" href="teacher.phpresource.htm_view&cid=445&id=74&nid=1&attrId=10">
+									[pdf] 商务管理 									<i class="fa fa-check-circle" aria-hidden="true"></i> 								</a>
+								<div class="left-nav-handle">
+									<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+									<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+									<span class="delete-res borderR0" onclick="showDelResource(74)"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+								</div>
+							</li>
+							 						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=445&nid=1&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('445','add','素质点',3,'1')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('445','edit','素质点',2,'1')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('445','1')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="427"><span class="folder">任务一  中西方礼仪文化概述</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=427&nid=1&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('427','add','任务一  中西方礼仪文化概述',3,'1')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('427','edit','任务一  中西方礼仪文化概述',2,'1')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('427','1')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="428"><span class="folder">任务二 商务礼仪概述</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=428&nid=1&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('428','add','任务二 商务礼仪概述',3,'1')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('428','edit','任务二 商务礼仪概述',2,'1')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('428','1')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="454"><span class="folder">任务三  商务活动中的尊位与位次排序</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=454&nid=1&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('454','add','任务三  商务活动中的尊位与位次排序',3,'1')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('454','edit','任务三  商务活动中的尊位与位次排序',2,'1')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('454','1')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+				 			</ul>
+
+			<div class="left-nav-handle4">
+				<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+				<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+				<span class="res-res res-res1" onclick="showEditNav('385','add','项目一 认识商务礼仪',2,'1')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+				<span class="res-res res-res2" onclick="showEditNav('385','edit','项目一 认识商务礼仪',1,'1')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+				<span class="delete-res borderR0" onclick="showDelNav('385','1')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+			</div>
+		</div>
+				<div class="contentL_bottom_nav posiR4" id="386">
+			<div class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">
+				<h1 class="">项目二 商务会议礼仪<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+			<ul id="browser" class="filetree collapsable3 disOff tabUl">
+
+								<li class="collapsable posiR3" id="429"><span class="folder">任务一 公司会议礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=429&nid=2&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('429','add','任务一 公司会议礼仪',3,'2')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('429','edit','任务一 公司会议礼仪',2,'2')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('429','2')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="430"><span class="folder">任务二 商务谈判礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=430&nid=2&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('430','add','任务二 商务谈判礼仪',3,'2')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('430','edit','任务二 商务谈判礼仪',2,'2')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('430','2')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+				 			</ul>
+
+			<div class="left-nav-handle4">
+				<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+				<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+				<span class="res-res res-res1" onclick="showEditNav('386','add','项目二 商务会议礼仪',2,'2')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+				<span class="res-res res-res2" onclick="showEditNav('386','edit','项目二 商务会议礼仪',1,'2')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+				<span class="delete-res borderR0" onclick="showDelNav('386','2')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+			</div>
+		</div>
+				<div class="contentL_bottom_nav posiR4" id="391">
+			<div class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">
+				<h1 class="">项目三  特定商务活动礼仪<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+			<ul id="browser" class="filetree collapsable3 disOff tabUl">
+
+								<li class="collapsable posiR3" id="431"><span class="folder">任务一  签字仪式礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=431&nid=3&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('431','add','任务一  签字仪式礼仪',3,'3')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('431','edit','任务一  签字仪式礼仪',2,'3')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('431','3')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="432"><span class="folder">任务二  剪彩仪式礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=432&nid=3&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('432','add','任务二  剪彩仪式礼仪',3,'3')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('432','edit','任务二  剪彩仪式礼仪',2,'3')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('432','3')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="433"><span class="folder">任务三  展览会礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=433&nid=3&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('433','add','任务三  展览会礼仪',3,'3')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('433','edit','任务三  展览会礼仪',2,'3')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('433','3')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+				 			</ul>
+
+			<div class="left-nav-handle4">
+				<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+				<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+				<span class="res-res res-res1" onclick="showEditNav('391','add','项目三  特定商务活动礼仪',2,'3')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+				<span class="res-res res-res2" onclick="showEditNav('391','edit','项目三  特定商务活动礼仪',1,'3')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+				<span class="delete-res borderR0" onclick="showDelNav('391','3')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+			</div>
+		</div>
+				<div class="contentL_bottom_nav posiR4" id="395">
+			<div class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">
+				<h1 class="">项目四 商务交往礼仪<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+			<ul id="browser" class="filetree collapsable3 disOff tabUl">
+
+								<li class="collapsable posiR3" id="434"><span class="folder">任务一  客户接待礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=434&nid=4&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('434','add','任务一  客户接待礼仪',3,'4')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('434','edit','任务一  客户接待礼仪',2,'4')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('434','4')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="435"><span class="folder">任务二  商务交际礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=435&nid=4&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('435','add','任务二  商务交际礼仪',3,'4')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('435','edit','任务二  商务交际礼仪',2,'4')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('435','4')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="436"><span class="folder">任务三 客户拜访礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=436&nid=4&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('436','add','任务三 客户拜访礼仪',3,'4')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('436','edit','任务三 客户拜访礼仪',2,'4')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('436','4')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="437"><span class="folder">任务一  中式宴请礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=437&nid=4&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('437','add','任务一  中式宴请礼仪',3,'4')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('437','edit','任务一  中式宴请礼仪',2,'4')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('437','4')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+				 			</ul>
+
+			<div class="left-nav-handle4">
+				<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+				<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+				<span class="res-res res-res1" onclick="showEditNav('395','add','项目四 商务交往礼仪',2,'4')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+				<span class="res-res res-res2" onclick="showEditNav('395','edit','项目四 商务交往礼仪',1,'4')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+				<span class="delete-res borderR0" onclick="showDelNav('395','4')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+			</div>
+		</div>
+				<div class="contentL_bottom_nav posiR4" id="396">
+			<div class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">
+				<h1 class="">项目五  商务宴请礼仪<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+			<ul id="browser" class="filetree collapsable3 disOff tabUl">
+
+								<li class="collapsable posiR3" id="438"><span class="folder">任务一 中式宴请礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=438&nid=5&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('438','add','任务一 中式宴请礼仪',3,'5')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('438','edit','任务一 中式宴请礼仪',2,'5')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('438','5')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="439"><span class="folder">任务二  西餐礼仪 </span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=439&nid=5&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('439','add','任务二  西餐礼仪 ',3,'5')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('439','edit','任务二  西餐礼仪 ',2,'5')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('439','5')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="440"><span class="folder">任务三  自助餐礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=440&nid=5&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('440','add','任务三  自助餐礼仪',3,'5')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('440','edit','任务三  自助餐礼仪',2,'5')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('440','5')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+				 			</ul>
+
+			<div class="left-nav-handle4">
+				<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+				<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+				<span class="res-res res-res1" onclick="showEditNav('396','add','项目五  商务宴请礼仪',2,'5')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+				<span class="res-res res-res2" onclick="showEditNav('396','edit','项目五  商务宴请礼仪',1,'5')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+				<span class="delete-res borderR0" onclick="showDelNav('396','5')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+			</div>
+		</div>
+				<div class="contentL_bottom_nav posiR4" id="397">
+			<div class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">
+				<h1 class="">项目六  职业形象礼仪<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+			<ul id="browser" class="filetree collapsable3 disOff tabUl">
+
+								<li class="collapsable posiR3" id="441"><span class="folder">任务一  仪容仪表礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=441&nid=6&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('441','add','任务一  仪容仪表礼仪',3,'6')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('441','edit','任务一  仪容仪表礼仪',2,'6')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('441','6')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="442"><span class="folder">任务二  职业着装礼仪 </span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=442&nid=6&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('442','add','任务二  职业着装礼仪 ',3,'6')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('442','edit','任务二  职业着装礼仪 ',2,'6')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('442','6')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="443"><span class="folder">任务三  办公室礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=443&nid=6&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('443','add','任务三  办公室礼仪',3,'6')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('443','edit','任务三  办公室礼仪',2,'6')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('443','6')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="444"><span class="folder">任务四  求职面试礼仪</span>
+					<ul class="collapsable2">
+						 						<ul id="folder21">
+							  						</ul>
+
+						<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=444&nid=6&attrId=-1">
+							<li class="paddingB0 ">
+								<span class="file1 add-resource"></span>
+							</li>
+						</a>
+											</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('444','add','任务四  求职面试礼仪',3,'6')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('444','edit','任务四  求职面试礼仪',2,'6')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('444','6')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+				 			</ul>
+
+			<div class="left-nav-handle4">
+				<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+				<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+				<span class="res-res res-res1" onclick="showEditNav('397','add','项目六  职业形象礼仪',2,'6')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+				<span class="res-res res-res2" onclick="showEditNav('397','edit','项目六  职业形象礼仪',1,'6')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+				<span class="delete-res borderR0" onclick="showDelNav('397','6')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+			</div>
+		</div>
+				<input type="hidden" id="nid" value="">
+		<input type="hidden" id="cid" value="">
+	</div>
+</div>
+</div>
+
+<div class="popForm " id="pop_href">
+	<div class="mask"></div>
+	<div class="box chooseUploadBox">
+		<h1>添加实训/作业
+			<span class="closeIcon">×</span>
+		</h1>
+		<div class="ar-chosUpload-inr">
+			<a class="chosUpload">
+				<div class="uploadImg" onclick="href(1);">
+					<img src="static/teacher/public/img/uploadImg.jpg" />
 				</div>
-				<div class="button-group2">
-					<div class="bom-button cancel floatL btnBg-red"><a href="##">取消</a></div>
-					<div class="bom-button Release floatR" onclick="addCourse()"><a href="##" class="confirmBtn">确认</a></div>
+				<p>添加实训</p>
+			</a>
+
+			<a class="onlineCreate">
+				<div class="uploadImg" onclick="href(2);">
+					<img src="static/teacher/public/img/onlinecreateImg.jpg" />
+				</div>
+				<p>添加作业</p>
+			</a>
+		</div>
+	</div>
+</div>
+<!--添加课程  start-->
+<div class="popForm" id="pop_addPer">
+	<div class="mask"></div>
+	<div class="box" style="">
+		<div class="rc-changeName-inr">
+			<h2 class="popTil">请输入课程激活码</h2>
+			<form>
+				<textarea class="addPer-txt" id="addKey"></textarea>
+				<div style="background: url(static/teacher/public/img/cm-popBg1.jpg) no-repeat left top;">购买课程请联系大连理工大学出版社编辑</div>
+				<p>联系电话：0411-84706673<br /> 联系人：小编
+				</p>
+			</form>
+			<div class="alertBtnGroup">
+				<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn" onclick="">
+					<a href="javascript:;">取消</a>
+				</div>
+				<div class="alertBotmBtn Release floatR">
+					<a href="javascript:;" onclick="addCourse()" class="">确认</a>
+				</div>
+				<div class="clear_float"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--删除资源弹窗end-->
+<div class="popForm  popFormIn" id="pop_createClass">
+	<div class="mask"></div>
+	<div class="box" style="margin-top: -145.5px;">
+		<h1><span id="navType">创建目录</span><span class="closeIcon">×</span></h1>
+		<div class="rc-changeName-inr">
+			<h2 style="text-align: center; font-size: 18px; font-weight: bold;" id="courseName"></h2><br>
+			<form>
+				<table class="cm-table alertTable">
+					<tbody>
+						<tr>
+							<td width="90">目录名称</td>
+							<td><input class="cm-popInput" id="navName" value="" placeholder="请输入目录名称" style="width: 240px; margin: 0;"></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			<div class="alertBtnGroup alertBtnGroupL8" style="margin-top: 12px;">
+				<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+					<a href="##">取消</a>
+				</div>
+				<input type="hidden" id="navId" value="">
+				<input type="hidden" id="navType" value="">
+				<input type="hidden" id="lv" value="">
+				<input type="hidden" id="leftNid" value="">
+				<div class="alertBotmBtn alertBotmBtnL8 Release floatR sucs-delete-block" onclick="addNav()">
+					<a href="##" class="">确认</a>
+				</div>
+				<div class="clear_float"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--删除资源弹窗end-->
+<!--添加课程  end-->
+<!-- 提示框 -->
+<!-- <section class="popMask2" style="display: none;"></section>
+<section class="popAlert2" style="display: none;">
+	<div class="popTittle2">
+		温馨提示<span class="popClose2">×</span>
+	</div>
+	<div class="popCnt2 textL"></div>
+	<span class="popBtn2 sucs-delete-load" onclick="location.reload();">确定</span>
+</section> -->
+<!--删除资源弹窗start-->
+<div class="popForm " id="pop_deleteResource1">
+	<input type="hidden" id="delResourceId" value="">
+	<div class="mask"></div>
+	<div class="box deleteBox">
+		<div class="deleteErrorImg">
+			<img src="static/teacher/public/img/deleteError.jpg" />
+		</div>
+		<p>您确认要删除这个资源吗</p>
+		<div class="alertBtnGroup">
+			<div class="alertBotmBtn cancel floatL btnBg-grey">
+				<a href="##">取消</a>
+			</div>
+			<div class="alertBotmBtn Release floatR" onclick="delResource()">
+				<a href="##">确认</a>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div>
+<!--删除资源弹窗end-->
+<!--删除导航弹窗start-->
+<div class="popForm " id="pop_deleteResource2">
+	<input type="hidden" id="delNav" value="">
+	<div class="mask"></div>
+	<div class="box deleteBox">
+		<div class="deleteErrorImg">
+			<img src="static/teacher/public/img/deleteError.jpg" />
+		</div>
+		<p>您确认要删除这个导航吗</p>
+		<div class="alertBtnGroup">
+			<div class="alertBotmBtn cancel floatL btnBg-grey">
+				<a href="##">取消</a>
+			</div>
+			<div class="alertBotmBtn Release floatR" onclick="delNav()">
+				<a href="##">确认</a>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div>
+<!--删除资源弹窗end-->
+<script type="text/javascript">
+	//弹出删除资源弹窗
+	function showDelResource(delResourceId) {
+		$("#delResourceId").val(delResourceId);
+		popFadeIn($('#pop_deleteResource1'));
+	}
+	//删除资源
+	function delResource() {
+		var resourceId = $("#delResourceId").val();
+		$.post("teacher.phpresource.htm_view&act=del", {
+			resourceId: resourceId
+		}, function(data) {
+			if(data == 1) {
+				//操作成功 刷新页面
+				if(resourceId == '') {
+					location.href = "teacher-resource.htm";
+				} else {
+					location.reload();
+				}
+			} else {
+				//操作失败 弹出错误信息
+				alert(data);
+			}
+		})
+	}
+	//弹出修改导航弹窗
+	function showEditNav(id, type, text, lv,nid) {
+		if(type == 'edit') {
+			$("#navName").val(text);
+			$("#navType").text("修改目录");
+		} else {
+			$("#navName").attr("placeorder","请输入导航名称");
+			$("#navType").text("创建目录");
+		}
+		$("#navId").val(id);
+		$("#navType").val(type);
+		$("#lv").val(lv);
+		$("#leftNid").val(nid);
+		//		popFadeIn()
+		$("#pop_createClass").show();
+		$("#pop_createClass").addClass('popFormIn');
+	}
+
+	//创建导航
+	function addNav() {
+		var text = $("#navName").val();
+		if(text == '') {
+			alert("请输入导航名称");
+			return false;
+		}
+		var id = $("#navId").val();
+		var type = $("#navType").val();
+		var lv = $("#lv").val();
+		var nid = $("#leftNid").val();
+		$.post("teacher-resource.htm?act=addNav", {
+			text: text,
+			id: id,
+			type: type,
+			lv: lv
+		}, function(data) {
+			if(data == 1) {
+				var url = window.location.href; 
+				var oldNid = getLink('nid');
+				if(oldNid==null){
+					url = url+"&nid=0";
+				}
+				var thisURL = setUrl('nid',nid,url);
+				if(thisURL==url){
+					location.reload();
+				}else{
+					window.location.href=thisURL;
+				}
+			} else {
+				alert("操作失败");
+			}
+		})
+
+	}
+	//弹出删除导航弹窗
+	function showDelNav(id,nid) {
+		$("#delNav").val(id);
+		$("#leftNid").val(nid);
+		popFadeIn($("#pop_deleteResource2"));
+
+	}
+
+	//删除导航
+	function delNav() {
+		var id = $("#delNav").val();
+		$.post("teacher-resource.htm?act=delNav", {
+			id: id
+		}, function(data) {
+			if(data == 1) {
+				var nid  = $("#leftNid").val();
+				var url = window.location.href; 
+								var oldNid = getLink('nid');
+								if(oldNid==null){
+									url = url+"&nid=0";
+								}
+								var thisURL = setUrl('nid',nid,url);
+								if(thisURL==url){
+									location.reload();
+								}else{
+									window.location.href=thisURL;
+								}
+			} else {
+				alert("操作失败");
+			}
+		})
+	}
+		//替换URL中的参数
+		function setUrl(key,value,url){  
+		    var u = url.replace(/(\\?|^|&|\#)nid=([^&|^#]*)(&|$|#)/, "$1"+key+"="+value+"$3");   
+		    u = u.replace(/#/g,"");
+		    return u;  
+		}
+				//获取链接中的参数
+	function getLink(name) {
+		var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) {
+			return unescape(r[2]);
+		}
+		return null;
+	}
+</script>
+
+				<!--内容区导航栏end-->
+				<!--内容区右侧-->
+				<div class="content-right">
+					<div class="content-right_tit">
+						<h1 class="paddingL28">课程简介<a href="teacher-resource-detail.htm"><div class="button-L8 floatR">
+							编辑
+						</div></a><div style="clear: both;"></div></h1>
+						
+						
+					</div>
+					<div class="underCntBox-ci">
+						<div class="part1-ci">
+							<!--左侧图片-->
+							<div class="part1-ci-left">
+								<img src="upload/image/15102154306448.jpg" />
+							</div>
+							<!--右侧课程内容-->
+							<!--p1-->
+							<div class="part1-ci-right">
+								<h1 class="courseName-ci">商务礼仪与职业形象</h1>
+								<div class="courseMajor">
+									课程所属专业：<span>财经商贸大类 —— 国际经济与贸易类</span>
+								</div>
+								<div class="courseTime">
+									课程建议学时：<span style="margin-right: 36px;">32课时</span> 每周建议课时：
+									<span style="margin-right: 36px;">4课时</span> 建议课程周数：
+									<span>8周</span>
+								</div>
+								<p><textarea readonly="readonly" style="width: 500px; height: 100px;">《商务礼仪与职业形象》课程是国际贸易实务专业的职业技术课程，也是该专业的核心主干课程，该课程开设于第一学年第二学期，总课时数为32课时。课程讲授了企业商务活动类型，具体商务活动的策划及组织，以及商务活动各环节和场合必须遵循的礼仪规范等。课程融知识、能力、素质培养为一体，以商务活动策划与组织的实用技能和规范运作为主要培养目标，同时关注对学生素质的培养，使学生能够胜任未来就业岗位的要求，并保持可持续发展。</textarea></p>
+							</div>
+
+						</div>
+						<h1 class="popTittle-web"><span>主要教材</span></h1>
+						<!--p2-->
+						<div class="part2-ci clearFloat_t">
+							<div class="bookImgBox-ci bookImgBox-ci_">
+								<img src="upload/image/16412876758581.png" />
+							</div>
+							<div class="bookCnt-rm bookCnt-rm_">
+								<h1 class="bookName-ci">商务礼仪与职业形象（第五版）</h1>
+								<div class="ci-book-author">作者：<span></span></div>
+								<div class="ci-book-author">出版日期：<span>2021.11</span></div>
+								<div class="ci-book-num">书号：<span>978-7-5685-3483-3</span></div>
+								<div class="ci-book-price">￥45.00</div>
+							</div>
+						</div>
+						<h1 class="popTittle-web"><span>参考书</span></h1>
+						<div class="part3-ci clearFloat_t">
+							<ul>
+															</ul>
+						</div>
+					</div>
+				</div>
+				<!--内容区右侧end-->
+				<div class="clear_float"></div>
+			</div>
+		</div>
+		<!--内容区end-->
+		<!--删除资源弹窗start-->
+		<div class="popForm " id="pop_deleteResource">
+			<div class="mask"></div>
+			<div class="box deleteBox">
+				<div class="deleteErrorImg">
+					<img src="static/teacher/public/img/deleteError.jpg" />
+				</div>
+				<p>是否确认删除</p>
+				<div class="alertBtnGroup">
+					<div class="alertBotmBtn cancel floatL btnBg-grey">
+						<a href="##">取消</a>
+					</div>
+					<div class="alertBotmBtn Release-res floatR">
+						<a href="##">确认</a>
+					</div>
 					<div class="clear_float"></div>
 				</div>
 			</div>
 		</div>
-		<!--课程激活码弹窗end-->
-		<!--删除成功-->
-		<section class="popMask2" style="display: none;"></section>
-		<section class="popAlert2" style="display: none;">
-			<div class="popTittle2">
-				温馨提示<span class="popClose2">×</span>
-			</div>
-			<div class="popCnt2 textL"><!--提示文字--></div>
-			<span class="popBtn2 sucs-delete-load">确定</span>
-		</section>
+		
 		<!--底部start-->
-
 		<!--2017-04-28新增学员悬浮窗-->
 	<!--2017-04-28新增学员悬浮窗结束-->
 <div class="footer" style="margin-top: 0px;">
@@ -214,7 +1013,7 @@
 		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.all.js"></script>
 		<script src="static/teacher/public/js/leftNav.js" ></script>
 		<script src="static/teacher/public/js/conL.js"></script>
-	    <!-- <!--<scriptsrc="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js"type="text/javascript"></script>--> -->
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js" type="text/javascript"></script>
 	    <script src="static/teacher/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js" type="text/javascript"></script>
 	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script>
 		<script src="static/teacher/public/js/addCourse.js" ></script>
@@ -238,44 +1037,10 @@
 
 
 		<!--底部end-->
+		<!--整体end-->
 		<script type="text/javascript">
-			function save(id){
-				$.post("course-save.json",{id:id},function(data){
-					window.location.href="teacher-resource.htm";
-				})
-			}
-			//添加课程  添加名额
-			function addCourse(){
-				var key  = $("#addKey").val();
-				var type = 1;
-				if(key==""){
-					alert("请输入课程激活码");
-					return false;
-				}
-				if(type==""){
-					location.reload();
-				}
-				$.post("_teacher-class-addCourse.txt",{key:key,type:type},function(data){
-					if(data==1){
-						//提示框
-					 	$(".textL").text("添加成功");
-						$('.popAlert2').fadeIn();
-						$('.popMask2').fadeIn();
-					}else{
-						alert(data);
-					}
-
-				});
-
-			}
 			$(function() {
-				//删除成功刷新页面
-				$('.sucs-delete-load').click(function(){
-					window.location.reload()
-				})
-				$('.look-course').click(function() {
-					popFadeIn($('#pop_editCourse'));
-				});
+				$(".contentL_bottom_nav_tit2").eq(+1).click();
 			})
 		</script>
 	</body>

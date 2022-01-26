@@ -47,7 +47,7 @@
 							<a href="teacher.htm" >首页</a>
 						</li>
 						<li>
-							<a href="teacher-resource.htm" >资源管理</a>
+							<a href="teacher-select-course.htm" >资源管理</a>
 						</li>
 						<li>
 							<a href="teacher-homework.htm" class="active">实训/作业</a>
@@ -876,7 +876,7 @@
 					var url = window.location.href; 
 									var oldNid = getLink('nid');
 									if(oldNid==null){
-										url = url+"&nid=0";
+										url = url+"?nid=0";
 									}
 									var thisURL = setUrl('nid',nid,url);
 									if(thisURL==url){
@@ -908,7 +908,7 @@
 					var url = window.location.href; 
 					var oldNid = getLink('nid');
 					if(oldNid==null){
-						url = url+"&nid=0";
+						url = url+"?nid=0";
 					}
 					var thisURL = setUrl('nid',nid,url);
 					if(thisURL==url){

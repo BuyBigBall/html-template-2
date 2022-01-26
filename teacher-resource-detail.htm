@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>修改课程</title>
+			<meta charset="utf-8" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_safe.css" />
+	 <link rel="stylesheet" href="static/teacher/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/iconfont.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgpt.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_wgx.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jedate/skin/jedate.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/add_t.css" />
+	<link rel="shortcut icon"  href="static/admin/public/image/favicon.ico" />
+	<link rel="stylesheet" href="static/teacher/public/css/styleL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgptL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/base.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/newleft.css" />
+
+
+
+	</head>
+
+	<body>
+		<!--头部导航start-->
+		<div class="header">
+					<div class="head">
+				<div class="head-left">
+					<div class="logo">
+						<img src="static/teacher/public/img/logo.jpg" />
+					</div>
+					<div class="tit">
+						<h2>大连理工大学出版社</h2>
+						<h4>职教数字化服务平台<span>Dutpsve</span> <span class="span1"><img src="static/teacher/public/img/com.jpg"/></span></h4>
+					</div>
+					<div class="txt">
+						<h1><img src="static/teacher/public/img/online.jpg"/></h1>
+					</div>
+				</div>
+				<div class="head-right">
+					<ul class="nav">
+						<li>
+							<a href="teacher.htm" >首页</a>
+						</li>
+						<li>
+							<a href="teacher-resource.htm" class="active">资源管理</a>
+						</li>
+						<li>
+							<a href="teacher-homework.htm" >实训/作业</a>
+						</li>
+						<li>
+							<a href="teacher-examination.htm" >考试管理</a>
+						</li>
+						<li>
+							<a href="teacher-class.htm" >班级管理</a>
+						</li>
+
+						<li >
+							<a href="teacher-message.htm" >消息中心</a>
+						</li>
+					</ul>
+					<div class="Signin">
+						<a href="##" onclick="window.open('user-personal.htm')" class="span1">
+							姜老师
+							</a>|<a href="index.htm" class="span2">退出</a>
+						<img class="pos" src="static/teacher/public/img/peo.jpg" />
+					</div>
+				</div>
+		</div>
+		</div>
+		<!--头部导航end-->
+		<!--内容区start-->
+		<div class="popBody">
+			<div class="content">
+				<!--内容区左侧导航栏-->
+				<div class="content-left">
+	<div class="contentL_top">
+		C语言设计教程<i class="fa fa-sort-desc" aria-hidden="true"></i>
+		<ul>
+			 			<li onClick="location.href='teacher-resource.htm?mid=1';">商务礼仪与职业形象</li>
+			  			<li onClick="location.href='teacher-resource.htm?mid=3';">C语言设计教程</li>
+			 			<li onClick="show()">添加课程</li>
+		</ul>
+	</div>
+	<div class="contentL_middle">
+		<div class="contentL_middleB contentL_middleR floatR res-res1" onclick="showEditNav('0','add','',1)">添加一级目录<i class="fa fa-plus" aria-hidden="true"></i></div>
+		<div class="clear_float"></div>
+	</div>
+	<div class="contentL_bottom collapsable4">
+		<div class="contentL_bottom_nav posiR4" style="display: none;">
+			<div class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">
+				<h1 class=""><i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+			<ul id="browser" class="filetree disOff tabUl">
+				<li><span class="folder"></span>
+					<ul>
+						<li><span class="folder paddingB0"></span>
+							<ul id="folder21">
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+				<div class="contentL_bottom_nav posiR4" id="614">
+			<div class="contentL_bottom_nav_tit contentL_bottom_nav_tit2  ">
+				<h1 class="">第1章   C语言概述<i class="  fa fa-sort-desc " aria-hidden="true"></i></h1></div>
+			<ul id="browser" class="filetree collapsable3 disOff tabUl">
+
+								<li class="collapsable posiR3" id="615"><span class="folder">第1节  C语言设计初步</span>
+					<ul class="collapsable2">
+												<li class="posiR2" id="616"><span class="folder paddingB0">1、Ｃ语言的发展</span>
+							<ul id="folder21">
+								  								<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=616&nid=0&attrId=-1">
+									<li class="paddingB0">
+										<span class="file1 add-resource"></span>
+									</li>
+								</a>
+							</ul>
+							<div class="left-nav-handle2">
+								<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+								<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+								<!-- <span class="res-res res-res1" onclick="showEditNav('616','add','1、Ｃ语言的发展')">添加</span> -->
+								<span class="res-res res-res2" onclick="showEditNav('616','edit','1、Ｃ语言的发展',3,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+								<span class="delete-res borderR0" onclick="showDelNav('616','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+							</div>
+						</li>
+												<li class="posiR2" id="617"><span class="folder paddingB0">2、Ｃ语言的特点sss</span>
+							<ul id="folder21">
+								  								<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=617&nid=0&attrId=-1">
+									<li class="paddingB0">
+										<span class="file1 add-resource"></span>
+									</li>
+								</a>
+							</ul>
+							<div class="left-nav-handle2">
+								<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+								<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+								<!-- <span class="res-res res-res1" onclick="showEditNav('617','add','2、Ｃ语言的特点sss')">添加</span> -->
+								<span class="res-res res-res2" onclick="showEditNav('617','edit','2、Ｃ语言的特点sss',3,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+								<span class="delete-res borderR0" onclick="showDelNav('617','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+							</div>
+						</li>
+												<li class="posiR2" id="618"><span class="folder paddingB0">3、C语言基本语法成分</span>
+							<ul id="folder21">
+								  								<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=618&nid=0&attrId=-1">
+									<li class="paddingB0">
+										<span class="file1 add-resource"></span>
+									</li>
+								</a>
+							</ul>
+							<div class="left-nav-handle2">
+								<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+								<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+								<!-- <span class="res-res res-res1" onclick="showEditNav('618','add','3、C语言基本语法成分')">添加</span> -->
+								<span class="res-res res-res2" onclick="showEditNav('618','edit','3、C语言基本语法成分',3,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+								<span class="delete-res borderR0" onclick="showDelNav('618','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+							</div>
+						</li>
+												<li class="posiR2" id="619"><span class="folder paddingB0">4、Ｃ语言的编辑、编译和运行</span>
+							<ul id="folder21">
+								  								<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=619&nid=0&attrId=-1">
+									<li class="paddingB0">
+										<span class="file1 add-resource"></span>
+									</li>
+								</a>
+							</ul>
+							<div class="left-nav-handle2">
+								<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+								<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+								<!-- <span class="res-res res-res1" onclick="showEditNav('619','add','4、Ｃ语言的编辑、编译和运行')">添加</span> -->
+								<span class="res-res res-res2" onclick="showEditNav('619','edit','4、Ｃ语言的编辑、编译和运行',3,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+								<span class="delete-res borderR0" onclick="showDelNav('619','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+							</div>
+						</li>
+						 					</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('615','add','第1节  C语言设计初步',3,'0')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('615','edit','第1节  C语言设计初步',2,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('615','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+								<li class="collapsable posiR3" id="620"><span class="folder">第2节  Visual C++ 6.0集成开发环境的使用</span>
+					<ul class="collapsable2">
+												<li class="posiR2" id="621"><span class="folder paddingB0">1、Visual C++ 6.0的启动与退出</span>
+							<ul id="folder21">
+								  								<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=621&nid=0&attrId=-1">
+									<li class="paddingB0">
+										<span class="file1 add-resource"></span>
+									</li>
+								</a>
+							</ul>
+							<div class="left-nav-handle2">
+								<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+								<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+								<!-- <span class="res-res res-res1" onclick="showEditNav('621','add','1、Visual C++ 6.0的启动与退出')">添加</span> -->
+								<span class="res-res res-res2" onclick="showEditNav('621','edit','1、Visual C++ 6.0的启动与退出',3,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+								<span class="delete-res borderR0" onclick="showDelNav('621','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+							</div>
+						</li>
+												<li class="posiR2" id="622"><span class="folder paddingB0">2、创建新工程</span>
+							<ul id="folder21">
+								  								<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=622&nid=0&attrId=-1">
+									<li class="paddingB0">
+										<span class="file1 add-resource"></span>
+									</li>
+								</a>
+							</ul>
+							<div class="left-nav-handle2">
+								<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+								<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+								<!-- <span class="res-res res-res1" onclick="showEditNav('622','add','2、创建新工程')">添加</span> -->
+								<span class="res-res res-res2" onclick="showEditNav('622','edit','2、创建新工程',3,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+								<span class="delete-res borderR0" onclick="showDelNav('622','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+							</div>
+						</li>
+												<li class="posiR2" id="623"><span class="folder paddingB0">3、创建源程序文件</span>
+							<ul id="folder21">
+								  								<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=623&nid=0&attrId=-1">
+									<li class="paddingB0">
+										<span class="file1 add-resource"></span>
+									</li>
+								</a>
+							</ul>
+							<div class="left-nav-handle2">
+								<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+								<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+								<!-- <span class="res-res res-res1" onclick="showEditNav('623','add','3、创建源程序文件')">添加</span> -->
+								<span class="res-res res-res2" onclick="showEditNav('623','edit','3、创建源程序文件',3,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+								<span class="delete-res borderR0" onclick="showDelNav('623','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+							</div>
+						</li>
+												<li class="posiR2" id="624"><span class="folder paddingB0">4、编译连接和运行源程序</span>
+							<ul id="folder21">
+								  								<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=624&nid=0&attrId=-1">
+									<li class="paddingB0">
+										<span class="file1 add-resource"></span>
+									</li>
+								</a>
+							</ul>
+							<div class="left-nav-handle2">
+								<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+								<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+								<!-- <span class="res-res res-res1" onclick="showEditNav('624','add','4、编译连接和运行源程序')">添加</span> -->
+								<span class="res-res res-res2" onclick="showEditNav('624','edit','4、编译连接和运行源程序',3,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+								<span class="delete-res borderR0" onclick="showDelNav('624','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+							</div>
+						</li>
+												<li class="posiR2" id="625"><span class="folder paddingB0">5、关闭打开工作区</span>
+							<ul id="folder21">
+								  								<a class="file1 look-homework-href" href="teacher.phpresource.htm_add&cid=625&nid=0&attrId=-1">
+									<li class="paddingB0">
+										<span class="file1 add-resource"></span>
+									</li>
+								</a>
+							</ul>
+							<div class="left-nav-handle2">
+								<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+								<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+								<!-- <span class="res-res res-res1" onclick="showEditNav('625','add','5、关闭打开工作区')">添加</span> -->
+								<span class="res-res res-res2" onclick="showEditNav('625','edit','5、关闭打开工作区',3,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+								<span class="delete-res borderR0" onclick="showDelNav('625','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+							</div>
+						</li>
+						 					</ul>
+					<div class="left-nav-handle3" style="display: none;">
+						<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+						<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+						<span class="res-res" onclick="showEditNav('620','add','第2节  Visual C++ 6.0集成开发环境的使用',3,'0')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+						<span class="res-res" onclick="showEditNav('620','edit','第2节  Visual C++ 6.0集成开发环境的使用',2,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+						<span class="delete-res2 borderR0" onclick="showDelNav('620','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+					</div>
+				</li>
+				 			</ul>
+
+			<div class="left-nav-handle4">
+				<span class="prev-res"><i class="fa fa-arrow-up" aria-hidden="true"></i>上移</span>
+				<span class="next-res"><i class="fa fa-arrow-down" aria-hidden="true"></i>下移</span>
+				<span class="res-res res-res1" onclick="showEditNav('614','add','第1章   C语言概述',2,'0')"><i class="fa fa-plus" aria-hidden="true"></i>添加</span>
+				<span class="res-res res-res2" onclick="showEditNav('614','edit','第1章   C语言概述',1,'0')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>编辑</span>
+				<span class="delete-res borderR0" onclick="showDelNav('614','0')"><i class="fa fa-trash-o" aria-hidden="true"></i>删除</span>
+			</div>
+		</div>
+				<input type="hidden" id="nid" value="">
+		<input type="hidden" id="cid" value="">
+	</div>
+</div>
+</div>
+
+<div class="popForm " id="pop_href">
+	<div class="mask"></div>
+	<div class="box chooseUploadBox">
+		<h1>添加实训/作业
+			<span class="closeIcon">×</span>
+		</h1>
+		<div class="ar-chosUpload-inr">
+			<a class="chosUpload">
+				<div class="uploadImg" onclick="href(1);">
+					<img src="static/teacher/public/img/uploadImg.jpg" />
+				</div>
+				<p>添加实训</p>
+			</a>
+
+			<a class="onlineCreate">
+				<div class="uploadImg" onclick="href(2);">
+					<img src="static/teacher/public/img/onlinecreateImg.jpg" />
+				</div>
+				<p>添加作业</p>
+			</a>
+		</div>
+	</div>
+</div>
+<!--添加课程  start-->
+<div class="popForm" id="pop_addPer">
+	<div class="mask"></div>
+	<div class="box" style="">
+		<div class="rc-changeName-inr">
+			<h2 class="popTil">请输入课程激活码</h2>
+			<form>
+				<textarea class="addPer-txt" id="addKey"></textarea>
+				<div style="background: url(static/teacher/public/img/cm-popBg1.jpg) no-repeat left top;">购买课程请联系大连理工大学出版社编辑</div>
+				<p>联系电话：0411-84706673<br /> 联系人：小编
+				</p>
+			</form>
+			<div class="alertBtnGroup">
+				<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn" onclick="">
+					<a href="javascript:;">取消</a>
+				</div>
+				<div class="alertBotmBtn Release floatR">
+					<a href="javascript:;" onclick="addCourse()" class="">确认</a>
+				</div>
+				<div class="clear_float"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--删除资源弹窗end-->
+<div class="popForm  popFormIn" id="pop_createClass">
+	<div class="mask"></div>
+	<div class="box" style="margin-top: -145.5px;">
+		<h1><span id="navType">创建目录</span><span class="closeIcon">×</span></h1>
+		<div class="rc-changeName-inr">
+			<h2 style="text-align: center; font-size: 18px; font-weight: bold;" id="courseName"></h2><br>
+			<form>
+				<table class="cm-table alertTable">
+					<tbody>
+						<tr>
+							<td width="90">目录名称</td>
+							<td><input class="cm-popInput" id="navName" value="" placeholder="请输入目录名称" style="width: 240px; margin: 0;"></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			<div class="alertBtnGroup alertBtnGroupL8" style="margin-top: 12px;">
+				<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+					<a href="##">取消</a>
+				</div>
+				<input type="hidden" id="navId" value="">
+				<input type="hidden" id="navType" value="">
+				<input type="hidden" id="lv" value="">
+				<input type="hidden" id="leftNid" value="">
+				<div class="alertBotmBtn alertBotmBtnL8 Release floatR sucs-delete-block" onclick="addNav()">
+					<a href="##" class="">确认</a>
+				</div>
+				<div class="clear_float"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--删除资源弹窗end-->
+<!--添加课程  end-->
+<!-- 提示框 -->
+<!-- <section class="popMask2" style="display: none;"></section>
+<section class="popAlert2" style="display: none;">
+	<div class="popTittle2">
+		温馨提示<span class="popClose2">×</span>
+	</div>
+	<div class="popCnt2 textL"></div>
+	<span class="popBtn2 sucs-delete-load" onclick="location.reload();">确定</span>
+</section> -->
+<!--删除资源弹窗start-->
+<div class="popForm " id="pop_deleteResource1">
+	<input type="hidden" id="delResourceId" value="">
+	<div class="mask"></div>
+	<div class="box deleteBox">
+		<div class="deleteErrorImg">
+			<img src="static/teacher/public/img/deleteError.jpg" />
+		</div>
+		<p>您确认要删除这个资源吗</p>
+		<div class="alertBtnGroup">
+			<div class="alertBotmBtn cancel floatL btnBg-grey">
+				<a href="##">取消</a>
+			</div>
+			<div class="alertBotmBtn Release floatR" onclick="delResource()">
+				<a href="##">确认</a>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div>
+<!--删除资源弹窗end-->
+<!--删除导航弹窗start-->
+<div class="popForm " id="pop_deleteResource2">
+	<input type="hidden" id="delNav" value="">
+	<div class="mask"></div>
+	<div class="box deleteBox">
+		<div class="deleteErrorImg">
+			<img src="static/teacher/public/img/deleteError.jpg" />
+		</div>
+		<p>您确认要删除这个导航吗</p>
+		<div class="alertBtnGroup">
+			<div class="alertBotmBtn cancel floatL btnBg-grey">
+				<a href="##">取消</a>
+			</div>
+			<div class="alertBotmBtn Release floatR" onclick="delNav()">
+				<a href="##">确认</a>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div>
+<!--删除资源弹窗end-->
+<script type="text/javascript">
+	//弹出删除资源弹窗
+	function showDelResource(delResourceId) {
+		$("#delResourceId").val(delResourceId);
+		popFadeIn($('#pop_deleteResource1'));
+	}
+	//删除资源
+	function delResource() {
+		var resourceId = $("#delResourceId").val();
+		$.post("teacher.phpresource.htm_view&act=del", {
+			resourceId: resourceId
+		}, function(data) {
+			if(data == 1) {
+				//操作成功 刷新页面
+				if(resourceId == '') {
+					location.href = "teacher-resource.htm";
+				} else {
+					location.reload();
+				}
+			} else {
+				//操作失败 弹出错误信息
+				alert(data);
+			}
+		})
+	}
+	//弹出修改导航弹窗
+	function showEditNav(id, type, text, lv,nid) {
+		if(type == 'edit') {
+			$("#navName").val(text);
+			$("#navType").text("修改目录");
+		} else {
+			$("#navName").attr("placeorder","请输入导航名称");
+			$("#navType").text("创建目录");
+		}
+		$("#navId").val(id);
+		$("#navType").val(type);
+		$("#lv").val(lv);
+		$("#leftNid").val(nid);
+		//		popFadeIn()
+		$("#pop_createClass").show();
+		$("#pop_createClass").addClass('popFormIn');
+	}
+
+	//创建导航
+	function addNav() {
+		var text = $("#navName").val();
+		if(text == '') {
+			alert("请输入导航名称");
+			return false;
+		}
+		var id = $("#navId").val();
+		var type = $("#navType").val();
+		var lv = $("#lv").val();
+		var nid = $("#leftNid").val();
+		$.post("teacher-resource.htm?act=addNav", {
+			text: text,
+			id: id,
+			type: type,
+			lv: lv
+		}, function(data) {
+			if(data == 1) {
+				var url = window.location.href; 
+				var oldNid = getLink('nid');
+				if(oldNid==null){
+					url = url+"&nid=0";
+				}
+				var thisURL = setUrl('nid',nid,url);
+				if(thisURL==url){
+					location.reload();
+				}else{
+					window.location.href=thisURL;
+				}
+			} else {
+				alert("操作失败");
+			}
+		})
+
+	}
+	//弹出删除导航弹窗
+	function showDelNav(id,nid) {
+		$("#delNav").val(id);
+		$("#leftNid").val(nid);
+		popFadeIn($("#pop_deleteResource2"));
+
+	}
+
+	//删除导航
+	function delNav() {
+		var id = $("#delNav").val();
+		$.post("teacher-resource.htm?act=delNav", {
+			id: id
+		}, function(data) {
+			if(data == 1) {
+				var nid  = $("#leftNid").val();
+				var url = window.location.href; 
+								var oldNid = getLink('nid');
+								if(oldNid==null){
+									url = url+"&nid=0";
+								}
+								var thisURL = setUrl('nid',nid,url);
+								if(thisURL==url){
+									location.reload();
+								}else{
+									window.location.href=thisURL;
+								}
+			} else {
+				alert("操作失败");
+			}
+		})
+	}
+		//替换URL中的参数
+		function setUrl(key,value,url){  
+		    var u = url.replace(/(\\?|^|&|\#)nid=([^&|^#]*)(&|$|#)/, "$1"+key+"="+value+"$3");   
+		    u = u.replace(/#/g,"");
+		    return u;  
+		}
+				//获取链接中的参数
+	function getLink(name) {
+		var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) {
+			return unescape(r[2]);
+		}
+		return null;
+	}
+</script>
+				<!--内容区导航栏end-->
+				<!--内容区右侧-->
+				<div class="content-right">
+					<div class="content-right_tit">
+						<h1 class="paddingL28">修改课程</h1>
+					</div>
+					<div class="ru-underCntBox" style="width: 860px;padding-bottom: 66px;">
+						<form method="post" action="teacher.phpresource.htm_detail&act=save" id="form"  enctype="multipart/form-data">
+							<input type="hidden" name="mycourseId" value="29">
+							<table>
+								
+							
+								
+								<tr>
+									<td width="180" class="upLoadMust-ipt color333 font-16">建议学时：</td>
+									<!--带星号input td添加此class upLoadMust-ipt-->
+									<td class="">
+										<input class="au-upload-ipt" value="56" name="num" />
+									</td>
+								</tr>
+								<tr>
+									<td width="180" class="upLoadMust-ipt color333 font-16">每周建议课时：</td>
+									<!--带星号input td添加此class upLoadMust-ipt-->
+									<td class="">
+										<input class="au-upload-ipt" value="4" name="weekNum" />
+									</td>
+								</tr>
+								<tr>
+									<td width="180" class="upLoadMust-ipt color333 font-16">建议课程周数：</td>
+									<!--带星号input td添加此class upLoadMust-ipt-->
+									<td class="">
+										<input class="au-upload-ipt" value="14" name="week" />
+									</td>
+								</tr>
+								<tr>
+									<td class="upLoadMust color333 font-16" style="padding-bottom: 6px;">课程简介：</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<!-- <script id="container3" name="content"  type="text/plain" ></script> -->
+										<textarea style="width:850px;height:354px;" class="au-upload-ipt" name="content" /></textarea>
+									</td>
+								</tr>
+
+								
+							</table>
+							<div class="button-group2"style="margin-top: 10px;">
+								<div class="bom-button cancel floatL" onclick="history.go(-1);">
+									<a href="##">取消</a>
+								</div>
+								<div class="bom-button Release floatR btnBg-blue" onclick="submit()">
+									<a href="javascript:;">保存</a>
+								</div>
+								<div class="clear_float"></div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--内容区右侧end-->
+				<div class="clear_float"></div>
+			</div>
+		</div>
+		<!--内容区end-->
+		<!--底部start-->
+		<!--2017-04-28新增学员悬浮窗-->
+	<!--2017-04-28新增学员悬浮窗结束-->
+<div class="footer" style="margin-top: 0px;">
+			<div class="footer-top">
+				<ul>
+					<li><img src="static/teacher/public/img/footimg2.jpg"/>追求卓越<span></span></li>
+					<li><img src="static/teacher/public/img/footimg3.jpg"/>打造精品<span></span></li>
+					<li><img src="static/teacher/public/img/footimg4.jpg"/>服务职教<span></span></li>
+					<li><img src="static/teacher/public/img/footimg1.jpg"/>树立品牌</li> 
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-logo floatL">
+					<img src="upload/image/14829742791809.png" />
+					<div class="cprt">
+						<p>&copy; 2016-2019 大连理工大学出版社，</p>
+						<p>All Rights Reserved 辽ICP备11016033号-8</p>
+					</div>
+				</div>
+				<div class="footer-bottom-con floatL">
+					<ul class="ul1">
+						<li><a href="textbook.htm" target="_blank">教材中心</a><span></span></li>
+						<li><a href="resource.htm" target="_blank">资源中心</a><span></span></li>
+						<li><a href="teacher.htm" target="_blank" >在线教学</a><span></span></li>
+						<li><a href="contactus.htm" target="_blank">出版专栏</a><span></span></li>
+						<li><a href="about.htm" target="_blank">关于我们</a></li>
+					</ul>
+					<ul class="ul2">
+						<li><a href="news.htm" target="_blank">新闻中心</a><span></span></li>
+						<li><a href="publishing.htm" target="_blank">出版流程</a><span></span></li>
+						<li><a href="contactus.htm" target="_blank">联系我们</a><span></span></li>
+						<li><a href="privacy.htm" target="_blank">隐私政策</a><span></span></li>
+						<li><a href="license.htm" target="_blank">法律声明</a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom-R floatL">
+					<img class="qr" src="upload/image/14890245941592.jpg" />
+				</div>
+				<div class="clear_float"></div>
+			</div>
+			
+		</div>
+
+		<!-- js脚本文件 -->
+		<script src="static/teacher/public/js/jquery-1.11.3.min.js"></script>
+		<script src="static/teacher/public/js/jqueryui/jquery-ui.min.js"></script>
+		<script src="static/teacher/public/js/index.js"></script>
+		<script src="static/teacher/public/js/addJs.js" ></script>
+		<script src="static/teacher/public/js/jquery.form.js" ></script>
+		<script src="static/teacher/public/js/jquery.treeview.min.js"></script>
+		<script src="static/teacher/public/js/commonJs.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.config.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.all.js"></script>
+		<script src="static/teacher/public/js/leftNav.js" ></script>
+		<script src="static/teacher/public/js/conL.js"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script>
+		<script src="static/teacher/public/js/addCourse.js" ></script>
+		<script src="static/teacher/public/js/ajax.js"></script>
+		<script src="static/teacher/public/js/rept.js"></script>
+		<script src="static/teacher/public/js/common.js"></script>
+		<script src="static/teacher/public/js/editorExam.js"></script>
+		<script src="static/teacher/public/js/exam-create-ajax.js"></script>
+		<script src="static/teacher/public/js/exam-editor-ajax.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//学员申请提示
+				$('.applyWindowBox').hover(function(){
+					$(this).find('.applyDetails').css('bottom','42px');
+				},function(){
+					$(this).find('.applyDetails').css('bottom','-90px');
+				})
+			})
+		</script>
+
+
+
+		<!--底部end-->
+		<!--整体end-->
+		<script src="static/teacher/public/js/ueditor/ueditor.config.js"></script>
+		<script src="static/teacher/public/js/ueditor/ueditor.all.js"></script>
+		<script type="text/javascript">
+			
+			
+			//表单提交
+			function submit(){
+				$("#form").ajaxSubmit({ 
+						dataType: 'text', //数据格式为文本
+						success: function(data) {
+							if(data==1){
+								//添加成功
+								location.href="teacher-resource.htm";
+							}else{
+								//弹出错误提示
+								alert(data);
+							}
+						}, 
+						error:function(data){  
+							alert("添加失败，请稍后再试");
+						} 
+					}); 
+			}
+			//DOM树加载完成后执行
+			$(function() {
+				var ue = UE.getEditor('container3'); 
+				//展开对应左侧菜单
+				// if(>0){
+					$(".contentL_bottom_nav_tit2").eq(0).click();
+				// }
+			})
+		</script>
+	</body>
+
+</html>
