@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<title>大连理工大学出版社平台管理系统</title>
+		<meta charset="utf-8" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_safe.css" />
+	 <link rel="stylesheet" href="static/teacher/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/iconfont.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgpt.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_wgx.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jedate/skin/jedate.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/add_t.css" />
+	<link rel="shortcut icon"  href="static/admin/public/image/favicon.ico" />
+	<link rel="stylesheet" href="static/teacher/public/css/styleL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgptL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/base.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/newleft.css" />
+
+
+
+
+	<body>
+		<!--头部导航start-->
+		<div class="header">
+					<div class="head">
+				<div class="head-left">
+					<div class="logo">
+						<img src="static/teacher/public/img/logo.jpg" />
+					</div>
+					<div class="tit">
+						<h2>大连理工大学出版社</h2>
+						<h4>职教数字化服务平台<span>Dutpsve</span> <span class="span1"><img src="static/teacher/public/img/com.jpg"/></span></h4>
+					</div>
+					<div class="txt">
+						<h1><img src="static/teacher/public/img/online.jpg"/></h1>
+					</div>
+				</div>
+				<div class="head-right">
+					<ul class="nav">
+						<li>
+							<a href="teacher.htm" >首页</a>
+						</li>
+						<li>
+							<a href="teacher-resource.htm" >资源管理</a>
+						</li>
+						<li>
+							<a href="teacher-homework.htm" >实训/作业</a>
+						</li>
+						<li>
+							<a href="teacher-examination.htm" class="active">考试管理</a>
+						</li>
+						<li>
+							<a href="teacher-class.htm" >班级管理</a>
+						</li>
+
+						<li >
+							<a href="teacher-message.htm" >消息中心</a>
+						</li>
+					</ul>
+					<div class="Signin">
+						<a href="##" onclick="window.open('user-personal.htm')" class="span1">
+							姜老师
+							</a>|<a href="index.htm" class="span2">退出</a>
+						<img class="pos" src="static/teacher/public/img/peo.jpg" />
+					</div>
+				</div>
+		</div>
+		</div>
+		<!--头部导航end-->
+		<!--内容区start-->
+		<form id="examForm" name="examForm" action="teacher.php?_d=examination&_f=examcreate"method="post">
+		<input type="hidden" name="act" value="examPost">
+		<input type="hidden" name="tp" value="" value="examPost">
+		<div class="popBody">
+			<div class="content">
+				<div class="examination">
+					<div class="examination-box examination-makecnt">新建考试</div>
+					<div class="examination-cnt infoBox">
+						<div class="examination-makecnt-box">
+							<table border="0" cellspacing="0" cellpadding="0" class="ex-make">
+								<tbody>
+									<tr>									
+										<td class="" style="padding-bottom: 10px;">专业课程：</td>
+										<td class="" style="padding-bottom: 10px;">国际结算</td>
+									</tr>
+									<tr>
+										<td class="" >考试名称</td>
+										<td class=""><input type="text" name="ename" value=""  class="ex-makenote"/></td>
+									</tr>
+									<tr style="padding-bottom: 29px;">
+										<td class="" >考试时间</td>
+										<td class="" style="background: url(static/teacher/public/img/ex-datebg.jpg) no-repeat 323px 14px;" >
+											<div style="position: relative;float: left;" >
+												<input type="text" name="edate" value="" id="ymd01" class="ex-date" readonly/>
+												<i class="iconfont icon-rili2 icon-blue-ex dbIcon-date" aria-hidden="true"></i>
+											</div>
+											
+											<table class="alertTable  ex-select-date">
+												<tr style="margin-bottom: 0;">
+													<td class="hasSelectTd">
+														<input class="selectBox" id="hm01" type="text" name="ebegintime" value="" placeholder="开始时间"  readonly>
+													</td>
+												</tr>
+											</table>
+											
+											<table class="alertTable  ex-select-date" style="margin-left: 21px;">
+												<tr style="margin-bottom: 0;">
+													<td class="hasSelectTd01 ">
+														<input class="selectBox" id="hm02" type="text" name="eovertime" value="" placeholder="结束时间"  readonly>
+													</td>
+												</tr>
+											</table>	
+										</td>
+										
+									</tr>
+									<tr>
+										<td class="">考试试卷</td>
+										<td class="">
+											<input type="text" readonly="true" class="ex-paper" value="" />
+											<a href="teacher.php?_d=examination&_f=examtestpaper" class="ex-paper-more">选择试卷</a>
+											<a href="teacher.php?_d=examination&_f=maketestpaper" class="ex-paper-more">新建试卷</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="" style="vertical-align: top;">考试班级</td>
+										<td>
+											<div class="add-linkman">
+												<div class="add-lkBtn look-addmenber" style="background-image: url(static/teacher/public/img/sprite.png);"></div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="ex-makebtm"><a href="teacher-examination.htm">取消</a><a class="gogogo">发布</a></div>
+						
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!--内容区end-->
+
+		<!--添加收件人start-->
+		<div class="popForm " id="pop_addmenber">
+			<div class="mask"></div>
+			<div class="box" style="height:380px;width: 500px;margin-left: -250px;">
+				<h1>选择班级
+				<span class="add-menTxt">已选择<span class="add-menNum">0</span>个</span>
+					<span class="closeIcon">×</span>
+				</h1>
+				<form>
+					<div class="addMen-box" style="background-color: #fff;">
+						
+						<div class="add-student add-classll">
+							<table class="add-sTab">
+								<tr class="add-sBg"><td width="60"><div class="check-box" style="text-align: center;padding-bottom: 5px;box-sizing: border-box;"><input type="checkbox" name="eclass[]" class="check check-active" value="26" checked="checked"/></div></td><td width="86%"><span class="add-sName">一班</span></td></tr>
+							</table>
+						</div>
+					</div>
+					<div class="alertBtnGroup" style="margin-top: 24px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="javascript:void(0);">取消</a>
+						</div>
+						<div class="alertBotmBtn addUse floatR">
+							<a href="javascript:void(0);" class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</form>
+			</div>
+		</div>
+		</form>
+
+		<!--添加收件人  end-->
+
+		<!--2017-04-28新增学员悬浮窗-->
+	<!--2017-04-28新增学员悬浮窗结束-->
+<div class="footer" style="margin-top: 0px;">
+			<div class="footer-top">
+				<ul>
+					<li><img src="static/teacher/public/img/footimg2.jpg"/>追求卓越<span></span></li>
+					<li><img src="static/teacher/public/img/footimg3.jpg"/>打造精品<span></span></li>
+					<li><img src="static/teacher/public/img/footimg4.jpg"/>服务职教<span></span></li>
+					<li><img src="static/teacher/public/img/footimg1.jpg"/>树立品牌</li> 
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-logo floatL">
+					<img src="upload/image/14829742791809.png" />
+					<div class="cprt">
+						<p>&copy; 2016-2019 大连理工大学出版社，</p>
+						<p>All Rights Reserved 辽ICP备11016033号-8</p>
+					</div>
+				</div>
+				<div class="footer-bottom-con floatL">
+					<ul class="ul1">
+						<li><a href="textbook.htm" target="_blank">教材中心</a><span></span></li>
+						<li><a href="resource.htm" target="_blank">资源中心</a><span></span></li>
+						<li><a href="teacher.htm" target="_blank" >在线教学</a><span></span></li>
+						<li><a href="contactus.htm" target="_blank">出版专栏</a><span></span></li>
+						<li><a href="about.htm" target="_blank">关于我们</a></li>
+					</ul>
+					<ul class="ul2">
+						<li><a href="news.htm" target="_blank">新闻中心</a><span></span></li>
+						<li><a href="publishing.htm" target="_blank">出版流程</a><span></span></li>
+						<li><a href="contactus.htm" target="_blank">联系我们</a><span></span></li>
+						<li><a href="privacy.htm" target="_blank">隐私政策</a><span></span></li>
+						<li><a href="license.htm" target="_blank">法律声明</a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom-R floatL">
+					<img class="qr" src="upload/image/14890245941592.jpg" />
+				</div>
+				<div class="clear_float"></div>
+			</div>
+			
+		</div>
+
+		<!-- js脚本文件 -->
+		<script src="static/teacher/public/js/jquery-1.11.3.min.js"></script>
+		<script src="static/teacher/public/js/jqueryui/jquery-ui.min.js"></script>
+		<script src="static/teacher/public/js/index.js"></script>
+		<script src="static/teacher/public/js/addJs.js" ></script>
+		<script src="static/teacher/public/js/jquery.form.js" ></script>
+		<script src="static/teacher/public/js/jquery.treeview.min.js"></script>
+		<script src="static/teacher/public/js/commonJs.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.config.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.all.js"></script>
+		<script src="static/teacher/public/js/leftNav.js" ></script>
+		<script src="static/teacher/public/js/conL.js"></script>
+	    <!-- <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js" type="text/javascript"></script> -->
+	    <script src="static/teacher/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script>
+		<script src="static/teacher/public/js/addCourse.js" ></script>
+		<script src="static/teacher/public/js/ajax.js"></script>
+		<script src="static/teacher/public/js/rept.js"></script>
+		<script src="static/teacher/public/js/common.js"></script>
+		<script src="static/teacher/public/js/editorExam.js"></script>
+		<script src="static/teacher/public/js/exam-create-ajax.js"></script>
+		<script src="static/teacher/public/js/exam-editor-ajax.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//学员申请提示
+				$('.applyWindowBox').hover(function(){
+					$(this).find('.applyDetails').css('bottom','42px');
+				},function(){
+					$(this).find('.applyDetails').css('bottom','-90px');
+				})
+			})
+		</script>
+
+
+
+
+		<script type="text/javascript" src="static/teacher/public/js/jedate/jquery-1.7.2.js"></script>
+		<script src="static/teacher/public/js/jquery.treeview.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="static/teacher/public/js/commonJs.js" ></script>
+		<script src="static/teacher/public/js/index.js"></script>
+		<script type="text/javascript" src="static/teacher/public/js/jedate/jquery.jedate.min.js"></script>
+		<script src="static/teacher/public/js/jquery.cookie.js"></script>		
+		<script type="text/javascript">				
+			$(function() {
+				checkNum($('.add-sTab'));
+				//cookie			
+				$('.add-sBg').each(function(i, elem) {
+					var _name = $(elem).find('.add-sName').text();
+					var _num = $(elem).find(".check").val();
+					var _addShow = $('<div class="add-member"><span class="lm-name" name="create_examClass" id="'+_num +'">' + _name +'<i class="fa removeMem fa-times" aria-hidden="true"></i></div>');
+					_addShow.insertBefore('.add-lkBtn');						
+				});	
+				$('.ex-paper-more').click(function() {
+					$.cookie("create_examName", $(".ex-makenote").val());	
+					$.cookie("create_examDate", $(".ex-date").val());	
+					$.cookie("create_examBeginTime", $(".selectBox").eq(0).val());	
+					$.cookie("create_examOverTime", $(".selectBox").eq(1).val());
+					var checkedArr = [];	
+					$.each($('.check:checked'),function(){
+				    	 checkedArr.push($(this).val());
+				   	});
+					$.cookie("create_examClass", decode(checkedArr));
+				});	
+				function decode(str){
+				    var _str = str.join(',');
+				    return _str;
+				}
+				function encode(str){
+				    var _arr = str.split(',');
+				    return _arr;
+				}
+				if($.cookie("create_examName")){
+					$(".ex-makenote").val($.cookie("create_examName"));					
+				}
+				if($.cookie("create_examDate")){
+					$(".ex-date").val($.cookie("create_examDate")); 					
+				}
+				if($.cookie("create_examBeginTime")){
+					$(".selectBox").eq(0).val($.cookie("create_examBeginTime")); 					
+				}
+				if($.cookie("create_examOverTime")){
+					$(".selectBox").eq(1).val($.cookie("create_examOverTime"));					
+				}
+				if($.cookie("create_examPaperName")){
+					$(".ex-paper").val($.cookie("create_examPaperName"));					
+				}	
+				if($.cookie("create_examPaperId")){
+					$.cookie("create_examPaperId");					
+				}					
+				if($.cookie("create_examClass")){
+					$(".add-member").remove();
+					encode($.cookie("create_examClass"));
+					arrlll = encode($.cookie("create_examClass"));
+					var _check = $(".check");
+//					console.log(arrlll.length);
+					for(var i=0;i<_check.length;i++){
+						var _num = _check[i].value;
+						var isExist = false;
+						for(var j=0;j<arrlll.length;j++){
+							var n = arrlll[j];
+							if(n == _num)
+							{
+								isExist = true;	
+//								$(".add-member").remove(); 
+								$(_check[i]).addClass('check-active');
+								$(_check[i]).prop("checked",true);
+								$(_check[i]).parent().parent().parent().addClass('add-sBg');
+								var _name = $(_check[i]).parent().parent().parent().find('.add-sName').text();
+								var _addShow = $('<div class="add-member"><span class="lm-name" name="create_examClass" id="'+_num +'">' + _name +'<i class="fa removeMem fa-times" aria-hidden="true"></i></div>');
+								_addShow.insertBefore('.add-lkBtn');	
+								break;
+							}else{
+								$(_check[i]).removeClass('check-active');
+								$(_check[i]).prop("checked",false);
+								$(_check[i]).parent().parent().parent().removeClass('add-sBg');								
+							}
+						}
+					}
+					checkNum($('.add-sTab'));	
+				}
+				$.cookie('create_examClass', '', { expires: -1 });
+				//     日历
+				$("#hm01").jeDate({
+				    format: 'hh:mm'
+				});	
+				$("#hm02").jeDate({
+				    format: 'hh:mm'
+				});									
+				$("#ymd01").jeDate({
+				    isinitVal:false,				    
+				    format: 'YYYY年MM月DD日'
+				});				
+				
+				// 		删除弹窗
+				$('.look-deleteResource').click(function() {
+					popFadeIn($('#pop_deleteResource'));
+				});
+				
+				//		修改资源名称弹窗
+				$('.look-changercName').click(function() {
+					var _this = $(this);
+					var _rsNameChange;
+					popFadeIn($('#pop_changeResourceName'));
+					$('.Release').click(function(){
+						_rsNameChange = $('.rc-changeCnt input').val();
+						_this.closest('h1').find('.resourceName-rc').text(_rsNameChange);
+					})
+				});
+				
+				//取消发布
+				$('.look-cancelCourse').click(function() {
+					var _this = $(this);
+					popFadeIn($('#pop_cancelResource'));
+					$('.cancelReleaseBtn').click(function(){
+						
+					})
+				});
+				
+				//重新上传资源
+				$('.look-reUpload').click(function() {
+					popFadeIn($('#pop_reUpload'));
+				});
+				
+				//删除班级
+				$('.ex-paper-jia li').each(function(index){
+					$('.cl').eq(index).click(function(){
+						$(this).parent().remove();
+					})
+				})
+				
+				
+//添加收件人		
+				$('.look-addmenber').click(function() {				
+					popFadeIn($('#pop_addmenber'));
+				})
+
+				//check
+				$(".add-sTab tr").click(function(){
+					var chk=$(this).find(":checkbox");
+						if(chk.is(':checked'))
+						{
+							chk.removeAttr("checked");
+						//$("[name='chk']").attr("checked",'true')
+						}
+						else
+						{
+							chk.attr("checked",true);//取消全选
+						}
+					})
+					$(".add-sTab tr").find(":checkbox").click(function(){
+					var chk=$(this);
+						if(chk.is(':checked'))
+						{
+							chk.removeAttr("checked");
+						//$("[name='chk']").attr("checked",'true')
+						}
+						else
+						{
+							chk.attr("checked",true);//取消全选
+						}
+				})
+				$(".add-sTab").delegate('tr', 'click', function() {
+					var _this = $(this).find(".check");
+					var _father = $(this).closest('tr');
+					var _thisval = $(this).find(".check-text").text();
+					var _thisGroup = $(this).parent();
+					var _val = '';
+					if(_this.hasClass('check-active')) {
+						_this.removeClass('check-active');
+						_this.prop("checked",false);
+						_father.removeClass('add-sBg');
+					} else {
+						_this.addClass('check-active');
+						_this.prop("checked",true);
+						_father.addClass('add-sBg');
+					}
+					checkNum($('.add-sTab'));
+					for(var i = 0; i < _thisGroup.find('.check-active').length; i++) {
+						_val += _thisGroup.find('.check-active').eq(i).next('.check-text').text() + ',';
+					}
+					_this.parent().siblings('.anntType2').val(_val);
+				})
+
+				//选择收件人  --- 班级
+				$('.add-class').delegate('li', 'click', function() {
+					$(this).addClass('add-classAct').siblings('li').removeClass('add-classAct');
+					//刷新右侧班级对应学生列表
+				});
+
+				//添加收件人
+				$('#pop_addmenber').delegate('.addUse', 'click', function() {			    
+					$(".add-member").remove(); 				    
+					$('.add-sBg').each(function(i, elem) {
+						var _name = $(elem).find('.add-sName').text();
+						var _num = $(elem).find(".check").val();
+						var _addShow = $('<div class="add-member"><span class="lm-name" name="create_examClass" id="'+_num +'">' + _name +'<i class="fa removeMem fa-times" aria-hidden="true"></i></div>');
+						_addShow.insertBefore('.add-lkBtn');
+					});
+					popFadeOut($('#pop_addmenber'));
+				})
+				//删除收件人
+				$('.add-linkman').delegate('.removeMem', 'click', function() {
+					var _id = $(this).closest('.add-member').find('.lm-name').attr('id');									
+					deleteMem(_id);
+					$(this).closest('.add-member').remove();
+					checkNum($('.add-sTab'));
+				});	
+
+				$('.gogogo').click(function(){
+					$("#examForm").submit();
+				})
+				
+			})
+			
+			//添加收件人数量
+			function checkNum(obj) {
+				var _num0 = obj.find('.add-sBg').length;
+				$('.add-menNum').html(_num0);
+			}
+			
+			//删除添加的收件人对应探矿中的删除
+			function deleteMem(txt) {
+				$('.add-sBg').each(function(i, elem) {
+					if($(elem).find('.check').attr('value') == txt) {
+						console.log(122);
+						$(elem).removeClass('add-sBg');
+						$(elem).find('.check').removeClass('check-active');
+						$(elem).find(".check").prop("checked",false);
+					}
+				})
+			}
+		</script>
+	</body>
+
+</html>

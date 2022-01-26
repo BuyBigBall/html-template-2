@@ -95,13 +95,15 @@ function popFadeOut(pop) {
 			})
 
 		}else{
-			$.post("_resourceUp.txt",{id:_id,nextId:_id2},function(data){
+			// updated yasha
+			data=1;
+			//$.post("_resourceUp.txt",{id:_id,nextId:_id2},function(data){
 				if(data==1){
 					
 				}else{
 					alert("网络连接错误");
 				}
-			})
+			//})
 		}
 	})
 	//点击下移	
@@ -122,13 +124,15 @@ function popFadeOut(pop) {
 
 		}else{
 			//操作实训模块
-			$.post("_resourceUp.txt",{id:_id,nextId:_id2},function(data){
+			// updated yasha
+			data=1;
+			//$.post("_resourceUp.txt",{id:_id,nextId:_id2},function(data){
 				if(data==1){
 					
 				}else{
 					alert("网络连接错误");
 				}
-			})
+			//})
 		}
 	})
 	
@@ -202,11 +206,13 @@ function popFadeOut(pop) {
 		var _id2 = $(this).closest('.posiR2').prev('.posiR2').attr('id');
 		$(this).closest('.posiR2').prev().before($(this).closest('.posiR2'))
 		$(this).closest('.left-nav-handle2').hide()
-		$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
+		// updated yasha
+		data=1;
+		//$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
 			if(!data){
 				alert("操作失败");
 			}
-		})
+		//})
 
 	})
 	//点击下移	
@@ -215,11 +221,13 @@ function popFadeOut(pop) {
 		var _id2 = $(this).closest('.posiR2').next('.posiR2').attr('id');
 		$(this).closest('.posiR2').next().after($(this).closest('.posiR2'))
 		$(this).closest('.left-nav-handle2').hide()
-		$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
+		// updated yasha
+		data=1;
+		//$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
 			if(!data){
 				alert("操作失败");
 			}
-		})
+		//})
 	})
 
 	
@@ -286,11 +294,13 @@ function popFadeOut(pop) {
 		var _id2 = $(this).closest('.posiR3').prev('.posiR3').attr('id');
 		$(this).closest('.posiR3').prev().before($(this).closest('.posiR3'))
 		$(this).closest('.left-nav-handle3').hide();
-		$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
+		// updated yasha
+		data=1;
+		//$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
 			if(!data){
 				alert("操作失败");
 			}
-		})
+		//})
 		return false;
 
 	})
@@ -300,11 +310,13 @@ function popFadeOut(pop) {
 		var _id2 = $(this).closest('.posiR3').next('.posiR3').attr('id');
 		$(this).closest('.posiR3').next().after($(this).closest('.posiR3'))
 		$(this).closest('.left-nav-handle3').hide();
-		$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
+		// updated yasha
+		data=1;
+		//$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
 			if(!data){
 				alert("操作失败");
 			}
-		})
+		//})
 		return false;
 	})
 	
@@ -377,11 +389,13 @@ function popFadeOut(pop) {
 		var _id2 = $(this).closest('.posiR4').prev('.posiR4').attr('id');
 		$(this).closest('.posiR4').prev().before($(this).closest('.posiR4'))
 		$(this).closest('.left-nav-handle4').hide();
-		$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
+		// updated yasha
+		data=1;
+		//$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
 			if(!data){
 				alert("操作失败");
 			}
-		})
+		//})
 		return false;
 
 	})
@@ -391,11 +405,13 @@ function popFadeOut(pop) {
 		var _id2 = $(this).closest('.posiR4').next('.posiR4').attr('id');
 		$(this).closest('.posiR4').next().after($(this).closest('.posiR4'))
 		$(this).closest('.left-nav-handle4').hide();
-		$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
+		// updated yasha
+		data=1;
+		//$.post("_teacher-resource-move.txt",{id:_id,nextId:_id2},function(data){
 			if(!data){
 				alert("操作失败");
 			}
-		})
+		//})
 		return false;
 	})
 	

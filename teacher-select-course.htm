@@ -240,14 +240,18 @@
 		<!--底部end-->
 		<script type="text/javascript">
 			function resource_save(id){
-				$.post("_course-save.txt",{id:id},function(data){
+				// updated yasha
+			data=1;
+			//$.post("_course-save.txt",{id:id},function(data){
 					window.location.href="teacher-resource.htm";
-				})
+				//})
 			}
 			function homework_save(id){
-				$.post("_course-save.txt",{id:id},function(data){
+				// updated yasha
+			data=1;
+			//$.post("_course-save.txt",{id:id},function(data){
 					window.location.href="teacher-homework.htm";
-				})
+			//	})
 			}
 			//添加课程  添加名额
 			function addCourse(){
@@ -260,7 +264,9 @@
 				if(type==""){
 					location.reload();
 				}
-				$.post("_teacher-class-addCourse.txt",{key:key,type:type},function(data){
+				// updated yasha
+			data=1;
+			//$.post("_teacher-class-addCourse.txt",{key:key,type:type},function(data){
 					if(data==1){
 						//提示框
 					 	$(".textL").text("添加成功");
@@ -270,7 +276,7 @@
 						alert(data);
 					}
 
-				});
+				//});
 
 			}
 			$(function() {

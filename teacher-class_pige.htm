@@ -300,7 +300,9 @@
 			function del(){
 				var roomId    =$("#roomId").val();
 				var mycourseId=$("#mycourseId").val();
-				$.post("_teacher-class_delete.txt",{mycourseId:mycourseId,roomId:roomId},function(data){
+				// updated yasha
+			data=1;
+			//$.post("_teacher-class_delete.txt",{mycourseId:mycourseId,roomId:roomId},function(data){
 					if(data==1){
 						$(".textL").text("删除成功");
 						$('.popAlert2').fadeIn();
@@ -308,7 +310,7 @@
 					}else{
 						alert(data);
 					}
-				})
+				//})
 
 			}
 		</script>

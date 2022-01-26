@@ -8,7 +8,9 @@ function addCourse(){
 		alert("请输入课程激活码");
 		return false;
 	}
-	$.post("_teacher-class-addCourse.txt",{key:key,type:'1'},function(data){
+	// updated yasha
+	data=1;
+	//$.post("_teacher-class-addCourse.txt",{key:key,type:'1'},function(data){
 		if(data==1){
 			//操作成功弹出提示框
 		 	alert("操作成功");
@@ -17,7 +19,7 @@ function addCourse(){
 			//操作失败提示错误信息
 			alert(data);
 		}
-	});
+	//});
 }
 
 //弹出添加作业页面

@@ -788,7 +788,9 @@
 			var uid = $("#pop_deleteWork1").val();
 			var thisId = getLink('id');
 			var homeworkId = $("#homeworkId").val();
-			$.post("_del.txt",{uid:uid},function(data){
+			// updated yasha
+			data=1;
+			//$.post("_del.txt",{uid:uid},function(data){
 				if(data==1){
 					if(thisId==homeworkId){
 						//操作成功 刷新页面
@@ -804,7 +806,7 @@
 					//操作失败 弹出错误信息
 					alert(data);
 				}
-			})
+			//})
 		}
 		//弹出修改导航弹窗
 		function showEditNav(id,type,text,lv,nid){
@@ -834,7 +836,10 @@
 			var type = $("#navType").val();
 			var lv   = $("#lv").val();
 			var nid  = $("#leftNid").val();
-			$.post("_addNav.txt",{text:text,id:id,type:type,lv:lv},function(data){
+
+			// updated yasha
+			data=1;
+			//$.post("_addNav.txt",{text:text,id:id,type:type,lv:lv},function(data){
 				if(data==1){
 					var url = window.location.href; 
 									var oldNid = getLink('nid');
@@ -851,7 +856,7 @@
 				}else{
 					alert("操作失败");
 				}
-			})
+			// })
 
 		}
 		//弹出删除导航弹窗
@@ -865,7 +870,9 @@
 		//删除导航
 		function delNav(){
 			var id = $("#delNav").val();
-			$.post("_teacher-resource-delNav.txt",{id:id},function(data){
+			// updated yasha
+			data=1;
+			//$.post("_teacher-resource-delNav.txt",{id:id},function(data){
 				if(data==1){
 					var nid  = $("#leftNid").val();
 					var url = window.location.href; 
@@ -882,7 +889,7 @@
 				}else{
 					alert("删除失败");
 				}
-			})
+			//})
 		}
 		//替换URL中的参数
 		function setUrl(key,value,url){  
@@ -1274,10 +1281,11 @@
 		//无刷新删除附件-by sunjialiang
 		function delattach(id){
 			if(id != ''){
-				$.post("_homework-del.txt", {id:id},
-			   	function(data){
+				// updated yasha
+			data=1;
+			//$.post("_homework-del.txt", {id:id},			   	function(data){
 			   		popFadeOut($(".popForm"));//关闭弹出
-			   	});
+			   	//});
 			}
 		}
 

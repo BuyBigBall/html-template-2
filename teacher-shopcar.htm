@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -26,52 +26,193 @@
 	</style><![endif]-->
 
 </head>
+<link rel="stylesheet" href="static/index/public/shopcar/cart.css">
 <body>
+<style>
+.tc_box{ display: none; width:100%; height: 100%; background: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; z-index: 100; }
+.box_k{ display: block; width:600px; background: #fff; margin:100px auto;}
+.box_k h1{ display: block; width:100%; height: 50px; line-height: 50px; color: #fff; font-size: 18px; text-align: center; background:#008fee; position: relative; }
+.box_k h1 span{ position: absolute; right:10px; top: 10px; line-height: 30px; font-size: 14px; width:30px; height: 30px; border-radius:50%; background: #fff; color: #333; cursor:pointer; }
+.box_k li{ display: block; width:500px; margin: 15px auto; clear: both; height: 35px; line-height: 35px; }
+.box_k li span{ float: left; display: block; width:100px; text-align: right; }
+.box_k li input{ float: right; display: block; width:350px; border: solid 1px #cacacc; line-height: 35px; height: 35px; text-indent: 10px; }
+.box_k li select{ float: right; display: block; width:350px; border: solid 1px #cacacc; line-height: 35px; height: 35px; text-indent: 10px; }
+.tc_btn{ display: block; width:120px; height: 40px; line-height: 40px; text-align: center; color: #fff; background:#008fee; font-size: 18px; margin:15px auto; cursor:pointer; }
+.yangshu_k{ display: block; text-align: center; line-height: 40px; color: #333; font-size: 18px; }
+.popAlert2{ border: solid 2px #cacacc; }
+.popCnt2_k {
+    width: 190px;
+    margin: 0 auto;
+    padding-bottom: 33px;
+    padding-left: 104px;
+    background: url(static/index/public/images/alertdui.jpg) no-repeat 38px 0px;
+    font-size: 18px;
+    color: #333;
+    padding-top: 6px;
+    border-bottom: 1px dashed #ddd;
+    margin-bottom: 17px;
+    text-align: center;
+}
+</style>
+
+<section class="popMask2" id="kk" style="display: none;"></section>
+<section class="popAlert2" id="kkb" style="display: none;">
+	<div class="popTittle2">温馨提示</div>
+	<div class="popCnt2_k">您已经完成申请</div>
+	<span class="popBtn2" onclick="shuaxin()">确定</span>
+</section>
+
+
+<div class="tc_box">
+	<div class="box_k">
+		<h1>填写信息申请样书<span onclick="close_box()">X</span></h1>
+		<li><span>单位名称</span><input type="text" name="zhuzhi"></li>
+		<li><span>申请人</span><input type="text" name="lianxiren" ></li>
+		<li><span>联系电话</span><input type="text" name="dianhua" ></li>
+		<li>
+			<span>所在省</span>
+			<select id="sheng" name="sheng">
+			  <option value ="0">请选择所在省</option>
+			  <option value ="1">北京市</option>
+			  <option value ="2">天津市</option>
+			  <option value="3">河北省</option>
+			  <option value="4">山西省</option>
+			  <option value="5">内蒙古自治区</option>
+			  <option value="6">辽宁省</option>
+			  <option value="7">吉林省</option>
+			  <option value="8">黑龙江省</option>
+			  <option value="9">上海市</option>
+			  <option value="10">江苏省</option>
+			  <option value="11">浙江省</option>
+			  <option value="12">安徽省</option>
+			  <option value="13">福建省</option>
+			  <option value="14">江西省</option>
+			  <option value="15">山东省</option>
+			  <option value="16">河南省</option>
+			  <option value="17">湖北省</option>
+			  <option value="18">湖南省</option>
+			  <option value="19">广东省</option>
+			  <option value="20">广西壮族自治区</option>
+			  <option value="21">海南省</option>
+			  <option value="22">重庆市</option>
+			  <option value="23">四川省</option>
+			  <option value="24">贵州省</option>
+			  <option value="25">云南省</option>
+			  <option value="26">陕西省</option>
+			  <option value="27">甘肃省</option>
+			  <option value="28">青海省</option>
+			  <option value="29">宁夏回族自治区</option>
+			  <option value="30">新疆维吾尔自治区</option>
+			  <!-- <option value="31">测试</option> -->
+			</select>
+		</li>
+		<li><span>收件地址</span><input type="text" name="dizhi" ></li>
+		<li><span>邮编</span><input type="text" name="youbian" ></li>
+		<div class="tc_btn" onclick="btn_from()">提交申请</div>
+		<div style="display: block; height: 30px;"></div>
+	</div>
+</div>
+	<!-- 隐藏域 start-->
+	<input type="hidden" name="" id="userName" value="jiang">
+	<input type="hidden" name="" id="textbookId" value="">
+	<!-- 隐藏域  end-->
 	<!--头部模块_start-->
 	<div class="g-hd">
-		<!-- 注册登陆 顶部公用 -->
-<div class="g-inr">
-	<a class="logo" href="index.htm"><img src="upload/image/14829742798015.png"/></a>
-	<!-- <a class="logo" href="index.htm"><img src="static/index/public/images/testlogo.png"/></a> -->
-	<img class="slogan" src="static/index/public/images/slogan.png">
-			<meta name="renderer" content="webkit">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
-</div>
+			<!--头部模块_start-->
+		<div class="g-inr">
+			<a class="logo" href="index.htm"><img src="upload/image/14829742798015.png"/></a>
+			<ul class="nav f-cb">
+				<li  >
+					<a class="nav1" href="index.htm">首页</a>
+				</li>
+				<li  >
+					<a class="nav1" href="textbook.htm?_f=textbook">教材中心 </a>
+				</li>
+				<li  >
+					<a class="nav1" href="resource.htm">资源中心</a>
+				</li>
+				<li  >
+					<a class="nav1" href="
+													teacher.htm
+						" target="_blank" >
+					在线教学</a>
+				</li>
+				<li  >
+					<a class="nav1" href="contactus.htm">出版专栏</a>
+					<div class="nav2List">
+						<a  href="contactus.htm">联系我们</a>
+						<a  href="topic.htm">选题开发</a>
+						<a  href="publishing.htm">出版流程</a>
+						<a  href="knowledge.htm">出版知识</a>
+					</div>
+				</li>
+				<li  >
+					<a class="nav1" href="about.htm">关于我们</a>
+					<div class="nav2List">
+						<a  href="about.htm">企业简介</a>
+						<a  href="about2.htm">大事记</a>
+						<a  href="about3.htm">荣誉业绩</a>
+						<a  href="about4.htm">国家项目</a>
+					</div>
+				</li>
+			</ul>
+							<a href="user-personal.htm"><div class="logined f-cb">
+					<div class="prt"></div>
+				    <span class="name color4">jiang</span>
+				</div></a>
+					</div>
+	<!--头部模块_end-->
+
 	</div>
 	<!--头部模块_end-->
-	<!--主体模块_start-->
-	<div class="g-body g-bodyLogin">
-		<div class="loginBox">
-			<div class="loginForm">
-				<form class="formValidate" action="register_success.htm"  method="post">
-					<h5 class="tit">欢迎登录</h5>
-					<div class="formItem validateItem" id="u">
-						<div class="inputWrap">
-							<input class="inputField" type="text" name="" id="username" data-nulltip="请输入会员名/邮箱/手机号" />
-							<p class="inputPh">会员名/邮箱/手机号</p>
-							<span class="ico ico1 sprite"></span>
-						</div>
-
-					</div>
-					<div class="formItem validateItem" id="p">
-						<div class="inputWrap">
-							<input class="inputField" type="password" name="userpwd" id="userpwd" data-nulltip="请输入密码" />
-							<p class="inputPh">请输入密码</p>
-							<span class="ico ico2 sprite"></span>
-						</div>
-					</div>
-					<P id="errortext" style=" color:red; display: none; font-size: 14px;" >账号或密码错误</P></br>
-					<input class="submit" type="button" onclick="checkform()" value="登 录" />
-					<div class="opt">
-						<p class="f-fl">还没有账号？<a class="color1" href="register.htm">立即注册</a></p>
-						<a class="color4" href="findpwd.htm">忘记密码？</a>
-					</div>
-				</form>
-			</div>
-			<img class="loginBnr" src="static/index/public/images/loginBox.jpg" />
-		</div>	
+	<!--banner模块_start-->
+	<div class="g-bnr">
+		<a href=""><img src="upload/image/14829171652839.jpg"></a>
 	</div>
+	<!--banner模块_end-->
+	<!--右侧样书库-->
+
+	<!--右侧样书库_end-->
+	<!--主体模块_start-->
+
+	    <div class="float-box">
+
+        <div class="confirm-box">
+
+            <h4 class="confirm-title">
+                <span></span>
+                <i class="close-btn">
+
+                    <span class="line-left"></span>
+                    <span class="line-right"></span>
+
+                </i>
+            </h4>
+
+            <div class="confirm-content">
+
+                请选择您要删除的商品？
+
+            </div>
+
+            <div class="confirm-btn">
+
+                <a href="javascript:;" class="delete">删除</a>
+                <a href="javascript:;" class="cancel">取消</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="header">
+        <div class="header-center"></div>
+        <div class="yangshu_k">样书清单内暂时没有样书，请前往教材中心加入样书</div>
+    </div>
+
+    <script src="static/index/public/shopcar/cart.js"></script>
+
 	<!--主体模块_end-->
 	<!--尾部模块_start-->
 		
@@ -212,7 +353,7 @@
 					<div class="nav navT f-cb">
 						<a href="textbook.htm?_f=textbook">教材中心</a>
 						<a href="resource.htm">资源中心</a>
-						<a href="login.htm?url=student.htm" target="_blank" >在线教学</a>
+						<a href="teacher.htm" target="_blank" >在线教学</a>
 						<a href="contactus.htm">出版专栏</a>
 						<a href="about.htm">关于我们</a>
 					</div>
@@ -279,50 +420,144 @@
 
 	<!--尾部模块_end-->
 	<script type="text/javascript">
-		function checkform(){
-			$("#errortext").hide();
-			var $this = $(".formValidate .validateItem [name]");
-			var $wrap = $this.parents(".validateItem");
-			var userName = document.getElementById('username');
-			var userPwd  = document.getElementById('userpwd');
-			if(userName.value ==''){
-				$("#u").append('<div class="msg wrong"><span class="ico sprite"></span><p class="text">'+$this.data("nulltip")+'</p></div>');
-	    		return false;
+		$(function(){ 
+			if(localStorage.getItem("num_book") == undefined){
+				localStorage.setItem("num_book", 0);
 			}
-			if(userPwd.value ==''){
-				$("#p").append('<div class="msg wrong"><span class="ico sprite"></span><p class="text">请输入密码</p></div>');
-				return false;
+			$("#ysk_num").html(localStorage.getItem("num_book"));
+			if(localStorage.getItem("num_book") == 0){
+				$(".yangshu_k").show()
+			}else{
+				$(".yangshu_k").hide()
 			}
-			if(userName.value !='' && userPwd.value!=''){
-
-				// $.post("_loginchk.json",{userName:userName.value,userPwd:userPwd.value},function(data){
-				// 	if(data.code==200){
-				// 		//登陆成功 跳转登陆成功页面
-				// 		if(data.userType==1){
-				// 			//学生
-				// 			if(data['userTel']==''){
-				// 				//完善资料
-				// 				location.href="student.htm?_f=add_info";
-				// 			}else{
-				// 				//跳转首页
-				// 				location.href="student.htm?_f=index";
-				// 			}
-				// 		}else{
-							//教师
-							location.href="register_success.htm";
-				// 		}
-						
-				// 	}else if(data.code==400){
-				// 		//登陆失败 显示错误提示
-				// 		$("#errortext").show();
-				// 	}else{
-				// 		alert(data.message);
-				// 	}
-				// });	
-
+		}); 
+		$("#collect").click(function(){
+			var userName = $("#userName").val();
+			if(userName == ''){
+				alert("请先登录");
+				location.href="login.htm";
+			}else{
+				var textbookId = $("#textbookId").val();
+				$.post("source/index/ajax/collect.php",{textbookId:textbookId},function(data){
+						if(data==1){
+							//收藏成功 
+							location.reload();
+						}else{
+							//收藏失败
+							alert("网络繁忙，请稍后再试");
+							location.reload();
+							return false;
+						}
+					});
 			}
-			return false;
+		})
+		$("#shenqing").click(function(){
+			if ($(".banOrder").length > 0) {
+				return
+			}
+			var bookNU = JSON.parse(localStorage.getItem("book_datanum"));
+			var NUshu = 0;
+			for(var i = 0; i < bookNU.length; i++){
+				NUshu = NUshu + Number(bookNU[i].btn_num);
+			}
+			if(NUshu > 3){
+				alert("最多只能申请三本")
+			}else{
+				$(".tc_box").show()
+			}
+			console.log(NUshu);
+			
+		})
+		function close_box(){
+			$(".tc_box").hide()
 		}
+		function btn_from(){
+			var zhuzhi = $(" input[ name='zhuzhi' ] ").val();
+			var lianxiren = $(" input[ name='lianxiren' ] ").val();
+			var dianhua = $(" input[ name='dianhua' ] ").val();
+			var dizhi = $(" input[ name='dizhi' ] ").val();
+			var youbian = $(" input[ name='youbian' ] ").val();
+			var sheng = $("#sheng option:selected").val();
+			if(zhuzhi == ""){
+				alert("请填写单位名称");
+				return;
+			}
+			if(/^[0-9]+$/.test(zhuzhi)){
+				alert("请填写正确单位名称");
+				return;
+			}
+			if(lianxiren == ""){
+				alert("请填写申请人");
+				return;
+			}
+			if(/^[0-9]+$/.test(lianxiren)){
+				alert("请填写正确申请人");
+				return;
+			}
+			if(dianhua == ""){
+				alert("请填写联系电话");
+				return;
+			}
+			if(sheng == 0){
+				alert("请选择所在省");
+				return;
+			}
+			if(dizhi == ""){
+				alert("请填写收件地址");
+				return;
+			}
+			if(/^[0-9]+$/.test(dizhi)){
+				alert("请填写正确收件地址");
+				return;
+			}
+			if(youbian == ""){
+				alert("请填写邮编");
+				return;
+			}
+			if(dianhua.length < 11){
+				alert("请填写正确电话");
+				return;
+			}
+			var book_datanum = JSON.parse(localStorage.getItem("book_datanum"));
+			var data_json = {
+		        	"shopcar":JSON.stringify(book_datanum),
+				    "zhuzhi":zhuzhi,
+				    "lianxiren":lianxiren,
+				    "dianhua":dianhua,
+				    "sheng":sheng,
+				    "dizhi":dizhi,
+				    "youbian":youbian
+		        }
+		    console.log(data_json);
+
+			$.ajax({
+		        type : 'post',
+		        url : 'http://sve.dutpbook.com/index.php?_d=ajax&_f=send',
+		        data:data_json,
+		        traditional : true,
+		        async : false,         
+		        success : function(result){
+		            if(result == 200){
+		            	$(".tc_box").hide();
+		            	localStorage.setItem("num_book", 0);
+		            	localStorage.setItem("data_book", []);
+		            	localStorage.setItem("book_datanum", []);
+		            	$(".mzContainer").html("");
+		            	$("#kk").show();
+		            	$("#kkb").show();
+		            	// window.location.reload();
+		            }
+		            console.log(result);
+		        },
+		        error : function(result){
+		        	alert("申请失败");
+		        	console.log(result);
+		        }
+		    });
+		}
+	function shuaxin(){
+		window.location.href = "http://sve.dutpbook.com/";
+	}
 	</script>
 </body>
 </html>

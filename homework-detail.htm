@@ -825,7 +825,9 @@
 			var uid = $("#pop_deleteWork1").val();
 			var thisId = getLink('id');
 			var homeworkId = $("#homeworkId").val();
-			$.post("_del.txt",{uid:uid},function(data){
+			// updated yasha
+			data=1;
+			//$.post("_del.txt",{uid:uid},function(data){
 				if(data==1){
 					if(thisId==homeworkId){
 						//操作成功 刷新页面
@@ -841,7 +843,7 @@
 					//操作失败 弹出错误信息
 					alert(data);
 				}
-			})
+			//})
 		}
 		//弹出修改导航弹窗
 		function showEditNav(id,type,text,lv,nid){
@@ -1201,7 +1203,9 @@
 
 		//删除实训
 		function del(){
-			$.post("_del.txt",{uid:16},function(data){
+			// updated yasha
+			data=1;
+			//$.post("_del.txt",{uid:16},function(data){
 				if(data==1){
 					//删除成功 跳转相应列表页
 					// location.href="teacher-homework-list.htm?cid=445&nid=1&type=1";
@@ -1217,7 +1221,7 @@
 					//删除失败 弹出错误提示
 					alert("删除失败，请稍后再试");
 				}
-			})
+			//})
 		}
 	</script>
 

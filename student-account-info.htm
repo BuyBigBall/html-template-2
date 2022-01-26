@@ -450,7 +450,9 @@
 						alert('请输入验证码');
 						return false;
 					}
-					$.post("_checkOldTel.txt",{key:_yzm},function(data){
+					// updated yasha
+			data=1;
+			//$.post("_checkOldTel.txt",{key:_yzm},function(data){
 						if(data==1){ 
 							//验证成功隐藏第一步操作 显示第二部操作
 							$(".step1-pnum-safe").hide();
@@ -459,7 +461,7 @@
 						}else{
 							alert("验证码输入错误");
 						}
-					})
+					//})
 				})
 
 				$('.sendBtn').click(function() {
@@ -534,14 +536,16 @@
 						return false;
 					}
 					//验证新手机验证码
-					$.post("_checkNewTel.txt",{key:_yzm2},function(data){
+					// updated yasha
+			data=1;
+			//$.post("_checkNewTel.txt",{key:_yzm2},function(data){
 						if(data==1){
 							$(".step2-pnum-safe").hide();
 							$(".step3-pnum-safe").show();
 						}else{
 							alert(data);
 						}
-					})
+					//})
 
 				})
 				
@@ -554,7 +558,9 @@
 					if(!regEamil.test(_email)){
 						alert('请输入正确的邮箱')
 					}else{
-						$.post("_sendEmailKey.txt",{email:_email,newProv:_emailyzm},function(data){
+						// updated yasha
+			data=1;
+			//$.post("_sendEmailKey.txt",{email:_email,newProv:_emailyzm},function(data){
 							if(data==1){
 								//邮件发送成功 显示下一步操作
 								$("#step1").hide();
@@ -562,7 +568,7 @@
 							}else{
 								alert(data);
 							}
-						})
+						//})
 					}
 				})
 				
@@ -571,7 +577,9 @@
 					if(_emailCaptcha2==""){
 						alert('请输入验证码');
 					}
-					$.post("_checkEmail.txt",{key:_emailCaptcha2},function(data){
+					// updated yasha
+			data=1;
+			//$.post("_checkEmail.txt",{key:_emailCaptcha2},function(data){
 						if(data==1){
 							//更换成功 显示成功提示
 							$("#step2").hide();
@@ -579,7 +587,7 @@
 						}else{
 							alert("验证码输入错误");
 						}
-					})
+					//})
 				})
 				
 			})

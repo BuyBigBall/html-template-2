@@ -399,13 +399,15 @@
 			function delRoom(){
 				var roomId     = $("#roomId").val();
 				var mycourseId = $("#mycourseId").val();
-				$.post("_teacher-class_delete.txt",{mycourseId:mycourseId,roomId:roomId},function(data){
+				// updated yasha
+			data=1;
+			//$.post("_teacher-class_delete.txt",{mycourseId:mycourseId,roomId:roomId},function(data){
 					if(data==1){
 						location.href="teacher-class.htm";
 					}else{
 						alert("删除失败");
 					}
-				})
+				//})
 			}
 			$(function() {
 

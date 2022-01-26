@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html>
+	<title>大连理工大学出版社平台管理系统</title>
+		<meta charset="utf-8" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_safe.css" />
+	 <link rel="stylesheet" href="static/teacher/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/iconfont.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgpt.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/jquery.treeview.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_wgx.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui.min.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.css" />
+	<link rel="stylesheet" href="static/teacher/public/js/jedate/skin/jedate.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/add_t.css" />
+	<link rel="shortcut icon"  href="static/admin/public/image/favicon.ico" />
+	<link rel="stylesheet" href="static/teacher/public/css/styleL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/style_lgptL1.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/base.css" />
+	<link rel="stylesheet" href="static/teacher/public/css/newleft.css" />
+
+
+
+
+	<body>
+		<!--头部导航start-->
+		<div class="header">
+					<div class="head">
+				<div class="head-left">
+					<div class="logo">
+						<img src="static/teacher/public/img/logo.jpg" />
+					</div>
+					<div class="tit">
+						<h2>大连理工大学出版社</h2>
+						<h4>职教数字化服务平台<span>Dutpsve</span> <span class="span1"><img src="static/teacher/public/img/com.jpg"/></span></h4>
+					</div>
+					<div class="txt">
+						<h1><img src="static/teacher/public/img/online.jpg"/></h1>
+					</div>
+				</div>
+				<div class="head-right">
+					<ul class="nav">
+						<li>
+							<a href="teacher.php?_d=index&_f=index" >首页</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=resource&_f=index" >资源管理</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=homework&_f=index" >实训/作业</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=examination&_f=index" class="active">考试管理</a>
+						</li>
+						<li>
+							<a href="teacher.php?_d=class&_f=class" >班级管理</a>
+						</li>
+
+						<li >
+							<a href="teacher.php?_d=message&_f=index" >消息中心</a>
+						</li>
+					</ul>
+					<div class="Signin">
+						<a href="##" onclick="window.open('index.php?_d=user&_f=personal')" class="span1">
+							姜老师
+							</a>|<a href="index.php?_d=user&_f=logout" class="span2">退出</a>
+						<img class="pos" src="static/teacher/public/img/peo.jpg" />
+					</div>
+				</div>
+		</div>
+		</div>
+		<!--头部导航end-->
+		<!--内容区start-->
+		<div class="popBody">
+			<div class="content">
+				<!--内容区右侧-->
+				<div class="ex-newbox">
+					<div class="content-right_tit">
+						<h1 class="paddingL28" style="border-bottom: 1px solid #ddd;">创建试卷</h1>
+					</div>
+					<div class="conR-con">
+						<form id="paperForm" name="paperForm" method="post" action="teacher.php?_d=examination&_f=maketestpaper&act=createPost&tp=&e=" class="anntForm-ra paddingT0">
+
+						<div class="conR-conT">
+							<!--2017-04-08修改布局-->
+							<div class="exam-name">
+								<div class="exam-name-top">
+									专业课程：<span>国际结算</span>
+								</div>
+								<div class="exam-name-bottom">
+									<div class="exam-name-bottomL floatL">
+										<table class="name-table">
+											<tr>
+												<td>试卷名称</td>
+												<td class="td1" colspan="3"><input type="text" name="tpname" id="tpname" value="" /></td>
+											</tr>
+											<tr>
+												<td>试卷满分</td>
+												<td class="td2"><input type="text" id="tpscore" name="tpscore" value="" />分</td>
+												<td style="padding-left: 17px;padding-right:14px;">建议时长</td>
+												<td class="td2"><input type="text" id="tpdur" name="tpdur" value="" style="margin-left: 0px !important;">分钟</td>
+											</tr>
+										</table>
+									</div>
+									<div class="exam-name-bottomR floatR">
+										<textarea placeholder="请输入试卷说明" id="remark" name="remark" class="tra-name"></textarea>
+									</div>
+									<div class="clear_float"></div>
+								</div>
+							</div>
+							<table  class="table-info">
+								<tr>
+										<td>包含题型</td>
+										<td>
+											<div class="homework-con" style="width: 800px;">
+												
+													<div class="work-check floatL marginT0 showhideCon"><div class="check2 floatL "></div><div class="check-text floatL" data="8">单选题</div><div class="clear_float"></div></div><div class="work-check floatL marginT0 showhideCon"><div class="check2 floatL "></div><div class="check-text floatL" data="9">多选题</div><div class="clear_float"></div></div><div class="work-check floatL marginT0 showhideCon"><div class="check2 floatL "></div><div class="check-text floatL" data="10">判断题</div><div class="clear_float"></div></div><div class="work-check floatL marginT0 showhideCon"><div class="check2 floatL "></div><div class="check-text floatL" data="11">名词解释题</div><div class="clear_float"></div></div><div class="work-check floatL marginT0 showhideCon"><div class="check2 floatL "></div><div class="check-text floatL" data="12">案例分析题</div><div class="clear_float"></div></div><div class="work-check floatL marginT0 showhideCon"><div class="check2 floatL "></div><div class="check-text floatL" data="13">综合技能训练题</div><div class="clear_float"></div></div><div class="work-check floatL marginT0 showhideCon"><div class="check2 floatL "></div><div class="check-text floatL" data="14">简答题</div><div class="clear_float"></div></div>
+													<input type="hidden" class="anntType" name="anntType[]" class="anntType2" value="" />
+												
+											</div>
+										</td>
+									</tr>
+								
+							</table>
+						</div>
+						<div class="conR-con-con ex-new-con">
+							<div class="conR-con-conL " style="display: none";>
+					<div class="conR-con-con1-top">
+						<ul>
+							<li class="li1"><img src="static/teacher/public/img/numberBG.png" /><span class="span1">1</span></li>
+							<li class="li2" id="8">单选题</li>
+							<li class="li3">总分值</li>
+							<li class="li4"><input type="text"  name="score[8]" value="" class="z-score"></li>
+							<li class="li5">分</li>
+							<li class="li6">已选择 <span class="checknum checknum1"></span>道题，每道题 <span class="the-score"></span>分</li>
+							<li class="li7 li7new">
+								<div class="tittleButtonGroup2" style="float: initial;">
+									<a class="btnBg-green look-questions1 paperBtn paperBtn-type J_paperBtn chooseFirst" id="1">选择试题</a>
+									<a class="bgcf4f4 look-releaseResource marginR0 selectInBtn" style="height: 30px;" data-num="1" data-id="8" data-title="单选题">创建试题</a>
+								</div>
+							</li>
+						</ul>
+						<input type="hidden"  name="questions_exam_val[8]" class="questions_exam_val"/>
+					</div>
+					<div class="conR-con-con1-bottom marginT11" style="display: none";>
+						<table class="table2 table2-1" border="1">
+							<thead>
+								<tr>
+									<th width="60">序号</th>
+									<th>题目</th>
+									<th width="120">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody></table></div></div><div class="conR-con-conL " style="display: none";>
+					<div class="conR-con-con1-top">
+						<ul>
+							<li class="li1"><img src="static/teacher/public/img/numberBG.png" /><span class="span1">2</span></li>
+							<li class="li2" id="9">多选题</li>
+							<li class="li3">总分值</li>
+							<li class="li4"><input type="text"  name="score[9]" value="" class="z-score"></li>
+							<li class="li5">分</li>
+							<li class="li6">已选择 <span class="checknum checknum1"></span>道题，每道题 <span class="the-score"></span>分</li>
+							<li class="li7 li7new">
+								<div class="tittleButtonGroup2" style="float: initial;">
+									<a class="btnBg-green look-questions1 paperBtn paperBtn-type J_paperBtn chooseFirst" id="1">选择试题</a>
+									<a class="bgcf4f4 look-releaseResource marginR0 selectInBtn" style="height: 30px;" data-num="2" data-id="9" data-title="多选题">创建试题</a>
+								</div>
+							</li>
+						</ul>
+						<input type="hidden"  name="questions_exam_val[9]" class="questions_exam_val"/>
+					</div>
+					<div class="conR-con-con1-bottom marginT11" style="display: none";>
+						<table class="table2 table2-1" border="1">
+							<thead>
+								<tr>
+									<th width="60">序号</th>
+									<th>题目</th>
+									<th width="120">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody></table></div></div><div class="conR-con-conL " style="display: none";>
+					<div class="conR-con-con1-top">
+						<ul>
+							<li class="li1"><img src="static/teacher/public/img/numberBG.png" /><span class="span1">3</span></li>
+							<li class="li2" id="10">判断题</li>
+							<li class="li3">总分值</li>
+							<li class="li4"><input type="text"  name="score[10]" value="" class="z-score"></li>
+							<li class="li5">分</li>
+							<li class="li6">已选择 <span class="checknum checknum1"></span>道题，每道题 <span class="the-score"></span>分</li>
+							<li class="li7 li7new">
+								<div class="tittleButtonGroup2" style="float: initial;">
+									<a class="btnBg-green look-questions1 paperBtn paperBtn-type J_paperBtn chooseFirst" id="1">选择试题</a>
+									<a class="bgcf4f4 look-releaseResource marginR0 selectInBtn" style="height: 30px;" data-num="3" data-id="10" data-title="判断题">创建试题</a>
+								</div>
+							</li>
+						</ul>
+						<input type="hidden"  name="questions_exam_val[10]" class="questions_exam_val"/>
+					</div>
+					<div class="conR-con-con1-bottom marginT11" style="display: none";>
+						<table class="table2 table2-1" border="1">
+							<thead>
+								<tr>
+									<th width="60">序号</th>
+									<th>题目</th>
+									<th width="120">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody></table></div></div><div class="conR-con-conL " style="display: none";>
+					<div class="conR-con-con1-top">
+						<ul>
+							<li class="li1"><img src="static/teacher/public/img/numberBG.png" /><span class="span1">4</span></li>
+							<li class="li2" id="11">名词解释题</li>
+							<li class="li3">总分值</li>
+							<li class="li4"><input type="text"  name="score[11]" value="" class="z-score"></li>
+							<li class="li5">分</li>
+							<li class="li6">已选择 <span class="checknum checknum1"></span>道题，每道题 <span class="the-score"></span>分</li>
+							<li class="li7 li7new">
+								<div class="tittleButtonGroup2" style="float: initial;">
+									<a class="btnBg-green look-questions1 paperBtn paperBtn-type J_paperBtn chooseFirst" id="1">选择试题</a>
+									<a class="bgcf4f4 look-releaseResource marginR0 selectInBtn" style="height: 30px;" data-num="4" data-id="11" data-title="名词解释题">创建试题</a>
+								</div>
+							</li>
+						</ul>
+						<input type="hidden"  name="questions_exam_val[11]" class="questions_exam_val"/>
+					</div>
+					<div class="conR-con-con1-bottom marginT11" style="display: none";>
+						<table class="table2 table2-1" border="1">
+							<thead>
+								<tr>
+									<th width="60">序号</th>
+									<th>题目</th>
+									<th width="120">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody></table></div></div><div class="conR-con-conL " style="display: none";>
+					<div class="conR-con-con1-top">
+						<ul>
+							<li class="li1"><img src="static/teacher/public/img/numberBG.png" /><span class="span1">5</span></li>
+							<li class="li2" id="12">案例分析题</li>
+							<li class="li3">总分值</li>
+							<li class="li4"><input type="text"  name="score[12]" value="" class="z-score"></li>
+							<li class="li5">分</li>
+							<li class="li6">已选择 <span class="checknum checknum1"></span>道题，每道题 <span class="the-score"></span>分</li>
+							<li class="li7 li7new">
+								<div class="tittleButtonGroup2" style="float: initial;">
+									<a class="btnBg-green look-questions1 paperBtn paperBtn-type J_paperBtn chooseFirst" id="1">选择试题</a>
+									<a class="bgcf4f4 look-releaseResource marginR0 selectInBtn" style="height: 30px;" data-num="5" data-id="12" data-title="案例分析题">创建试题</a>
+								</div>
+							</li>
+						</ul>
+						<input type="hidden"  name="questions_exam_val[12]" class="questions_exam_val"/>
+					</div>
+					<div class="conR-con-con1-bottom marginT11" style="display: none";>
+						<table class="table2 table2-1" border="1">
+							<thead>
+								<tr>
+									<th width="60">序号</th>
+									<th>题目</th>
+									<th width="120">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody></table></div></div><div class="conR-con-conL " style="display: none";>
+					<div class="conR-con-con1-top">
+						<ul>
+							<li class="li1"><img src="static/teacher/public/img/numberBG.png" /><span class="span1">6</span></li>
+							<li class="li2" id="13">综合技能训练题</li>
+							<li class="li3">总分值</li>
+							<li class="li4"><input type="text"  name="score[13]" value="" class="z-score"></li>
+							<li class="li5">分</li>
+							<li class="li6">已选择 <span class="checknum checknum1"></span>道题，每道题 <span class="the-score"></span>分</li>
+							<li class="li7 li7new">
+								<div class="tittleButtonGroup2" style="float: initial;">
+									<a class="btnBg-green look-questions1 paperBtn paperBtn-type J_paperBtn chooseFirst" id="1">选择试题</a>
+									<a class="bgcf4f4 look-releaseResource marginR0 selectInBtn" style="height: 30px;" data-num="4" data-id="13" data-title="综合技能训练题">创建试题</a>
+								</div>
+							</li>
+						</ul>
+						<input type="hidden"  name="questions_exam_val[13]" class="questions_exam_val"/>
+					</div>
+					<div class="conR-con-con1-bottom marginT11" style="display: none";>
+						<table class="table2 table2-1" border="1">
+							<thead>
+								<tr>
+									<th width="60">序号</th>
+									<th>题目</th>
+									<th width="120">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody></table></div></div><div class="conR-con-conL " style="display: none";>
+					<div class="conR-con-con1-top">
+						<ul>
+							<li class="li1"><img src="static/teacher/public/img/numberBG.png" /><span class="span1">7</span></li>
+							<li class="li2" id="14">简答题</li>
+							<li class="li3">总分值</li>
+							<li class="li4"><input type="text"  name="score[14]" value="" class="z-score"></li>
+							<li class="li5">分</li>
+							<li class="li6">已选择 <span class="checknum checknum1"></span>道题，每道题 <span class="the-score"></span>分</li>
+							<li class="li7 li7new">
+								<div class="tittleButtonGroup2" style="float: initial;">
+									<a class="btnBg-green look-questions1 paperBtn paperBtn-type J_paperBtn chooseFirst" id="1">选择试题</a>
+									<a class="bgcf4f4 look-releaseResource marginR0 selectInBtn" style="height: 30px;" data-num="4" data-id="14" data-title="简答题">创建试题</a>
+								</div>
+							</li>
+						</ul>
+						<input type="hidden"  name="questions_exam_val[14]" class="questions_exam_val"/>
+					</div>
+					<div class="conR-con-con1-bottom marginT11" style="display: none";>
+						<table class="table2 table2-1" border="1">
+							<thead>
+								<tr>
+									<th width="60">序号</th>
+									<th>题目</th>
+									<th width="120">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody></table></div></div>
+						</div>
+						</form>
+						<div class="button-group3 marginT32">
+							<div class="bom-button cancel floatL bgcb8c4">
+								<a href="javascript:history.go(-1);">取消</a>
+							</div>
+							<div class="bom-button Release floatL bgcbule magrL22 J_store-pub_" style="width: 152px !important;">
+								<a href="" target="view_window" >预览</a>
+							</div>
+							<div class="bom-button Release floatL bgcbule magrL22 J_store-pub" style="width: 152px !important;">
+								<a href="##" >保存发布</a>
+							</div>
+							<div class="clear_float"></div>
+						</div>
+					</div>
+				</div>
+				<!--内容区右侧end-->
+				<div class="clear_float"></div>
+			</div>
+		</div>
+		<!--内容区end-->
+		<!--底部start-->
+		
+		<!--底部end-->
+		<!--整体end-->
+
+		<!--上传弹窗start-->
+		<div class="popForm " id="pop_uploadfile">
+			<div class="mask"></div>
+			<div class="box rc-reUploadBox" style="height: 413px;">
+				<h1>上传资源
+					<span class="closeIcon">×</span>
+				</h1>
+				<!--<div class=""></div>-->
+				<form>
+					<input type="hidden" value="" name="resourceType" id="resourceType" />
+					<!--课程类型-->
+					<table class="alertTable">
+						<tr>
+							<td width="86"><span style="position: relative;top: -12px;">选择文件</span></td>
+							<td>
+								<input type="text" class="alertIptFileVal" readonly="readonly" id="filedInput1" />
+								<div class="fileUploaderBox">
+									<input type="file" class="fileField" for='filedInput1' />
+									<input type="button" class="filedBtn" value="选择" />
+								</div>
+								<p class="fileTip">支持JPG、PNG、PDF、MP3、MP4格式</p>
+							</td>
+						</tr>
+						<tr>
+							<td width="86"><span style="position: relative;top: -34px;">附件说明</span></td>
+							<td>
+								<textarea></textarea>
+							</td>
+						</tr>
+					</table>
+					<div class="alertBtnGroup" style="margin-top: 20px;width: 131px;">
+						<div class="alertBotmBtn Release">
+							<a href="##" class="resourceSubmitBtn">确认上传</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--上传弹窗end-->
+		<!--选择试题弹窗start-->
+		<div class="popForm " id="pop_questions1">
+			<div class="mask"></div>
+			<div class="box rc-cancelBox" style="height: 533px; width: 900px; margin-left: -25%;">
+				<h1 class="marginB0"><span class="paperBtn paper-default paperTypeBtn" id="1">默认试卷</span>
+					<span class="marginL33 paperBtn paperTypeBtn" id="2">我的试卷</span>
+					<span class="font-s14 marginL18 ">已选择<span class="checknum checknum1 colore766">0</span>道题</span>
+					<span class="newbu-search magrL273"><input type="text" class="serVal" placeholder="请输入关键词搜索"/><i class="fa fa-search" aria-hidden="true"></i></span>
+					<span class="closeIcon">×</span>
+				</h1>
+				<div class="rc-changeName-inr rc-changeName-inr1">
+					<form>
+						<div class="homework-check1 homework-check1-pro">
+							<!--我的试卷-->
+							<div class="lineloer-answer lineloer-answer1 paddingL28 disNO  exam-box-get">
+								
+							</div>
+							<!--我的试卷结束-->
+						</div>
+					</form>
+					<div class="alertBtnGroup" style="margin-top: 12px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##">取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR sureBtn1">
+							<a href="##" class="">确认</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--选择试题弹窗end-->
+		<!--删除资源弹窗start-->
+		<div class="popForm popDeleteBox" id="pop_deleteResource" style="z-index: 99;">
+			<div class="mask"></div>
+			<div class="box deleteBox" style="z-index: 999;">
+				<div class="deleteErrorImg">
+					<img src="static/teacher/public/img/deleteError.jpg" />
+				</div>
+				<p>您确认要删除这个资源么</p>
+				<div class="alertBtnGroup">
+					<div class="alertBotmBtn cancel floatL btnBg-grey">
+						<a href="##">取消</a>
+					</div>
+					<div class="alertBotmBtn del-sure Release-delete floatR">
+						<a href="##">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<!--删除资源弹窗end-->
+		
+		<!--编辑试题弹窗start-->
+		<div class="popForm " id="pop_questions_t">
+			<div class="mask"></div>
+			<div class="box rc-cancelBox" style="height: 680px; width: 900px; margin-left: -25%;">
+				<h1 class="marginB0">编辑试题</h1>
+				<div class="overY-auto">
+				<table class="exam-edit-table exam-edit-table-t">
+					<tr>
+						<td class="padL27">试题类型：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="J_data-title">单选题</td>			
+					</tr>
+					<tr>
+						<td class="padL27 verT">试题题目：</td>
+						<td>
+							<script id="containerA" name="content" type="text/plain"></script>
+						</td>
+					</tr>
+					<!--2017.4.12编--添加了tr-->
+					<tr class="J_context">
+						<td class="padL27 verT">试题正文：</td>
+						<td>
+							<script id="containerD" name="content" type="text/plain"></script>
+						</td>
+					</tr>
+					<!--2017.4.12编--添加了class名字-->
+					<tr class="J_option-add">
+						<td class="padL27 verT">试题选项：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="J_editor">
+							<div class="add-fu">添加选项</div>
+						</td>
+					</tr>
+					<!--2017.4.12编--添加了class名字-->
+					<tr class="J_option">
+						<td class="padL27 verT"></td>
+						<td>
+							<table class="table1" id="panel">
+								<thead>
+									<tr>
+										<th width="47">序号</th>
+										<th width="416">内容</th>
+										<th width="90">正确答案</th>
+										<th width="200">操作</th>
+									</tr>
+								</thead>
+								<!--2017.4.12编--添加了class名字-->
+								<tbody class="J_test-option-content">
+									<tr>
+										<td class="exam-option">A</td>
+										<td>
+											<p class="exam-option-an look-option">AAAAAAAAAAAAAA</p>
+										</td>
+										<td>
+											<div class="workrt-radio"></div>
+										</td>
+										<td class="ch-ch">
+											<a class="green next-ch">下移</a>
+											<a class="red look-deleteResource">删除</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="exam-option">B</td>
+										<td>
+											<p class="exam-option-an look-option">bbbbbbbbbbbbbbbbb</p>
+										</td>
+										<td>
+											<div class="workrt-radio"></div>
+										</td>
+										<td class="ch-ch">
+											<a class="green prv-ch">上移</a>
+											<a class="green next-ch">下移</a>
+											<a class="red look-deleteResource">删除</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="exam-option">C</td>
+										<td>
+											<p class="exam-option-an look-option">ccccccccccccc</p>
+										</td>
+										<td>
+											<div class="workrt-radio"></div>
+										</td>
+										<td class="ch-ch">
+											<a class="green prv-ch">上移</a>
+											<a class="green next-ch">下移</a>
+											<a class="red look-deleteResource">删除</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="exam-option">D</td>
+										<td>
+											<p class="exam-option-an look-option">ddddddddddddddd</p>
+										</td>
+										<td>
+											<div class="workrt-radio"></div>
+										</td>
+										<td class="ch-ch">
+											<a class="green prv-ch">上移</a>
+											<a class="red look-deleteResource">删除</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<!--2017-04-17---2添加一行tr-->
+					<tr class="Case_option-add-editor lastTr" style="display: none;">
+							<td class="padL27 verT">添加：</td>
+							<!--2017.4.12编--添加了class名字-->
+							<td class="Case_editor padL27 verT">
+								<!--2017.4.17编--添加了class名字--J_addBtn-->
+								<div class="add-fu add-fu-case-editor floatL J_addBtn" style="margin-right:20px;">添加</div>
+							</td>
+						</tr>
+					</tr>
+					<!--2017-04-17---2添加tr结束-->
+				<tr>
+					<td class="padL27 verT">试题解析：</td>
+					<td>
+						<script id="containerB" name="content" type="text/plain"></script>
+					</td>
+				</tr>
+				</table>
+				</div>
+				<div class="alertBtnGroup" style="margin-top: 12px;">
+					<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+						<a href="##">取消</a>
+					</div>
+						<!--2017.4.12编--添加了class名字--J_confirm-->
+					<div class="alertBotmBtn Release floatR J_confirm">
+						<a href="##" class="">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<!--编辑试题弹窗end-->
+		
+		<!--编辑选项内容弹窗start-->
+		<div class="popForm " id="pop_reUpload" style="z-index: 99;">
+			<div class="mask"></div>
+			<div class="box ex-showbox">
+				<h1>内容编辑
+					<span class="closeIcon">×</span>
+				</h1>				
+					<div class="ch-cnt">
+					 	<script id="container_editorOption" name="content" type="text/plain" style="width:460px;margin: 0 auto;"></script>
+					</div>
+					<div class="alertBtnGroup" style="margin-top: 20px;width: 300px;">
+						<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+							<a href="##" >取消</a>
+						</div>
+						<div class="alertBotmBtn Release floatR J_publish">
+							<a href="##" class="resourceSubmitBtn">发布</a>
+						</div>
+						<div class="clear_float"></div>
+					</div>
+			</div>
+		</div>
+		<!--选编辑项内容发布弹窗end-->
+<!--创建单选题弹窗start-->
+		<div class="popForm " id="pop_questions_select">
+			<div class="mask"></div>
+			<div class="box rc-cancelBox" style="height: 680px; width: 900px; margin-left: -25%;">
+				<h1 class="marginB0">创建试题</h1>
+				<div class="overY-auto">
+				<table class="exam-edit-table">
+					<tr>
+						<td class="padL27">试题类型：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="Select_data-title">单选题</td>			
+						<input type="hidden" id="select_data_id" value="">		
+					</tr>
+					<tr>
+						<td class="padL27 verT">试题题目：</td>
+						<td>
+							<script id="containerSA" name="content" type="text/plain"></script>
+						</td>
+					</tr>
+					<!--2017.4.12编--添加了class名字-->
+					<tr class="Select_option-add">
+						<td class="padL27 verT">试题选项：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="Select_editor">
+							<div class="add-fu1 add-fu-select">添加选项</div>
+						</td>
+					</tr>
+					<!--2017.4.12编--添加了class名字-->
+					<tr class="Select_option">
+						<td class="padL27 verT"></td>
+						<td>
+							<table class="table1" id="panel-select">
+								<thead>
+									<tr>
+										<th width="47">序号</th>
+										<th width="416">内容</th>
+										<th width="90">正确答案</th>
+										<th width="200">操作</th>
+									</tr>
+								</thead>
+								<!--2017.4.12编--添加了class名字-->
+								<tbody class="Select_test-option-content">
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="padL27 verT">试题解析：</td>
+						<td>
+							<script id="containerSB" name="content" type="text/plain"></script>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<div class="alertBtnGroup" style="margin-top: 12px;">
+					<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+						<a href="##">取消</a>
+					</div>
+						<!--2017.4.12编--添加了class名字--J_confirm-->
+					<div class="alertBotmBtn Release floatR confirm-select">
+						<a href="##" class="">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<!--创建单选题弹窗end-->	
+		<!--创建多选题弹窗start-->
+		<div class="popForm " id="pop_questions_check">
+			<div class="mask"></div>
+			<div class="box rc-cancelBox" style="height: 680px; width: 900px; margin-left: -25%;">
+				<h1 class="marginB0">创建试题</h1>
+				<div class="overY-auto">
+				<table class="exam-edit-table">
+					<tr>
+						<td class="padL27">试题类型：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="Check_data-title">多选题</td>			
+					</tr>
+					<tr>
+						<td class="padL27 verT">试题题目：</td>
+						<td>
+							<script id="containerCA" name="content" type="text/plain"></script>
+						</td>
+					</tr>
+					<!--2017.4.12编--添加了class名字-->
+					<tr class="Check_option-add">
+						<td class="padL27 verT">试题选项：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="Check_editor">
+							<div class="add-fu1 add-fu-check">添加选项</div>
+						</td>
+					</tr>
+					<!--2017.4.12编--添加了class名字-->
+					<tr class="Check_option">
+						<td class="padL27 verT"></td>
+						<td>
+							<table class="table1" id="panel-check">
+								<thead>
+									<tr>
+										<th width="47">序号</th>
+										<th width="416">内容</th>
+										<th width="90">正确答案</th>
+										<th width="200">操作</th>
+									</tr>
+								</thead>
+								<!--2017.4.12编--添加了class名字-->
+								<tbody class="Check_test-option-content">
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="padL27 verT">试题解析：</td>
+						<td>
+							<script id="containerCB" name="content" type="text/plain"></script>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<div class="alertBtnGroup" style="margin-top: 12px;">
+					<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+						<a href="##">取消</a>
+					</div>
+						<!--2017.4.12编--添加了class名字--J_confirm-->
+					<div class="alertBotmBtn Release floatR confirm-check">
+						<a href="##" class="">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<!--创建多选题弹窗end-->
+		<!--创建判断题弹窗start-->
+		<div class="popForm " id="pop_questions_yesno">
+			<div class="mask"></div>
+			<div class="box rc-cancelBox" style="height: 680px; width: 900px; margin-left: -25%;">
+				<h1 class="marginB0">创建试题</h1>
+				<div class="overY-auto">
+				<table class="exam-edit-table">
+					<tr>
+						<td class="padL27">试题类型：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="Pand_data-title">判断题</td>			
+					</tr>
+					<tr>
+						<td class="padL27 verT">试题题目：</td>
+						<td>
+							<script id="containerPA" name="content" type="text/plain"></script>
+						</td>
+					</tr>
+					<!--2017.4.12编--添加了class名字-->
+					<tr class="Yes_option-add">
+						<td class="padL27 verT">选择答案：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="Yes_editor">
+							<div class="work-radio1 mgrT0 Yes_radio-option">
+								<div class="disradio disradio-active  floatL"></div>
+								<div class="radio-text Yes_radio-text floatL" style="margin-right: 16px;">正确</div>
+								<div class="disradio floatL"></div>
+								<div class="radio-text Yes_radio-text floatL">错误</div>
+								<div class="clear_float"></div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="padL27 verT">试题解析：</td>
+						<td>
+							<script id="containerPB" name="content" type="text/plain"></script>
+						</td>
+					</tr>
+				</table>
+				</div>
+				<div class="alertBtnGroup" style="margin-top: 12px;">
+					<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+						<a href="##">取消</a>
+					</div>
+						<!--2017.4.12编--添加了class名字--J_confirm-->
+					<div class="alertBotmBtn Release floatR confirm-pand">
+						<a href="##" class="">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<!--创建判断题弹窗end-->
+		<!--创建名词解释题弹窗start-->
+		<div class="popForm " id="pop_questions_explain">
+			<div class="mask"></div>
+			<div class="box rc-cancelBox" style="height: 680px; width: 900px; margin-left: -25%;">
+				<h1 class="marginB0">创建试题</h1>
+				<div class="overY-auto">
+				<table class="exam-edit-table">
+					<tr>
+						<td class="padL27">试题类型：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="Explain_data-title">名词解释题</td>			
+					</tr>
+					<tr>
+						<td class="padL27 verT">试题题目：</td>
+						<td>
+							<script id="containerEA" name="content" type="text/plain"></script>
+						</td>
+					</tr>
+					<!--2017.4.12编--添加了class名字-->
+					<tr class="Explain_option-add">
+						<td class="padL27 verT">参考答案：</td>
+						<!-- 2017.4.12编--添加了class名字 -->
+						<td class="Explain_option">
+							<div id="containerEC" name="content" type="text/plain"></div>
+						</td>
+					</tr>
+<!-- 					<tr>
+						<td class="padL27 verT">试题解析：</td>
+						<td>
+							<script id="containerEB" name="content" type="text/plain"></script>
+						</td>
+					</tr> -->
+				</table>
+				</div>
+				<div class="alertBtnGroup" style="margin-top: 12px;">
+					<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+						<a href="##">取消</a>
+					</div>
+						<!--2017.4.12编--添加了class名字--J_confirm-->
+					<div class="alertBotmBtn Release floatR confirm-explain">
+						<a href="##" class="">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>
+		<!--创建名词解释题弹窗end-->
+		<!--创建案例分析题弹窗start-->
+		<div class="popForm " id="pop_questions_case1">
+			<div class="mask"></div>
+			<div class="box rc-cancelBox" style="height: 680px; width: 900px; margin-left: -25%;">
+				<h1 class="marginB0">创建试题</h1>
+				<div class="overY-auto">
+				<table class="exam-edit-table case-box">
+					<tr>
+						<td class="padL27">试题类型：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="Case_data-title">案例分析题</td>			
+					</tr>
+					<tr>
+						<td class="padL27 verT">试题题目：</td>
+						<td><script id="containerCSA" name="content" type="text/plain"></script></td>
+					</tr>
+					<!--2017.4.12编--添加了tr-->
+					<tr class="Case_context">
+						<td class="padL27 verT">试题正文：</td>
+						<td><script id="containerCSD" name="content" type="text/plain"></script></td>
+					</tr>
+					<tr class="dataNumTr">
+						<td  colspan="2" class="padL27 verT"><div class="quesNum quesNumStyle" data-num="0">问题1</div></td>
+					</tr>
+					<tr class="case1_son-title">
+						<td class="padL27 verT">试题子题目：</td>
+						<td><div id="containerZR0b" name="content" type="text/plain"></div></td>
+					</tr>
+					<tr>
+						<td class="padL27 verT">试题子题目答案：</td>
+						<td><div id="containerZR00a" name="content" type="text/plain"></div></td>
+					</tr>			
+					<tr class="Case_option-add lastTr1">
+						<td class="padL27 verT">添加及选择：</td>
+						<!--2017.4.12编--添加了class名字-->
+						<td class="ddd_editor">
+							<div class="add-fu add-case22 floatL" style="margin-right:20px;" >添加</div>
+							<!-- <div class="add-fu choiceCase floatL">选择问题</div> -->
+						</td>
+					</tr>
+				</table>
+				</div>
+				<div class="alertBtnGroup" style="margin-top: 12px;">
+					<div class="alertBotmBtn cancel floatL btnBg-grey closeBtn">
+						<a href="##">取消</a>
+					</div>
+						<!--2017.4.12编--添加了class名字--J_confirm-->
+					<div class="alertBotmBtn Release floatR confirm-case">
+						<a href="##" class="">确认</a>
+					</div>
+					<div class="clear_float"></div>
+				</div>
+			</div>
+		</div>	
+		<!-- 隐藏域 start -->
+		<input type="hidden" id="questionType" value="" />
+
+		<!-- 隐藏域 end -->
+		<!--2017-04-28新增学员悬浮窗-->
+	<!--2017-04-28新增学员悬浮窗结束-->
+<div class="footer" style="margin-top: 0px;">
+			<div class="footer-top">
+				<ul>
+					<li><img src="static/teacher/public/img/footimg2.jpg"/>追求卓越<span></span></li>
+					<li><img src="static/teacher/public/img/footimg3.jpg"/>打造精品<span></span></li>
+					<li><img src="static/teacher/public/img/footimg4.jpg"/>服务职教<span></span></li>
+					<li><img src="static/teacher/public/img/footimg1.jpg"/>树立品牌</li> 
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-logo floatL">
+					<img src="upload/image/14829742791809.png" />
+					<div class="cprt">
+						<p>&copy; 2016-2019 大连理工大学出版社，</p>
+						<p>All Rights Reserved 辽ICP备11016033号-8</p>
+					</div>
+				</div>
+				<div class="footer-bottom-con floatL">
+					<ul class="ul1">
+						<li><a href="index.php?_d=textbook&_f=textbook" target="_blank">教材中心</a><span></span></li>
+						<li><a href="index.php?_d=resource&_f=resource" target="_blank">资源中心</a><span></span></li>
+						<li><a href="teacher.php?_d=index&_f=index" target="_blank" >在线教学</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column1" target="_blank">出版专栏</a><span></span></li>
+						<li><a href="index.php?_d=aboutus&_f=aboutus1" target="_blank">关于我们</a></li>
+					</ul>
+					<ul class="ul2">
+						<li><a href="index.php?_d=news&_f=news" target="_blank">新闻中心</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column3" target="_blank">出版流程</a><span></span></li>
+						<li><a href="index.php?_d=column&_f=column1" target="_blank">联系我们</a><span></span></li>
+						<li><a href="index.php?_d=login&_f=agreement&id=3" target="_blank">隐私政策</a><span></span></li>
+						<li><a href="index.php?_d=login&_f=agreement&id=2" target="_blank">法律声明</a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom-R floatL">
+					<img class="qr" src="upload/image/14890245941592.jpg" />
+				</div>
+				<div class="clear_float"></div>
+			</div>
+			
+		</div>
+
+		<!-- js脚本文件 -->
+		<script src="static/teacher/public/js/jquery-1.11.3.min.js"></script>
+		<script src="static/teacher/public/js/jqueryui/jquery-ui.min.js"></script>
+		<script src="static/teacher/public/js/index.js"></script>
+		<script src="static/teacher/public/js/addJs.js" ></script>
+		<script src="static/teacher/public/js/jquery.form.js" ></script>
+		<script src="static/teacher/public/js/jquery.treeview.min.js"></script>
+		<script src="static/teacher/public/js/commonJs.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.config.js"></script>
+		<script src="static/teacher/public/js/ueidtor-1.4.3.3/ueditor.all.js"></script>
+		<script src="static/teacher/public/js/leftNav.js" ></script>
+		<script src="static/teacher/public/js/conL.js"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js" type="text/javascript"></script>
+	    <script src="static/teacher/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script>
+		<script src="static/teacher/public/js/addCourse.js" ></script>
+		<script src="static/teacher/public/js/ajax.js"></script>
+		<script src="static/teacher/public/js/rept.js"></script>
+		<script src="static/teacher/public/js/common.js"></script>
+		<script src="static/teacher/public/js/editorExam.js"></script>
+		<script src="static/teacher/public/js/exam-create-ajax.js"></script>
+		<script src="static/teacher/public/js/exam-editor-ajax.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//学员申请提示
+				$('.applyWindowBox').hover(function(){
+					$(this).find('.applyDetails').css('bottom','42px');
+				},function(){
+					$(this).find('.applyDetails').css('bottom','-90px');
+				})
+			})
+		</script>
+
+
+
+		<script>
+				
+			$(function(){
+				
+				//初始化编辑器
+				var ue = UE.getEditor('containerA',{
+					initialFrameWidth:756,
+					initialFrameHeight:100,
+//					2017.4.12编--添加了下面的属性，防止编辑器的工具栏抖动
+					autoFloatEnabled:false,
+					enterTag:'br',
+					toolbars: [
+					    [
+					        'anchor', //锚点
+					        'undo', //撤销
+					        'redo', //重做
+					        'bold', //加粗
+					        'indent', //首行缩进
+					        'snapscreen', //截图
+					        'italic', //斜体
+					        'underline', //下划线
+					        'strikethrough', //删除线
+					        'subscript', //下标
+					        'fontborder', //字符边框
+					        'superscript', //上标
+					        'formatmatch', //格式刷
+					        'blockquote', //引用
+					        'pasteplain', //纯文本粘贴模式
+					        'selectall', //全选
+					        'print', //打印
+					        'preview', //预览
+					        'horizontal', //分隔线
+					        'removeformat', //清除格式
+					        'time', //时间
+					        'date', //日期
+					        'unlink', //取消链接
+					        'cleardoc', //清空文档
+					        'fontfamily', //字体
+					        'fontsize', //字号
+					        'paragraph', //段落格式
+					        'simpleupload', //单图上传
+					        'insertimage', //多图上传
+					        'edittable', //表格属性
+					        'edittd', //单元格属性
+					        'link', //超链接
+					        'justifyleft', //居左对齐
+					        'justifyright', //居右对齐
+					        'justifycenter', //居中对齐
+					        'justifyjustify', //两端对齐
+					        'forecolor', //字体颜色
+					        'backcolor', //背景色
+					        'rowspacingtop', //段前距
+					        'rowspacingbottom', //段后距
+					        'imagenone', //默认
+					        'attachment', //附件
+					        'imagecenter', //居中
+					        'lineheight', //行间距
+					        'customstyle', //自定义标题
+					        'autotypeset', //自动排版
+					        'touppercase', //字母大写
+					        'tolowercase', //字母小写
+					        'background', //背景
+					    ]
+					]
+				});
+				
+				var ue = UE.getEditor('containerB',{
+					initialFrameWidth:756,
+					initialFrameHeight:100,
+//					2017.4.12编--添加了下面的属性，防止编辑器的工具栏抖动
+					autoFloatEnabled:false,
+					enterTag:'br',
+					toolbars: [
+					    [
+					        'anchor', //锚点
+					        'undo', //撤销
+					        'redo', //重做
+					        'bold', //加粗
+					        'indent', //首行缩进
+					        'snapscreen', //截图
+					        'italic', //斜体
+					        'underline', //下划线
+					        'strikethrough', //删除线
+					        'subscript', //下标
+					        'fontborder', //字符边框
+					        'superscript', //上标
+					        'formatmatch', //格式刷
+					        'blockquote', //引用
+					        'pasteplain', //纯文本粘贴模式
+					        'selectall', //全选
+					        'print', //打印
+					        'preview', //预览
+					        'horizontal', //分隔线
+					        'removeformat', //清除格式
+					        'time', //时间
+					        'date', //日期
+					        'unlink', //取消链接
+					        'cleardoc', //清空文档
+					        'fontfamily', //字体
+					        'fontsize', //字号
+					        'paragraph', //段落格式
+					        'simpleupload', //单图上传
+					        'insertimage', //多图上传
+					        'edittable', //表格属性
+					        'edittd', //单元格属性
+					        'link', //超链接
+					        'justifyleft', //居左对齐
+					        'justifyright', //居右对齐
+					        'justifycenter', //居中对齐
+					        'justifyjustify', //两端对齐
+					        'forecolor', //字体颜色
+					        'backcolor', //背景色
+					        'rowspacingtop', //段前距
+					        'rowspacingbottom', //段后距
+					        'imagenone', //默认
+					        'attachment', //附件
+					        'imagecenter', //居中
+					        'lineheight', //行间距
+					        'customstyle', //自定义标题
+					        'autotypeset', //自动排版
+					        'touppercase', //字母大写
+					        'tolowercase', //字母小写
+					        'background', //背景
+					    ]
+					]
+				});
+				
+				var ue = UE.getEditor('containerD',{
+					initialFrameWidth:756,
+					initialFrameHeight:100,
+//					2017.4.12编--添加了下面的属性，防止编辑器的工具栏抖动
+					autoFloatEnabled:false,
+					enterTag:'br',
+					toolbars: [
+					    [
+					        'anchor', //锚点
+					        'undo', //撤销
+					        'redo', //重做
+					        'bold', //加粗
+					        'indent', //首行缩进
+					        'snapscreen', //截图
+					        'italic', //斜体
+					        'underline', //下划线
+					        'strikethrough', //删除线
+					        'subscript', //下标
+					        'fontborder', //字符边框
+					        'superscript', //上标
+					        'formatmatch', //格式刷
+					        'blockquote', //引用
+					        'pasteplain', //纯文本粘贴模式
+					        'selectall', //全选
+					        'print', //打印
+					        'preview', //预览
+					        'horizontal', //分隔线
+					        'removeformat', //清除格式
+					        'time', //时间
+					        'date', //日期
+					        'unlink', //取消链接
+					        'cleardoc', //清空文档
+					        'fontfamily', //字体
+					        'fontsize', //字号
+					        'paragraph', //段落格式
+					        'simpleupload', //单图上传
+					        'insertimage', //多图上传
+					        'edittable', //表格属性
+					        'edittd', //单元格属性
+					        'link', //超链接
+					        'justifyleft', //居左对齐
+					        'justifyright', //居右对齐
+					        'justifycenter', //居中对齐
+					        'justifyjustify', //两端对齐
+					        'forecolor', //字体颜色
+					        'backcolor', //背景色
+					        'rowspacingtop', //段前距
+					        'rowspacingbottom', //段后距
+					        'imagenone', //默认
+					        'attachment', //附件
+					        'imagecenter', //居中
+					        'lineheight', //行间距
+					        'customstyle', //自定义标题
+					        'autotypeset', //自动排版
+					        'touppercase', //字母大写
+					        'tolowercase', //字母小写
+					        'background', //背景
+					    ]
+					]
+				});
+				
+				var ue = UE.getEditor('container_editorOption',{
+					initialFrameWidth:460,
+					initialFrameHeight:240,
+//					2017.4.12编--添加了下面的属性，防止编辑器的工具栏抖动
+					autoFloatEnabled:false,
+					enterTag:'br',
+					toolbars: [
+					    [
+					        'anchor', //锚点
+					        'undo', //撤销
+					        'redo', //重做
+					        'bold', //加粗
+					        'indent', //首行缩进
+					        'snapscreen', //截图
+					        'italic', //斜体
+					        'underline', //下划线
+					        'strikethrough', //删除线
+					        'subscript', //下标
+					        'fontborder', //字符边框
+					        'superscript', //上标
+					        'formatmatch', //格式刷
+					        'blockquote', //引用
+					        'pasteplain', //纯文本粘贴模式
+					        'selectall', //全选
+					        'print', //打印
+					        'preview', //预览
+					        'horizontal', //分隔线
+					        'removeformat', //清除格式
+					        'time', //时间
+					        'date', //日期
+					        'unlink', //取消链接
+					        'cleardoc', //清空文档
+					        'fontfamily', //字体
+					        'fontsize', //字号
+					        'paragraph', //段落格式
+					        'simpleupload', //单图上传
+					        'insertimage', //多图上传
+					        'edittable', //表格属性
+					        'edittd', //单元格属性
+					        'link', //超链接
+					        'justifyleft', //居左对齐
+					        'justifyright', //居右对齐
+					        'justifycenter', //居中对齐
+					        'justifyjustify', //两端对齐
+					        'forecolor', //字体颜色
+					        'backcolor', //背景色
+					        'rowspacingtop', //段前距
+					        'rowspacingbottom', //段后距
+					        'imagenone', //默认
+					        'attachment', //附件
+					        'imagecenter', //居中
+					        'lineheight', //行间距
+					        'customstyle', //自定义标题
+					        'autotypeset', //自动排版
+					        'touppercase', //字母大写
+					        'tolowercase', //字母小写
+					        'background', //背景
+					    ]
+					]
+				});
+				
+			})
+		</script>
+	</body>
+
+</html>

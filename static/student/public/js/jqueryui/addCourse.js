@@ -8,6 +8,12 @@ function addCourse(){
 		alert("请输入课程激活码");
 		return false;
 	}
+	{	// added yasha
+		$(".textL").text("操作成功");
+		$('.popAlert2').fadeIn();
+		$('.popMask2').fadeIn();
+		return;
+	}
 	$.post("_addCourse.txt",{key:key,type:'1'},function(data){
 		if(data==1){
 			//操作成功弹出提示框
@@ -53,7 +59,9 @@ function href(type,cid){
 			}
 			
 		}
-		$.post("_addRoom.txt",{number:number},function(data){
+		// updated yasha
+		data=1;
+		//$.post("_addRoom.txt",{number:number},function(data){
 			if(data==1){
 				popFadeOut($('#pop_joinCourse'));
 				popFadeOut($('#pop_addPer'));
@@ -64,7 +72,7 @@ function href(type,cid){
 				popFadeOut($('#pop_joinCourse'));
 				popFadeOut($('#pop_addPer'));
 			}
-		})
+		//})
 	}
 
 

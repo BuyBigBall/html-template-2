@@ -676,10 +676,11 @@
 			//无刷新删除附件-by sunjialiang
 			function delattach(id){
 				if(id != ''){
-					$.post("_homework-del.txt", {id:id},
-				   	function(data){
+					// updated yasha
+			data=1;
+			//$.post("_homework-del.txt", {id:id},function(data){
 				   		popFadeOut($(".popForm"));//关闭弹出
-				   	});
+				   	//});
 				}
 			}
 

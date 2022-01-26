@@ -714,14 +714,16 @@
 			//验证旧手机
 			function showstep2(){
 				var oldNumber1 = $("#oldNumber2").val();
-				$.post('_checkOldTel.txt', { key: oldNumber1}, function (data) {
+				// updated yasha
+			data=1;
+			//$.post('_checkOldTel.txt', { key: oldNumber1}, function (data) {
 					if(data==1){
 						$("#step1T").hide();
 						$("#step2T").show();
 					}else{
 						alert("验证码输入错误");
 					}
-				});
+				//});
 			}
 			//设置新手机
 			function showstep3(){
@@ -767,11 +769,13 @@
 								clearInterval(stCd);
 							}
 							var tel=$("#phoneNew").val();
-							$.ajax({
-				                url:"_sendMsg_old.txt",
-				                type:"post",
-				                data:{tel:tel},
-				                success:function(data) {  
+// updated yasha
+data=1;
+			//							// $.ajax({
+				            //     url:"_sendMsg_old.txt",
+				            //     type:"post",
+				            //     data:{tel:tel},
+				            //     success:function(data) {  
 				                	if(data==-1){
 				                		alert("发送失败，请稍后再试");
 				                		return false;
@@ -795,7 +799,7 @@
         									}
             					}
 				                		
-				           	})
+				           //	})
 						})
 						//手机_下一步_绑定新手机
 					$("#stepPhoneNext1").click(function() {
@@ -873,14 +877,16 @@
 							  		var re = new RegExp(regu);
 							  		if(re.test(email)) {
 							  			//在这里发送邮件
-							  			$.post('user-mine5.htm?act=sendEmail', { email: email}, function (data) {
+							  			// updated yasha
+			data=1;
+			//$.post('user-mine5.htm?act=sendEmail', { email: email}, function (data) {
 							  				if(data==1){
 							  					$("#step1E").hide();
 							  					$("#step2E").show();
 							  				}else{
 							  					alert("验证码发送失败，请稍后再试");
 							  				}
-							  			})
+							  			//})
 							  			
 							  		} else {
 							  			alert("请输入正确邮箱");

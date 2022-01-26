@@ -288,14 +288,16 @@
 			//删除邮件
 			function del(){
 				var id = $("#id").val();
-				$.post("_message-del.txt",{id:id},function(data){
+				// updated yasha
+			data=1;
+			//$.post("_message-del.txt",{id:id},function(data){
 					if(data==1){
 						location.reload();
 					}else{
 						alert(data);
 					}
 
-				})
+				//})
 			}
 			function show(id){
 				popFadeIn($('#pop_deleteResource'));
