@@ -1,9 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 	<head>
-		<meta charset="utf-8" />
-		<title>收件箱</title>
+		<title>选择课程</title>
 			<meta charset="utf-8" />
 	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
 	<link rel="stylesheet" href="static/student/public/css/base.css" />
@@ -26,7 +25,7 @@
 	</head>
 
 	<body class="body-student">
-		<!--头部模块开始-->
+		<!--头部导航start-->
 		<div class="header header_student cl">
 			<div class="head">
 		<div class="head-left">
@@ -48,18 +47,18 @@
 				</li>
 				<li>
 
-					<a href="student-select-examcourse.htm"  style="position:relative;">我的考试</a>
+					<a href="student-examination.htm"  style="position:relative;">我的考试</a>
 				</li>
 				<li>
 					<a href="student-class.htm" >我的班级</a>
 				</li>
 				<!-- <li class="newbgc"> -->
 				<li >
-					<a href="student-message.htm"  class="active">消息中心</a>
+					<a href="student-message.htm" >消息中心</a>
 				</li>
 			</ul>
 			<div class="Signin">
-				<a href="student-profile.htm" class="span1">
+				<a href="user-personal.htm" class="span1">
 					李小明
 				</a> |
 				<a href="index.htm" class="span2">退出</a>
@@ -68,91 +67,57 @@
 		</div>
 	</div>
 		</div>
-		<!--头部模块结束-->
-		<!--内容区start-->
+		<!--头部导航end-->
+
+		<!--内容区-->
 		<div class="popBody popBody_student">
-			<div class="content">
-				<!--内容区左侧导航栏-->
-				<div class="content-left">
-					<div class="inr-left-nav clearFloat_t">
-						<ul>
-							<a href="student-message-new.htm"><li>
-								新建消息
-								<span class="arrorFont">></span>
-							</li></a>
-							<a href="student-message.htm"><li class="cur-left-nav-stu">
-								收件箱
-								<span class="arrorFont">></span>
-							</li></a>
-							<a href="student-message-send.htm"><li>
-								已发送
-								<span class="arrorFont">></span>
-							</li></a>
-							<a href="student-message-recycle.htm"><li>
-								回收站
-								<span class="arrorFont">></span>
-							</li></a>
-						</ul>
-					</div>
-				</div>
-				<!--内容区导航栏end-->
-				<!--内容区右侧-->
-				<div class="content-right infoBox">
-					<div class="content-right_tit">
-						<h1 class="paddingL28">收件箱</h1>
-						<div class="homeworkScore">
-							<h2 class="">标题：明天不上课了</h2>
-							<div class="ticTr">发件人：
-								<span style="margin-right: 40px;">凯鹏</span>
-							</div>
-							<div class="ticTr">时&nbsp;&nbsp;&nbsp;间：
-								<span>2021-04-29 10:01:49</span>
-							</div>
-							<div class="ticTr">收件人：
-																<span></span>
-															</div>
+			<div class="rm-inr">
+				<h1 class="acnttxt">
+					<i class="iconfont icon-wenjian1 icon-blue magrL22 dbIcon"></i>
+					选择课程
+				</h1>
+				<div class="rm-inr-cntBox">
+					<!--课程-->
+										<!-- <a href="student-resource.htm?mid=8"> -->
+					<div class="coursePart-rm " onclick="save(1,8)">
+						<img src="upload/image/15102154306448.jpg" />
+						<div class="botmMsk-rm">
+							<span class="courseName">商务礼仪与职业形象</span>
+							<span class="courseStudent">
+								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
+								学员名额：<span>1</span>/<span>30</span>
+							</span>
 						</div>
 					</div>
-					<div class="underCntBox-ci treleased-content-con paddingT14">
-						<div class="info-txt">
-							明天我不能上课了
+					<!-- <a> -->
+										<!-- <a href="student-resource.htm?mid=10"> -->
+					<div class="coursePart-rm " onclick="save(5,10)">
+						<img src="upload/image/15644695641775.jpg" />
+						<div class="botmMsk-rm">
+							<span class="courseName">计算机应用基础</span>
+							<span class="courseStudent">
+								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
+								学员名额：<span>3</span>/<span>50</span>
+							</span>
 						</div>
-						
 					</div>
-					<!-- <div class="alertBtnGroup2" style="margin-top: 24px;">
-						<div class="alertBotmBtn cancel btnBg-grey closeBtn floatL magrL22" onclick="history.go(-1);">
-							<a href="##">返回</a>
+					<!-- <a> -->
+										<!-- <a href="student-resource.htm?mid=10"> -->
+					<div class="coursePart-rm mgrR0" onclick="save(5,10)">
+						<img src="upload/image/15644695641775.jpg" />
+						<div class="botmMsk-rm">
+							<span class="courseName">计算机应用基础</span>
+							<span class="courseStudent">
+								<i class="iconfont icon-zhanghao dbIcon-rm-ren"></i>
+								学员名额：<span>1</span>/<span>50</span>
+							</span>
 						</div>
-						<div class="alertBotmBtn addUse floatL magrL22">
-							<a href="student-message-new.htm?sendId=265" class="">回复</a>
-						</div>
-						<div class="alertBotmBtn addUse floatL magrL22">
-							<a href="student-message-new.htm?transmitId=8" class="">转发</a>
-						</div>
-						<div class="clear_float"></div></br>
-					</div> -->
-					<div class="button-group3 marginT32">
-							<div class="bom-button cancel floatL bgcb8c4 magrL22" onclick="history.go(-1);">
-								<a href="javascript:;">取消</a>
-							</div>
-							<div class="bom-button Release floatL bgcbule magrL22" style="width: 152px !important;">
-								<a href="student-message-new.htm?sendId=265">回复</a>
-							</div>
-							<div class="bom-button Release floatL magrL22">
-								<a href="student-message-new.htm?transmitId=8">转发</a>
-							</div>
-							<div class="clear_float"></div>
-						</div>
-						</br>
-
-				</div>
-				<!--内容区右侧end-->
-
-				<div class="clear_float"></div>
+					</div>
+					<!-- <a> -->
+									</div>
 			</div>
 		</div>
-		<!--内容区end-->
-		<!--底部start-->
+		<!--内容区结束-->		
 		
 
 <div class="footer" style="margin-top: 0px;">
@@ -237,7 +202,7 @@
 	<script src="static/student/public/js/conL.js"></script>
 	<!-- <script src="static/student/public/js/jqueryui/jquery-ui-timepicker-addon.js"></script> -->
     <!-- <script src="static/student/public/js/jqueryui/jquery.ui.datepicker-zh-CN.js.js"></script> -->
-    
+    <!--  -->
     <!--  -->
     <script src="static/student/public/js/addCourse.js" ></script>
 	<script src="static/student/public/js/leftNav.js"></script>
@@ -269,9 +234,13 @@
 	</script>
 
 		<!--底部end-->
-		<!--整体end-->
-		<script>
-			$(function() {})
+		<!--底部end-->
+		<script type="text/javascript">
+			function save(id,mid){
+				$.post("_student-select-course.txt",{id:id,mid:mid},function(data){
+					window.location.href="student-examination.htm";
+				})
+			}
 		</script>
 	</body>
 

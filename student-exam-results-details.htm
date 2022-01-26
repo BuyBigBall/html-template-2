@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="utf-8" />
-		<title>收件箱</title>
+		<title>我的成绩</title>
 			<meta charset="utf-8" />
 	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
 	<link rel="stylesheet" href="static/student/public/css/base.css" />
@@ -27,7 +27,7 @@
 
 	<body class="body-student">
 		<!--头部模块开始-->
-		<div class="header header_student cl">
+		<div class="header header_student">
 			<div class="head">
 		<div class="head-left">
 			<a href="student.htm">
@@ -48,18 +48,18 @@
 				</li>
 				<li>
 
-					<a href="student-select-examcourse.htm"  style="position:relative;">我的考试</a>
+					<a href="student-examination.htm"  style="position:relative;">我的考试</a>
 				</li>
 				<li>
 					<a href="student-class.htm" >我的班级</a>
 				</li>
 				<!-- <li class="newbgc"> -->
 				<li >
-					<a href="student-message.htm"  class="active">消息中心</a>
+					<a href="student-message.htm" >消息中心</a>
 				</li>
 			</ul>
 			<div class="Signin">
-				<a href="student-profile.htm" class="span1">
+				<a href="user-personal.htm" class="span1">
 					李小明
 				</a> |
 				<a href="index.htm" class="span2">退出</a>
@@ -71,84 +71,101 @@
 		<!--头部模块结束-->
 		<!--内容区start-->
 		<div class="popBody popBody_student">
-			<div class="content">
-				<!--内容区左侧导航栏-->
-				<div class="content-left">
-					<div class="inr-left-nav clearFloat_t">
-						<ul>
-							<a href="student-message-new.htm"><li>
-								新建消息
-								<span class="arrorFont">></span>
-							</li></a>
-							<a href="student-message.htm"><li class="cur-left-nav-stu">
-								收件箱
-								<span class="arrorFont">></span>
-							</li></a>
-							<a href="student-message-send.htm"><li>
-								已发送
-								<span class="arrorFont">></span>
-							</li></a>
-							<a href="student-message-recycle.htm"><li>
-								回收站
-								<span class="arrorFont">></span>
-							</li></a>
-						</ul>
-					</div>
+			<div class="pi-inr-box">
+				<div class="inr-left-nav clearFloat_t">
+					<ul>
+						<a href="student-profile.htm"><li >
+							个人信息
+							<span class="arrorFont">></span>
+						</li></a>
+						<a href="student-exam-results.htm"><li class="cur-left-nav-stu">
+							我的成绩
+							<span class="arrorFont">></span>
+						</li></a>
+						<a href="student-account-info.htm"><li>
+							账户安全
+							<span class="arrorFont">></span>
+						</li></a>
+						<a href="student-change-pwd.htm"><li >
+							修改密码
+							<span class="arrorFont">></span>
+						</li></a>
+					</ul>
 				</div>
-				<!--内容区导航栏end-->
-				<!--内容区右侧-->
-				<div class="content-right infoBox">
-					<div class="content-right_tit">
-						<h1 class="paddingL28">收件箱</h1>
-						<div class="homeworkScore">
-							<h2 class="">标题：明天不上课了</h2>
-							<div class="ticTr">发件人：
-								<span style="margin-right: 40px;">凯鹏</span>
-							</div>
-							<div class="ticTr">时&nbsp;&nbsp;&nbsp;间：
-								<span>2021-04-29 10:01:49</span>
-							</div>
-							<div class="ticTr">收件人：
-																<span></span>
-															</div>
-						</div>
-					</div>
-					<div class="underCntBox-ci treleased-content-con paddingT14">
-						<div class="info-txt">
-							明天我不能上课了
+				<div class="inr-right-cnt">
+					<h1>成绩详情</h1>
+					<div class="resultsBox" style="padding-bottom: 166px;">
+						
+						<div class="studentInfo-erd">
+							<span style="display: inline-block;width: 220px;">姓名：李小明</span>
+							<span style="width: 247px;display: inline-block;">课程：商务礼仪与职业形象</span>
+							<span style="width: 247px;display: inline-block;">综合排名：1</span>
 						</div>
 						
-					</div>
-					<!-- <div class="alertBtnGroup2" style="margin-top: 24px;">
-						<div class="alertBotmBtn cancel btnBg-grey closeBtn floatL magrL22" onclick="history.go(-1);">
-							<a href="##">返回</a>
-						</div>
-						<div class="alertBotmBtn addUse floatL magrL22">
-							<a href="student-message-new.htm?sendId=265" class="">回复</a>
-						</div>
-						<div class="alertBotmBtn addUse floatL magrL22">
-							<a href="student-message-new.htm?transmitId=8" class="">转发</a>
-						</div>
-						<div class="clear_float"></div></br>
-					</div> -->
-					<div class="button-group3 marginT32">
-							<div class="bom-button cancel floatL bgcb8c4 magrL22" onclick="history.go(-1);">
-								<a href="javascript:;">取消</a>
-							</div>
-							<div class="bom-button Release floatL bgcbule magrL22" style="width: 152px !important;">
-								<a href="student-message-new.htm?sendId=265">回复</a>
-							</div>
-							<div class="bom-button Release floatL magrL22">
-								<a href="student-message-new.htm?transmitId=8">转发</a>
+						<div class="toread" style="margin-bottom: 7px;">
+							<div class="toread-nav">
+								<ul class="floatL">
+									<li class="bgcbule">作业成绩</li>
+									<li>实训成绩</li>
+									<li>考试成绩</li>
+								</ul>
 							</div>
 							<div class="clear_float"></div>
 						</div>
-						</br>
-
+												<div class="examTabBox" style=" ">
+							<div class="aboutTask">
+								<div class="submitTask">作业提交：<span class="colorRed">0/3</span></div>
+								<div class="taskScore">作业平均分：<span class="colorRed">-</span></div>
+							</div>
+							
+							<div class="toread-con">
+								<table class="marginT10 tableEr	">
+									<tr class="bgceaf9">
+										<th width="269" class="font-s14 color333">章节名称</th>
+										<th width="279" class="font-s14 color333">单项作业名称</th>
+										<th width="153" class="font-s14 color333">分值</th>
+										<th width="157" class="font-s14 color333" style=" display: none;">分数段</th> 
+									</tr>
+																	</table>
+							</div>
+						</div>
+												<div class="examTabBox" style=" display: none;">
+							<div class="aboutTask">
+								<div class="submitTask">实训提交：<span class="colorRed">0/1</span></div>
+								<div class="taskScore">实训平均分：<span class="colorRed">-</span></div>
+							</div>
+							
+							<div class="toread-con">
+								<table class="marginT10 tableEr	">
+									<tr class="bgceaf9">
+										<th width="269" class="font-s14 color333">章节名称</th>
+										<th width="279" class="font-s14 color333">单项作业名称</th>
+										<th width="153" class="font-s14 color333">分值</th>
+										<th width="157" class="font-s14 color333" style=" display: none;">分数段</th> 
+									</tr>
+																	</table>
+							</div>
+						</div>
+												<div class="examTabBox" style=" display: none;">
+							<div class="aboutTask">
+								<div class="submitTask">考试提交：<span class="colorRed">0/2</span></div>
+								<div class="taskScore">考试平均分：<span class="colorRed">-</span></div>
+							</div>
+							
+							<div class="toread-con">
+								<table class="marginT10 tableEr	">
+									<tr class="bgceaf9">
+										<th width="269" class="font-s14 color333">章节名称</th>
+										<th width="279" class="font-s14 color333">单项作业名称</th>
+										<th width="153" class="font-s14 color333">分值</th>
+										<th width="157" class="font-s14 color333" style=" ">分数段</th> 
+									</tr>
+																	</table>
+							</div>
+						</div>
+						
+					</div>
 				</div>
-				<!--内容区右侧end-->
-
-				<div class="clear_float"></div>
 			</div>
 		</div>
 		<!--内容区end-->
@@ -270,8 +287,15 @@
 
 		<!--底部end-->
 		<!--整体end-->
-		<script>
-			$(function() {})
+		<script type="text/javascript">
+			$(function() {
+				$(".tableEr  tr:even").addClass("bgcf9");
+				$('.toread-nav ul li').click(function(){
+					$('.toread-nav ul li').removeClass('bgcbule');
+					$(this).addClass('bgcbule');
+					$('.examTabBox').eq($(this).index()).show().siblings('.examTabBox').hide();
+				})
+			})
 		</script>
 	</body>
 

@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="utf-8" />
-		<title>收件箱</title>
+		<title>班级管理</title>
 			<meta charset="utf-8" />
 	<link rel="stylesheet" href="static/student/public/css/style_safe.css" />
 	<link rel="stylesheet" href="static/student/public/css/base.css" />
@@ -51,11 +51,11 @@
 					<a href="student-select-examcourse.htm"  style="position:relative;">我的考试</a>
 				</li>
 				<li>
-					<a href="student-class.htm" >我的班级</a>
+					<a href="student-class.htm"  class="active">我的班级</a>
 				</li>
 				<!-- <li class="newbgc"> -->
 				<li >
-					<a href="student-message.htm"  class="active">消息中心</a>
+					<a href="student-message.htm" >消息中心</a>
 				</li>
 			</ul>
 			<div class="Signin">
@@ -71,88 +71,36 @@
 		<!--头部模块结束-->
 		<!--内容区start-->
 		<div class="popBody popBody_student">
-			<div class="content">
-				<!--内容区左侧导航栏-->
-				<div class="content-left">
-					<div class="inr-left-nav clearFloat_t">
-						<ul>
-							<a href="student-message-new.htm"><li>
-								新建消息
-								<span class="arrorFont">></span>
-							</li></a>
-							<a href="student-message.htm"><li class="cur-left-nav-stu">
-								收件箱
-								<span class="arrorFont">></span>
-							</li></a>
-							<a href="student-message-send.htm"><li>
-								已发送
-								<span class="arrorFont">></span>
-							</li></a>
-							<a href="student-message-recycle.htm"><li>
-								回收站
-								<span class="arrorFont">></span>
-							</li></a>
-						</ul>
+			<div class="content cmCont">
+				<div class="cm-nav">
+					<div class="cm-navL ">
+						<a href="student-class.htm">
+							<i class="iconfont">&#xe7a0;</i>
+							<span>授课班级</span>
+							<div class="cm-actDiv"></div>
+						</a>
+					</div>
+					<div class="linel"></div>
+					<div class="cm-navR cm-active">
+						<a href="student-class.htm_yet">
+							<i class="iconfont">&#xe629;</i>
+							<span>已归档班级</span>
+							<div class="cm-actDiv"></div>
+						</a>
 					</div>
 				</div>
-				<!--内容区导航栏end-->
-				<!--内容区右侧-->
-				<div class="content-right infoBox">
-					<div class="content-right_tit">
-						<h1 class="paddingL28">收件箱</h1>
-						<div class="homeworkScore">
-							<h2 class="">标题：明天不上课了</h2>
-							<div class="ticTr">发件人：
-								<span style="margin-right: 40px;">凯鹏</span>
-							</div>
-							<div class="ticTr">时&nbsp;&nbsp;&nbsp;间：
-								<span>2021-04-29 10:01:49</span>
-							</div>
-							<div class="ticTr">收件人：
-																<span></span>
-															</div>
-						</div>
+				<div class="rm-inr">
+					<div class="rm-inr-cntBox">
+						<!--课程-->
+												
 					</div>
-					<div class="underCntBox-ci treleased-content-con paddingT14">
-						<div class="info-txt">
-							明天我不能上课了
-						</div>
-						
-					</div>
-					<!-- <div class="alertBtnGroup2" style="margin-top: 24px;">
-						<div class="alertBotmBtn cancel btnBg-grey closeBtn floatL magrL22" onclick="history.go(-1);">
-							<a href="##">返回</a>
-						</div>
-						<div class="alertBotmBtn addUse floatL magrL22">
-							<a href="student-message-new.htm?sendId=265" class="">回复</a>
-						</div>
-						<div class="alertBotmBtn addUse floatL magrL22">
-							<a href="student-message-new.htm?transmitId=8" class="">转发</a>
-						</div>
-						<div class="clear_float"></div></br>
-					</div> -->
-					<div class="button-group3 marginT32">
-							<div class="bom-button cancel floatL bgcb8c4 magrL22" onclick="history.go(-1);">
-								<a href="javascript:;">取消</a>
-							</div>
-							<div class="bom-button Release floatL bgcbule magrL22" style="width: 152px !important;">
-								<a href="student-message-new.htm?sendId=265">回复</a>
-							</div>
-							<div class="bom-button Release floatL magrL22">
-								<a href="student-message-new.htm?transmitId=8">转发</a>
-							</div>
-							<div class="clear_float"></div>
-						</div>
-						</br>
-
 				</div>
-				<!--内容区右侧end-->
 
-				<div class="clear_float"></div>
 			</div>
 		</div>
 		<!--内容区end-->
-		<!--底部start-->
+		<!--整体end-->
+		<!--添加班级  end-->
 		
 
 <div class="footer" style="margin-top: 0px;">
@@ -268,10 +216,9 @@
 		
 	</script>
 
-		<!--底部end-->
-		<!--整体end-->
-		<script>
-			$(function() {})
+		<script type="text/javascript">
+			$(function() {
+			})
 		</script>
 	</body>
 
